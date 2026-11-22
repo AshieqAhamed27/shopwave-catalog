@@ -775,6 +775,378 @@
         "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80",
         "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80"
       ]
+    },
+    {
+      "id": 25,
+      "name": "AuraBeam 4K Laser Smart Projector",
+      "category": "electronics",
+      "price": 42999,
+      "originalPrice": 59999,
+      "rating": 4.9,
+      "reviewCount": 740,
+      "badge": "hot",
+      "description": "True 4K UHD laser projection up to 150 inches with 2500 ANSI lumens, HDR10+, Android TV built-in, and Harman Kardon acoustics.",
+      "tags": [
+        "4K UHD",
+        "2500 ANSI Lumens",
+        "Android TV",
+        "Harman Kardon"
+      ],
+      "features": [
+        "4K UHD laser technology",
+        "2500 ANSI lumens high brightness",
+        "Up to 150-inch display size",
+        "Built-in Android TV with voice remote",
+        "Dual 10W Harman Kardon speakers",
+        "Auto focus and keystone correction"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=600&q=80",
+        "https://images.unsplash.com/photo-1595769816263-9b910be24d5f?w=600&q=80",
+        "https://images.unsplash.com/photo-1461151304267-38535e780c79?w=600&q=80",
+        "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&q=80"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "MechStrike RGB Mechanical Gaming Keyboard",
+      "category": "electronics",
+      "price": 6999,
+      "originalPrice": 9499,
+      "rating": 4.7,
+      "reviewCount": 2890,
+      "badge": "sale",
+      "description": "Hot-swappable linear mechanical switches, per-key RGB backlighting, aircraft-grade aluminum top plate, and magnetic memory foam wrist rest.",
+      "tags": [
+        "Hot-Swappable",
+        "RGB Backlit",
+        "Aluminum Frame",
+        "Linear Switches"
+      ],
+      "features": [
+        "Hot-swappable mechanical switches",
+        "Per-key customizable RGB illumination",
+        "Solid aircraft aluminum top plate",
+        "Magnetic plush wrist rest included",
+        "1000Hz polling rate with N-key rollover",
+        "Detachable braided USB-C cable"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80",
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600&q=80",
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&q=80",
+        "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=600&q=80"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Nomad Weatherproof Tactical Backpack",
+      "category": "fashion",
+      "price": 4799,
+      "originalPrice": 6499,
+      "rating": 4.8,
+      "reviewCount": 1650,
+      "badge": "new",
+      "description": "Built from ballistic 900D Cordura nylon with waterproof zippers, modular expansion webbing, and a 16-inch padded laptop compartment.",
+      "tags": [
+        "Cordura 900D",
+        "Waterproof",
+        "16\" Laptop Sleeve",
+        "Ergonomic"
+      ],
+      "features": [
+        "900D ballistic waterproof Cordura nylon",
+        "16-inch padded laptop and tablet sleeve",
+        "Ergonomic airflow back panel",
+        "MOLLE attachment system",
+        "Quick-access passport and bottle pockets",
+        "Lockable dual main compartment zippers"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=80",
+        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=600&q=80",
+        "https://images.unsplash.com/photo-1546938576-6e6a64f317cc?w=600&q=80",
+        "https://images.unsplash.com/photo-1577733966973-d680bffd2e80?w=600&q=80"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Solstice Italian Leather Dress Belt",
+      "category": "fashion",
+      "price": 2299,
+      "originalPrice": 3299,
+      "rating": 4.6,
+      "reviewCount": 1140,
+      "badge": "hot",
+      "description": "Hand-crafted full-grain Italian vegetable-tanned leather with a brushed nickel buckle. Reversible design for effortless versatility.",
+      "tags": [
+        "Full-Grain Leather",
+        "Italian Craft",
+        "Brushed Nickel",
+        "Reversible"
+      ],
+      "features": [
+        "100% full-grain Italian leather",
+        "Brushed nickel buckle hardware",
+        "Reversible black/cognac brown strap",
+        "Hand-burnished edges",
+        "5 custom sizing adjustment holes",
+        "Supplied in luxury gift box"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1624222247344-550fb60583dc?w=600&q=80",
+        "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&q=80",
+        "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80",
+        "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "BaristaPro Espresso & Cappuccino Machine",
+      "category": "home",
+      "price": 18499,
+      "originalPrice": 24999,
+      "rating": 4.8,
+      "reviewCount": 1390,
+      "badge": "hot",
+      "description": "20-bar professional Italian pump espresso maker with integrated conical burr grinder, micro-foam steam wand, and digital temperature control.",
+      "tags": [
+        "20-Bar Pump",
+        "Burr Grinder",
+        "Steam Wand",
+        "PID Temperature"
+      ],
+      "features": [
+        "20-bar high-pressure Italian pump",
+        "Integrated conical burr coffee grinder",
+        "Commercial-style micro-foam steam wand",
+        "PID precise digital temperature control",
+        "Single and double shot portafilters",
+        "1.8L removable water reservoir"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=600&q=80",
+        "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80",
+        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "ZenBreeze Silent HEPA Air Purifier",
+      "category": "home",
+      "price": 8999,
+      "originalPrice": 12999,
+      "rating": 4.7,
+      "reviewCount": 2010,
+      "badge": "sale",
+      "description": "True HEPA H13 filtration removes 99.97% of airborne allergens, pollen, dust, and pet dander. Ultra-quiet sleep mode and real-time air quality ring.",
+      "tags": [
+        "H13 HEPA",
+        "99.97% Allergen Removal",
+        "Silent 24dB",
+        "Smart Sensor"
+      ],
+      "features": [
+        "3-stage True HEPA H13 filtration",
+        "Covers rooms up to 450 sq ft",
+        "Whisper-quiet sleep mode at 24dB",
+        "Real-time color air quality sensor",
+        "Timer with 2h, 4h, and 8h settings",
+        "Energy Star certified efficiency"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&q=80",
+        "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&q=80",
+        "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "HydroGlow Ceramic Self-Watering Planters",
+      "category": "home",
+      "price": 2499,
+      "originalPrice": 3499,
+      "rating": 4.6,
+      "reviewCount": 890,
+      "badge": "new",
+      "description": "Set of 3 modern ceramic planters equipped with sub-irrigation reservoir technology that keeps your indoor plants hydrated for up to two weeks.",
+      "tags": [
+        "Self-Watering",
+        "Set of 3",
+        "Hand-Glazed Ceramic",
+        "Indoor Plants"
+      ],
+      "features": [
+        "Sub-irrigation self-watering reservoir",
+        "Set of 3 sizes (4\", 6\", 8\")",
+        "Hand-glazed matte minimalist finish",
+        "Prevents over and under-watering",
+        "Removable drainage plug option",
+        "High-fired durable stoneware"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&q=80",
+        "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=600&q=80",
+        "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=600&q=80",
+        "https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=600&q=80"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "ApexPro Smart Adjustable Dumbbell Set",
+      "category": "sports",
+      "price": 19999,
+      "originalPrice": 27999,
+      "rating": 4.9,
+      "reviewCount": 1520,
+      "badge": "hot",
+      "description": "Rapid-dial adjustment system replaces 15 sets of weights in one compact footprint. Adjust from 2.5 kg to 24 kg per dumbbell in seconds.",
+      "tags": [
+        "2.5–24kg",
+        "Rapid Dial",
+        "Replaces 15 Weights",
+        "Anti-Slip Grip"
+      ],
+      "features": [
+        "Rapid dial weight selection",
+        "Adjusts from 2.5kg to 24kg per dumbbell",
+        "Space-saving compact design",
+        "Textured ergonomic knurled handle",
+        "Heavy-duty steel weight plates",
+        "Custom storage docking trays included"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=600&q=80",
+        "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80",
+        "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=600&q=80",
+        "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "TrailBlazer Carbon Fiber Trekking Poles",
+      "category": "sports",
+      "price": 3499,
+      "originalPrice": 4799,
+      "rating": 4.7,
+      "reviewCount": 980,
+      "badge": "limited",
+      "description": "Ultra-lightweight 100% carbon fiber trekking poles with ergonomic natural cork grips, quick flick-lock height adjustment, and all-terrain accessories.",
+      "tags": [
+        "100% Carbon Fiber",
+        "Natural Cork Grip",
+        "Flick Lock",
+        "Ultra-Light 210g"
+      ],
+      "features": [
+        "100% high-density carbon fiber shafts",
+        "Weight: only 210g per pole",
+        "Moisture-wicking natural cork grips",
+        "Quick-cam aluminum flip locks",
+        "Includes mud baskets, snow baskets & rubber tips",
+        "Collapses to 62cm for easy travel"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80",
+        "https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80",
+        "https://images.unsplash.com/photo-1507034589631-9433cc6bc453?w=600&q=80",
+        "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=600&q=80"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "L'Éclat 24K Gold Rejuvenating Night Serum",
+      "category": "beauty",
+      "price": 4299,
+      "originalPrice": 5999,
+      "rating": 4.8,
+      "reviewCount": 2470,
+      "badge": "hot",
+      "description": "Luxury anti-aging nighttime elixir infused with pure 24K gold flakes, multi-peptide complex, and botanical squalane to restore elasticity and firmness.",
+      "tags": [
+        "24K Gold Flakes",
+        "Multi-Peptides",
+        "Squalane",
+        "Anti-Aging"
+      ],
+      "features": [
+        "Real 24K gold nano-flakes for collagen support",
+        "Matrixyl 3000 multi-peptide complex",
+        "Plant-derived olive squalane base",
+        "Visibly diminishes fine lines and wrinkles",
+        "Fast-absorbing non-sticky texture",
+        "Dermatologist tested & cruelty-free"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1617897903246-719242758050?w=600&q=80",
+        "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&q=80",
+        "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=600&q=80",
+        "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "SonicGlow Deep Cleansing Facial Brush",
+      "category": "beauty",
+      "price": 2699,
+      "originalPrice": 3799,
+      "rating": 4.7,
+      "reviewCount": 1830,
+      "badge": "new",
+      "description": "Ultra-hygienic sonic silicone facial cleanser delivering 8,000 pulses per minute across 12 intensity settings. 100% waterproof with wireless charging.",
+      "tags": [
+        "Sonic Pulses",
+        "Hygienic Silicone",
+        "12 Speeds",
+        "IPX7 Waterproof"
+      ],
+      "features": [
+        "8,000 sonic transdermal pulsations per minute",
+        "Medical-grade ultra-soft antibacterial silicone",
+        "12 adjustable intensity vibration levels",
+        "IPX7 100% shower-safe waterproof rating",
+        "Magnetic inductive charging dock",
+        "Up to 300 uses on a single full charge"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&q=80",
+        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80",
+        "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80",
+        "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "VelvetAura French Vanilla Scented Candle",
+      "category": "beauty",
+      "price": 1499,
+      "originalPrice": 1999,
+      "rating": 4.9,
+      "reviewCount": 3180,
+      "badge": "sale",
+      "description": "Hand-poured 100% natural soy wax candle scented with Madagascar vanilla, tonka bean, and warm amber. Clean-burning wooden wick with 60-hour burn time.",
+      "tags": [
+        "Natural Soy Wax",
+        "Wooden Wick",
+        "60hr Burn Time",
+        "Madagascar Vanilla"
+      ],
+      "features": [
+        "100% pure organic soy wax",
+        "Crackling natural wood wick",
+        "Madagascar vanilla & warm amber scent notes",
+        "Up to 60 hours of clean burn time",
+        "Reusable amber glass apothecary jar",
+        "Free from parabens, paraffin, and phthalates"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?w=600&q=80",
+        "https://images.unsplash.com/photo-1603006905003-be475563bc59?w=600&q=80",
+        "https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?w=600&q=80",
+        "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&q=80"
+      ]
     }
   ]
 }

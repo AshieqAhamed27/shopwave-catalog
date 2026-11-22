@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 const productHighlights = [
   {
     icon: '🛍️',
-    title: 'Curated 24-Item Catalog',
-    desc: 'Explore 24 hand-selected lifestyle products across 5 diverse categories — Electronics, Fashion, Home & Living, Sports, and Beauty — complete with multi-angle high-res galleries and full specifications.',
+    title: 'Curated 36-Item Catalog',
+    desc: 'Explore 36 hand-selected lifestyle products across 5 diverse categories — Electronics, Fashion, Home & Living, Sports, and Beauty — complete with multi-angle high-res galleries and full specifications.',
   },
   {
     icon: '🔍',
