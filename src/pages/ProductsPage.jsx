@@ -2,6 +2,15 @@ import { useState, useMemo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { products, categories, formatPrice } from '../data/products';
 import ProductCard from '../components/ProductCard';
+import CustomSelect from '../components/CustomSelect';
+
+const sortOptions = [
+  { value: 'default', label: 'Sort: Default' },
+  { value: 'price-asc', label: 'Price: Low to High' },
+  { value: 'price-desc', label: 'Price: High to Low' },
+  { value: 'rating', label: 'Top Rated ★' },
+  { value: 'popular', label: 'Most Popular 🔥' },
+];
 
 export default function ProductsPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -99,18 +108,12 @@ export default function ProductsPage() {
           </div>
 
           {/* Sort */}
-          <select
-            className="sort-select"
-            id="product-sort"
+          <CustomSelect
+            options={sortOptions}
             value={sort}
-            onChange={e => setSort(e.target.value)}
-          >
-            <option value="default">Sort: Default</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
-            <option value="rating">Top Rated</option>
-            <option value="popular">Most Popular</option>
-          </select>
+            onChange={setSort}
+            id="product-sort"
+          />
         </div>
 
         {/* Grid */}
