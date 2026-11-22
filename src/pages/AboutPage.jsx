@@ -1,10 +1,36 @@
 import { Link } from 'react-router-dom';
 
-const teamMembers = [
-  { name: 'Ashieq Ahamed', role: 'Full-Stack Developer', emoji: '👨‍💻' },
-  { name: 'Sarah Chen', role: 'UI/UX Designer', emoji: '🎨' },
-  { name: 'Rahul Verma', role: 'Backend Engineer', emoji: '⚙️' },
-  { name: 'Priya Sharma', role: 'Product Manager', emoji: '📊' },
+const productHighlights = [
+  {
+    icon: '🛍️',
+    title: 'Curated 24-Item Catalog',
+    desc: 'Explore 24 hand-selected lifestyle products across 5 diverse categories — Electronics, Fashion, Home & Living, Sports, and Beauty — complete with multi-angle high-res galleries and full specifications.',
+  },
+  {
+    icon: '🔍',
+    title: 'Smart Search & Live Filters',
+    desc: 'Instant real-time search with multi-parameter filtering by category, promotional badges (Hot, Sale, New, Limited), and instant sorting by price, customer rating, or popularity.',
+  },
+  {
+    icon: '🛒',
+    title: 'Interactive Slide-In Cart',
+    desc: 'Slide-in drawer cart with dynamic quantity adjustments, instant subtotal calculation, free shipping threshold tracker, and single-click checkout.',
+  },
+  {
+    icon: '⚡',
+    title: 'Full-Stack Express REST API',
+    desc: 'Integrated with an Express 5 backend server featuring RESTful endpoints for products, category filtering, and order management with persistent storage.',
+  },
+  {
+    icon: '♥',
+    title: 'Live Wishlist System',
+    desc: 'One-click wishlist toggling with animated micro-interactions and live navbar counter badges so shoppers never lose their favorite finds.',
+  },
+  {
+    icon: '🛡️',
+    title: 'Offline Resilient Architecture',
+    desc: 'Built with automatic fallback mechanisms — the product experience works seamlessly whether connected to the live Node.js server or running as a static build.',
+  },
 ];
 
 const values = [
@@ -27,7 +53,7 @@ export default function AboutPage() {
             About <span style={{ background: 'linear-gradient(135deg, var(--accent-cyan), var(--accent-primary))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>ShopWave</span>
           </h1>
           <p className="page-banner-subtitle">
-            A premium e-commerce capstone project — built for internship, powered by passion.
+            A modern full-stack e-commerce catalog featuring client-side routing, state management, and an Express REST API.
           </p>
         </div>
       </div>
@@ -42,7 +68,7 @@ export default function AboutPage() {
               Built to Demonstrate<br />
               <span style={{ background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-pink))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Professional-Grade
-              </span> Dev Skills
+              </span> Full-Stack Skills
             </h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '1.25rem' }}>
               ShopWave was created as a Full-Stack Web Development Capstone Project — demonstrating
@@ -50,13 +76,13 @@ export default function AboutPage() {
               modularity, and performance-optimized asset delivery.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '2rem' }}>
-              The project showcases React + Vite, React Router v6, Context API, modern CSS design systems
-              with glassmorphism and micro-animations, and production build optimizations. It's designed
-              to demonstrate real-world full-stack thinking for internship evaluators.
+              The project showcases React 19 + Vite 8, React Router v7, Context API, an Express REST API backend,
+              and modern CSS design systems with glassmorphism and micro-animations. It's designed
+              to demonstrate real-world full-stack thinking for evaluators and modern web standards.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link to="/products" className="btn btn-primary" id="about-cta-btn">View Products →</Link>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline">GitHub Repo</a>
+              <a href="https://github.com/AshieqAhamed27/shopwave-catalog" target="_blank" rel="noopener noreferrer" className="btn btn-outline">GitHub Repo</a>
             </div>
           </div>
 
@@ -81,7 +107,7 @@ export default function AboutPage() {
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 800, marginTop: '0.5rem', background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-pink))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                   ShopWave
                 </div>
-                <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.3rem' }}>Capstone Project 2024</div>
+                <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.3rem' }}>Full-Stack Project</div>
               </div>
               <div className="about-floating-card">
                 <div className="about-float-value">4.8★</div>
@@ -101,12 +127,13 @@ export default function AboutPage() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '1rem' }}>
             {[
-              { icon: '⚛️', name: 'React 18', desc: 'UI Library' },
-              { icon: '⚡', name: 'Vite 6', desc: 'Build Tool' },
-              { icon: '🔀', name: 'React Router v6', desc: 'Client Routing' },
+              { icon: '⚛️', name: 'React 19', desc: 'UI Library' },
+              { icon: '⚡', name: 'Vite 8', desc: 'Build Tool' },
+              { icon: '🚀', name: 'Node & Express', desc: 'REST API' },
+              { icon: '🔀', name: 'React Router', desc: 'Client Routing' },
               { icon: '🎨', name: 'Vanilla CSS', desc: 'Design System' },
               { icon: '🧩', name: 'Context API', desc: 'State Mgmt' },
-              { icon: '☁️', name: 'Vercel/Render', desc: 'Deployment' },
+              { icon: '☁️', name: 'Render', desc: 'Live Deployment' },
             ].map((tech, i) => (
               <div
                 key={i}
@@ -130,6 +157,26 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* About This Product */}
+        <section className="section" style={{ paddingTop: 0 }}>
+          <div className="section-header">
+            <span className="section-label">Product Capabilities</span>
+            <h2 className="section-title">About This <span className="gradient-text">Product</span></h2>
+            <p className="section-subtitle">
+              ShopWave is engineered as an ultra-fast, responsive, and feature-rich full-stack e-commerce catalog platform.
+            </p>
+          </div>
+          <div className="values-grid">
+            {productHighlights.map((item, i) => (
+              <div key={i} className="value-card">
+                <div className="value-icon">{item.icon}</div>
+                <h3 className="value-title">{item.title}</h3>
+                <p className="value-desc">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Values */}
         <section className="section" style={{ paddingTop: 0 }}>
           <div className="section-header">
@@ -142,24 +189,6 @@ export default function AboutPage() {
                 <div className="value-icon">{v.icon}</div>
                 <h3 className="value-title">{v.title}</h3>
                 <p className="value-desc">{v.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Team */}
-        <section className="section" style={{ paddingTop: 0 }}>
-          <div className="section-header">
-            <span className="section-label">The People</span>
-            <h2 className="section-title">Meet the <span className="gradient-text">Team</span></h2>
-            <p className="section-subtitle">The brilliant minds behind ShopWave.</p>
-          </div>
-          <div className="team-grid">
-            {teamMembers.map((m, i) => (
-              <div key={i} className="team-card">
-                <div className="team-avatar">{m.emoji}</div>
-                <h3 className="team-name">{m.name}</h3>
-                <p className="team-role">{m.role}</p>
               </div>
             ))}
           </div>
