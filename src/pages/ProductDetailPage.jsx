@@ -56,6 +56,10 @@ export default function ProductDetailPage() {
                 alt={product.name}
                 className="product-main-image"
                 id="product-main-image"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = './placeholder.svg';
+                }}
               />
               <div className="product-thumbnails">
                 {product.images.map((img, i) => (
@@ -66,6 +70,10 @@ export default function ProductDetailPage() {
                     className={`product-thumb${activeImage === i ? ' active' : ''}`}
                     onClick={() => setActiveImage(i)}
                     id={`product-thumb-${i}`}
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = './placeholder.svg';
+                    }}
                   />
                 ))}
               </div>

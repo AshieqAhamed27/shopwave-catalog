@@ -12,7 +12,7 @@ A modern, production-ready **Full-Stack Capstone Project** built with **React + 
 
 ## ✨ Features
 
-- 🛍️ **Product Catalog** — 12 curated products across 5 categories (Electronics, Fashion, Home, Sports, Beauty)
+- 🛍️ **Product Catalog** — 24 curated products across 5 categories (Electronics, Fashion, Home, Sports, Beauty)
 - 🔍 **Search & Filter** — Real-time search, category filtering, and sort (price, rating, popularity)
 - 🛒 **Shopping Cart** — Slide-in cart drawer with quantity controls and subtotal
 - ♥ **Wishlist** — Save favorite products with live badge counter
@@ -51,7 +51,7 @@ shopwave-catalog/
 │   ├── context/
 │   │   └── ShopContext.jsx     # Global cart + wishlist + toasts
 │   ├── data/
-│   │   └── products.js         # Product catalog data (12 items)
+│   │   └── products.js         # Product catalog data (24 items)
 │   ├── pages/
 │   │   ├── HomePage.jsx        # Hero + categories + featured products
 │   │   ├── ProductsPage.jsx    # Search + filter + sort listing

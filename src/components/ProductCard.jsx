@@ -22,6 +22,10 @@ export default function ProductCard({ product }) {
           alt={product.name}
           className="product-card-image"
           loading="lazy"
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = './placeholder.svg';
+          }}
         />
 
         {/* Badge */}

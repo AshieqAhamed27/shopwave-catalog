@@ -34,6 +34,10 @@ export default function CartDrawer() {
                   src={item.images[0]}
                   alt={item.name}
                   className="cart-item-image"
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = './placeholder.svg';
+                  }}
                 />
                 <div className="cart-item-info">
                   <p className="cart-item-name">{item.name}</p>
