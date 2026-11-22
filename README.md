@@ -6,7 +6,12 @@ A modern, production-ready **Full-Stack Capstone Project** built with **React + 
 
 ## 🚀 Live Demo
 
-> Deploy to Vercel in one click — see deployment guide below.
+[![Live Demo on Render](https://img.shields.io/badge/Render-Live%20Demo-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://shopwave-catalog.onrender.com)
+[![API Health Check](https://img.shields.io/badge/API-Health%20OK-brightgreen?style=for-the-badge)](https://shopwave-catalog.onrender.com/api/health)
+
+👉 **Live Web App**: [https://shopwave-catalog.onrender.com](https://shopwave-catalog.onrender.com)  
+👉 **Live API Health**: [https://shopwave-catalog.onrender.com/api/health](https://shopwave-catalog.onrender.com/api/health)  
+👉 **Live Products API**: [https://shopwave-catalog.onrender.com/api/products](https://shopwave-catalog.onrender.com/api/products)
 
 ---
 
