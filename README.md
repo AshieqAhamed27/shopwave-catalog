@@ -29,9 +29,11 @@ A modern, production-ready **Full-Stack Capstone Project** built with **React + 
 | Tech | Purpose |
 |------|---------|
 | **React 18** | UI Component Library |
-| **Vite 8** | Build Tool & Dev Server |
+| **Vite 8** | Frontend Build Tool & Dev Server |
+| **Node.js & Express** | RESTful Backend API Server |
 | **React Router v6** | Client-Side Routing |
 | **Context API** | Global State (Cart, Wishlist, Toasts) |
+| **JSON Database** | Persistent Storage for Orders & Catalog |
 | **Vanilla CSS** | Custom Design System (no frameworks) |
 | **Vercel / Render** | Deployment |
 
@@ -41,17 +43,25 @@ A modern, production-ready **Full-Stack Capstone Project** built with **React + 
 
 ```
 shopwave-catalog/
+├── server/
+│   ├── data/
+│   │   ├── products.json       # Product catalog storage
+│   │   └── orders.json         # Persistent orders storage
+│   ├── routes/
+│   │   ├── productRoutes.js    # /api/products & /api/categories endpoints
+│   │   └── orderRoutes.js      # /api/orders (POST checkout & GET history)
+│   └── server.js               # Express API server entry point
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.jsx          # Sticky nav + scroll effect + badges
 │   │   ├── ProductCard.jsx     # Product card with hover animations
-│   │   ├── CartDrawer.jsx      # Sliding cart drawer
+│   │   ├── CartDrawer.jsx      # Sliding cart drawer + live API checkout
 │   │   ├── Footer.jsx          # Full footer with links
 │   │   └── ToastContainer.jsx  # Toast notification system
 │   ├── context/
-│   │   └── ShopContext.jsx     # Global cart + wishlist + toasts
+│   │   └── ShopContext.jsx     # Global cart + wishlist + toasts + clearCart
 │   ├── data/
-│   │   └── products.js         # Product catalog data (24 items)
+│   │   └── products.js         # Fallback product catalog data (24 items)
 │   ├── pages/
 │   │   ├── HomePage.jsx        # Hero + categories + featured products
 │   │   ├── ProductsPage.jsx    # Search + filter + sort listing
@@ -61,7 +71,7 @@ shopwave-catalog/
 │   ├── App.jsx                 # Routes + Provider + Layout
 │   └── index.css               # Design system (glassmorphism + animations)
 ├── index.html                  # HTML entry with SEO meta tags
-├── vite.config.js              # Vite config with code splitting
+├── vite.config.js              # Vite config with API proxy + code splitting
 └── package.json
 ```
 
@@ -77,16 +87,31 @@ cd shopwave-catalog
 # 2. Install dependencies
 npm install
 
-# 3. Start development server
+# 3. Start Backend API Server (Port 5000)
+npm run server
+# → API running at http://localhost:5000/api/health
+
+# 4. In a second terminal, start Frontend Dev Server (Port 5173)
 npm run dev
-# → Opens at http://localhost:5173
+# → Frontend opens at http://localhost:5173
 
-# 4. Build for production
+# 5. Build for production
 npm run build
-
-# 5. Preview production build
-npm run preview
 ```
+
+---
+
+## 🔌 Backend API Reference
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/health` | Service health status check |
+| `GET` | `/api/products` | Retrieve all products (supports `?category=`, `?badge=`, `?search=`, `?sort=`) |
+| `GET` | `/api/products/:id` | Get single product by numeric ID |
+| `GET` | `/api/categories` | Retrieve all 5 shopping categories |
+| `POST` | `/api/orders` | Place a new customer order & save to `orders.json` |
+| `GET` | `/api/orders` | View placed orders history |
+| `GET` | `/api/orders/:id` | Lookup a specific order by Order ID |
 
 ---
 

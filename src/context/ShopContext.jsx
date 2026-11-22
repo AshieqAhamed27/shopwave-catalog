@@ -41,6 +41,10 @@ export function ShopProvider({ children }) {
     );
   }, []);
 
+  const clearCart = useCallback(() => {
+    setCart([]);
+  }, []);
+
   const cartTotal = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
   const cartCount = cart.reduce((sum, item) => sum + item.qty, 0);
 
@@ -62,7 +66,7 @@ export function ShopProvider({ children }) {
 
   return (
     <ShopContext.Provider value={{
-      cart, addToCart, removeFromCart, updateQty, cartTotal, cartCount,
+      cart, addToCart, removeFromCart, updateQty, clearCart, cartTotal, cartCount,
       wishlist, toggleWishlist, isInWishlist,
       cartOpen, setCartOpen,
       toasts, addToast,
