@@ -33,6 +33,27 @@ const screenAboutPath = path.resolve('report/images/screenshot_about.png');
 console.log('Building Word document...');
 
 // Helper for standard body paragraph
+function bulletP(boldPrefix, text) {
+  return new Paragraph({
+    alignment: AlignmentType.JUSTIFIED,
+    spacing: { after: 120, line: 320 },
+    bullet: { level: 0 },
+    children: [
+      new TextRun({
+        text: boldPrefix + ' ',
+        font: 'Arial',
+        size: 23,
+        bold: true
+      }),
+      new TextRun({
+        text,
+        font: 'Arial',
+        size: 23
+      })
+    ]
+  });
+}
+
 function bodyP(text, options = {}) {
   return new Paragraph({
     alignment: AlignmentType.JUSTIFIED,
@@ -546,24 +567,13 @@ chapterChildren.push(
 // Page 7
 chapterChildren.push(
   sectionH('3.3 Scope and Dataset'),
-  bodyP('The catalog dataset comprises 36 carefully curated consumer items distributed evenly across 5 retail divisions. Table 3.1 summarizes the merchandise structure:'),
-  new Table({
-    width: { size: 100, type: WidthType.PERCENTAGE },
-    borders: {
-      top: { style: BorderStyle.SINGLE, size: 4 }, bottom: { style: BorderStyle.SINGLE, size: 4 },
-      insideHorizontal: { style: BorderStyle.SINGLE, size: 2 }
-    },
-    rows: [
-      new TableRow({ children: [cell('CATEGORY', true, 25), cell('ITEMS', true, 15, AlignmentType.CENTER), cell('PRICE RANGE (INR)', true, 30, AlignmentType.CENTER), cell('SAMPLE PRODUCTS', true, 30)] }),
-      new TableRow({ children: [cell('Electronics', false, 25), cell('8', false, 15, AlignmentType.CENTER), cell('₹1,499 – ₹79,999', false, 30, AlignmentType.CENTER), cell('Wireless Headphones, 4K Monitor, Smartwatch')] }),
-      new TableRow({ children: [cell('Fashion', false, 25), cell('8', false, 15, AlignmentType.CENTER), cell('₹1,299 – ₹6,999', false, 30, AlignmentType.CENTER), cell('Denim Jacket, Linen Shirt, Chrono Watch')] }),
-      new TableRow({ children: [cell('Home & Living', false, 25), cell('7', false, 15, AlignmentType.CENTER), cell('₹899 – ₹14,999', false, 30, AlignmentType.CENTER), cell('Ergonomic Chair, Aroma Diffuser, Desk Lamp')] }),
-      new TableRow({ children: [cell('Sports & Fitness', false, 25), cell('7', false, 15, AlignmentType.CENTER), cell('₹799 – ₹24,999', false, 30, AlignmentType.CENTER), cell('Yoga Mat, Adjustable Dumbbells, Hydration Bottle')] }),
-      new TableRow({ children: [cell('Beauty & Personal Care', false, 25), cell('6', false, 15, AlignmentType.CENTER), cell('₹649 – ₹3,499', false, 30, AlignmentType.CENTER), cell('Vitamin C Serum, Matte Lipstick, Beard Grooming')] }),
-      new TableRow({ children: [cell('Total Catalog', true, 25), cell('36', true, 15, AlignmentType.CENTER), cell('₹649 – ₹79,999', true, 30, AlignmentType.CENTER), cell('Curated Lifestyle Selection')] })
-    ]
-  }),
-  captionP('Table 3.1 – Product Catalog Dataset Summary'),
+  bodyP('The catalog dataset comprises 36 carefully curated consumer items distributed evenly across 5 retail divisions. The merchandise composition and pricing structure encompass:'),
+  bulletP('Electronics:', '8 catalog items, priced from ₹1,499 to ₹79,999. Representative selections include Wireless Noise-Cancelling Headphones, 4K Ultra-HD Monitors, and Smart Fitness Watches.'),
+  bulletP('Fashion:', '8 catalog items, priced from ₹1,299 to ₹6,999. Representative selections include Classic Denim Jackets, Pure Linen Button-Down Shirts, and Chronograph Wristwatches.'),
+  bulletP('Home & Living:', '7 catalog items, priced from ₹899 to ₹14,999. Representative selections include Ergonomic Executive Chairs, Ultrasonic Aroma Diffusers, and Minimalist Desk Lamps.'),
+  bulletP('Sports & Fitness:', '7 catalog items, priced from ₹799 to ₹24,999. Representative selections include High-Density Yoga Mats, Adjustable Dumbbell Sets, and Insulated Stainless Flasks.'),
+  bulletP('Beauty & Personal Care:', '6 catalog items, priced from ₹649 to ₹3,499. Representative selections include Brightening Vitamin C Serums, Velvet Matte Lipsticks, and Complete Grooming Kits.'),
+  bodyP('In total, the production catalog manages 36 verified items spanning a value envelope of ₹649 to ₹79,999, providing a rich, multi-department retail environment for evaluation.'),
   bodyP('Each product entry records 14 distinct attributes: unique numeric ID, title, department category, discounted retail price, original maximum retail price (MRP), calculated discount percentage, star rating, total review count, real-time stock quantity, primary high-resolution image URL, and three thumbnail gallery angles.'),
   pb()
 );
@@ -571,24 +581,13 @@ chapterChildren.push(
 // Page 8
 chapterChildren.push(
   sectionH('3.4 Application Structure and Route Hierarchy'),
-  bodyP('ShopWave is structured as a modular Single Page Application using React Router 7. Table 3.2 details the primary page views and functional modules:'),
-  new Table({
-    width: { size: 100, type: WidthType.PERCENTAGE },
-    borders: {
-      top: { style: BorderStyle.SINGLE, size: 4 }, bottom: { style: BorderStyle.SINGLE, size: 4 },
-      insideHorizontal: { style: BorderStyle.SINGLE, size: 2 }
-    },
-    rows: [
-      new TableRow({ children: [cell('ROUTE PATH', true, 22), cell('PAGE COMPONENT', true, 25), cell('PRIMARY FUNCTIONALITY', true, 53)] }),
-      new TableRow({ children: [cell('/', false, 22), cell('HomePage', false, 25), cell('Landing view featuring hero banner, category pills, trust badges, and featured trending merchandise carousel.')] }),
-      new TableRow({ children: [cell('/products', false, 22), cell('ProductsPage', false, 25), cell('Interactive catalog view housing live keyword search, category selector, CustomSelect price sorting, and responsive product grid.')] }),
-      new TableRow({ children: [cell('/products/:id', false, 22), cell('ProductDetailPage', false, 25), cell('Deep-dive product view with high-res photo gallery, stock level indicator, specifications, related suggestions, and Add to Cart action.')] }),
-      new TableRow({ children: [cell('/wishlist', false, 22), cell('WishlistPage', false, 25), cell('Personalized collection of saved favorite items with one-click migration to active cart.')] }),
-      new TableRow({ children: [cell('/about', false, 22), cell('AboutPage', false, 25), cell('Technical showcase detailing platform architecture, technology stack, and engineering performance benchmarks.')] }),
-      new TableRow({ children: [cell('* (Fallback)', false, 22), cell('NotFound (404)', false, 25), cell('Custom 404 error page with quick navigation back to main catalog.')] })
-    ]
-  }),
-  captionP('Table 3.2 – Application Route and Module Structure'),
+  bodyP('ShopWave is structured as a modular Single Page Application using React Router 7. The primary application routes, page components, and functional modules are organized as follows:'),
+  bulletP('HomePage (Route: /):', 'Main landing storefront featuring the hero visual banner, category quick-filter pills, buyer trust badges, headline performance counters, and a curated carousel of trending merchandise.'),
+  bulletP('ProductsPage (Route: /products):', 'Central interactive catalog view housing real-time keyword search, responsive multi-department category filters, the custom glassmorphic select dropdown for price sorting, and the reactive product card grid.'),
+  bulletP('ProductDetailPage (Route: /products/:id):', 'Deep-dive product specification view with an interactive multi-angle photo gallery, dynamic stock level indicator, feature checklist, related item recommendations, and instant cart additions.'),
+  bulletP('WishlistPage (Route: /wishlist):', 'Dedicated personal collection displaying user-bookmarked items with persistent LocalStorage state and one-click item migration into the active shopping cart drawer.'),
+  bulletP('AboutPage (Route: /about):', 'Technical showcase detailing system architecture, decoupled client-server communications, performance audit scores, and engineering methodologies.'),
+  bulletP('NotFound (Route: *):', 'A graceful 404 fallback interface providing intuitive error feedback and rapid one-click navigation back to the product catalog.'),
   bodyP('In addition to page routes, persistent global overlays—including the animated Navbar, sliding CartDrawer, ToastContainer, and BackToTop floating button—remain active across all routes.'),
   pb()
 );

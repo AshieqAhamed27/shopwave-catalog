@@ -542,52 +542,35 @@ addPage(`
 // Page 17: Page 7 - 3.3 Scope and Dataset & Table 3.1
 addPage(`
   <h2>3.3 Scope and Dataset</h2>
-  <p style="text-indent: 30pt;">The catalog dataset comprises 36 carefully curated consumer items distributed evenly across 5 retail divisions. Table 3.1 summarizes the merchandise structure:</p>
-  <table class="tbl">
-    <thead>
-      <tr>
-        <th style="width: 25%;">CATEGORY</th>
-        <th style="width: 15%;">ITEMS</th>
-        <th style="width: 30%;">PRICE RANGE (INR)</th>
-        <th style="width: 30%;">SAMPLE PRODUCTS</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Electronics</td><td style="text-align: center;">8</td><td style="text-align: center;">₹1,499 – ₹79,999</td><td>Wireless Headphones, 4K Monitor, Smartwatch</td></tr>
-      <tr><td>Fashion</td><td style="text-align: center;">8</td><td style="text-align: center;">₹1,299 – ₹6,999</td><td>Denim Jacket, Linen Shirt, Chrono Watch</td></tr>
-      <tr><td>Home & Living</td><td style="text-align: center;">7</td><td style="text-align: center;">₹899 – ₹14,999</td><td>Ergonomic Chair, Aroma Diffuser, Desk Lamp</td></tr>
-      <tr><td>Sports & Fitness</td><td style="text-align: center;">7</td><td style="text-align: center;">₹799 – ₹24,999</td><td>Yoga Mat, Adjustable Dumbbells, Bottle</td></tr>
-      <tr><td>Beauty</td><td style="text-align: center;">6</td><td style="text-align: center;">₹649 – ₹3,499</td><td>Vitamin C Serum, Matte Lipstick, Grooming</td></tr>
-      <tr><td><strong>Total Catalog</strong></td><td style="text-align: center;"><strong>36</strong></td><td style="text-align: center;"><strong>₹649 – ₹79,999</strong></td><td><strong>Curated Lifestyle Selection</strong></td></tr>
-    </tbody>
-  </table>
-  <p class="caption">Table 3.1 – Product Catalog Dataset Summary</p>
-  <p style="text-indent: 30pt;">Each product entry records 14 distinct attributes: unique numeric ID, title, department category, discounted retail price, original maximum retail price (MRP), calculated discount percentage, star rating, total review count, real-time stock quantity, primary high-resolution image URL, and three thumbnail gallery angles.</p>
+  <p style="text-indent: 30pt; line-height: 1.5; margin-bottom: 10pt;">The catalog dataset comprises 36 carefully curated consumer items distributed evenly across 5 retail divisions. The merchandise composition and pricing structure encompass:</p>
+  
+  <ul style="margin: 8pt 0 12pt 24pt; line-height: 1.6; font-size: 11.5pt;">
+    <li style="margin-bottom: 5pt;"><strong>Electronics:</strong> 8 catalog items, priced from ₹1,499 to ₹79,999. Representative selections include Wireless Noise-Cancelling Headphones, 4K Ultra-HD Monitors, and Smart Fitness Watches.</li>
+    <li style="margin-bottom: 5pt;"><strong>Fashion:</strong> 8 catalog items, priced from ₹1,299 to ₹6,999. Representative selections include Classic Denim Jackets, Pure Linen Button-Down Shirts, and Chronograph Wristwatches.</li>
+    <li style="margin-bottom: 5pt;"><strong>Home & Living:</strong> 7 catalog items, priced from ₹899 to ₹14,999. Representative selections include Ergonomic Executive Chairs, Ultrasonic Aroma Diffusers, and Minimalist Desk Lamps.</li>
+    <li style="margin-bottom: 5pt;"><strong>Sports & Fitness:</strong> 7 catalog items, priced from ₹799 to ₹24,999. Representative selections include High-Density Yoga Mats, Adjustable Dumbbell Sets, and Insulated Stainless Flasks.</li>
+    <li style="margin-bottom: 5pt;"><strong>Beauty & Personal Care:</strong> 6 catalog items, priced from ₹649 to ₹3,499. Representative selections include Brightening Vitamin C Serums, Velvet Matte Lipsticks, and Complete Grooming Kits.</li>
+  </ul>
+  
+  <p style="text-indent: 30pt; line-height: 1.5; margin-bottom: 8pt;">In total, the production catalog manages 36 verified items spanning a value envelope of ₹649 to ₹79,999, providing a rich, multi-department retail environment for evaluation.</p>
+  <p style="text-indent: 30pt; line-height: 1.5; margin-bottom: 0;">Each product entry records 14 distinct attributes: unique numeric ID, title, department category, discounted retail price, original maximum retail price (MRP), calculated discount percentage, star rating, total review count, real-time stock quantity, primary high-resolution image URL, and three thumbnail gallery angles.</p>
 `, '7');
 
 // Page 18: Page 8 - 3.4 Dashboard Structure & Table 3.2
 addPage(`
   <h2>3.4 Dashboard Structure</h2>
-  <p style="text-indent: 30pt;">ShopWave is structured as a modular Single Page Application using React Router 7. Table 3.2 details the primary page views and functional modules:</p>
-  <table class="tbl">
-    <thead>
-      <tr>
-        <th style="width: 20%;">ROUTE PATH</th>
-        <th style="width: 25%;">PAGE COMPONENT</th>
-        <th style="width: 55%;">PRIMARY FUNCTIONALITY</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>/</td><td>HomePage</td><td>Landing view featuring hero banner, category pills, trust badges, and featured trending merchandise carousel.</td></tr>
-      <tr><td>/products</td><td>ProductsPage</td><td>Interactive catalog view housing live keyword search, category selector, CustomSelect price sorting, and responsive product grid.</td></tr>
-      <tr><td>/products/:id</td><td>ProductDetailPage</td><td>Deep-dive product view with high-res photo gallery, stock level indicator, specifications, related suggestions, and Add to Cart action.</td></tr>
-      <tr><td>/wishlist</td><td>WishlistPage</td><td>Personalized collection of saved favorite items with one-click migration to active cart.</td></tr>
-      <tr><td>/about</td><td>AboutPage</td><td>Technical showcase detailing platform architecture, technology stack, and engineering performance benchmarks.</td></tr>
-      <tr><td>* (Fallback)</td><td>NotFound (404)</td><td>Custom 404 error page with quick navigation back to main catalog.</td></tr>
-    </tbody>
-  </table>
-  <p class="caption">Table 3.2 – Application Route and Module Structure</p>
-  <p style="text-indent: 30pt;">In addition to page routes, persistent global overlays—including the animated Navbar, sliding CartDrawer, ToastContainer, and BackToTop floating button—remain active across all routes.</p>
+  <p style="text-indent: 30pt; line-height: 1.5; margin-bottom: 10pt;">ShopWave is structured as a modular Single Page Application using React Router 7. The primary application routes, page components, and functional modules are organized as follows:</p>
+  
+  <ul style="margin: 8pt 0 12pt 24pt; line-height: 1.6; font-size: 11pt;">
+    <li style="margin-bottom: 6pt;"><strong>HomePage (Route: <code>/</code>):</strong> Main landing storefront featuring the hero visual banner, category quick-filter pills, buyer trust badges, headline performance counters, and a curated carousel of trending merchandise.</li>
+    <li style="margin-bottom: 6pt;"><strong>ProductsPage (Route: <code>/products</code>):</strong> Central interactive catalog view housing real-time keyword search, responsive multi-department category filters, the custom glassmorphic select dropdown for price sorting, and the reactive product card grid.</li>
+    <li style="margin-bottom: 6pt;"><strong>ProductDetailPage (Route: <code>/products/:id</code>):</strong> Deep-dive product specification view with an interactive multi-angle photo gallery, dynamic stock level indicator, feature checklist, related item recommendations, and instant cart additions.</li>
+    <li style="margin-bottom: 6pt;"><strong>WishlistPage (Route: <code>/wishlist</code>):</strong> Dedicated personal collection displaying user-bookmarked items with persistent LocalStorage state and one-click item migration into the active shopping cart drawer.</li>
+    <li style="margin-bottom: 6pt;"><strong>AboutPage (Route: <code>/about</code>):</strong> Technical showcase detailing system architecture, decoupled client-server communications, performance audit scores, and engineering methodologies.</li>
+    <li style="margin-bottom: 6pt;"><strong>NotFound (Route: <code>*</code>):</strong> A graceful 404 fallback interface providing intuitive error feedback and rapid one-click navigation back to the product catalog.</li>
+  </ul>
+  
+  <p style="text-indent: 30pt; line-height: 1.5; margin-top: 10pt; margin-bottom: 0;">In addition to page routes, persistent global overlays—including the animated Navbar, sliding CartDrawer, ToastContainer, and BackToTop floating button—remain active across all routes.</p>
 `, '8');
 
 // Page 19: Page 9 - Chapter 4: Theoretical Analysis
