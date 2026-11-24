@@ -3,951 +3,1793 @@
 export const FALLBACK_IMAGE = './placeholder.svg';
 
 export const categories = [
-  { id: 'all', label: 'All Products', icon: '✦' },
-  { id: 'electronics', label: 'Electronics', icon: '⚡' },
-  { id: 'fashion', label: 'Fashion', icon: '👗' },
-  { id: 'home', label: 'Home & Living', icon: '🏠' },
-  { id: 'sports', label: 'Sports', icon: '🏋️' },
-  { id: 'beauty', label: 'Beauty', icon: '✨' },
+  {
+    "id": "all",
+    "label": "All Products",
+    "icon": "✦"
+  },
+  {
+    "id": "electronics",
+    "label": "Electronics",
+    "icon": "⚡"
+  },
+  {
+    "id": "fashion",
+    "label": "Fashion",
+    "icon": "👗"
+  },
+  {
+    "id": "home",
+    "label": "Home & Living",
+    "icon": "🏠"
+  },
+  {
+    "id": "sports",
+    "label": "Sports",
+    "icon": "🏋️"
+  },
+  {
+    "id": "beauty",
+    "label": "Beauty",
+    "icon": "✨"
+  }
 ];
 
 export const products = [
   {
-    id: 1,
-    name: 'ArcPro X1 Wireless Headphones',
-    category: 'electronics',
-    price: 12999,
-    originalPrice: 18999,
-    rating: 4.8,
-    reviewCount: 2341,
-    badge: 'hot',
-    description: 'Industry-leading noise cancellation, 30-hour battery life, and ultra-premium build quality. The ArcPro X1 redefines what wireless audio feels like — with adaptive EQ, transparency mode, and seamless multi-device pairing.',
-    tags: ['Wireless', 'Noise Cancelling', 'Bluetooth 5.3', '30hr Battery'],
-    features: [
-      'Active Noise Cancellation (ANC)',
-      'Transparency Mode',
-      '30-hour battery life',
-      'Wireless charging case',
-      'Bluetooth 5.3 multipoint',
-      'Foldable premium design',
+    "id": 1,
+    "name": "ArcPro X1 Wireless Headphones",
+    "category": "electronics",
+    "price": 12999,
+    "originalPrice": 18999,
+    "rating": 4.8,
+    "reviewCount": 2341,
+    "badge": "hot",
+    "description": "Industry-leading noise cancellation, 30-hour battery life, and ultra-premium build quality. The ArcPro X1 redefines what wireless audio feels like — with adaptive EQ, transparency mode, and seamless multi-device pairing.",
+    "tags": [
+      "Wireless",
+      "Noise Cancelling",
+      "Bluetooth 5.3",
+      "30hr Battery"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Active Noise Cancellation (ANC)",
+      "Transparency Mode",
+      "30-hour battery life",
+      "Wireless charging case",
+      "Bluetooth 5.3 multipoint",
+      "Foldable premium design"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "SONY",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "SONY",
+      "Model": "ArcPro X1 Wireless Headphones",
+      "Category": "ELECTRONICS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 2,
-    name: 'NovaSmart Watch Ultra',
-    category: 'electronics',
-    price: 24999,
-    originalPrice: 34999,
-    rating: 4.6,
-    reviewCount: 1876,
-    badge: 'sale',
-    description: 'Your health, style, and productivity — unified in one brilliant device. Features a 2.1" AMOLED display, ECG monitoring, blood oxygen tracking, and 7-day battery.',
-    tags: ['AMOLED', 'Health Monitor', 'GPS', '7-day Battery'],
-    features: [
-      '2.1" AMOLED always-on display',
-      'ECG & Blood Oxygen sensor',
-      'Built-in GPS',
-      '7-day battery life',
-      '100+ workout modes',
-      'IP68 water resistant',
+    "id": 2,
+    "name": "NovaSmart Watch Ultra",
+    "category": "electronics",
+    "price": 24999,
+    "originalPrice": 34999,
+    "rating": 4.6,
+    "reviewCount": 1876,
+    "badge": "sale",
+    "description": "Your health, style, and productivity — unified in one brilliant device. Features a 2.1\" AMOLED display, ECG monitoring, blood oxygen tracking, and 7-day battery.",
+    "tags": [
+      "AMOLED",
+      "Health Monitor",
+      "GPS",
+      "7-day Battery"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "2.1\" AMOLED always-on display",
+      "ECG & Blood Oxygen sensor",
+      "Built-in GPS",
+      "7-day battery life",
+      "100+ workout modes",
+      "IP68 water resistant"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "APPLE",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "APPLE",
+      "Model": "NovaSmart Watch Ultra",
+      "Category": "ELECTRONICS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 3,
-    name: 'Lumera 4K Action Camera',
-    category: 'electronics',
-    price: 19500,
-    originalPrice: null,
-    rating: 4.7,
-    reviewCount: 892,
-    badge: 'new',
-    description: 'Capture your adventures in cinematic 4K at 120fps. HyperSmooth 4.0 stabilization, voice commands, and a rugged waterproof design.',
-    tags: ['4K 120fps', 'HyperSmooth', 'Waterproof', 'Voice Control'],
-    features: [
-      '4K at 120fps video',
-      'HyperSmooth 4.0 stabilization',
-      'Waterproof to 10m',
-      'HDR + Night Lapse modes',
-      'Voice control support',
-      'Live streaming capable',
+    "id": 3,
+    "name": "Lumera 4K Action Camera",
+    "category": "electronics",
+    "price": 19500,
+    "originalPrice": null,
+    "rating": 4.7,
+    "reviewCount": 892,
+    "badge": "new",
+    "description": "Capture your adventures in cinematic 4K at 120fps. HyperSmooth 4.0 stabilization, voice commands, and a rugged waterproof design.",
+    "tags": [
+      "4K 120fps",
+      "HyperSmooth",
+      "Waterproof",
+      "Voice Control"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "4K at 120fps video",
+      "HyperSmooth 4.0 stabilization",
+      "Waterproof to 10m",
+      "HDR + Night Lapse modes",
+      "Voice control support",
+      "Live streaming capable"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "GOPRO",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "GOPRO",
+      "Model": "Lumera 4K Action Camera",
+      "Category": "ELECTRONICS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 4,
-    name: 'Velvet Cloud Premium Sneakers',
-    category: 'fashion',
-    price: 7999,
-    originalPrice: 11999,
-    rating: 4.5,
-    reviewCount: 3210,
-    badge: 'sale',
-    description: 'Ultra-lightweight foam midsole meets breathable engineered knit upper. Comfort that lasts all day, style that turns heads.',
-    tags: ['Lightweight', 'Knit Upper', 'Foam Sole', 'Unisex'],
-    features: [
-      'Engineered knit upper',
-      'Ultra-light foam midsole',
-      'Breathable mesh lining',
-      'Flexible rubber outsole',
-      'Available sizes 5-12',
-      'Machine washable',
+    "id": 4,
+    "name": "Velvet Cloud Premium Sneakers",
+    "category": "fashion",
+    "price": 7999,
+    "originalPrice": 11999,
+    "rating": 4.5,
+    "reviewCount": 3210,
+    "badge": "sale",
+    "description": "Ultra-lightweight foam midsole meets breathable engineered knit upper. Comfort that lasts all day, style that turns heads.",
+    "tags": [
+      "Lightweight",
+      "Knit Upper",
+      "Foam Sole",
+      "Unisex"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Engineered knit upper",
+      "Ultra-light foam midsole",
+      "Breathable mesh lining",
+      "Flexible rubber outsole",
+      "Available sizes 5-12",
+      "Machine washable"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "PUMA",
+    "sizes": [
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
+    ],
+    "colors": [
+      "Chalk White",
+      "Core Black",
+      "Wolf Gray"
+    ],
+    "specifications": {
+      "Type": "Running / Lifestyle Sneakers",
+      "Sole Material": "EVA Rubber Foam Cushioning",
+      "Upper Material": "Breathable Engineered Mesh",
+      "Closure": "Lace-Up",
+      "Occasion": "Sports / Casual Running",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 5,
-    name: 'Meridian Leather Tote Bag',
-    category: 'fashion',
-    price: 5499,
-    originalPrice: 7999,
-    rating: 4.9,
-    reviewCount: 674,
-    badge: 'hot',
-    description: 'Hand-stitched premium leather with a spacious interior, brass hardware, and timeless minimalist design. Work or weekend — it carries everything.',
-    tags: ['Genuine Leather', 'Spacious', 'Brass Hardware', 'Unisex'],
-    features: [
-      'Full-grain leather exterior',
-      'Brass-tone hardware accents',
-      'Padded laptop sleeve',
-      'Interior zipper pocket',
-      'Adjustable shoulder strap',
-      'Handcrafted in Italy',
+    "id": 5,
+    "name": "Meridian Leather Tote Bag",
+    "category": "fashion",
+    "price": 5499,
+    "originalPrice": 7999,
+    "rating": 4.9,
+    "reviewCount": 674,
+    "badge": "hot",
+    "description": "Hand-stitched premium leather with a spacious interior, brass hardware, and timeless minimalist design. Work or weekend — it carries everything.",
+    "tags": [
+      "Genuine Leather",
+      "Spacious",
+      "Brass Hardware",
+      "Unisex"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Full-grain leather exterior",
+      "Brass-tone hardware accents",
+      "Padded laptop sleeve",
+      "Interior zipper pocket",
+      "Adjustable shoulder strap",
+      "Handcrafted in Italy"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "LAVIE",
+    "colors": [
+      "Cognac Tan",
+      "Midnight Black",
+      "Burgundy"
+    ],
+    "specifications": {
+      "Type": "Shoulder Tote Bag",
+      "Material": "Full Grain Vegan Leather",
+      "Compartments": "3 Main + 1 Zip Pocket",
+      "Closure": "YKK Top Zipper",
+      "Occasion": "Work / Everyday / Travel",
+      "Country of Origin": "India"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 6,
-    name: 'Aura Silk Blend Shirt',
-    category: 'fashion',
-    price: 3299,
-    originalPrice: null,
-    rating: 4.4,
-    reviewCount: 1120,
-    badge: 'new',
-    description: 'Crafted from a luxurious silk-cotton blend, this shirt drapes beautifully and moves with you. Classic collar, contemporary relaxed fit.',
-    tags: ['Silk-Cotton Blend', 'Relaxed Fit', 'Wrinkle-Resistant', 'Eco-Dyed'],
-    features: [
-      '70% silk, 30% cotton',
-      'Eco-friendly dyeing process',
-      'Wrinkle-resistant fabric',
-      'Mother-of-pearl buttons',
-      'Relaxed contemporary fit',
-      'Dry clean or gentle wash',
+    "id": 6,
+    "name": "Men's Slim Fit Cut-Away Collar Casual Shirt",
+    "category": "fashion",
+    "price": 699,
+    "originalPrice": 1999,
+    "rating": 4.4,
+    "reviewCount": 4820,
+    "badge": "hot",
+    "description": "Upgrade your smart-casual wardrobe with this slim-fit casual shirt crafted from 100% breathable combed cotton. Features a modern cut-away collar, button placket, curved hem, and single chest pocket. Perfect for casual outings, office fridays, and evening dinners.",
+    "tags": [
+      "Casual Shirt",
+      "Slim Fit",
+      "100% Cotton",
+      "Full Sleeve"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "100% breathable combed cotton for all-day comfort",
+      "Structured slim silhouette tailored through chest and waist",
+      "Reinforced dual-stitch seams and curved hemline",
+      "Pre-shrunk fabric to prevent post-wash shrinkage",
+      "Single chest patch pocket with subtle tonal embroidery"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "HIGHLANDER",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Classic White",
+      "Navy Blue",
+      "Olive"
+    ],
+    "specifications": {
+      "Fabric": "100% Combed Cotton",
+      "Fit": "Slim Fit",
+      "Pattern": "Solid Structured",
+      "Collar": "Cut-Away Collar",
+      "Sleeve": "Full Sleeve with Button Cuffs",
+      "Occasion": "Casual / Smart Casual",
+      "Wash Care": "Machine Wash Cold, Warm Iron",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 7,
-    name: 'Glow Arc Minimal Desk Lamp',
-    category: 'home',
-    price: 4599,
-    originalPrice: 6299,
-    rating: 4.6,
-    reviewCount: 543,
-    badge: 'sale',
-    description: 'Architect-inspired LED desk lamp with touch-sensitive dimmer, 3 color temperatures, and a 360° adjustable arm. Charge your phone wirelessly at the base.',
-    tags: ['LED', 'Wireless Charging', 'Touch Dimmer', 'USB-C'],
-    features: [
-      'Adjustable brightness 0-100%',
-      '3 color temperatures',
-      '360° flexible arm',
-      'Wireless Qi charging base',
-      'USB-C pass-through port',
-      'Auto-off timer function',
+    "id": 7,
+    "name": "Glow Arc Minimal Desk Lamp",
+    "category": "home",
+    "price": 4599,
+    "originalPrice": 6299,
+    "rating": 4.6,
+    "reviewCount": 543,
+    "badge": "sale",
+    "description": "Architect-inspired LED desk lamp with touch-sensitive dimmer, 3 color temperatures, and a 360° adjustable arm. Charge your phone wirelessly at the base.",
+    "tags": [
+      "LED",
+      "Wireless Charging",
+      "Touch Dimmer",
+      "USB-C"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Adjustable brightness 0-100%",
+      "3 color temperatures",
+      "360° flexible arm",
+      "Wireless Qi charging base",
+      "USB-C pass-through port",
+      "Auto-off timer function"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "PHILIPS",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "PHILIPS",
+      "Model": "Glow Arc Minimal Desk Lamp",
+      "Category": "HOME",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 8,
-    name: 'Nordic Minimal Wall Clock',
-    category: 'home',
-    price: 2199,
-    originalPrice: null,
-    rating: 4.3,
-    reviewCount: 288,
-    badge: 'new',
-    description: 'Scandinavian design meets silent sweep mechanism. Solid walnut frame with a matte white face. Makes time look beautiful.',
-    tags: ['Silent Sweep', 'Walnut Frame', 'Scandinavian', 'Battery Powered'],
-    features: [
-      'Silent sweep mechanism',
-      'Solid walnut wood frame',
-      'Matte white dial face',
-      '30cm diameter',
-      'Single AA battery',
-      'Handcrafted in Denmark',
+    "id": 8,
+    "name": "Nordic Minimal Wall Clock",
+    "category": "home",
+    "price": 2199,
+    "originalPrice": null,
+    "rating": 4.3,
+    "reviewCount": 288,
+    "badge": "new",
+    "description": "Scandinavian design meets silent sweep mechanism. Solid walnut frame with a matte white face. Makes time look beautiful.",
+    "tags": [
+      "Silent Sweep",
+      "Walnut Frame",
+      "Scandinavian",
+      "Battery Powered"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1533090161767-e6ffed986b88?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Silent sweep mechanism",
+      "Solid walnut wood frame",
+      "Matte white dial face",
+      "30cm diameter",
+      "Single AA battery",
+      "Handcrafted in Denmark"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1533090161767-e6ffed986b88?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "IKEA",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "IKEA",
+      "Model": "Nordic Minimal Wall Clock",
+      "Category": "HOME",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 9,
-    name: 'ProFlex Resistance Band Set',
-    category: 'sports',
-    price: 1899,
-    originalPrice: 2799,
-    rating: 4.5,
-    reviewCount: 4320,
-    badge: 'hot',
-    description: 'Professional-grade latex resistance bands with 5 resistance levels (5–45 kg). Stackable, durable, and comes with a mesh bag + exercise guide.',
-    tags: ['5-45kg Resistance', 'Stackable', 'Latex', 'Starter Kit'],
-    features: [
-      '5 resistance levels included',
-      'Medical-grade latex',
-      'Stackable design (up to 45kg)',
-      'Comfortable foam handles',
-      'Ankle straps included',
-      'Digital exercise guide',
+    "id": 9,
+    "name": "ProFlex Resistance Band Set",
+    "category": "sports",
+    "price": 1899,
+    "originalPrice": 2799,
+    "rating": 4.5,
+    "reviewCount": 4320,
+    "badge": "hot",
+    "description": "Professional-grade latex resistance bands with 5 resistance levels (5–45 kg). Stackable, durable, and comes with a mesh bag + exercise guide.",
+    "tags": [
+      "5-45kg Resistance",
+      "Stackable",
+      "Latex",
+      "Starter Kit"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "5 resistance levels included",
+      "Medical-grade latex",
+      "Stackable design (up to 45kg)",
+      "Comfortable foam handles",
+      "Ankle straps included",
+      "Digital exercise guide"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "BOLDFIT",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "BOLDFIT",
+      "Model": "ProFlex Resistance Band Set",
+      "Category": "SPORTS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 10,
-    name: 'QuantumRun Carbon Running Shoes',
-    category: 'sports',
-    price: 15999,
-    originalPrice: 20999,
-    rating: 4.8,
-    reviewCount: 1097,
-    badge: 'limited',
-    description: 'Carbon fiber plate + nitrogen-infused foam = your fastest race yet. Used by marathon runners worldwide. Lightweight at just 198g.',
-    tags: ['Carbon Plate', 'Race Ready', '198g', 'Nitrogen Foam'],
-    features: [
-      'Full-length carbon fiber plate',
-      'Nitrogen-infused foam midsole',
-      'Ultra-thin mesh upper',
-      'Weight: 198g (US9)',
-      'Marathon race certified',
-      'Heel-to-toe drop: 8mm',
+    "id": 10,
+    "name": "QuantumRun Carbon Running Shoes",
+    "category": "sports",
+    "price": 15999,
+    "originalPrice": 20999,
+    "rating": 4.8,
+    "reviewCount": 1097,
+    "badge": "limited",
+    "description": "Carbon fiber plate + nitrogen-infused foam = your fastest race yet. Used by marathon runners worldwide. Lightweight at just 198g.",
+    "tags": [
+      "Carbon Plate",
+      "Race Ready",
+      "198g",
+      "Nitrogen Foam"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Full-length carbon fiber plate",
+      "Nitrogen-infused foam midsole",
+      "Ultra-thin mesh upper",
+      "Weight: 198g (US9)",
+      "Marathon race certified",
+      "Heel-to-toe drop: 8mm"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "NIKE",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "NIKE",
+      "Model": "QuantumRun Carbon Running Shoes",
+      "Category": "SPORTS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 11,
-    name: 'Velvet Glow Skincare Kit',
-    category: 'beauty',
-    price: 3899,
-    originalPrice: 5499,
-    rating: 4.7,
-    reviewCount: 2890,
-    badge: 'sale',
-    description: 'Complete 5-step Korean skincare routine in a luxury gift set. Hyaluronic acid serum, retinol night cream, vitamin C moisturizer, gentle cleanser + toner.',
-    tags: ['Korean Skincare', 'Hyaluronic Acid', 'Retinol', 'Gift Set'],
-    features: [
-      'Hyaluronic acid serum (30ml)',
-      'Retinol night cream (50ml)',
-      'Vitamin C moisturizer (60ml)',
-      'Gentle foaming cleanser',
-      'Balancing rose toner',
-      'Cruelty-free & vegan',
+    "id": 11,
+    "name": "Velvet Glow Skincare Kit",
+    "category": "beauty",
+    "price": 3899,
+    "originalPrice": 5499,
+    "rating": 4.7,
+    "reviewCount": 2890,
+    "badge": "sale",
+    "description": "Complete 5-step Korean skincare routine in a luxury gift set. Hyaluronic acid serum, retinol night cream, vitamin C moisturizer, gentle cleanser + toner.",
+    "tags": [
+      "Korean Skincare",
+      "Hyaluronic Acid",
+      "Retinol",
+      "Gift Set"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Hyaluronic acid serum (30ml)",
+      "Retinol night cream (50ml)",
+      "Vitamin C moisturizer (60ml)",
+      "Gentle foaming cleanser",
+      "Balancing rose toner",
+      "Cruelty-free & vegan"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "MINIMALIST",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "MINIMALIST",
+      "Model": "Velvet Glow Skincare Kit",
+      "Category": "BEAUTY",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 12,
-    name: 'Aura Matte Luxury Lipstick Collection',
-    category: 'beauty',
-    price: 1599,
-    originalPrice: null,
-    rating: 4.6,
-    reviewCount: 5640,
-    badge: 'new',
-    description: 'Bold, long-lasting matte finish with 12-hour wear. Infused with vitamin E and jojoba oil for comfortable, non-drying wear. Set of 6 curated shades.',
-    tags: ['12-Hour Wear', 'Matte Finish', 'Vitamin E', '6 Shades'],
-    features: [
-      '12-hour long-lasting formula',
-      'Non-drying matte finish',
-      'Vitamin E & jojoba oil',
-      'Cruelty-free & vegan',
-      '6 curated shade range',
-      'Recyclable packaging',
+    "id": 12,
+    "name": "Aura Matte Luxury Lipstick Collection",
+    "category": "beauty",
+    "price": 1599,
+    "originalPrice": null,
+    "rating": 4.6,
+    "reviewCount": 5640,
+    "badge": "new",
+    "description": "Bold, long-lasting matte finish with 12-hour wear. Infused with vitamin E and jojoba oil for comfortable, non-drying wear. Set of 6 curated shades.",
+    "tags": [
+      "12-Hour Wear",
+      "Matte Finish",
+      "Vitamin E",
+      "6 Shades"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1599732487317-567406a14705?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1563178406-4cdc2923acbc?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "12-hour long-lasting formula",
+      "Non-drying matte finish",
+      "Vitamin E & jojoba oil",
+      "Cruelty-free & vegan",
+      "6 curated shade range",
+      "Recyclable packaging"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1599732487317-567406a14705?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563178406-4cdc2923acbc?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "M.A.C",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "M.A.C",
+      "Model": "Aura Matte Luxury Lipstick Collection",
+      "Category": "BEAUTY",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 13,
-    name: 'Horizon SoundBar 5.1 Dolby Atmos',
-    category: 'electronics',
-    price: 16999,
-    originalPrice: 22999,
-    rating: 4.8,
-    reviewCount: 1420,
-    badge: 'hot',
-    description: 'Immerse yourself in cinematic 3D surround sound with Dolby Atmos and a dedicated wireless subwoofer. Crystal-clear dialogue and punchy bass bring movies, gaming, and music to life.',
-    tags: ['Dolby Atmos', 'Wireless Subwoofer', 'Bluetooth 5.3', 'HDMI eARC'],
-    features: [
-      'Dolby Atmos 5.1 surround sound',
-      'Wireless deep-bass subwoofer',
-      'HDMI eARC & optical inputs',
-      'Bluetooth 5.3 streaming',
-      'Dedicated dialog enhancement',
-      'Wall-mountable slim profile',
+    "id": 13,
+    "name": "Horizon SoundBar 5.1 Dolby Atmos",
+    "category": "electronics",
+    "price": 16999,
+    "originalPrice": 22999,
+    "rating": 4.8,
+    "reviewCount": 1420,
+    "badge": "hot",
+    "description": "Immerse yourself in cinematic 3D surround sound with Dolby Atmos and a dedicated wireless subwoofer. Crystal-clear dialogue and punchy bass bring movies, gaming, and music to life.",
+    "tags": [
+      "Dolby Atmos",
+      "Wireless Subwoofer",
+      "Bluetooth 5.3",
+      "HDMI eARC"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1558403194-611308249627?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Dolby Atmos 5.1 surround sound",
+      "Wireless deep-bass subwoofer",
+      "HDMI eARC & optical inputs",
+      "Bluetooth 5.3 streaming",
+      "Dedicated dialog enhancement",
+      "Wall-mountable slim profile"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1558403194-611308249627?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "JBL",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "JBL",
+      "Model": "Horizon SoundBar 5.1 Dolby Atmos",
+      "Category": "ELECTRONICS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 14,
-    name: 'NeoTab Pro 12.4" OLED Tablet',
-    category: 'electronics',
-    price: 38999,
-    originalPrice: 47999,
-    rating: 4.7,
-    reviewCount: 965,
-    badge: 'new',
-    description: 'Ultra-slim flagship tablet featuring a vivid 120Hz OLED display, octacore powerhouse performance, and precision stylus included. Perfect for digital art, work, and 4K entertainment.',
-    tags: ['120Hz OLED', 'Stylus Included', 'All-Day Battery', 'Quad Speakers'],
-    features: [
-      '12.4" 2.8K OLED 120Hz display',
-      'Active pressure-sensitive stylus included',
-      'Quad AKG-tuned stereo speakers',
-      '10,090 mAh battery with 45W fast charge',
-      'Ultra-thin 5.7mm aluminum body',
-      'Wi-Fi 6E connectivity',
+    "id": 14,
+    "name": "NeoTab Pro 12.4\" OLED Tablet",
+    "category": "electronics",
+    "price": 38999,
+    "originalPrice": 47999,
+    "rating": 4.7,
+    "reviewCount": 965,
+    "badge": "new",
+    "description": "Ultra-slim flagship tablet featuring a vivid 120Hz OLED display, octacore powerhouse performance, and precision stylus included. Perfect for digital art, work, and 4K entertainment.",
+    "tags": [
+      "120Hz OLED",
+      "Stylus Included",
+      "All-Day Battery",
+      "Quad Speakers"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1527690789675-4ea7d8d49a9b?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "12.4\" 2.8K OLED 120Hz display",
+      "Active pressure-sensitive stylus included",
+      "Quad AKG-tuned stereo speakers",
+      "10,090 mAh battery with 45W fast charge",
+      "Ultra-thin 5.7mm aluminum body",
+      "Wi-Fi 6E connectivity"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1527690789675-4ea7d8d49a9b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "SAMSUNG",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "SAMSUNG",
+      "Model": "NeoTab Pro 12.4\" OLED Tablet",
+      "Category": "ELECTRONICS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 15,
-    name: 'Stellar Chrono Minimalist Watch',
-    category: 'fashion',
-    price: 8999,
-    originalPrice: 12499,
-    rating: 4.9,
-    reviewCount: 812,
-    badge: 'hot',
-    description: 'Sophisticated chronograph crafted from surgical-grade stainless steel with scratch-resistant sapphire crystal glass and genuine Italian leather strap. Water resistant to 50 meters.',
-    tags: ['Sapphire Glass', 'Chronograph', 'Italian Leather', '50m Waterproof'],
-    features: [
-      'Sapphire crystal scratch-resistant glass',
-      'Japanese quartz chronograph movement',
-      'Interchangeable Italian leather strap',
-      '5 ATM / 50m water resistance',
-      'Luminescent hands and dial markers',
-      '3-year international warranty',
+    "id": 15,
+    "name": "Men's Tapered Slim-Fit Stretch Denim Jeans",
+    "category": "fashion",
+    "price": 1499,
+    "originalPrice": 3999,
+    "rating": 4.6,
+    "reviewCount": 8410,
+    "badge": "hot",
+    "description": "Classic 5-pocket indigo stretch denim jeans designed with a mid-rise waist and tapered leg opening. Blended with premium elastane for effortless flexibility whether you're commuting or lounging. Finished with whiskering and subtle stone wash fading.",
+    "tags": [
+      "Denim Jeans",
+      "Stretch Cotton",
+      "Slim Tapered",
+      "5-Pocket"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1533139502658-0198f920d8e8?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Authentic heavy-duty 12.5 oz ring-spun denim",
+      "2% active stretch elastane prevents knee bagging",
+      "Reinforced copper rivets at key stress points",
+      "Classic 5-pocket styling with signature arcuate stitch",
+      "Comfort-stretch waistband contouring natural waist"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1604176354204-9268737828e4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "LEVI'S",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Medium Indigo",
+      "Dark Blue Wash",
+      "Jet Black"
+    ],
+    "specifications": {
+      "Fabric": "98% Cotton, 2% Elastane (Stretch Denim)",
+      "Fit": "Slim Tapered Fit",
+      "Waist Rise": "Mid Rise",
+      "Wash": "Lightly Washed with Whiskers",
+      "Fly": "Zip Fly with Shank Button",
+      "Occasion": "Daily Casual / Weekend",
+      "Wash Care": "Machine Wash Inside Out, Do Not Bleach",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 16,
-    name: 'UrbanDrift Aviator Polarized Sunglasses',
-    category: 'fashion',
-    price: 3499,
-    originalPrice: 4999,
-    rating: 4.6,
-    reviewCount: 1540,
-    badge: 'sale',
-    description: 'Classic aviator silhouette engineered with lightweight aerospace titanium frames and UV400 polarized gradient lenses to eliminate glare and enhance clarity in all lighting conditions.',
-    tags: ['Polarized', 'UV400 Protection', 'Titanium Frame', 'Anti-Glare'],
-    features: [
-      '100% UV400 protection polarized lenses',
-      'Lightweight titanium alloy frame',
-      'Scratch and impact-resistant coating',
-      'Adjustable silicone nose pads',
-      'Hard protective case & microfiber cloth',
-      'Unisex timeless design',
+    "id": 16,
+    "name": "Men's Slim Fit Cotton Chino Cargo Trousers",
+    "category": "fashion",
+    "price": 1199,
+    "originalPrice": 2799,
+    "rating": 4.3,
+    "reviewCount": 3150,
+    "badge": "new",
+    "description": "Versatile multi-pocket cotton twill chino trousers tailored for modern utility and sleek streetwear style. Featuring gusseted cargo thigh pockets, rear welt pockets, and a clean flat front with stretch comfort waistband.",
+    "tags": [
+      "Cargo Pants",
+      "Chinos",
+      "Cotton Twill",
+      "Utility"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "High-density cotton twill weave resists tears and scuffs",
+      "Twin expandable cargo pockets with secure snap flaps",
+      "Articulated knees allow full range of motion",
+      "Flat-front waistband with sturdy belt loops",
+      "Breathable fabric suitable for all-season wear"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "ROADSTER",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Khaki Beige",
+      "Olive Green",
+      "Charcoal Gray",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Fabric": "97% Cotton Twill, 3% Spandex",
+      "Fit": "Slim Straight Fit",
+      "Waist Rise": "Mid Rise",
+      "Pockets": "6 Pockets (2 Hand, 2 Cargo Flap, 2 Back)",
+      "Occasion": "Outdoor / Casual / Streetwear",
+      "Wash Care": "Machine Wash Warm",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 17,
-    name: 'Highland Cashmere Knit Sweater',
-    category: 'fashion',
-    price: 6499,
-    originalPrice: 8999,
-    rating: 4.8,
-    reviewCount: 720,
-    badge: 'limited',
-    description: 'Exceptionally soft 100% Mongolian grade-A cashmere sweater with a classic crew neckline and ribbed trim. Luxurious warmth and everyday elegance without the bulk.',
-    tags: ['100% Cashmere', 'Grade-A Mongolian', 'Ultra-Soft', 'Breathable'],
-    features: [
-      '100% pure Grade-A cashmere',
-      '2-ply tightly spun yarn to resist pilling',
-      'Ribbed cuffs, hem, and crew neckline',
-      'Naturally thermoregulating and breathable',
-      'Classic tailored fit',
-      'Includes cedar storage bag',
+    "id": 17,
+    "name": "Men's Solid Pure Combed Cotton Crewneck T-Shirt",
+    "category": "fashion",
+    "price": 499,
+    "originalPrice": 1299,
+    "rating": 4.5,
+    "reviewCount": 12940,
+    "badge": "hot",
+    "description": "An everyday essential built to last. Crafted from 220 GSM bio-washed combed cotton with an ultra-soft hand feel. Retains its vibrant color and structured shape through countless wash cycles without pilling or fading.",
+    "tags": [
+      "T-Shirt",
+      "100% Cotton",
+      "Crew Neck",
+      "Bio-Washed"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Heavyweight 220 GSM combed cotton fabric",
+      "Silicone bio-wash treatment for anti-pilling softness",
+      "Lycra ribbed collar prevents neck sagging over time",
+      "Double-stitched hem and sleeves for added durability",
+      "Tagless neck label for scratch-free comfort"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "PUMA",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Jet Black",
+      "Heather Gray",
+      "Classic White",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Fabric": "100% Super Combed Bio-Washed Cotton (220 GSM)",
+      "Fit": "Regular Comfort Fit",
+      "Neckline": "Ribbed Crew Neck",
+      "Sleeve": "Half Sleeve",
+      "Occasion": "Daily Wear / Lounge / Gym",
+      "Wash Care": "Machine Wash Gentle, Dry in Shade",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 18,
-    name: 'AromaMist Ceramic Essential Oil Diffuser',
-    category: 'home',
-    price: 2799,
-    originalPrice: 3999,
-    rating: 4.7,
-    reviewCount: 1890,
-    badge: 'hot',
-    description: 'Hand-crafted ceramic ultrasonic aroma diffuser that elevates your living space. Whisper-quiet misting, ambient warm night-light, and auto shut-off protection.',
-    tags: ['Ultrasonic', 'Handmade Ceramic', 'Warm Ambient LED', 'Auto Shut-Off'],
-    features: [
-      'Handcrafted matte ceramic cover',
-      'Whisper-quiet ultrasonic mist technology',
-      'Dual mist modes (continuous and intermittent)',
-      'Soothing ambient LED glow',
-      'BPA-free water reservoir (180ml)',
-      'Auto shut-off when water runs out',
+    "id": 18,
+    "name": "AromaMist Ceramic Essential Oil Diffuser",
+    "category": "home",
+    "price": 2799,
+    "originalPrice": 3999,
+    "rating": 4.7,
+    "reviewCount": 1890,
+    "badge": "hot",
+    "description": "Hand-crafted ceramic ultrasonic aroma diffuser that elevates your living space. Whisper-quiet misting, ambient warm night-light, and auto shut-off protection.",
+    "tags": [
+      "Ultrasonic",
+      "Handmade Ceramic",
+      "Warm Ambient LED",
+      "Auto Shut-Off"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1602928321679-560bb453f190?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Handcrafted matte ceramic cover",
+      "Whisper-quiet ultrasonic mist technology",
+      "Dual mist modes (continuous and intermittent)",
+      "Soothing ambient LED glow",
+      "BPA-free water reservoir (180ml)",
+      "Auto shut-off when water runs out"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1602928321679-560bb453f190?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "MUJI",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "MUJI",
+      "Model": "AromaMist Ceramic Essential Oil Diffuser",
+      "Category": "HOME",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 19,
-    name: 'Haven Velvet Ergonomic Accent Chair',
-    category: 'home',
-    price: 14499,
-    originalPrice: 19999,
-    rating: 4.8,
-    reviewCount: 630,
-    badge: 'sale',
-    description: 'Mid-century modern accent chair upholstered in plush stain-resistant velvet with high-density foam padding and sturdy tapered brass-tipped metal legs.',
-    tags: ['Stain-Resistant Velvet', 'Ergonomic', 'Brass Accents', 'High-Density Foam'],
-    features: [
-      'Stain-resistant performance velvet',
-      'Contoured ergonomic backrest',
-      'High-resilience foam cushion',
-      'Sturdy steel frame with brass-finish feet',
-      'Weight capacity up to 150 kg',
-      'Easy 15-minute assembly',
+    "id": 19,
+    "name": "Haven Velvet Ergonomic Accent Chair",
+    "category": "home",
+    "price": 14499,
+    "originalPrice": 19999,
+    "rating": 4.8,
+    "reviewCount": 630,
+    "badge": "sale",
+    "description": "Mid-century modern accent chair upholstered in plush stain-resistant velvet with high-density foam padding and sturdy tapered brass-tipped metal legs.",
+    "tags": [
+      "Stain-Resistant Velvet",
+      "Ergonomic",
+      "Brass Accents",
+      "High-Density Foam"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1580481077195-c990d0b6eb01?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1519947486513-ce6419a70125?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Stain-resistant performance velvet",
+      "Contoured ergonomic backrest",
+      "High-resilience foam cushion",
+      "Sturdy steel frame with brass-finish feet",
+      "Weight capacity up to 150 kg",
+      "Easy 15-minute assembly"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1580481077195-c990d0b6eb01?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1519947486513-ce6419a70125?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "WEST ELM",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "WEST ELM",
+      "Model": "Haven Velvet Ergonomic Accent Chair",
+      "Category": "HOME",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 20,
-    name: 'Artisan Ceramic Dinnerware Set',
-    category: 'home',
-    price: 4999,
-    originalPrice: 6999,
-    rating: 4.6,
-    reviewCount: 880,
-    badge: 'new',
-    description: '16-piece handcrafted stoneware dinnerware set featuring an organic speckled glaze and exposed earthy rim. Microwave, oven, and dishwasher safe.',
-    tags: ['Handcrafted Stoneware', '16-Piece Set', 'Dishwasher Safe', 'Lead-Free'],
-    features: [
-      '16-piece set (4 dinner plates, 4 salad plates, 4 bowls, 4 mugs)',
-      'Natural speckled reactive glaze finish',
-      'Chip-resistant durable stoneware',
-      'Microwave and dishwasher safe',
-      'Oven safe up to 200°C',
-      '100% lead and cadmium free',
+    "id": 20,
+    "name": "Artisan Ceramic Dinnerware Set",
+    "category": "home",
+    "price": 4999,
+    "originalPrice": 6999,
+    "rating": 4.6,
+    "reviewCount": 880,
+    "badge": "new",
+    "description": "16-piece handcrafted stoneware dinnerware set featuring an organic speckled glaze and exposed earthy rim. Microwave, oven, and dishwasher safe.",
+    "tags": [
+      "Handcrafted Stoneware",
+      "16-Piece Set",
+      "Dishwasher Safe",
+      "Lead-Free"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "16-piece set (4 dinner plates, 4 salad plates, 4 bowls, 4 mugs)",
+      "Natural speckled reactive glaze finish",
+      "Chip-resistant durable stoneware",
+      "Microwave and dishwasher safe",
+      "Oven safe up to 200°C",
+      "100% lead and cadmium free"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "FABINDIA",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "FABINDIA",
+      "Model": "Artisan Ceramic Dinnerware Set",
+      "Category": "HOME",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 21,
-    name: 'AeroHydro Insulated Stainless Steel Bottle',
-    category: 'sports',
-    price: 1799,
-    originalPrice: 2499,
-    rating: 4.9,
-    reviewCount: 3820,
-    badge: 'hot',
-    description: 'Double-wall vacuum insulated 32oz sports bottle engineered with 18/8 pro-grade stainless steel. Keeps drinks ice cold for 24 hours or steaming hot for 12 hours.',
-    tags: ['Vacuum Insulated', '24hr Cold / 12hr Hot', '18/8 Steel', 'Leak-Proof'],
-    features: [
-      'Double-wall vacuum insulation',
-      '32 oz (950ml) capacity',
-      'Leak-proof chug and straw lids included',
-      'Pro-grade 18/8 food-safe stainless steel',
-      'Sweat-free powder-coated exterior',
-      'BPA and phthalate-free',
+    "id": 21,
+    "name": "AeroHydro Insulated Stainless Steel Bottle",
+    "category": "sports",
+    "price": 1799,
+    "originalPrice": 2499,
+    "rating": 4.9,
+    "reviewCount": 3820,
+    "badge": "hot",
+    "description": "Double-wall vacuum insulated 32oz sports bottle engineered with 18/8 pro-grade stainless steel. Keeps drinks ice cold for 24 hours or steaming hot for 12 hours.",
+    "tags": [
+      "Vacuum Insulated",
+      "24hr Cold / 12hr Hot",
+      "18/8 Steel",
+      "Leak-Proof"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Double-wall vacuum insulation",
+      "32 oz (950ml) capacity",
+      "Leak-proof chug and straw lids included",
+      "Pro-grade 18/8 food-safe stainless steel",
+      "Sweat-free powder-coated exterior",
+      "BPA and phthalate-free"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "HYDRO FLASK",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "HYDRO FLASK",
+      "Model": "AeroHydro Insulated Stainless Steel Bottle",
+      "Category": "SPORTS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 22,
-    name: 'ApexGrip Non-Slip Eco Yoga Mat',
-    category: 'sports',
-    price: 2999,
-    originalPrice: 4299,
-    rating: 4.8,
-    reviewCount: 1760,
-    badge: 'sale',
-    description: 'Premium 6mm high-density natural tree rubber yoga mat with laser-etched alignment lines and sweat-activated non-slip grip. Free carrying strap included.',
-    tags: ['Natural Rubber', 'Alignment Lines', 'Non-Slip Grip', 'Eco-Friendly'],
-    features: [
-      '6mm extra-thick joint cushioning',
-      'Natural biodegradable tree rubber base',
-      'Laser-etched body alignment system',
-      'Sweat-activated dry grip surface',
-      'Includes premium cotton carrying sling',
-      'Free from PVC, silicones, and toxic phthalates',
+    "id": 22,
+    "name": "ApexGrip Non-Slip Eco Yoga Mat",
+    "category": "sports",
+    "price": 2999,
+    "originalPrice": 4299,
+    "rating": 4.8,
+    "reviewCount": 1760,
+    "badge": "sale",
+    "description": "Premium 6mm high-density natural tree rubber yoga mat with laser-etched alignment lines and sweat-activated non-slip grip. Free carrying strap included.",
+    "tags": [
+      "Natural Rubber",
+      "Alignment Lines",
+      "Non-Slip Grip",
+      "Eco-Friendly"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "6mm extra-thick joint cushioning",
+      "Natural biodegradable tree rubber base",
+      "Laser-etched body alignment system",
+      "Sweat-activated dry grip surface",
+      "Includes premium cotton carrying sling",
+      "Free from PVC, silicones, and toxic phthalates"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "DECATHLON",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "DECATHLON",
+      "Model": "ApexGrip Non-Slip Eco Yoga Mat",
+      "Category": "SPORTS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 23,
-    name: 'Botanical Nectar Hair Repair Serum',
-    category: 'beauty',
-    price: 2199,
-    originalPrice: 2999,
-    rating: 4.7,
-    reviewCount: 2150,
-    badge: 'new',
-    description: 'Intensive leave-in hair elixir formulated with Moroccan argan oil, keratin peptides, and marula oil to tame frizz, heal split ends, and impart a glass-like shine.',
-    tags: ['Argan & Marula Oil', 'Keratin Peptides', 'Heat Protection', 'Anti-Frizz'],
-    features: [
-      'Cold-pressed Moroccan argan oil',
-      'Heat protectant up to 230°C',
-      'Repairs split ends and strengthens cuticle',
-      'Lightweight non-greasy formula',
-      'Sulfate, paraben, and cruelty-free',
-      'Signature jasmine and vanilla scent',
+    "id": 23,
+    "name": "Botanical Nectar Hair Repair Serum",
+    "category": "beauty",
+    "price": 2199,
+    "originalPrice": 2999,
+    "rating": 4.7,
+    "reviewCount": 2150,
+    "badge": "new",
+    "description": "Intensive leave-in hair elixir formulated with Moroccan argan oil, keratin peptides, and marula oil to tame frizz, heal split ends, and impart a glass-like shine.",
+    "tags": [
+      "Argan & Marula Oil",
+      "Keratin Peptides",
+      "Heat Protection",
+      "Anti-Frizz"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1608248597359-25f0a207ba83?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Cold-pressed Moroccan argan oil",
+      "Heat protectant up to 230°C",
+      "Repairs split ends and strengthens cuticle",
+      "Lightweight non-greasy formula",
+      "Sulfate, paraben, and cruelty-free",
+      "Signature jasmine and vanilla scent"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1608248597359-25f0a207ba83?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "THE ORDINARY",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "THE ORDINARY",
+      "Model": "Botanical Nectar Hair Repair Serum",
+      "Category": "BEAUTY",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 24,
-    name: 'Rose Quartz Facial Sculpting Roller',
-    category: 'beauty',
-    price: 1899,
-    originalPrice: 2599,
-    rating: 4.8,
-    reviewCount: 3100,
-    badge: 'hot',
-    description: '100% authentic Brazilian rose quartz dual-ended facial roller and heart-shaped Gua Sha tool. Depuffs, cools, stimulates lymphatic drainage, and boosts skin radiance.',
-    tags: ['Real Rose Quartz', 'Gua Sha Included', 'Lymphatic Drainage', 'Depuffing'],
-    features: [
-      '100% certified Brazilian rose quartz',
-      'Dual-ended roller (large & mini stone)',
-      'Matching heart Gua Sha sculpting stone',
-      'Silent silicone rolling mechanism',
-      'Naturally cool to soothe inflammation',
-      'Velvet pouch & gift box included',
+    "id": 24,
+    "name": "Rose Quartz Facial Sculpting Roller",
+    "category": "beauty",
+    "price": 1899,
+    "originalPrice": 2599,
+    "rating": 4.8,
+    "reviewCount": 3100,
+    "badge": "hot",
+    "description": "100% authentic Brazilian rose quartz dual-ended facial roller and heart-shaped Gua Sha tool. Depuffs, cools, stimulates lymphatic drainage, and boosts skin radiance.",
+    "tags": [
+      "Real Rose Quartz",
+      "Gua Sha Included",
+      "Lymphatic Drainage",
+      "Depuffing"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1512290900672-1f0236a29dfb?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "100% certified Brazilian rose quartz",
+      "Dual-ended roller (large & mini stone)",
+      "Matching heart Gua Sha sculpting stone",
+      "Silent silicone rolling mechanism",
+      "Naturally cool to soothe inflammation",
+      "Velvet pouch & gift box included"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512290900672-1f0236a29dfb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "FOREST ESSENTIALS",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "FOREST ESSENTIALS",
+      "Model": "Rose Quartz Facial Sculpting Roller",
+      "Category": "BEAUTY",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 25,
-    name: 'AuraBeam 4K Laser Smart Projector',
-    category: 'electronics',
-    price: 42999,
-    originalPrice: 59999,
-    rating: 4.9,
-    reviewCount: 740,
-    badge: 'hot',
-    description: 'True 4K UHD laser projection up to 150 inches with 2500 ANSI lumens, HDR10+, Android TV built-in, and Harman Kardon acoustics.',
-    tags: ['4K UHD', '2500 ANSI Lumens', 'Android TV', 'Harman Kardon'],
-    features: [
-      '4K UHD laser technology',
-      '2500 ANSI lumens high brightness',
-      'Up to 150-inch display size',
-      'Built-in Android TV with voice remote',
-      'Dual 10W Harman Kardon speakers',
-      'Auto focus and keystone correction',
+    "id": 25,
+    "name": "AuraBeam 4K Laser Smart Projector",
+    "category": "electronics",
+    "price": 42999,
+    "originalPrice": 59999,
+    "rating": 4.9,
+    "reviewCount": 740,
+    "badge": "hot",
+    "description": "True 4K UHD laser projection up to 150 inches with 2500 ANSI lumens, HDR10+, Android TV built-in, and Harman Kardon acoustics.",
+    "tags": [
+      "4K UHD",
+      "2500 ANSI Lumens",
+      "Android TV",
+      "Harman Kardon"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1461151304267-38535e780c79?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1595769816263-9b910be24d5f?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "4K UHD laser technology",
+      "2500 ANSI lumens high brightness",
+      "Up to 150-inch display size",
+      "Built-in Android TV with voice remote",
+      "Dual 10W Harman Kardon speakers",
+      "Auto focus and keystone correction"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1461151304267-38535e780c79?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1595769816263-9b910be24d5f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "XGIMI",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "XGIMI",
+      "Model": "AuraBeam 4K Laser Smart Projector",
+      "Category": "ELECTRONICS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 26,
-    name: 'MechStrike RGB Mechanical Gaming Keyboard',
-    category: 'electronics',
-    price: 6999,
-    originalPrice: 9499,
-    rating: 4.7,
-    reviewCount: 2890,
-    badge: 'sale',
-    description: 'Hot-swappable linear mechanical switches, per-key RGB backlighting, aircraft-grade aluminum top plate, and magnetic memory foam wrist rest.',
-    tags: ['Hot-Swappable', 'RGB Backlit', 'Aluminum Frame', 'Linear Switches'],
-    features: [
-      'Hot-swappable mechanical switches',
-      'Per-key customizable RGB illumination',
-      'Solid aircraft aluminum top plate',
-      'Magnetic plush wrist rest included',
-      '1000Hz polling rate with N-key rollover',
-      'Detachable braided USB-C cable',
+    "id": 26,
+    "name": "MechStrike RGB Mechanical Gaming Keyboard",
+    "category": "electronics",
+    "price": 6999,
+    "originalPrice": 9499,
+    "rating": 4.7,
+    "reviewCount": 2890,
+    "badge": "sale",
+    "description": "Hot-swappable linear mechanical switches, per-key RGB backlighting, aircraft-grade aluminum top plate, and magnetic memory foam wrist rest.",
+    "tags": [
+      "Hot-Swappable",
+      "RGB Backlit",
+      "Aluminum Frame",
+      "Linear Switches"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1541140532154-b024d705b909?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Hot-swappable mechanical switches",
+      "Per-key customizable RGB illumination",
+      "Solid aircraft aluminum top plate",
+      "Magnetic plush wrist rest included",
+      "1000Hz polling rate with N-key rollover",
+      "Detachable braided USB-C cable"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1541140532154-b024d705b909?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "KEYCHRON",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "KEYCHRON",
+      "Model": "MechStrike RGB Mechanical Gaming Keyboard",
+      "Category": "ELECTRONICS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 27,
-    name: 'Nomad Weatherproof Tactical Backpack',
-    category: 'fashion',
-    price: 4799,
-    originalPrice: 6499,
-    rating: 4.8,
-    reviewCount: 1650,
-    badge: 'new',
-    description: 'Built from ballistic 900D Cordura nylon with waterproof zippers, modular expansion webbing, and a 16-inch padded laptop compartment.',
-    tags: ['Cordura 900D', 'Waterproof', '16" Laptop Sleeve', 'Ergonomic'],
-    features: [
-      '900D ballistic waterproof Cordura nylon',
-      '16-inch padded laptop and tablet sleeve',
-      'Ergonomic airflow back panel',
-      'MOLLE attachment system',
-      'Quick-access passport and bottle pockets',
-      'Lockable dual main compartment zippers',
+    "id": 27,
+    "name": "Women's High-Rise Ankle Length Skinny Stretch Jeans",
+    "category": "fashion",
+    "price": 1299,
+    "originalPrice": 3199,
+    "rating": 4.7,
+    "reviewCount": 5120,
+    "badge": "hot",
+    "description": "Flattering high-rise skinny jeans designed to hug your curves from hip to ankle. Super-stretch denim offers second-skin comfort with incredible shape retention that won't bag out. Ankle-grazing length pairs effortlessly with sneakers or heels.",
+    "tags": [
+      "Women Jeans",
+      "High Rise",
+      "Skinny Fit",
+      "Super Stretch"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1546938576-6e6a64f317cc?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Super-stretch denim sculpts and holds its silhouette",
+      "High-rise contour waistband eliminates gap at the back",
+      "Clean ankle-length hemline with double stitch",
+      "Deep functional front and back pockets",
+      "Breathable fabric blend comfortable all year round"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "DENIM LAB",
+    "sizes": [
+      "26",
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "colors": [
+      "Washed Indigo",
+      "Carbon Black",
+      "Sky Blue Wash"
+    ],
+    "specifications": {
+      "Fabric": "78% Cotton, 20% Polyester, 2% Elastane",
+      "Fit": "Skinny High-Rise Fit",
+      "Waist Rise": "High Rise (10.5-inch)",
+      "Length": "Ankle Length",
+      "Closure": "Zip Fly with Single Button",
+      "Occasion": "Casual / Party / Office",
+      "Wash Care": "Machine Wash Cold, Hang Dry",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 28,
-    name: 'Solstice Italian Leather Dress Belt',
-    category: 'fashion',
-    price: 2299,
-    originalPrice: 3299,
-    rating: 4.6,
-    reviewCount: 1140,
-    badge: 'hot',
-    description: 'Hand-crafted full-grain Italian vegetable-tanned leather with a brushed nickel buckle. Reversible design for effortless versatility.',
-    tags: ['Full-Grain Leather', 'Italian Craft', 'Brushed Nickel', 'Reversible'],
-    features: [
-      '100% full-grain Italian leather',
-      'Brushed nickel buckle hardware',
-      'Reversible black/cognac brown strap',
-      'Hand-burnished edges',
-      '5 custom sizing adjustment holes',
-      'Supplied in luxury gift box',
+    "id": 28,
+    "name": "Men's Rugged Washed Denim Trucker Jacket",
+    "category": "fashion",
+    "price": 1899,
+    "originalPrice": 4599,
+    "rating": 4.7,
+    "reviewCount": 4120,
+    "badge": "new",
+    "description": "The iconic denim jacket reimagined with vintage wash character and durable brass hardware. Features point collar, dual flap chest pockets, welt hand pockets, and adjustable waist tabs. The quintessential layering piece for any casual outfit.",
+    "tags": [
+      "Denim Jacket",
+      "Trucker",
+      "Vintage Wash",
+      "Outerwear"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Heavy 13 oz durable ring-spun denim cotton",
+      "Antiqued brass shank buttons and contrast stitching",
+      "Adjustable side waist tabs for custom fit tapering",
+      "Dual button-flap chest pockets and interior phone stash",
+      "Pre-washed for instant broken-in comfort"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "ALLEN SOLLY",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Vintage Blue Wash",
+      "Stone Wash",
+      "Charcoal Gray"
+    ],
+    "specifications": {
+      "Fabric": "100% Heavy Duty Cotton Denim (13 oz)",
+      "Fit": "Regular Boxy Fit",
+      "Collar": "Point Spread Collar",
+      "Closure": "Full Button Placket with Shank Buttons",
+      "Pockets": "4 Pockets (2 Chest Button Flap, 2 Side Welt)",
+      "Occasion": "Winter / Travel / Layering",
+      "Wash Care": "Machine Wash Cold, Hang to Dry",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 29,
-    name: 'BaristaPro Espresso & Cappuccino Machine',
-    category: 'home',
-    price: 18499,
-    originalPrice: 24999,
-    rating: 4.8,
-    reviewCount: 1390,
-    badge: 'hot',
-    description: '20-bar professional Italian pump espresso maker with integrated conical burr grinder, micro-foam steam wand, and digital temperature control.',
-    tags: ['20-Bar Pump', 'Burr Grinder', 'Steam Wand', 'PID Temperature'],
-    features: [
-      '20-bar high-pressure Italian pump',
-      'Integrated conical burr coffee grinder',
-      'Commercial-style micro-foam steam wand',
-      'PID precise digital temperature control',
-      'Single and double shot portafilters',
-      '1.8L removable water reservoir',
+    "id": 29,
+    "name": "BaristaPro Espresso & Cappuccino Machine",
+    "category": "home",
+    "price": 18499,
+    "originalPrice": 24999,
+    "rating": 4.8,
+    "reviewCount": 1390,
+    "badge": "hot",
+    "description": "20-bar professional Italian pump espresso maker with integrated conical burr grinder, micro-foam steam wand, and digital temperature control.",
+    "tags": [
+      "20-Bar Pump",
+      "Burr Grinder",
+      "Steam Wand",
+      "PID Temperature"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "20-bar high-pressure Italian pump",
+      "Integrated conical burr coffee grinder",
+      "Commercial-style micro-foam steam wand",
+      "PID precise digital temperature control",
+      "Single and double shot portafilters",
+      "1.8L removable water reservoir"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "DE'LONGHI",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "DE'LONGHI",
+      "Model": "BaristaPro Espresso & Cappuccino Machine",
+      "Category": "HOME",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 30,
-    name: 'ZenBreeze Silent HEPA Air Purifier',
-    category: 'home',
-    price: 8999,
-    originalPrice: 12999,
-    rating: 4.7,
-    reviewCount: 2010,
-    badge: 'sale',
-    description: 'True HEPA H13 filtration removes 99.97% of airborne allergens, pollen, dust, and pet dander. Ultra-quiet sleep mode and real-time air quality ring.',
-    tags: ['H13 HEPA', '99.97% Allergen Removal', 'Silent 24dB', 'Smart Sensor'],
-    features: [
-      '3-stage True HEPA H13 filtration',
-      'Covers rooms up to 450 sq ft',
-      'Whisper-quiet sleep mode at 24dB',
-      'Real-time color air quality sensor',
-      'Timer with 2h, 4h, and 8h settings',
-      'Energy Star certified efficiency',
+    "id": 30,
+    "name": "ZenBreeze Silent HEPA Air Purifier",
+    "category": "home",
+    "price": 8999,
+    "originalPrice": 12999,
+    "rating": 4.7,
+    "reviewCount": 2010,
+    "badge": "sale",
+    "description": "True HEPA H13 filtration removes 99.97% of airborne allergens, pollen, dust, and pet dander. Ultra-quiet sleep mode and real-time air quality ring.",
+    "tags": [
+      "H13 HEPA",
+      "99.97% Allergen Removal",
+      "Silent 24dB",
+      "Smart Sensor"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "3-stage True HEPA H13 filtration",
+      "Covers rooms up to 450 sq ft",
+      "Whisper-quiet sleep mode at 24dB",
+      "Real-time color air quality sensor",
+      "Timer with 2h, 4h, and 8h settings",
+      "Energy Star certified efficiency"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "DYSON",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "DYSON",
+      "Model": "ZenBreeze Silent HEPA Air Purifier",
+      "Category": "HOME",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 31,
-    name: 'HydroGlow Ceramic Self-Watering Planters',
-    category: 'home',
-    price: 2499,
-    originalPrice: 3499,
-    rating: 4.6,
-    reviewCount: 890,
-    badge: 'new',
-    description: 'Set of 3 modern ceramic planters equipped with sub-irrigation reservoir technology that keeps your indoor plants hydrated for up to two weeks.',
-    tags: ['Self-Watering', 'Set of 3', 'Hand-Glazed Ceramic', 'Indoor Plants'],
-    features: [
-      'Sub-irrigation self-watering reservoir',
-      'Set of 3 sizes (4", 6", 8")',
-      'Hand-glazed matte minimalist finish',
-      'Prevents over and under-watering',
-      'Removable drainage plug option',
-      'High-fired durable stoneware',
+    "id": 31,
+    "name": "HydroGlow Ceramic Self-Watering Planters",
+    "category": "home",
+    "price": 2499,
+    "originalPrice": 3499,
+    "rating": 4.6,
+    "reviewCount": 890,
+    "badge": "new",
+    "description": "Set of 3 modern ceramic planters equipped with sub-irrigation reservoir technology that keeps your indoor plants hydrated for up to two weeks.",
+    "tags": [
+      "Self-Watering",
+      "Set of 3",
+      "Hand-Glazed Ceramic",
+      "Indoor Plants"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Sub-irrigation self-watering reservoir",
+      "Set of 3 sizes (4\", 6\", 8\")",
+      "Hand-glazed matte minimalist finish",
+      "Prevents over and under-watering",
+      "Removable drainage plug option",
+      "High-fired durable stoneware"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "CHUMBAK",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "CHUMBAK",
+      "Model": "HydroGlow Ceramic Self-Watering Planters",
+      "Category": "HOME",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 32,
-    name: 'ApexPro Smart Adjustable Dumbbell Set',
-    category: 'sports',
-    price: 19999,
-    originalPrice: 27999,
-    rating: 4.9,
-    reviewCount: 1520,
-    badge: 'hot',
-    description: 'Rapid-dial adjustment system replaces 15 sets of weights in one compact footprint. Adjust from 2.5 kg to 24 kg per dumbbell in seconds.',
-    tags: ['2.5–24kg', 'Rapid Dial', 'Replaces 15 Weights', 'Anti-Slip Grip'],
-    features: [
-      'Rapid dial weight selection',
-      'Adjusts from 2.5kg to 24kg per dumbbell',
-      'Space-saving compact design',
-      'Textured ergonomic knurled handle',
-      'Heavy-duty steel weight plates',
-      'Custom storage docking trays included',
+    "id": 32,
+    "name": "ApexPro Smart Adjustable Dumbbell Set",
+    "category": "sports",
+    "price": 19999,
+    "originalPrice": 27999,
+    "rating": 4.9,
+    "reviewCount": 1520,
+    "badge": "hot",
+    "description": "Rapid-dial adjustment system replaces 15 sets of weights in one compact footprint. Adjust from 2.5 kg to 24 kg per dumbbell in seconds.",
+    "tags": [
+      "2.5–24kg",
+      "Rapid Dial",
+      "Replaces 15 Weights",
+      "Anti-Slip Grip"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Rapid dial weight selection",
+      "Adjusts from 2.5kg to 24kg per dumbbell",
+      "Space-saving compact design",
+      "Textured ergonomic knurled handle",
+      "Heavy-duty steel weight plates",
+      "Custom storage docking trays included"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "BOWFLEX",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "BOWFLEX",
+      "Model": "ApexPro Smart Adjustable Dumbbell Set",
+      "Category": "SPORTS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 33,
-    name: 'TrailBlazer Carbon Fiber Trekking Poles',
-    category: 'sports',
-    price: 3499,
-    originalPrice: 4799,
-    rating: 4.7,
-    reviewCount: 980,
-    badge: 'limited',
-    description: 'Ultra-lightweight 100% carbon fiber trekking poles with ergonomic natural cork grips, quick flick-lock height adjustment, and all-terrain accessories.',
-    tags: ['100% Carbon Fiber', 'Natural Cork Grip', 'Flick Lock', 'Ultra-Light 210g'],
-    features: [
-      '100% high-density carbon fiber shafts',
-      'Weight: only 210g per pole',
-      'Moisture-wicking natural cork grips',
-      'Quick-cam aluminum flip locks',
-      'Includes mud baskets, snow baskets & rubber tips',
-      'Collapses to 62cm for easy travel',
+    "id": 33,
+    "name": "TrailBlazer Carbon Fiber Trekking Poles",
+    "category": "sports",
+    "price": 3499,
+    "originalPrice": 4799,
+    "rating": 4.7,
+    "reviewCount": 980,
+    "badge": "limited",
+    "description": "Ultra-lightweight 100% carbon fiber trekking poles with ergonomic natural cork grips, quick flick-lock height adjustment, and all-terrain accessories.",
+    "tags": [
+      "100% Carbon Fiber",
+      "Natural Cork Grip",
+      "Flick Lock",
+      "Ultra-Light 210g"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "100% high-density carbon fiber shafts",
+      "Weight: only 210g per pole",
+      "Moisture-wicking natural cork grips",
+      "Quick-cam aluminum flip locks",
+      "Includes mud baskets, snow baskets & rubber tips",
+      "Collapses to 62cm for easy travel"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "BLACK DIAMOND",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "BLACK DIAMOND",
+      "Model": "TrailBlazer Carbon Fiber Trekking Poles",
+      "Category": "SPORTS",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 34,
-    name: "L'Éclat 24K Gold Rejuvenating Night Serum",
-    category: 'beauty',
-    price: 4299,
-    originalPrice: 5999,
-    rating: 4.8,
-    reviewCount: 2470,
-    badge: 'hot',
-    description: 'Luxury anti-aging nighttime elixir infused with pure 24K gold flakes, multi-peptide complex, and botanical squalane to restore elasticity and firmness.',
-    tags: ['24K Gold Flakes', 'Multi-Peptides', 'Squalane', 'Anti-Aging'],
-    features: [
-      'Real 24K gold nano-flakes for collagen support',
-      'Matrixyl 3000 multi-peptide complex',
-      'Plant-derived olive squalane base',
-      'Visibly diminishes fine lines and wrinkles',
-      'Fast-absorbing non-sticky texture',
-      'Dermatologist tested & cruelty-free',
+    "id": 34,
+    "name": "L'Éclat 24K Gold Rejuvenating Night Serum",
+    "category": "beauty",
+    "price": 4299,
+    "originalPrice": 5999,
+    "rating": 4.8,
+    "reviewCount": 2470,
+    "badge": "hot",
+    "description": "Luxury anti-aging nighttime elixir infused with pure 24K gold flakes, multi-peptide complex, and botanical squalane to restore elasticity and firmness.",
+    "tags": [
+      "24K Gold Flakes",
+      "Multi-Peptides",
+      "Squalane",
+      "Anti-Aging"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1608248597359-25f0a207ba83?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "Real 24K gold nano-flakes for collagen support",
+      "Matrixyl 3000 multi-peptide complex",
+      "Plant-derived olive squalane base",
+      "Visibly diminishes fine lines and wrinkles",
+      "Fast-absorbing non-sticky texture",
+      "Dermatologist tested & cruelty-free"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1608248597359-25f0a207ba83?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "ESTÉE LAUDER",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "ESTÉE LAUDER",
+      "Model": "L'Éclat 24K Gold Rejuvenating Night Serum",
+      "Category": "BEAUTY",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 35,
-    name: 'SonicGlow Deep Cleansing Facial Brush',
-    category: 'beauty',
-    price: 2699,
-    originalPrice: 3799,
-    rating: 4.7,
-    reviewCount: 1830,
-    badge: 'new',
-    description: 'Ultra-hygienic sonic silicone facial cleanser delivering 8,000 pulses per minute across 12 intensity settings. 100% waterproof with wireless charging.',
-    tags: ['Sonic Pulses', 'Hygienic Silicone', '12 Speeds', 'IPX7 Waterproof'],
-    features: [
-      '8,000 sonic transdermal pulsations per minute',
-      'Medical-grade ultra-soft antibacterial silicone',
-      '12 adjustable intensity vibration levels',
-      'IPX7 100% shower-safe waterproof rating',
-      'Magnetic inductive charging dock',
-      'Up to 300 uses on a single full charge',
+    "id": 35,
+    "name": "SonicGlow Deep Cleansing Facial Brush",
+    "category": "beauty",
+    "price": 2699,
+    "originalPrice": 3799,
+    "rating": 4.7,
+    "reviewCount": 1830,
+    "badge": "new",
+    "description": "Ultra-hygienic sonic silicone facial cleanser delivering 8,000 pulses per minute across 12 intensity settings. 100% waterproof with wireless charging.",
+    "tags": [
+      "Sonic Pulses",
+      "Hygienic Silicone",
+      "12 Speeds",
+      "IPX7 Waterproof"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "8,000 sonic transdermal pulsations per minute",
+      "Medical-grade ultra-soft antibacterial silicone",
+      "12 adjustable intensity vibration levels",
+      "IPX7 100% shower-safe waterproof rating",
+      "Magnetic inductive charging dock",
+      "Up to 300 uses on a single full charge"
     ],
+    "images": [
+      "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "FOREO",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "FOREO",
+      "Model": "SonicGlow Deep Cleansing Facial Brush",
+      "Category": "BEAUTY",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
   },
   {
-    id: 36,
-    name: 'VelvetAura French Vanilla Scented Candle',
-    category: 'beauty',
-    price: 1499,
-    originalPrice: 1999,
-    rating: 4.9,
-    reviewCount: 3180,
-    badge: 'sale',
-    description: 'Hand-poured 100% natural soy wax candle scented with Madagascar vanilla, tonka bean, and warm amber. Clean-burning wooden wick with 60-hour burn time.',
-    tags: ['Natural Soy Wax', 'Wooden Wick', '60hr Burn Time', 'Madagascar Vanilla'],
-    features: [
-      '100% pure organic soy wax',
-      'Crackling natural wood wick',
-      'Madagascar vanilla & warm amber scent notes',
-      'Up to 60 hours of clean burn time',
-      'Reusable amber glass apothecary jar',
-      'Free from parabens, paraffin, and phthalates',
+    "id": 36,
+    "name": "VelvetAura French Vanilla Scented Candle",
+    "category": "beauty",
+    "price": 1499,
+    "originalPrice": 1999,
+    "rating": 4.9,
+    "reviewCount": 3180,
+    "badge": "sale",
+    "description": "Hand-poured 100% natural soy wax candle scented with Madagascar vanilla, tonka bean, and warm amber. Clean-burning wooden wick with 60-hour burn time.",
+    "tags": [
+      "Natural Soy Wax",
+      "Wooden Wick",
+      "60hr Burn Time",
+      "Madagascar Vanilla"
     ],
-    images: [
-      'https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80',
+    "features": [
+      "100% pure organic soy wax",
+      "Crackling natural wood wick",
+      "Madagascar vanilla & warm amber scent notes",
+      "Up to 60 hours of clean burn time",
+      "Reusable amber glass apothecary jar",
+      "Free from parabens, paraffin, and phthalates"
     ],
-  },
+    "images": [
+      "https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "BATH & BODY WORKS",
+    "sizes": null,
+    "colors": [
+      "Black",
+      "Silver",
+      "Navy Blue"
+    ],
+    "specifications": {
+      "Brand": "BATH & BODY WORKS",
+      "Model": "VelvetAura French Vanilla Scented Candle",
+      "Category": "BEAUTY",
+      "Warranty": "1 Year Domestic Warranty",
+      "Country of Origin": "India"
+    },
+    "assured": true,
+    "deliveryDays": 1
+  }
 ];
 
 export const formatPrice = (price) =>
