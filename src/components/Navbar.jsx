@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
+import BrandLogo from './BrandLogo';
 
 export default function Navbar() {
   const { cartCount, wishlist, setCartOpen } = useShop();
@@ -15,9 +16,8 @@ export default function Navbar() {
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       {/* Logo */}
-      <Link to="/" className="nav-logo">
-        <div className="nav-logo-icon">⚡</div>
-        <span>ShopWave</span>
+      <Link to="/" className="nav-logo" style={{ textDecoration: 'none' }}>
+        <BrandLogo size="md" />
       </Link>
 
       {/* Links */}

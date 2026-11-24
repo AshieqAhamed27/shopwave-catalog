@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import BrandLogo from './BrandLogo';
 
 export default function Footer() {
   return (
@@ -7,9 +8,8 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand */}
           <div>
-            <div className="nav-logo" style={{ marginBottom: '0.75rem' }}>
-              <div className="nav-logo-icon">⚡</div>
-              <span>ShopWave</span>
+            <div style={{ marginBottom: '0.85rem' }}>
+              <BrandLogo size="lg" />
             </div>
             <p className="footer-brand-desc">
               A premium e-commerce product catalog built with React, Vite, and
