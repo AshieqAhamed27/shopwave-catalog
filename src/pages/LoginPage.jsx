@@ -95,7 +95,7 @@ export default function LoginPage() {
           <tbody>
             ${(order.items || []).map(it => `
               <tr>
-                <td><strong>${it.name}</strong></td>
+                <td><strong>${it.name}${it.size ? ` <span style="color: #c5a880;">(Size: ${it.size})</span>` : ''}</strong></td>
                 <td style="text-align: center;">${it.qty || it.quantity || 1}</td>
                 <td style="text-align: right;">₹${Number(it.price).toLocaleString('en-IN')}</td>
                 <td style="text-align: right;">₹${((Number(it.price) || 0) * (Number(it.qty || it.quantity) || 1)).toLocaleString('en-IN')}</td>
@@ -215,7 +215,10 @@ export default function LoginPage() {
                         {(ord.items || []).map((it, idx) => (
                           <div key={idx} className="order-item-mini-row">
                             <span className="item-qty-badge">{it.qty || it.quantity || 1}x</span>
-                            <span className="item-name-text">{it.name}</span>
+                            <span className="item-name-text">
+                              {it.name}
+                              {it.size && <span style={{ color: 'var(--accent-gold)', marginLeft: '6px', fontSize: '0.78rem' }}>({it.size})</span>}
+                            </span>
                             <span className="item-price-text">₹{Number(it.price).toLocaleString('en-IN')}</span>
                           </div>
                         ))}

@@ -34,41 +34,49 @@ export default function CartDrawer() {
               </button>
             </div>
           ) : (
-            cart.map(item => (
-              <div className="cart-item" key={item.id} style={{ borderBottom: '1px solid var(--border-subtle)', padding: '1.25rem 1.5rem' }}>
-                <img
-                  src={item.images?.[0] || './placeholder.svg'}
-                  alt={item.name}
-                  className="cart-item-image"
-                  style={{ width: '80px', height: '80px', objectFit: 'cover', background: '#0a0a0a', border: '1px solid var(--border-subtle)' }}
-                  onError={(e) => {
-                    e.currentTarget.onerror = null;
-                    e.currentTarget.src = './placeholder.svg';
-                  }}
-                />
-                <div className="cart-item-info">
-                  <p className="cart-item-name" style={{ fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: '0.95rem', color: '#ffffff' }}>
-                    {item.name}
-                  </p>
-                  <p className="cart-item-price" style={{ color: 'var(--gold-primary)', fontWeight: 700, fontSize: '0.95rem' }}>
-                    {formatPrice(item.price)}
-                  </p>
-                  <div className="cart-item-controls" style={{ marginTop: '0.5rem' }}>
-                    <button className="qty-btn" onClick={() => updateQty(item.id, -1)} aria-label="Decrease quantity">−</button>
-                    <span className="qty-value">{item.qty}</span>
-                    <button className="qty-btn" onClick={() => updateQty(item.id, 1)} aria-label="Increase quantity">+</button>
-                    <button
-                      className="cart-item-remove"
-                      onClick={() => removeFromCart(item.id)}
-                      title="Remove piece"
-                      aria-label="Remove piece"
-                    >
-                      ✕
-                    </button>
+            cart.map(item => {
+              const itemKey = item.cartItemId || item.id;
+              return (
+                <div className="cart-item" key={itemKey} style={{ borderBottom: '1px solid var(--border-subtle)', padding: '1.25rem 1.5rem' }}>
+                  <img
+                    src={item.images?.[0] || './placeholder.svg'}
+                    alt={item.name}
+                    className="cart-item-image"
+                    style={{ width: '80px', height: '80px', objectFit: 'cover', background: '#0a0a0a', border: '1px solid var(--border-subtle)' }}
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = './placeholder.svg';
+                    }}
+                  />
+                  <div className="cart-item-info">
+                    <p className="cart-item-name" style={{ fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: '0.95rem', color: '#ffffff' }}>
+                      {item.name}
+                    </p>
+                    {item.size && (
+                      <p style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.65)', margin: '0.2rem 0' }}>
+                        Size: <strong style={{ color: 'var(--gold-primary)', fontWeight: 700 }}>{item.size}</strong>
+                      </p>
+                    )}
+                    <p className="cart-item-price" style={{ color: 'var(--gold-primary)', fontWeight: 700, fontSize: '0.95rem' }}>
+                      {formatPrice(item.price)}
+                    </p>
+                    <div className="cart-item-controls" style={{ marginTop: '0.5rem' }}>
+                      <button className="qty-btn" onClick={() => updateQty(itemKey, -1)} aria-label="Decrease quantity">−</button>
+                      <span className="qty-value">{item.qty}</span>
+                      <button className="qty-btn" onClick={() => updateQty(itemKey, 1)} aria-label="Increase quantity">+</button>
+                      <button
+                        className="cart-item-remove"
+                        onClick={() => removeFromCart(itemKey)}
+                        title="Remove piece"
+                        aria-label="Remove piece"
+                      >
+                        ✕
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))
+              );
+            })
           )}
         </div>
 

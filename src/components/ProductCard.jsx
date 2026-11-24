@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
-import { formatPrice } from '../data/products';
+import { formatPrice, getProductPriceRange } from '../data/products';
 
 export default function ProductCard({ product }) {
   const { addToCart, toggleWishlist, isInWishlist } = useShop();
   const navigate = useNavigate();
   const inWishlist = isInWishlist(product.id);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  const priceRange = getProductPriceRange(product);
 
   const handleCardClick = (e) => {
     if (e.target.closest('.gucci-card-wishlist') || e.target.closest('.gucci-quick-bag-btn') || e.target.closest('.gucci-angle-dot')) return;
@@ -81,7 +83,14 @@ export default function ProductCard({ product }) {
           <button
             type="button"
             className="gucci-quick-bag-btn"
-            onClick={(e) => { e.stopPropagation(); addToCart(product); }}
+            onClick={(e) => {
+              e.stopPropagation();
+              addToCart({
+                ...product,
+                size: product.sizes?.[0] || 'Standard',
+                price: priceRange.min
+              });
+            }}
           >
             + ADD TO BAG
           </button>
@@ -107,17 +116,22 @@ export default function ProductCard({ product }) {
           {product.name}
         </h3>
 
-        {/* Size Availability Preview */}
+        {/* Size Availability Preview with Dynamic Pricing Notice */}
         {product.sizes && product.sizes.length > 0 && (
           <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', marginBottom: '0.5rem', letterSpacing: '0.04em' }}>
             Sizes: <span style={{ color: 'rgba(255,255,255,0.75)' }}>{product.sizes.slice(0, 5).join(' · ')}</span>
+            {priceRange.hasRange && (
+              <span style={{ color: '#c5a059', marginLeft: '5px' }}>• Tiered</span>
+            )}
           </div>
         )}
 
         {/* Real E-Commerce Price with Strike-through & Discount */}
         <div className="gucci-card-price" style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
           <span style={{ color: '#ffffff', fontWeight: 700, fontSize: '1.05rem' }}>
-            {formatPrice(product.price)}
+            {priceRange.hasRange
+              ? `${formatPrice(priceRange.min)} – ${formatPrice(priceRange.max)}`
+              : formatPrice(product.price)}
           </span>
           {product.originalPrice && product.originalPrice > product.price && (
             <>

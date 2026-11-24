@@ -5082,19 +5082,34 @@ body {
 }
 
 .gucci-size-btn {
-  min-width: 52px;
-  height: 42px;
-  padding: 0 10px;
+  min-width: 66px;
+  min-height: 48px;
+  padding: 6px 12px;
   background: #111111;
   border: 1px solid var(--border-subtle);
   color: #ffffff;
-  font-size: 0.82rem;
-  font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2px;
+  border-radius: 4px;
+}
+
+.gucci-size-btn .sz-name {
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.gucci-size-btn .sz-price-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
 }
 
 .gucci-size-btn:hover,
@@ -5102,6 +5117,11 @@ body {
   border-color: var(--gold-primary);
   background: rgba(197, 160, 89, 0.15);
   color: var(--gold-light);
+}
+
+.gucci-size-btn:hover .sz-price-tag,
+.gucci-size-btn.active .sz-price-tag {
+  color: var(--gold-primary);
 }
 
 .gucci-pdp-actions {

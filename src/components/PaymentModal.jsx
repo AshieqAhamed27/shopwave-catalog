@@ -468,7 +468,7 @@ export default function PaymentModal({
                 <tr>
                   <td>${idx + 1}</td>
                   <td>
-                    <strong>${it.name}</strong>
+                    <strong>${it.name}${it.size ? ` <span style="color: #c5a880;">(Size: ${it.size})</span>` : ''}</strong>
                     <div style="color: #6b7280; font-size: 10.5px;">HSN: 620520 • Grade-A Luxury Apparel Spec</div>
                   </td>
                   <td class="text-center">${it.qty || it.quantity || 1}</td>

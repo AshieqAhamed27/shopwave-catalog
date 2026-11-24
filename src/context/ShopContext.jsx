@@ -130,26 +130,41 @@ export function ShopProvider({ children }) {
   // ---- Cart ----
   const addToCart = useCallback((product, qtyToAdd = 1) => {
     const count = typeof qtyToAdd === 'number' && qtyToAdd > 0 ? qtyToAdd : 1;
+    const itemSize = product.size || (product.sizes && product.sizes.length > 0 ? product.sizes[0] : null);
+    const itemPrice = typeof product.price === 'number' ? product.price : (Number(product.price) || 0);
+    const cartItemId = itemSize ? `${product.id}-${itemSize}` : `${product.id}`;
+
     setCart(prev => {
-      const existing = prev.find(item => item.id === product.id);
+      const existing = prev.find(item => (item.cartItemId || item.id) === cartItemId);
       if (existing) {
         return prev.map(item =>
-          item.id === product.id ? { ...item, qty: item.qty + count } : item
+          (item.cartItemId || item.id) === cartItemId
+            ? { ...item, qty: item.qty + count }
+            : item
         );
       }
-      return [...prev, { ...product, qty: count }];
+      return [...prev, {
+        ...product,
+        cartItemId,
+        size: itemSize,
+        price: itemPrice,
+        qty: count
+      }];
     });
-    addToast(`${product.name} added to cart! 🛍️`, 'success');
+    addToast(`${product.name}${itemSize ? ` (${itemSize})` : ''} added to shopping bag! 🛍️`, 'success');
   }, [addToast]);
 
-  const removeFromCart = useCallback((id) => {
-    setCart(prev => prev.filter(item => item.id !== id));
+  const removeFromCart = useCallback((targetKey) => {
+    setCart(prev => prev.filter(item => (item.cartItemId || item.id) !== targetKey && item.id !== targetKey));
   }, []);
 
-  const updateQty = useCallback((id, delta) => {
+  const updateQty = useCallback((targetKey, delta) => {
     setCart(prev =>
       prev
-        .map(item => item.id === id ? { ...item, qty: item.qty + delta } : item)
+        .map(item => (item.cartItemId || item.id) === targetKey || item.id === targetKey
+          ? { ...item, qty: item.qty + delta }
+          : item
+        )
         .filter(item => item.qty > 0)
     );
   }, []);

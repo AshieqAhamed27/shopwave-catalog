@@ -43,7 +43,14 @@ export const products = [
       "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "S": 2499,
+      "M": 2699,
+      "L": 2899,
+      "XL": 3099,
+      "XXL": 3299
+    }
   },
   {
     "id": 2,
@@ -89,7 +96,14 @@ export const products = [
       "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 2
+    "deliveryDays": 2,
+    "sizePrices": {
+      "38": 4499,
+      "39": 4699,
+      "40": 4899,
+      "42": 5099,
+      "44": 5299
+    }
   },
   {
     "id": 3,
@@ -134,7 +148,14 @@ export const products = [
       "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "38": 2799,
+      "39": 2999,
+      "40": 3199,
+      "42": 3399,
+      "44": 3599
+    }
   },
   {
     "id": 4,
@@ -179,7 +200,14 @@ export const products = [
       "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 2
+    "deliveryDays": 2,
+    "sizePrices": {
+      "S": 2999,
+      "M": 3199,
+      "L": 3399,
+      "XL": 3599,
+      "XXL": 3799
+    }
   },
   {
     "id": 5,
@@ -223,7 +251,14 @@ export const products = [
       "https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "S": 3299,
+      "M": 3499,
+      "L": 3699,
+      "XL": 3899,
+      "XXL": 4099
+    }
   },
   {
     "id": 6,
@@ -268,7 +303,14 @@ export const products = [
       "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "30": 3499,
+      "32": 3699,
+      "34": 3899,
+      "36": 4099,
+      "38": 4299
+    }
   },
   {
     "id": 7,
@@ -313,7 +355,14 @@ export const products = [
       "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "30": 2699,
+      "32": 2899,
+      "34": 3099,
+      "36": 3299,
+      "38": 3499
+    }
   },
   {
     "id": 8,
@@ -357,7 +406,14 @@ export const products = [
       "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 2
+    "deliveryDays": 2,
+    "sizePrices": {
+      "28": 3199,
+      "30": 3399,
+      "32": 3599,
+      "34": 3799,
+      "36": 3999
+    }
   },
   {
     "id": 9,
@@ -401,7 +457,14 @@ export const products = [
       "https://images.unsplash.com/photo-1542574621-e088a4464f7e?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "30": 4999,
+      "32": 5199,
+      "34": 5399,
+      "36": 5599,
+      "38": 5799
+    }
   },
   {
     "id": 10,
@@ -445,7 +508,14 @@ export const products = [
       "https://images.unsplash.com/photo-1722310752951-4d459d28c678?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "S": 1299,
+      "M": 1449,
+      "L": 1599,
+      "XL": 1749,
+      "XXL": 1899
+    }
   },
   {
     "id": 11,
@@ -489,7 +559,14 @@ export const products = [
       "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "S": 3999,
+      "M": 4149,
+      "L": 4299,
+      "XL": 4449,
+      "XXL": 4599
+    }
   },
   {
     "id": 12,
@@ -533,7 +610,14 @@ export const products = [
       "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "S": 1699,
+      "M": 1849,
+      "L": 1999,
+      "XL": 2149,
+      "XXL": 2299
+    }
   },
   {
     "id": 13,
@@ -577,7 +661,14 @@ export const products = [
       "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "S": 1499,
+      "M": 1649,
+      "L": 1799,
+      "XL": 1949,
+      "XXL": 2099
+    }
   },
   {
     "id": 14,
@@ -621,7 +712,14 @@ export const products = [
       "https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "S": 2999,
+      "M": 3149,
+      "L": 3299,
+      "XL": 3449,
+      "XXL": 3599
+    }
   },
   {
     "id": 15,
@@ -666,7 +764,14 @@ export const products = [
       "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "S": 8999,
+      "M": 9499,
+      "L": 9999,
+      "XL": 10499,
+      "XXL": 10999
+    }
   },
   {
     "id": 16,
@@ -710,7 +815,13 @@ export const products = [
       "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 2
+    "deliveryDays": 2,
+    "sizePrices": {
+      "38R": 9999,
+      "40R": 10499,
+      "42R": 10999,
+      "44R": 11499
+    }
   },
   {
     "id": 17,
@@ -752,7 +863,13 @@ export const products = [
       "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "S": 6499,
+      "M": 6999,
+      "L": 7499,
+      "XL": 7999
+    }
   },
   {
     "id": 18,
@@ -795,7 +912,14 @@ export const products = [
       "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "UK 7": 3999,
+      "UK 8": 4199,
+      "UK 9": 4399,
+      "UK 10": 4599,
+      "UK 11": 4799
+    }
   },
   {
     "id": 19,
@@ -839,7 +963,14 @@ export const products = [
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "UK 7": 4499,
+      "UK 8": 4699,
+      "UK 9": 4899,
+      "UK 10": 5099,
+      "UK 11": 5299
+    }
   },
   {
     "id": 20,
@@ -882,7 +1013,14 @@ export const products = [
       "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 2
+    "deliveryDays": 2,
+    "sizePrices": {
+      "UK 7": 3799,
+      "UK 8": 3999,
+      "UK 9": 4199,
+      "UK 10": 4399,
+      "UK 11": 4599
+    }
   },
   {
     "id": 21,
@@ -926,7 +1064,14 @@ export const products = [
       "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "UK 7": 5499,
+      "UK 8": 5899,
+      "UK 9": 6299,
+      "UK 10": 6699,
+      "UK 11": 7099
+    }
   },
   {
     "id": 22,
@@ -970,7 +1115,14 @@ export const products = [
       "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "UK 7": 4999,
+      "UK 8": 5199,
+      "UK 9": 5399,
+      "UK 10": 5599,
+      "UK 11": 5799
+    }
   },
   {
     "id": 23,
@@ -1013,7 +1165,14 @@ export const products = [
       "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "UK 7": 5999,
+      "UK 8": 6399,
+      "UK 9": 6799,
+      "UK 10": 7199,
+      "UK 11": 7599
+    }
   },
   {
     "id": 24,
@@ -1057,7 +1216,14 @@ export const products = [
       "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "32": 1799,
+      "34": 1949,
+      "36": 2099,
+      "38": 2249,
+      "40": 2399
+    }
   },
   {
     "id": 25,
@@ -1097,7 +1263,10 @@ export const products = [
       "https://images.unsplash.com/photo-1624538000860-24716b9050f2?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "One Size": 1499
+    }
   },
   {
     "id": 26,
@@ -1138,7 +1307,10 @@ export const products = [
       "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "40mm": 7999
+    }
   },
   {
     "id": 27,
@@ -1178,7 +1350,10 @@ export const products = [
       "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "Standard Fit": 2199
+    }
   },
   {
     "id": 28,
@@ -1218,7 +1393,10 @@ export const products = [
       "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "24L Capacity": 2899
+    }
   },
   {
     "id": 29,
@@ -1258,7 +1436,10 @@ export const products = [
       "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "750ml": 1199
+    }
   },
   {
     "id": 30,
@@ -1298,7 +1479,10 @@ export const products = [
       "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
-    "deliveryDays": 1
+    "deliveryDays": 1,
+    "sizePrices": {
+      "Adjustable Snapback": 899
+    }
   }
 ];
 
@@ -1341,5 +1525,54 @@ export const categories = [
 ];
 
 export function formatPrice(price) {
-  return '₹' + price.toLocaleString('en-IN');
+  return '₹' + Number(price || 0).toLocaleString('en-IN');
+}
+
+/**
+ * Get dynamic price based on selected size
+ */
+export function getSizePrice(product, size) {
+  if (!product) return 0;
+  if (product.sizePrices && size && product.sizePrices[size] !== undefined) {
+    return product.sizePrices[size];
+  }
+  const base = Number(product.price) || 0;
+  if (!size || !Array.isArray(product.sizes) || product.sizes.length <= 1) {
+    return base;
+  }
+  const idx = product.sizes.indexOf(size);
+  if (idx <= 0) return base;
+
+  let step = 200;
+  if (product.category === 'outerwear' || base >= 8000) step = 500;
+  else if (base >= 5000) step = 400;
+  else if (product.category === 'footwear') step = 200;
+  else if (product.category === 'tshirts' || base < 2000) step = 150;
+  else step = 200;
+
+  return base + (idx * step);
+}
+
+/**
+ * Get original discounted price scaled to size
+ */
+export function getSizeOriginalPrice(product, size) {
+  if (!product || !product.originalPrice) return null;
+  const currentPrice = getSizePrice(product, size);
+  const diff = currentPrice - (Number(product.price) || 0);
+  return (Number(product.originalPrice) || 0) + diff;
+}
+
+/**
+ * Get min and max price range across all available sizes
+ */
+export function getProductPriceRange(product) {
+  if (!product) return { min: 0, max: 0, hasRange: false };
+  if (!Array.isArray(product.sizes) || product.sizes.length <= 1) {
+    const p = Number(product.price) || 0;
+    return { min: p, max: p, hasRange: false };
+  }
+  const min = getSizePrice(product, product.sizes[0]);
+  const max = getSizePrice(product, product.sizes[product.sizes.length - 1]);
+  return { min, max, hasRange: min !== max };
 }

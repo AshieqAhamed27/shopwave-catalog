@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { products, formatPrice } from '../data/products';
+import { products, formatPrice, getSizePrice, getSizeOriginalPrice } from '../data/products';
 import { useShop } from '../context/ShopContext';
 import ProductCard from '../components/ProductCard';
 import PaymentModal from '../components/PaymentModal';
@@ -43,8 +43,12 @@ export default function ProductDetailPage() {
   const currentColor = selectedColor || (product.colors ? product.colors[0] : null);
   const currentSize = selectedSize || (product.sizes ? product.sizes[0] : null);
 
-  const discountPercent = product.originalPrice && product.originalPrice > product.price
-    ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+  // Dynamic price based on selected size
+  const currentPrice = getSizePrice(product, currentSize);
+  const currentOriginalPrice = getSizeOriginalPrice(product, currentSize);
+
+  const discountPercent = currentOriginalPrice && currentOriginalPrice > currentPrice
+    ? Math.round(((currentOriginalPrice - currentPrice) / currentOriginalPrice) * 100)
     : null;
 
   const handleMouseMove = (e) => {
@@ -64,8 +68,22 @@ export default function ProductDetailPage() {
     setZoomStyle({ display: 'none' });
   };
 
+  const handleAddToCart = () => {
+    addToCart({
+      ...product,
+      size: currentSize,
+      price: currentPrice,
+      originalPrice: currentOriginalPrice
+    });
+  };
+
   const handleBuyNow = () => {
-    addToCart(product);
+    addToCart({
+      ...product,
+      size: currentSize,
+      price: currentPrice,
+      originalPrice: currentOriginalPrice
+    });
     setIsPaymentOpen(true);
   };
 
@@ -168,20 +186,25 @@ export default function ProductDetailPage() {
 
               <h1 className="gucci-pdp-title">{product.name}</h1>
 
-              {/* Price row with original price and discount */}
+              {/* Price row with dynamic size-based price, strike-through, and discount */}
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.85rem', flexWrap: 'wrap', marginTop: '0.5rem' }}>
                 <div className="gucci-pdp-price" style={{ margin: 0 }}>
-                  {formatPrice(product.price)}
+                  {formatPrice(currentPrice)}
                 </div>
-                {product.originalPrice && product.originalPrice > product.price && (
+                {currentOriginalPrice && currentOriginalPrice > currentPrice && (
                   <>
                     <span style={{ textDecoration: 'line-through', color: 'rgba(255,255,255,0.45)', fontSize: '1.15rem' }}>
-                      {formatPrice(product.originalPrice)}
+                      {formatPrice(currentOriginalPrice)}
                     </span>
                     <span style={{ color: '#4ade80', fontSize: '0.9rem', fontWeight: 700, background: 'rgba(74, 222, 128, 0.1)', padding: '2px 8px', borderRadius: '4px' }}>
                       {discountPercent}% OFF
                     </span>
                   </>
+                )}
+                {product.sizes && product.sizes.length > 1 && currentPrice !== product.price && (
+                  <span style={{ fontSize: '0.75rem', color: '#c5a059', background: 'rgba(197, 160, 89, 0.15)', border: '1px solid rgba(197, 160, 89, 0.3)', padding: '3px 8px', borderRadius: '3px', fontWeight: 600 }}>
+                    Size {currentSize}: +₹{(currentPrice - product.price).toLocaleString('en-IN')}
+                  </span>
                 )}
               </div>
 
@@ -211,27 +234,47 @@ export default function ProductDetailPage() {
               </div>
             )}
 
-            {/* Size Options (Shirts, Pants, T-Shirts, Shoes) */}
+            {/* Size Options with Dynamic Pricing (Shirts, Pants, T-Shirts, Shoes) */}
             {product.sizes && product.sizes.length > 0 && (
               <div className="gucci-variant-block">
                 <div className="variant-title-row">
                   <span className="variant-title">
                     SELECT SIZE: <strong style={{ color: '#c5a059' }}>{currentSize}</strong>
+                    {currentPrice !== product.price && (
+                      <span style={{ marginLeft: '8px', fontSize: '0.78rem', color: 'rgba(255,255,255,0.6)', fontWeight: 400 }}>
+                        ({formatPrice(currentPrice)})
+                      </span>
+                    )}
                   </span>
                   <span className="gucci-size-guide-link">Size Chart & Fit Guide</span>
                 </div>
                 <div className="gucci-size-grid">
-                  {product.sizes.map((sz) => (
-                    <button
-                      key={sz}
-                      type="button"
-                      className={`gucci-size-btn${currentSize === sz ? ' active' : ''}`}
-                      onClick={() => setSelectedSize(sz)}
-                    >
-                      {sz}
-                    </button>
-                  ))}
+                  {product.sizes.map((sz) => {
+                    const szPrice = getSizePrice(product, sz);
+                    const isSelected = currentSize === sz;
+                    return (
+                      <button
+                        key={sz}
+                        type="button"
+                        className={`gucci-size-btn${isSelected ? ' active' : ''}`}
+                        onClick={() => setSelectedSize(sz)}
+                        title={`Select size ${sz} - ${formatPrice(szPrice)}`}
+                      >
+                        <span className="sz-name">{sz}</span>
+                        {product.sizes.length > 1 && (
+                          <span className="sz-price-tag">
+                            {formatPrice(szPrice)}
+                          </span>
+                        )}
+                      </button>
+                    );
+                  })}
                 </div>
+                {product.sizes.length > 1 && (
+                  <div style={{ fontSize: '0.74rem', color: 'rgba(255,255,255,0.45)', marginTop: '0.5rem', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                    <span>✦</span> Price adjusts automatically based on selected size.
+                  </div>
+                )}
               </div>
             )}
 
@@ -241,9 +284,9 @@ export default function ProductDetailPage() {
                 type="button"
                 className="btn-gucci-solid-lg"
                 id={`detail-add-cart-${product.id}`}
-                onClick={() => addToCart(product)}
+                onClick={handleAddToCart}
               >
-                ADD TO SHOPPING BAG
+                ADD TO SHOPPING BAG • {formatPrice(currentPrice)}
               </button>
               <button
                 type="button"
@@ -251,7 +294,7 @@ export default function ProductDetailPage() {
                 id={`detail-buy-now-${product.id}`}
                 onClick={handleBuyNow}
               >
-                BUY NOW WITH 1-CLICK
+                BUY NOW WITH 1-CLICK • {formatPrice(currentPrice)}
               </button>
             </div>
 
