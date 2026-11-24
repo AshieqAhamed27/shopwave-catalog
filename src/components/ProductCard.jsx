@@ -8,16 +8,14 @@ export default function ProductCard({ product }) {
   const navigate = useNavigate();
   const inWishlist = isInWishlist(product.id);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
 
   const handleCardClick = (e) => {
     if (e.target.closest('.gucci-card-wishlist') || e.target.closest('.gucci-quick-bag-btn') || e.target.closest('.gucci-angle-dot')) return;
     navigate(`/products/${product.id}`);
   };
 
-  const currentImage = (isHovered && product.images && product.images.length > 1)
-    ? product.images[activeImageIndex === 0 ? 1 : activeImageIndex]
-    : (product.images && product.images[activeImageIndex]) || product.images?.[0] || './placeholder.svg';
+  // Fixed: Do NOT flip image on card hover. Stays consistent on the chosen packshot.
+  const currentImage = (product.images && product.images[activeImageIndex]) || product.images?.[0] || './placeholder.svg';
 
   const discountPercent = product.originalPrice && product.originalPrice > product.price
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
@@ -27,8 +25,6 @@ export default function ProductCard({ product }) {
     <article
       className="gucci-luxury-card"
       onClick={handleCardClick}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => { setIsHovered(false); setActiveImageIndex(0); }}
       role="button"
       tabIndex={0}
       aria-label={product.name}
@@ -72,8 +68,7 @@ export default function ProductCard({ product }) {
               <button
                 key={idx}
                 type="button"
-                className={`gucci-angle-dot${(activeImageIndex === idx || (isHovered && activeImageIndex === 0 && idx === 1)) ? ' active' : ''}`}
-                onMouseEnter={(e) => { e.stopPropagation(); setActiveImageIndex(idx); }}
+                className={`gucci-angle-dot${activeImageIndex === idx ? ' active' : ''}`}
                 onClick={(e) => { e.stopPropagation(); setActiveImageIndex(idx); }}
                 aria-label={`View angle ${idx + 1}`}
               />

@@ -1,6 +1,1306 @@
-// Product catalog data for ShopWave (Premium Apparel & Lifestyle E-Commerce)
-
-export const FALLBACK_IMAGE = './placeholder.svg';
+export const products = [
+  {
+    "id": 1,
+    "name": "Men's Slim Fit Oxford Cotton Button-Down Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "shirts",
+    "price": 2499,
+    "originalPrice": 3999,
+    "rating": 4.8,
+    "reviewCount": 3820,
+    "badge": "hot",
+    "description": "Classic blue pinpoint Oxford button-down shirt. Tailored from 100% breathable combed long-staple cotton with a neat buttoned collar, spade chest pocket, and curved hem.",
+    "tags": [
+      "Oxford Shirt",
+      "100% Cotton",
+      "Slim Fit",
+      "Button-Down"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue"
+    ],
+    "specifications": {
+      "Fabric": "100% Long-Staple Combed Oxford Cotton",
+      "Weave": "Pinpoint Basketweave",
+      "Collar": "Button-Down with Interlining",
+      "Fit": "Tailored Slim Silhouette",
+      "Wash Care": "Machine Wash Warm, Tumble Dry Low"
+    },
+    "features": [
+      "Heavyweight 6.5 oz breathable long-staple cotton",
+      "Pre-shrunk fabric ensures exact fit after laundering",
+      "Genuine pearl-finish cross-stitched buttons",
+      "Single chest spade pocket with reinforced seams"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 2,
+    "name": "Crisp Cotton Poplin Formal Dress Shirts (3-Color Set)",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "shirts",
+    "price": 4499,
+    "originalPrice": 6999,
+    "rating": 4.9,
+    "reviewCount": 2150,
+    "badge": "new",
+    "description": "A luxury 3-piece wardrobe bundle featuring structured dress shirts in Navy, Crisp White, and Burgundy. Woven from 120-thread-count Egyptian cotton with stay-sharp collars.",
+    "tags": [
+      "Dress Shirt Set",
+      "Bundle",
+      "100% Cotton",
+      "Workwear"
+    ],
+    "sizes": [
+      "38",
+      "39",
+      "40",
+      "42",
+      "44"
+    ],
+    "colors": [
+      "Navy / White / Wine Trio"
+    ],
+    "specifications": {
+      "Fabric": "100% Egyptian Giza Long-Staple Cotton",
+      "Quantity": "3 Pack (Navy, White, Burgundy)",
+      "Collar": "Classic Stiffened Point Collar",
+      "Cuffs": "Two-Button Adjustable Barrel Cuffs",
+      "Wash Care": "Machine Wash Cold, Warm Iron"
+    },
+    "features": [
+      "3 versatile essential colors in one luxury gift box",
+      "Easy-iron finish resists creasing through 12-hour workdays",
+      "Removable brass collar stays included",
+      "Reinforced French seams along shoulder yokes"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 2
+  },
+  {
+    "id": 3,
+    "name": "Men's Tailored White Spread-Collar Dress Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "shirts",
+    "price": 2799,
+    "originalPrice": 4299,
+    "rating": 4.7,
+    "reviewCount": 1640,
+    "badge": "hot",
+    "description": "The quintessential formal white shirt. Crafted with a modern semi-spread collar perfectly calibrated for neckties or open-collar styling under blazers.",
+    "tags": [
+      "White Shirt",
+      "Formal",
+      "Spread Collar",
+      "Tailored"
+    ],
+    "sizes": [
+      "38",
+      "39",
+      "40",
+      "42",
+      "44"
+    ],
+    "colors": [
+      "Bright White"
+    ],
+    "specifications": {
+      "Fabric": "100% 2-Ply Combed Twill Cotton",
+      "Collar": "Semi-Spread Collar with Built-In Stays",
+      "Placket": "Clean French Front Placket",
+      "Occasion": "Black Tie, Weddings, Boardroom Meetings",
+      "Wash Care": "Gentle Machine Wash, Steam Iron"
+    },
+    "features": [
+      "Opaque two-ply weave ensures non-transparent wear",
+      "Split back yoke allows natural shoulder articulation",
+      "Tapered sleeve profile with clean gauntlet buttons"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 4,
+    "name": "Men's Fine Bengal Pinstripe Business Cotton Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "shirts",
+    "price": 2999,
+    "originalPrice": 4599,
+    "rating": 4.8,
+    "reviewCount": 980,
+    "badge": "limited",
+    "description": "Timeless business tailoring. Light blue Bengal micro-stripe woven from silky long-staple cotton poplin. Features clean collar architecture and tapered darts.",
+    "tags": [
+      "Stripe Shirt",
+      "Business",
+      "Poplin",
+      "Tailored"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue / White Stripe"
+    ],
+    "specifications": {
+      "Fabric": "100% Combed Cotton Poplin",
+      "Pattern": "Micro Bengal Pinstripe",
+      "Collar": "Point Collar with Removable Stays",
+      "Fit": "Modern Slim Fit",
+      "Wash Care": "Machine Wash Warm"
+    },
+    "features": [
+      "Silky-smooth mercerized finish with subtle sheen",
+      "Precision stripe matching across placket and pocket",
+      "Double-stitched side gussets with Atelier crest"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 2
+  },
+  {
+    "id": 5,
+    "name": "Executive Pinpoint Poplin Collared Dress Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "shirts",
+    "price": 3299,
+    "originalPrice": 4999,
+    "rating": 4.9,
+    "reviewCount": 1420,
+    "badge": "hot",
+    "description": "Architectural precision in pure white poplin cotton. Designed for high-profile business dinners and formal engagements with stay-crisp collar geometry.",
+    "tags": [
+      "Executive",
+      "Formal Shirt",
+      "100% Cotton",
+      "White"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Classic White"
+    ],
+    "specifications": {
+      "Fabric": "100% High-Thread Pinpoint Cotton Poplin",
+      "Collar": "Structured Cutaway Collar",
+      "Cuffs": "French Convertible Cuffs",
+      "Care": "Professional Laundry Recommended"
+    },
+    "features": [
+      "High thread count provides crisp drape and wrinkle resistance",
+      "Convertible cuffs support both standard buttons and luxury cufflinks",
+      "Hand-turned collar points prevent curling"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 6,
+    "name": "Men's Raw Indigo Straight-Leg Selvedge Denim Jeans",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "pants",
+    "price": 3499,
+    "originalPrice": 5499,
+    "rating": 4.9,
+    "reviewCount": 3100,
+    "badge": "hot",
+    "description": "Authentic dark indigo raw denim jeans. Woven on vintage shuttle looms from 13.5 oz unwashed ring-spun cotton. Features a straight-leg silhouette and copper hardware.",
+    "tags": [
+      "Selvedge Denim",
+      "Raw Jeans",
+      "Indigo",
+      "Straight Leg"
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Deep Indigo Raw"
+    ],
+    "specifications": {
+      "Fabric": "100% Ring-Spun Cotton Denim (13.5 oz)",
+      "Weave": "Right-Hand Twill with Redline Selvedge ID",
+      "Rise": "Mid-Rise Regular Waist",
+      "Closure": "Solid Brass Button Fly",
+      "Wash Care": "Soak inside-out in cold water. Hang dry."
+    },
+    "features": [
+      "Raw unwashed denim develops unique custom fade whiskers over time",
+      "Reinforced pocket bags and hidden back-pocket copper rivets",
+      "Heavyweight chain-stitched hem prevents unraveling"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 7,
+    "name": "Men's Tailored Khaki Stretch Chino Trousers",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "pants",
+    "price": 2699,
+    "originalPrice": 3999,
+    "rating": 4.8,
+    "reviewCount": 2890,
+    "badge": "hot",
+    "description": "The foundation of smart-casual style. High-density combed cotton twill with 3% elastane for effortless comfort during commutes, travel, and meetings.",
+    "tags": [
+      "Chinos",
+      "Khaki Pants",
+      "Stretch Cotton",
+      "Slim Tapered"
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Classic Khaki Tan"
+    ],
+    "specifications": {
+      "Fabric": "97% Combed Long-Staple Cotton, 3% Spandex",
+      "Weave": "Fine Peached Twill",
+      "Fit": "Tailored Slim Tapered Cut",
+      "Pockets": "Two Slanted Front Chino Pockets, Two Welt Back Pockets",
+      "Wash Care": "Machine Wash Cold, Hang Dry"
+    },
+    "features": [
+      "Garment-dyed and enzyme washed for ultra-soft peached hand feel",
+      "Interior stretch curtain waistband prevents gapping",
+      "Reinforced crotch gusset prevents seam blowouts"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 8,
+    "name": "Vintage Wash Straight-Fit Distressed Denim Jeans",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "pants",
+    "price": 3199,
+    "originalPrice": 4799,
+    "rating": 4.7,
+    "reviewCount": 1720,
+    "badge": "new",
+    "description": "Artisanal washed denim featuring natural abrasion whiskering, soft distressed knees, and authentic mid-blue vintage tone. Cut in a timeless straight silhouette.",
+    "tags": [
+      "Distressed Jeans",
+      "Vintage Wash",
+      "Denim Pants",
+      "Casual"
+    ],
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "colors": [
+      "Vintage Sun-Washed Blue"
+    ],
+    "specifications": {
+      "Fabric": "99% Cotton, 1% Elastane (12 oz Denim)",
+      "Finish": "Enzyme Stone Wash with Hand-Scraped Whisker Details",
+      "Rise": "High-Mid Rise",
+      "Closure": "Heavy Duty YKK Metal Zipper Fly"
+    },
+    "features": [
+      "Hand-finished distressed abrasions create distinct character",
+      "Comfort stretch denim allows ease of movement all day",
+      "Classic 5-pocket denim architecture with branded leather patch"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 2
+  },
+  {
+    "id": 9,
+    "name": "Heavyweight 14oz Japanese Selvedge Raw Denim Jeans",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "pants",
+    "price": 4999,
+    "originalPrice": 7499,
+    "rating": 4.9,
+    "reviewCount": 2480,
+    "badge": "limited",
+    "description": "Collector-grade heavyweight Japanese raw selvedge denim. Dip-dyed 16 times in pure indigo dye, developing high-contrast honeycomb fade patterns with wear.",
+    "tags": [
+      "Japanese Denim",
+      "14oz Raw",
+      "Selvedge",
+      "Heritage"
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Deep Dark Indigo"
+    ],
+    "specifications": {
+      "Fabric": "100% Japanese Kurabo Selvedge Cotton (14 oz)",
+      "Loom": "Vintage Toyoda Shuttle Loom",
+      "Edge": "Pink & White Classic Selvedge Ticker",
+      "Hardware": "Custom Tarnished Pewter Doughnut Buttons"
+    },
+    "features": [
+      "Ultra-dense 14 oz unwashed raw denim",
+      "Reinforced heavy cotton pocket bags with stamped lot number",
+      "Chain-stitched waistband and hem using vintage Union Special 43200G"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1542574621-e088a4464f7e?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 10,
+    "name": "Men's Pure Combed Cotton Crewneck White T-Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "tshirts",
+    "price": 1299,
+    "originalPrice": 1999,
+    "rating": 4.8,
+    "reviewCount": 4200,
+    "badge": "hot",
+    "description": "The definitive everyday white tee. Knitted from 220 GSM combed long-staple cotton jersey for zero transparency, clean drape, and a ribbed neck that never sags.",
+    "tags": [
+      "White Tee",
+      "Crewneck",
+      "Heavyweight Cotton",
+      "Essential"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Optic White"
+    ],
+    "specifications": {
+      "Fabric": "100% Combed Compact Cotton (220 GSM)",
+      "Neckline": "1x1 Lycra-Reinforced Ribbed Crewneck",
+      "Fit": "Modern Regular Contour Fit",
+      "Wash Care": "Machine Wash Cold, Dry Flat"
+    },
+    "features": [
+      "Heavyweight 220 GSM knit guarantees completely non-sheer look",
+      "Pre-shrunk treatment retains silhouette washing after washing",
+      "Blind-stitched sleeves and hem for clean minimalist look"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1722310752951-4d459d28c678?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 11,
+    "name": "Piqué Mercerized Cotton Short-Sleeve Polo Shirts (4-Pack)",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "tshirts",
+    "price": 3999,
+    "originalPrice": 5999,
+    "rating": 4.9,
+    "reviewCount": 2890,
+    "badge": "new",
+    "description": "Set of 4 refined piqué cotton polo shirts in Slate Blue, Emerald Green, Coral Peach, and Heather Grey. Engineered with curl-resistant flat-knit collars.",
+    "tags": [
+      "Polo Shirt",
+      "Piqué Cotton",
+      "Multipack",
+      "Smart Casual"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Blue / Green / Coral / Grey Set"
+    ],
+    "specifications": {
+      "Fabric": "100% Mercerized Combed Cotton Piqué",
+      "Bundle": "4 Shirts Included",
+      "Placket": "Three-Button Horn Placket",
+      "Collar": "Rib-Knit Collar with Anti-Roll Construction"
+    },
+    "features": [
+      "Breathable waffle-piqué knit moves heat away from skin",
+      "Mercerization provides silky luster and superior colorfastness",
+      "Side vents reinforced with herringbone tape"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 12,
+    "name": "Streetwear Graphic Heavyweight Cotton T-Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "tshirts",
+    "price": 1699,
+    "originalPrice": 2499,
+    "rating": 4.7,
+    "reviewCount": 1180,
+    "badge": "hot",
+    "description": "Contemporary streetwear tee in warm sand beige. Screen-printed with cobalt blue Japanese graphic artwork using water-based inks that never crack.",
+    "tags": [
+      "Graphic Tee",
+      "Streetwear",
+      "Beige Cotton",
+      "Oversized"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sand / Cobalt Blue"
+    ],
+    "specifications": {
+      "Fabric": "100% Carded Organic Cotton (240 GSM)",
+      "Print": "Zero-Handfeel Water-Based Screenprint",
+      "Fit": "Relaxed Boxy Drop-Shoulder Fit",
+      "Wash Care": "Machine Wash Cold Inside-Out"
+    },
+    "features": [
+      "Heavy 240 GSM organic jersey with soft brushed handfeel",
+      "Thick ribbed collar that holds shape under heavy rotation",
+      "Woven Atelier authenticity hem label"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 13,
+    "name": "Core Black Graphic Crewneck Cotton T-Shirts",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "tshirts",
+    "price": 1499,
+    "originalPrice": 2199,
+    "rating": 4.8,
+    "reviewCount": 2210,
+    "badge": "hot",
+    "description": "Deep jet-black crewneck t-shirts crafted from enzyme-washed combed cotton jersey. Accented with subtle minimalist monochrome chest graphics.",
+    "tags": [
+      "Black Tee",
+      "Graphic T-Shirt",
+      "Cotton",
+      "Street Style"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Pitch Black"
+    ],
+    "specifications": {
+      "Fabric": "100% Combed Ringspun Cotton (200 GSM)",
+      "Dye": "Reactive Jet-Black (Fade-Proof up to 50 washes)",
+      "Seams": "Double-Needle Flatlock Stitching",
+      "Care": "Machine Wash Cold"
+    },
+    "features": [
+      "Reactive black dye keeps deep color vibrancy without grey fading",
+      "Enzyme bio-wash eliminates fabric fuzz and pilling",
+      "Reinforced taped shoulder-to-shoulder seam"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 14,
+    "name": "Relaxed Heavyweight Fleece Pullover Hoodie",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "tshirts",
+    "price": 2999,
+    "originalPrice": 4499,
+    "rating": 4.9,
+    "reviewCount": 1950,
+    "badge": "hot",
+    "description": "Cozy 400 GSM heavyweight brushed fleece hoodie in clean optic white. Double-layered crossover hood with metal-tipped drawstrings and kangaroo pouch.",
+    "tags": [
+      "Hoodie",
+      "Sweatshirt",
+      "Fleece",
+      "White"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Optic White"
+    ],
+    "specifications": {
+      "Fabric": "85% Cotton, 15% Recycled Polyester (400 GSM Heavy Fleece)",
+      "Interior": "Ultra-Plush Brushed French Terry Lining",
+      "Hood": "Double-Layered Self-Fabric Three-Panel Hood",
+      "Ribbing": "Heavy 2x2 Spandex Ribbed Cuffs and Hem"
+    },
+    "features": [
+      "Dense 400 GSM fleece provides substantial warmth and premium drape",
+      "Flat-lock construction eliminates internal seam chafing",
+      "Generous double-stitched kangaroo pocket with reinforced bar tacks"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 15,
+    "name": "Genuine Full-Grain Leather Moto Biker Jacket",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "outerwear",
+    "price": 8999,
+    "originalPrice": 13999,
+    "rating": 4.9,
+    "reviewCount": 1420,
+    "badge": "limited",
+    "description": "An heirloom statement piece. Hand-buffed full-grain lambskin leather with asymmetrical silver hardware, snap-down notch lapels, and quilted satin interior.",
+    "tags": [
+      "Leather Jacket",
+      "Moto Biker",
+      "Full Grain",
+      "Black Leather"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Midnight Black"
+    ],
+    "specifications": {
+      "Leather": "100% Genuine Full-Grain Aniline Lambskin (1.2mm)",
+      "Zippers": "Heavy Gauge Antique Silver YKK Zippers",
+      "Lining": "100% Breathable Quilted Cupro Twill",
+      "Pockets": "Three Exterior Zippered Pockets, One Flap Coin Pocket",
+      "Care": "Specialist Leather Clean Only"
+    },
+    "features": [
+      "Supple full-grain leather softens and molds to your body with wear",
+      "Bi-swing action back pleats allow comfortable reach when riding",
+      "Two deep internal leather-trimmed breast pockets"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 16,
+    "name": "Men's Tailored Wool Check 3-Piece Blazer Suit",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "outerwear",
+    "price": 9999,
+    "originalPrice": 15999,
+    "rating": 4.9,
+    "reviewCount": 960,
+    "badge": "hot",
+    "description": "Refined sartorial tailoring. Italian wool-blend woven in a rich blue Glen plaid check. Unstructured shoulder construction provides a modern soft drape.",
+    "tags": [
+      "Wool Blazer",
+      "Tailored Suit",
+      "Glen Check",
+      "Formal"
+    ],
+    "sizes": [
+      "38R",
+      "40R",
+      "42R",
+      "44R"
+    ],
+    "colors": [
+      "Heritage Blue Glen Check"
+    ],
+    "specifications": {
+      "Fabric": "70% Australian Merino Wool, 30% Mulberry Silk",
+      "Construction": "Half-Canvas Front Construction with Soft Shoulder",
+      "Lapel": "Classic 3.25-inch Notch Lapel",
+      "Vents": "Dual Side Vents for Smooth Movement",
+      "Care": "Dry Clean Only"
+    },
+    "features": [
+      "Half-canvas chest piece adapts to chest curvature over time",
+      "Real functioning four-button surgeon cuffs",
+      "Bemberg cupro lining with interior ticket and passport pockets"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 2
+  },
+  {
+    "id": 17,
+    "name": "Minimalist 3-Piece Capsule Wardrobe Set (Trousers, Tee & Sneakers)",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "outerwear",
+    "price": 6499,
+    "originalPrice": 9999,
+    "rating": 4.8,
+    "reviewCount": 1350,
+    "badge": "new",
+    "description": "Curated monochromatic outfit system. Includes tailored grey wool-blend trousers, heavyweight combed black tee, and matching minimal white court sneakers.",
+    "tags": [
+      "Capsule Outfit",
+      "Bundle",
+      "Minimalist",
+      "3-Piece"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Charcoal Grey & Black Edit"
+    ],
+    "specifications": {
+      "Includes": "1x Tailored Trouser, 1x Supima Tee, 1x Pair Leather Sneakers",
+      "Colors": "Charcoal Grey / Pitch Black / Crisp White",
+      "Style": "Scandinavian Minimalist Everyday Uniform"
+    },
+    "features": [
+      "Complete head-to-toe coordinated outfit in a single order",
+      "High-versatility pieces that mix-and-match across your wardrobe",
+      "Delivered together in signature Atelier protective wardrobe case"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 18,
+    "name": "Classic White Leather Low-Top Court Sneakers",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "footwear",
+    "price": 3999,
+    "originalPrice": 5999,
+    "rating": 4.9,
+    "reviewCount": 3650,
+    "badge": "hot",
+    "description": "The essential low-profile white sneaker. Full-grain calfskin leather upper with stitched Margom-style rubber cupsole and memory foam cushioned leather footbed.",
+    "tags": [
+      "White Sneakers",
+      "Leather Court Shoe",
+      "Casual Footwear"
+    ],
+    "sizes": [
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
+    ],
+    "colors": [
+      "Triple White"
+    ],
+    "specifications": {
+      "Upper": "100% Full-Grain Italian Calfskin Leather",
+      "Sole": "High-Abrasion Vulcanized Rubber Cupsole (Stitched 360°)",
+      "Footbed": "Removable Leather-Lined Ergonomic OrthoLite Insole",
+      "Laces": "Waxed Cotton Flat Athletic Laces"
+    },
+    "features": [
+      "Perforated quarter panels ensure continuous airflow",
+      "Side-stitched cupsole guarantees sole will never delaminate",
+      "Padded collar and tongue prevents heel slipping"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 19,
+    "name": "Engineered Knit Lightweight Running Sneakers",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "footwear",
+    "price": 4499,
+    "originalPrice": 6999,
+    "rating": 4.8,
+    "reviewCount": 2980,
+    "badge": "hot",
+    "description": "Vibrant crimson engineered Flyknit upper with sock-like adaptive collar. Responsive lightweight foam midsole engineered for all-day cushioning and daily runs.",
+    "tags": [
+      "Running Shoes",
+      "Athletic",
+      "Red Sneakers",
+      "Lightweight"
+    ],
+    "sizes": [
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
+    ],
+    "colors": [
+      "Crimson Red / White"
+    ],
+    "specifications": {
+      "Upper": "Seamless High-Tensile Engineered Flyknit Yarn",
+      "Midsole": "High-Rebound Dual-Density EVA Cushioning Foam",
+      "Outsole": "Segmented Geometric Flex-Groove Rubber Outsole",
+      "Weight": "Ultra-light 230g per shoe"
+    },
+    "features": [
+      "Adaptive knit wraps the foot like a sock without pressure hotspots",
+      "Laser-siped outsole provides multi-surface wet traction",
+      "Breathable weave expels heat rapidly"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 20,
+    "name": "Retro Colorblock Chunky Streetwear Sneakers",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "footwear",
+    "price": 3799,
+    "originalPrice": 5499,
+    "rating": 4.7,
+    "reviewCount": 1840,
+    "badge": "new",
+    "description": "90s aesthetic dad shoe remastered. Layered multi-panel suede, breathable mesh, and rubber overlays in retro white, teal, ochre, and red with contrast laces.",
+    "tags": [
+      "Chunky Sneakers",
+      "Colorblock",
+      "Streetwear",
+      "Retro"
+    ],
+    "sizes": [
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
+    ],
+    "colors": [
+      "Multi-Color Retro Accent"
+    ],
+    "specifications": {
+      "Upper": "Genuine Suede, Leather & Open-Cell Sport Mesh",
+      "Midsole": "Sculpted Chunky Polyurethane Platform (40mm lift)",
+      "Tread": "High-Traction Lugged Gum Rubber Base"
+    },
+    "features": [
+      "Striking geometric colorblocking makes any outfit stand out",
+      "Padded mesh tongue with dual pull tabs for easy slip-on",
+      "Shock-absorbing heel crash pad protects joints"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 2
+  },
+  {
+    "id": 21,
+    "name": "Burnished Full-Grain Leather Double Monk Strap Shoes",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "footwear",
+    "price": 5499,
+    "originalPrice": 8499,
+    "rating": 4.9,
+    "reviewCount": 1620,
+    "badge": "limited",
+    "description": "Artisanal European elegance. Hand-burnished mahogany calfskin leather featuring dual polished silver buckles, a sleek cap toe, and Goodyear welted sole.",
+    "tags": [
+      "Monk Strap",
+      "Dress Shoes",
+      "Brown Leather",
+      "Formal"
+    ],
+    "sizes": [
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
+    ],
+    "colors": [
+      "Burnished Mahogany Brown"
+    ],
+    "specifications": {
+      "Upper": "100% Full-Grain Crust Calfskin Leather",
+      "Buckles": "Solid Brass with Polished Nickel Silver Plating",
+      "Construction": "Goodyear Welted (Resolable)",
+      "Sole": "Vegetable-Tanned Hard Leather Sole with Rubber Heel Cap"
+    },
+    "features": [
+      "Hand-patinated finish gives rich depth that ages beautifully",
+      "Goodyear welt allows lifetime resoling by any cobbler",
+      "Hidden elastic on upper buckle allows easy slip-on convenience"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 22,
+    "name": "Handcrafted Tan Leather Perforated Oxford Dress Shoes",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "footwear",
+    "price": 4999,
+    "originalPrice": 7999,
+    "rating": 4.8,
+    "reviewCount": 1240,
+    "badge": "hot",
+    "description": "Refined business footwear. Warm cognac-tan leather with micro-perforated texture across the vamp, closed lacing system, and hand-finished beveled waist.",
+    "tags": [
+      "Oxford Shoes",
+      "Tan Leather",
+      "Lace Up",
+      "Business Formal"
+    ],
+    "sizes": [
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
+    ],
+    "colors": [
+      "Cognac Tan"
+    ],
+    "specifications": {
+      "Upper": "Hand-Selected Full-Grain Calfskin",
+      "Details": "Micro-Pinpoint Perforated Vamp Panel",
+      "Lining": "Full Glove Leather Interior",
+      "Sole": "Channel-Stitched Leather Outsole with TPU Grip Pad"
+    },
+    "features": [
+      "Chiseled toe profile flatters tailored suit silhouettes",
+      "Cushioned cork filler underfoot molds to your unique foot arches",
+      "Reinforced eyelets with waxed round dress laces"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 23,
+    "name": "Retro Two-Tone Leather Low Basketball Sneakers",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "footwear",
+    "price": 5999,
+    "originalPrice": 8999,
+    "rating": 4.9,
+    "reviewCount": 4120,
+    "badge": "hot",
+    "description": "Iconic court heritage. White, black, and orange colorway crafted with premium tumbled leather overlays, encapsulated air cushioning, and circular pivot tread.",
+    "tags": [
+      "Basketball Sneakers",
+      "Leather Lows",
+      "Orange/Black",
+      "Icon"
+    ],
+    "sizes": [
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
+    ],
+    "colors": [
+      "Starfish Orange / Black / White"
+    ],
+    "specifications": {
+      "Upper": "Premium Tumbled Leather & Synthetic Overlays",
+      "Cushioning": "Encapsulated Air-Sole Unit in Heel",
+      "Outsole": "Solid Rubber with Classic Radial Traction Pattern"
+    },
+    "features": [
+      "Padded low-cut collar looks sleek and feels plush",
+      "Perforations on toe box provide targeted cooling",
+      "Durable stitched cupsole handles everyday pavement wear"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 24,
+    "name": "Italian Full-Grain Leather Dress Belt with Silver Buckle",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 1799,
+    "originalPrice": 2699,
+    "rating": 4.9,
+    "reviewCount": 3870,
+    "badge": "hot",
+    "description": "Handcrafted 35mm dress belt made from vegetable-tanned Tuscan bridle leather. Accented with brushed stainless silver buckle and hand-beveled edge paint.",
+    "tags": [
+      "Leather Belt",
+      "Dress Belt",
+      "Full Grain",
+      "Accessories"
+    ],
+    "sizes": [
+      "32",
+      "34",
+      "36",
+      "38",
+      "40"
+    ],
+    "colors": [
+      "Rich Cognac Brown"
+    ],
+    "specifications": {
+      "Material": "100% Tuscan Vegetable-Tanned Full-Grain Leather (3.8mm thick)",
+      "Buckle": "Solid Stainless Steel with Satin Brushed Finish",
+      "Width": "35mm (Standard Trouser Loop Fit)",
+      "Origin": "Hand-Cut & Burnished in Florence, Italy"
+    },
+    "features": [
+      "Single solid cut of leather with zero synthetic fillers or bonded dust",
+      "Hand-burnished wax-sealed edges prevent splitting",
+      "Seven precision oblong pin holes for micro-adjustment"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 25,
+    "name": "Full-Grain Tan Leather Slim Bifold Wallet with RFID Shield",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 1499,
+    "originalPrice": 2299,
+    "rating": 4.8,
+    "reviewCount": 2340,
+    "badge": "hot",
+    "description": "Slimline pocket profile. Crafted from natural oil-waxed pull-up leather that develops rich vintage patina. Embedded with RFID blocking mesh for card security.",
+    "tags": [
+      "Leather Wallet",
+      "Bifold",
+      "RFID Protection",
+      "Pocket Essential"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      "Caramel Tan"
+    ],
+    "specifications": {
+      "Leather": "Top-Grain Vegetable-Tanned Cowhide Leather",
+      "Capacity": "8 Card Slots, 2 Hidden Pockets, Full-Length Cash Divider",
+      "Security": "Certified Military-Grade RFID 13.56 MHz Shielding",
+      "Dimensions": "11 cm x 8.5 cm x 1.2 cm"
+    },
+    "features": [
+      "Ultra-slim 1.2 cm thickness fits smoothly in front or rear trouser pockets",
+      "Turned-edge leather construction prevents fraying",
+      "Gift-ready presentation in embossed matte black wooden box"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1624538000860-24716b9050f2?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 26,
+    "name": "Luxury Automatic Chronograph Watch with Alligator Leather Strap",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 7999,
+    "originalPrice": 12999,
+    "rating": 4.9,
+    "reviewCount": 1120,
+    "badge": "limited",
+    "description": "Horological sophistication. 40mm stainless steel case with open-heart balance wheel, dual chronograph subdials, scratch-proof sapphire crystal, and brown leather strap.",
+    "tags": [
+      "Automatic Watch",
+      "Chronograph",
+      "Timepiece",
+      "Luxury"
+    ],
+    "sizes": [
+      "40mm"
+    ],
+    "colors": [
+      "Cream Dial / Brown Leather"
+    ],
+    "specifications": {
+      "Case": "316L Surgical-Grade Polished Stainless Steel (40mm diameter)",
+      "Movement": "Japanese 24-Jewel Self-Winding Automatic (42h reserve)",
+      "Glass": "Double-Domed Anti-Reflective Sapphire Crystal",
+      "Water Resistance": "50 Meters (5 ATM)",
+      "Strap": "Genuine Embossed Alligator-Grain Calfskin (20mm)"
+    },
+    "features": [
+      "Exhibition glass caseback reveals oscillating rotor and gear train",
+      "No battery ever required — charges naturally from wrist kinetic motion",
+      "Luminescent hands for legible reading in low-light environments"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 27,
+    "name": "Round Gold Metal Frame Polarized Sunglasses",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 2199,
+    "originalPrice": 3499,
+    "rating": 4.8,
+    "reviewCount": 1750,
+    "badge": "hot",
+    "description": "Iconic 1970s intellectual silhouette. Hypoallergenic lightweight gold monel metal frame fitted with bottle-green Category 3 polarized mineral glass lenses.",
+    "tags": [
+      "Sunglasses",
+      "Polarized",
+      "Round Frame",
+      "Gold Metal"
+    ],
+    "sizes": [
+      "Standard Fit"
+    ],
+    "colors": [
+      "Polished Gold / Bottle Green"
+    ],
+    "specifications": {
+      "Frame": "Electroplated Nickel-Free Monel Alloy (Lightweight 24g)",
+      "Lenses": "Category 3 UV400 Polarized Triacetate Cellulose (TAC)",
+      "Protection": "100% UVA/UVB/UVC Ray Filtering",
+      "Hinges": "Durable 3-Barrel Stainless Steel Screws"
+    },
+    "features": [
+      "Polarized filter cuts 99.9% of blinding road and water surface glare",
+      "Adjustable hypoallergenic medical-grade silicone nose pads",
+      "Includes hard clamshell magnetic case and microfiber cleaning cloth"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 28,
+    "name": "Minimalist All-Weather Commuter Laptop Backpack (24L)",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 2899,
+    "originalPrice": 4299,
+    "rating": 4.8,
+    "reviewCount": 3120,
+    "badge": "hot",
+    "description": "Sleek urban travel bag. 900D water-repellent ballistic nylon shell with a dedicated fleece-padded 16-inch laptop compartment, hidden passport slot, and luggage pass-through.",
+    "tags": [
+      "Backpack",
+      "Laptop Bag",
+      "Commuter",
+      "Waterproof"
+    ],
+    "sizes": [
+      "24L Capacity"
+    ],
+    "colors": [
+      "Matte Black"
+    ],
+    "specifications": {
+      "Exterior": "900D PU-Coated Ballistic Weatherproof Polyester",
+      "Laptop Slot": "Dedicated Suspended Sleeve (Fits up to 16\" MacBook Pro)",
+      "Zippers": "YKK AquaGuard Waterproof Reversible Zippers",
+      "Weight": "780g (Ergonomic Breathable Air-Mesh Backing)"
+    },
+    "features": [
+      "Suspended false-bottom laptop sleeve prevents impact when setting bag down",
+      "Luggage trolley strap allows hands-free airport transit",
+      "Expandable side pocket holds up to 1000ml water bottles securely"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 29,
+    "name": "Matte Forest Green Vacuum-Insulated Thermal Tumbler (750ml)",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 1199,
+    "originalPrice": 1799,
+    "rating": 4.9,
+    "reviewCount": 4620,
+    "badge": "hot",
+    "description": "Double-wall vacuum insulation keeps cold beverages chilled for 24 hours and hot coffee steaming for 12 hours. Powder-coated 18/8 food-grade stainless steel with leak-proof cap.",
+    "tags": [
+      "Water Bottle",
+      "Thermal Tumbler",
+      "Stainless Steel",
+      "Green"
+    ],
+    "sizes": [
+      "750ml"
+    ],
+    "colors": [
+      "Matte Forest Green"
+    ],
+    "specifications": {
+      "Material": "18/8 Pro-Grade Kitchen Stainless Steel (BPA Free)",
+      "Thermal Tech": "TempShield Double-Wall Vacuum Insulation",
+      "Cap": "100% Leakproof Honeycomb Insulated Screw Cap",
+      "Dimensions": "28 cm height, 7.5 cm base (Fits standard car cup holders)"
+    },
+    "features": [
+      "No sweat condensation exterior keeps hands and gym bags dry",
+      "Pure electro-polished interior retains zero metallic aftertaste or odors",
+      "Durable powder-coat finish withstands dings, drops, and dishwasher cycles"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 30,
+    "name": "Classic Cotton Mesh Structured Trucker Baseball Cap",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 899,
+    "originalPrice": 1399,
+    "rating": 4.7,
+    "reviewCount": 1890,
+    "badge": "hot",
+    "description": "Pure white structured 5-panel trucker cap. Premium foam front crown with breathable rear mesh and pre-curved visor. Adjustable snapback closure fits all head sizes.",
+    "tags": [
+      "Baseball Cap",
+      "Trucker Hat",
+      "White Cap",
+      "Accessories"
+    ],
+    "sizes": [
+      "Adjustable Snapback"
+    ],
+    "colors": [
+      "Optic White"
+    ],
+    "specifications": {
+      "Front Panel": "100% Polyester High-Density Foam Front",
+      "Back Panels": "100% Breathable Nylon Honeycomb Mesh",
+      "Visor": "Pre-Curved 6-Row Stitched Visor",
+      "Closure": "Heavy-Duty 7-Hole Snapback Strap"
+    },
+    "features": [
+      "Moisture-wicking inner cotton headband absorbs forehead sweat",
+      "High crown structure maintains pristine shape without collapsing",
+      "Clean blank profile pairs effortlessly with minimalist casual wear"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  }
+];
 
 export const categories = [
   {
@@ -40,1831 +1340,6 @@ export const categories = [
   }
 ];
 
-export const products = [
-  {
-    "id": 1,
-    "name": "Men's Slim Fit Oxford Cotton Button-Down Shirt",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "shirts",
-    "price": 2499,
-    "originalPrice": 3999,
-    "rating": 4.8,
-    "reviewCount": 3820,
-    "badge": "hot",
-    "description": "A perennial smart-casual essential. Crafted from 100% breathable pinpoint Oxford cotton with an authentic button-down collar, box pleat at the back for freedom of movement, and curved hemline.",
-    "tags": [
-      "Oxford Shirt",
-      "100% Cotton",
-      "Slim Fit",
-      "Button-Down"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Sky Blue",
-      "Classic White",
-      "Navy Blue",
-      "Soft Pink"
-    ],
-    "specifications": {
-      "Fabric": "100% Long-Staple Combed Oxford Cotton",
-      "Weave": "Pinpoint Basketweave",
-      "Collar": "Classic Button-Down Collar with Interlining",
-      "Cuffs": "Adjustable Two-Button Barrel Cuffs",
-      "Occasion": "Work, Dinner, Weekend Casual",
-      "Wash Care": "Machine Wash Warm, Tumble Dry Low"
-    },
-    "features": [
-      "Heavyweight 6.5 oz breathable long-staple cotton",
-      "Pre-shrunk fabric ensures exact fit after laundering",
-      "Genuine mother-of-pearl finish buttons with cross-stitching",
-      "Tailored slim silhouette contours cleanly through waist and chest",
-      "Single chest spade pocket with reinforced stress points"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 2,
-    "name": "Men's Relaxed Pure French Linen Casual Shirt",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "shirts",
-    "price": 2999,
-    "originalPrice": 4599,
-    "rating": 4.9,
-    "reviewCount": 2410,
-    "badge": "hot",
-    "description": "Lightweight, airy, and naturally cooling. Spun from 100% Normandy French flax linen with a relaxed silhouette, spread collar, and garment-dyed wash for effortless summer sophistication.",
-    "tags": [
-      "Linen Shirt",
-      "Pure Linen",
-      "Relaxed Fit",
-      "Summer Essential"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Natural Sand",
-      "Optic White",
-      "Sage Green",
-      "Sea Breeze Blue"
-    ],
-    "specifications": {
-      "Fabric": "100% French Flax Linen",
-      "Weight": "165 GSM Breathable Linen Weave",
-      "Collar": "Casual Soft Spread Collar",
-      "Fit": "Relaxed Resort Cut",
-      "Wash Care": "Machine Wash Cold, Hang Dry"
-    },
-    "features": [
-      "Sourced from premium French flax fields for ultra-soft drape",
-      "Natural moisture-wicking and thermo-regulating fibers",
-      "Garment-washed for instant lived-in comfort",
-      "Curved hemline looks elegant untucked with chinos or shorts",
-      "Reinforced French seams throughout the interior"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 3,
-    "name": "Men's Tailored Bengal Stripe Poplin Formal Shirt",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "shirts",
-    "price": 2799,
-    "originalPrice": 4299,
-    "rating": 4.8,
-    "reviewCount": 1890,
-    "badge": "new",
-    "description": "Classic British sartorial style. High-density 100% two-ply cotton poplin woven in crisp navy Bengal stripes. Features a semi-spread cutaway collar and convertible double cuffs.",
-    "tags": [
-      "Formal Shirt",
-      "Striped",
-      "Poplin",
-      "Business Dress"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Navy Bengal Stripe",
-      "Sky Blue Stripe"
-    ],
-    "specifications": {
-      "Fabric": "100% Two-Ply Combed Egyptian Cotton Poplin",
-      "Collar": "Semi-Spread Cutaway Collar with Removable Stays",
-      "Cuffs": "Convertible Button & French Cuff Compatible",
-      "Occasion": "Boardroom, Formal Business, Wedding"
-    },
-    "features": [
-      "High-thread count 100s two-ply smooth poplin weave",
-      "Wrinkle-resistant easy-iron finish stays crisp all day",
-      "Precision stripe matching across placket and collar",
-      "Removable brass collar stays included",
-      "Clean French front placket with iridescent buttons"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 4,
-    "name": "Men's Cuban Camp Collar Resort Textured Shirt",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "shirts",
-    "price": 2299,
-    "originalPrice": 3499,
-    "rating": 4.7,
-    "reviewCount": 3120,
-    "badge": "hot",
-    "description": "Retro seaside elegance. Designed with an open Cuban camp collar, straight vented hemline, and waffle-textured breathable cotton blend that drapes fluidly.",
-    "tags": [
-      "Camp Collar",
-      "Cuban Shirt",
-      "Resort Wear",
-      "Summer"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Ivory Ecru",
-      "Olive Drab",
-      "Midnight Black"
-    ],
-    "specifications": {
-      "Fabric": "85% Cotton, 15% Viscose Waffle Knit",
-      "Collar": "Retro Cuban Camp Collar",
-      "Hem": "Straight Cut Hem with Side Vents",
-      "Fit": "Relaxed Boxy Fit"
-    },
-    "features": [
-      "Open camp collar lies flat against the collarbone comfortably",
-      "Subtle waffle textured weave allows continuous cooling airflow",
-      "Straight square hem tailored specifically to be worn untucked",
-      "Tonal natural wood-effect resin buttons",
-      "Pre-washed for non-shrink durability"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 5,
-    "name": "Women's Oversized Silk-Blend Button-Up Blouse",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "shirts",
-    "price": 3499,
-    "originalPrice": 4999,
-    "rating": 4.9,
-    "reviewCount": 1680,
-    "badge": "new",
-    "description": "Fluid, feminine, and effortlessly chic. Crafted from luxurious sand-washed mulberry silk blend with dropped shoulders, elongated cuffs, and curved high-low hem.",
-    "tags": [
-      "Silk Blouse",
-      "Oversized",
-      "Women Tops",
-      "Drape"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "Champagne Cream",
-      "Soft Mauve",
-      "Jet Black"
-    ],
-    "specifications": {
-      "Fabric": "70% Sand-Washed Mulberry Silk, 30% Lyocell",
-      "Fit": "Oversized Fluid Drape",
-      "Collar": "Spread Point Collar",
-      "Wash Care": "Hand Wash Cold or Dry Clean"
-    },
-    "features": [
-      "Sand-washed finish gives a velvety matte peach-skin texture",
-      "Elongated architectural cuffs with dual pearl buttons",
-      "High-low curved hemline tucks smoothly into high-waist trousers",
-      "Breathable, lightweight, and gentle on sensitive skin",
-      "Minimalist concealed button placket"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 6,
-    "name": "Men's Tailored Stretch Cotton Chino Trousers",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "pants",
-    "price": 2499,
-    "originalPrice": 3799,
-    "rating": 4.8,
-    "reviewCount": 5120,
-    "badge": "hot",
-    "description": "The definitive modern pant. Made from 97% combed cotton twill infused with 3% spandex for all-day comfort. Features a mid-rise waist, flat front, and tailored slim leg.",
-    "tags": [
-      "Chino Trousers",
-      "Stretch Cotton",
-      "Slim Fit",
-      "Smart Casual"
-    ],
-    "sizes": [
-      "30",
-      "32",
-      "34",
-      "36",
-      "38"
-    ],
-    "colors": [
-      "British Khaki",
-      "Navy Blue",
-      "Olive Green",
-      "Charcoal Grey"
-    ],
-    "specifications": {
-      "Fabric": "97% Combed Cotton Twill, 3% Elastane",
-      "Rise": "Mid-Rise (10.5 inches)",
-      "Leg": "Tailored Slim Tapered Leg (14-inch opening)",
-      "Pockets": "Front Slant Pockets & Rear Button Welt Pockets"
-    },
-    "features": [
-      "Premium high-density twill resists scuffs and knees bagging out",
-      "Interior curtain waistband prevents shirt from untucking",
-      "Heavy-duty YKK brass zipper fly with sturdy horn button",
-      "Clean flat-front silhouette pairs seamlessly with blazers or polos",
-      "Garment washed for ultra-soft hand feel"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 7,
-    "name": "Men's Classic Straight Selvedge-Look Denim Jeans",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "pants",
-    "price": 2999,
-    "originalPrice": 4499,
-    "rating": 4.9,
-    "reviewCount": 4680,
-    "badge": "hot",
-    "description": "Heavyweight 12.5 oz ring-spun indigo denim with 2% comfort stretch. Cut with a timeless straight leg, copper hardware, and authentic vintage stone washing.",
-    "tags": [
-      "Denim Jeans",
-      "Straight Leg",
-      "Indigo Wash",
-      "5-Pocket"
-    ],
-    "sizes": [
-      "30",
-      "32",
-      "34",
-      "36",
-      "38"
-    ],
-    "colors": [
-      "Vintage Medium Indigo",
-      "Dark Rinse",
-      "Washed Black"
-    ],
-    "specifications": {
-      "Denim Weight": "12.5 oz Authentic Ring-Spun Denim",
-      "Composition": "98% Cotton, 2% Spandex",
-      "Fly": "Heavy-Duty Brass Zip Fly with Shank Button",
-      "Hardware": "Reinforced Copper Rivets at Strain Points"
-    },
-    "features": [
-      "Classic 5-pocket styling with coin pocket and spade back pockets",
-      "Subtle whiskering and hand-sanded thigh highlights",
-      "Comfort stretch waistband contours without pinching",
-      "Triple-needle reinforced chain-stitch inseam",
-      "Genuine full-grain leather patch on back waistband"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1604176354204-9268737828e4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 8,
-    "name": "Men's Pleated Wool-Blend Tailored Dress Trousers",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "pants",
-    "price": 3499,
-    "originalPrice": 5299,
-    "rating": 4.8,
-    "reviewCount": 1940,
-    "badge": "new",
-    "description": "The modern gentleman's trouser. High-twist wool blend with double forward pleats, side waist adjusters, extended waistband tab, and a fluid tapered drape.",
-    "tags": [
-      "Dress Trousers",
-      "Wool Blend",
-      "Pleated",
-      "Sartorial"
-    ],
-    "sizes": [
-      "30",
-      "32",
-      "34",
-      "36",
-      "38"
-    ],
-    "colors": [
-      "Charcoal Melange",
-      "Navy Blue",
-      "Camel Tan"
-    ],
-    "specifications": {
-      "Fabric": "65% Virgin Wool, 33% Polyester, 2% Elastane",
-      "Waist": "Extended Tab Waistband with Side Buckle Adjusters",
-      "Leg": "Classic Tapered with 1.5-inch Turn-Up Cuffs",
-      "Wash Care": "Dry Clean Recommended"
-    },
-    "features": [
-      "Double forward pleats create an elegant vertical drape down the leg",
-      "Side metal buckle adjusters eliminate the need for a belt",
-      "Crease-resistant high-twist yarn looks impeccable all day",
-      "Interior French fly and hook-and-bar closure for clean front",
-      "Pre-cuffed 1.5-inch hem breaks neatly above shoes"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 9,
-    "name": "Men's Utility Cotton Cargo Jogger Pants",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "pants",
-    "price": 2699,
-    "originalPrice": 3999,
-    "rating": 4.7,
-    "reviewCount": 3890,
-    "badge": "hot",
-    "description": "Functional utility meets urban streetwear. Crafted from durable cotton ripstop with expandable dual cargo pockets, drawstring elastic waist, and ribbed ankle cuffs.",
-    "tags": [
-      "Cargo Pants",
-      "Joggers",
-      "Utility",
-      "Streetwear"
-    ],
-    "sizes": [
-      "30",
-      "32",
-      "34",
-      "36",
-      "38"
-    ],
-    "colors": [
-      "Olive Green",
-      "Black Obsidian",
-      "Khaki Beige"
-    ],
-    "specifications": {
-      "Fabric": "98% Cotton Ripstop Weave, 2% Spandex",
-      "Pockets": "6 Pockets (2 Hand, 2 Snap Cargo, 2 Rear)",
-      "Waist": "Elasticized Drawcord Waistband",
-      "Ankles": "Ribbed Snug Ankle Cuffs"
-    },
-    "features": [
-      "Heavy-duty ripstop cross-hatch weave resists tears and abrasion",
-      "Ergonomic articulated knees provide unrestricted mobility",
-      "Deep cargo pockets with hidden magnetic snap flaps",
-      "Reinforced seat and crotch gusset prevents seam blowouts",
-      "Snug ribbed cuffs highlight high-top and low-top sneakers"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 10,
-    "name": "Women's High-Waist Wide-Leg Pleated Trousers",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "pants",
-    "price": 2899,
-    "originalPrice": 4299,
-    "rating": 4.9,
-    "reviewCount": 2840,
-    "badge": "hot",
-    "description": "A silhouette of modern power and elegance. Features a flattering high-rise contour waistband, deep front pleats, and an elongated fluid wide leg that moves gracefully.",
-    "tags": [
-      "Wide Leg",
-      "High Waist",
-      "Women Trousers",
-      "Pleated"
-    ],
-    "sizes": [
-      "26",
-      "28",
-      "30",
-      "32",
-      "34"
-    ],
-    "colors": [
-      "Warm Taupe",
-      "Ivory Cream",
-      "Midnight Black"
-    ],
-    "specifications": {
-      "Fabric": "78% Polyester, 18% Rayon, 4% Spandex Crepe",
-      "Rise": "High Rise (11.5 inches)",
-      "Leg": "Wide Palazzo Leg Silhouette",
-      "Inseam": "32 inches"
-    },
-    "features": [
-      "Substantial crepe fabric creates a lengthening, slimming drape",
-      "Wide contoured waistband eliminates gap at the lower back",
-      "Functional deep side slant pockets that lie completely flat",
-      "Concealed side zipper with hook-and-eye closure",
-      "Pairs effortlessly with cropped tees, bodysuits, or blazers"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 11,
-    "name": "Men's Premium Heavyweight Cotton Crewneck T-Shirt",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "tshirts",
-    "price": 1299,
-    "originalPrice": 1999,
-    "rating": 4.8,
-    "reviewCount": 8420,
-    "badge": "hot",
-    "description": "The gold standard of daily tees. Tailored from substantial 240 GSM combed cotton with a silicone bio-wash for unmatched softness. Retains its boxy shape and neckline through countless washes.",
-    "tags": [
-      "Heavyweight Tee",
-      "100% Cotton",
-      "Crewneck",
-      "Essential"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Jet Black",
-      "Optic White",
-      "Heather Grey",
-      "Vintage Olive"
-    ],
-    "specifications": {
-      "Fabric": "100% Super-Combed Ring-Spun Cotton (240 GSM)",
-      "Collar": "1x1 Lycra Ribbed Crewneck (Won't Sag)",
-      "Fit": "Classic Regular Boxy Fit",
-      "Finish": "Silicone Bio-Washed and Anti-Pilling"
-    },
-    "features": [
-      "Heavyweight 240 GSM density prevents transparency",
-      "Lycra-infused ribbed collar keeps its shape wear after wear",
-      "Double-needle stitching along hem and sleeve cuffs",
-      "Pre-shrunk fabric ensures exact post-wash dimensional stability",
-      "Tagless heat-transferred neck label for itch-free comfort"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 12,
-    "name": "Men's Mercerized Cotton Slim-Fit Polo Shirt",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "tshirts",
-    "price": 1999,
-    "originalPrice": 2999,
-    "rating": 4.8,
-    "reviewCount": 3120,
-    "badge": "new",
-    "description": "Refined smart-casual style. Mercerized double-combed cotton delivers a subtle silky sheen, rich color depth, and exceptional softness. Features a knit ribbed collar and three-button placket.",
-    "tags": [
-      "Polo Shirt",
-      "Mercerized Cotton",
-      "Slim Fit",
-      "Luxe Casual"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Navy Blue",
-      "Pure White",
-      "Burgundy",
-      "Forest Green"
-    ],
-    "specifications": {
-      "Fabric": "100% Double-Mercerized Combed Cotton Piqué",
-      "Collar": "Structured Knit Collar (Won't Curl)",
-      "Placket": "3-Button Placket with Genuine Shell Buttons",
-      "Vents": "Side Vents with Herringbone Tape Reinforcement"
-    },
-    "features": [
-      "Mercerization treatment adds a lustrous finish and enhanced colorfastness",
-      "Structured ribbed collar stays sharp without rolling or curling",
-      "Natural shell-look buttons with laser-etched edge detailing",
-      "Ventilated side hem slits allow comfortable wear untucked",
-      "Breathable piqué mesh structure keeps skin cool in heat"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 13,
-    "name": "100% Pure Mongolian Cashmere Crewneck Sweater",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "tshirts",
-    "price": 5999,
-    "originalPrice": 8999,
-    "rating": 5,
-    "reviewCount": 1420,
-    "badge": "hot",
-    "description": "The height of everyday luxury. Knitted from grade-A 2-ply Mongolian cashmere for extraordinary warmth without weight. Features a classic crew neckline and ribbed trims.",
-    "tags": [
-      "Cashmere Sweater",
-      "Pure Cashmere",
-      "Knitwear",
-      "Winter Luxury"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Oatmeal Heather",
-      "Charcoal Melange",
-      "Midnight Navy",
-      "Black"
-    ],
-    "specifications": {
-      "Yarn": "100% Grade-A Mongolian Cashmere (15.5 micron thickness)",
-      "Knit Gauge": "12-Gauge 2-Ply Fine Knit",
-      "Details": "Ribbed Collar, Cuffs, and Hem with Spandex Recovery",
-      "Wash Care": "Hand Wash Cold or Dry Clean"
-    },
-    "features": [
-      "Grade-A long fibers resist pilling and soften with every wash",
-      "Provides three times the warmth of standard sheep's wool",
-      "Featherweight 260g total weight feels like a warm cloud on skin",
-      "Ribbed cuffs and waistband with subtle elastic recovery",
-      "Includes a breathable cedar-lined storage bag"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 14,
-    "name": "Heavyweight French Terry Pullover Hoodie",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "tshirts",
-    "price": 2999,
-    "originalPrice": 4499,
-    "rating": 4.9,
-    "reviewCount": 4890,
-    "badge": "hot",
-    "description": "An architectural streetwear hoodie. Built from 450 GSM ultra-heavyweight cotton French terry with a double-layered hood, kangaroo pouch pocket, and ribbed side gussets.",
-    "tags": [
-      "Heavy Hoodie",
-      "French Terry",
-      "450 GSM",
-      "Streetwear"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Medium Grey Heather",
-      "Washed Black",
-      "Forest Green"
-    ],
-    "specifications": {
-      "Fabric": "100% Combed Cotton French Terry (450 GSM)",
-      "Hood": "Double-Layered Self-Fabric Hood without Drawstrings",
-      "Pockets": "Bar-Tacked Kangaroo Front Pouch",
-      "Gussets": "Ribbed Side Panels for Natural Range of Motion"
-    },
-    "features": [
-      "Substantial 450 GSM terry holds an impressive sculptural drape",
-      "Clean drawstring-free hood stands upright without collapsing",
-      "Side rib gussets reduce torso restriction when stretching or sitting",
-      "Heavy 2x2 ribbed cuffs seal out wind and draft",
-      "Reinforced flatlock seams throughout the body"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 15,
-    "name": "Merino Wool Blend V-Neck Knit Cardigan",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "tshirts",
-    "price": 3699,
-    "originalPrice": 5299,
-    "rating": 4.8,
-    "reviewCount": 1840,
-    "badge": "new",
-    "description": "Vintage ivy league sophistication. Knitted in a fine gauge from extra-fine Australian Merino wool. Features a deep V-neckline, real horn buttons, and twin front welt pockets.",
-    "tags": [
-      "Cardigan",
-      "Merino Wool",
-      "V-Neck",
-      "Layering"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Camel Brown",
-      "Navy Blue",
-      "Charcoal Melange"
-    ],
-    "specifications": {
-      "Yarn": "80% Extra-Fine Merino Wool, 20% Recycled Nylon",
-      "Gauge": "12-Gauge Lightweight Knit",
-      "Buttons": "5-Button Placket with Natural Horn Buttons",
-      "Wash Care": "Hand Wash Cold or Machine Wool Cycle"
-    },
-    "features": [
-      "Extra-fine Merino wool naturally regulates warmth without itching",
-      "Genuine horn buttons with laser-finished edge detail",
-      "Two front welt patch pockets for glasses or everyday items",
-      "Ribbed cuffs and hem provide a snug, tailored fit over dress shirts",
-      "Versatile transitional piece for autumn, winter, and spring"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 16,
-    "name": "Classic Denim Trucker Jacket in Vintage Indigo",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "outerwear",
-    "price": 3999,
-    "originalPrice": 5999,
-    "rating": 4.9,
-    "reviewCount": 4210,
-    "badge": "hot",
-    "description": "An American heritage staple. Built from 13.5 oz heavy ring-spun cotton denim with antique brass shank buttons, dual button-flap chest pockets, welt hand pockets, and waist tabs.",
-    "tags": [
-      "Denim Jacket",
-      "Trucker",
-      "13.5oz Denim",
-      "Outerwear"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Vintage Indigo Wash",
-      "Washed Black",
-      "Stonewash Blue"
-    ],
-    "specifications": {
-      "Denim Weight": "13.5 oz Heavyweight 100% Cotton Denim",
-      "Hardware": "Antiqued Solid Brass Shank Buttons",
-      "Pockets": "4 Pockets (2 Chest Flap, 2 Side Welt)",
-      "Tabs": "Adjustable Waist Button Tabs on Back"
-    },
-    "features": [
-      "Rigid 13.5 oz denim softened with stone washing for immediate comfort",
-      "Reinforced double-felled seams built to last for decades",
-      "Point collar with classic V-shaped front chest panel stitching",
-      "Side waist tabs allow quick adjustment from straight to tapered fit",
-      "Internal deep drop pockets hold passports and smartphones"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 17,
-    "name": "Genuine Full-Grain Leather Moto Biker Jacket",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "outerwear",
-    "price": 8999,
-    "originalPrice": 12999,
-    "rating": 5,
-    "reviewCount": 1640,
-    "badge": "hot",
-    "description": "Rebel elegance. Handcrafted from supple 1.2mm top-grain cowhide leather with heavy-gauge silver YKK zippers, snap-down notch lapels, zippered cuffs, and a quilted satin lining.",
-    "tags": [
-      "Leather Jacket",
-      "Moto Biker",
-      "Genuine Leather",
-      "Cowhide"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Obsidian Black",
-      "Distressed Brown"
-    ],
-    "specifications": {
-      "Leather": "100% Top-Grain Cowhide Leather (1.2mm Thickness)",
-      "Zippers": "Heavy-Duty YKK #8 Metal Zippers",
-      "Lining": "Quilted Diamond Satin Interior Lining",
-      "Hardware": "Brushed Nickel Snap Hardware"
-    },
-    "features": [
-      "Full 1.2mm top-grain leather breaks in beautifully with age",
-      "Asymmetrical front zip closure blocks wind when riding",
-      "Bi-swing action back shoulders provide complete arm movement",
-      "Zippered sleeve cuffs expand over watches or gloves",
-      "Three zippered exterior pockets and dual interior holster pockets"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 18,
-    "name": "Men's Tailored Wool-Blend Single-Breasted Blazer",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "outerwear",
-    "price": 5499,
-    "originalPrice": 7999,
-    "rating": 4.9,
-    "reviewCount": 2210,
-    "badge": "new",
-    "description": "Sharp sartorial styling. Tailored from a refined wool and silk twill blend with notch lapels, natural soft shoulders, double rear vents, and two-button front closure.",
-    "tags": [
-      "Tailored Blazer",
-      "Wool Blend",
-      "Sport Coat",
-      "Smart Casual"
-    ],
-    "sizes": [
-      "38R",
-      "40R",
-      "42R",
-      "44R",
-      "46R"
-    ],
-    "colors": [
-      "Classic Navy Blue",
-      "Charcoal Melange",
-      "Olive Hopsack"
-    ],
-    "specifications": {
-      "Fabric": "70% Wool, 28% Polyester, 2% Elastane Twill",
-      "Structure": "Modern Half-Canvas Internal Chest Construction",
-      "Lining": "Breathable Bemberg Silk Cupro Lining",
-      "Vents": "Dual Side Back Vents"
-    },
-    "features": [
-      "Half-canvas chest piece molds naturally to your body over time",
-      "Natural soft shoulder padding without rigid padding boxiness",
-      "Functioning four-button surgeon sleeve cuffs",
-      "Chest welt pocket ready for pocket squares, plus two flap pockets",
-      "Pairs effortlessly with tailored trousers or dark denim jeans"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 19,
-    "name": "Men's Water-Resistant Classic Flight Bomber Jacket",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "outerwear",
-    "price": 4299,
-    "originalPrice": 6299,
-    "rating": 4.8,
-    "reviewCount": 2940,
-    "badge": "hot",
-    "description": "Military heritage refined for the city. Weather-resistant flight satin nylon shell with lightweight thermal insulation, signature ribbed baseball collar, and utility sleeve pocket.",
-    "tags": [
-      "Bomber Jacket",
-      "MA-1",
-      "Water-Resistant",
-      "Flight Jacket"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Sage Green",
-      "Matte Black",
-      "Deep Navy"
-    ],
-    "specifications": {
-      "Shell": "Heavy-Duty 100% Flight Satin Nylon with DWR Coating",
-      "Insulation": "Polyfill Thermal Mid-Weight Insulation",
-      "Closure": "Two-Way Heavy Gauge YKK Zipper",
-      "Collar": "Knit Ribbed Baseball Collar"
-    },
-    "features": [
-      "Water-repellent DWR coating sheds light rain and snow easily",
-      "Classic zippered utility cigarette pocket on left sleeve",
-      "Dual front snap-flap hand pockets lined with warm brushed tricot",
-      "Ribbed collar, cuffs, and hem seal in warmth on chilly days",
-      "Interior snap security pocket for wallet and phone"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 20,
-    "name": "Classic Minimalist White Leather Court Sneakers",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "footwear",
-    "price": 3499,
-    "originalPrice": 4999,
-    "rating": 4.9,
-    "reviewCount": 6820,
-    "badge": "hot",
-    "description": "The cleanest sneaker ever made. Handcrafted from supple full-grain Italian leather with an ultra-clean silhouette, padded collar, cushioned memory foam insole, and durable Margom-style rubber cupsole.",
-    "tags": [
-      "White Sneakers",
-      "Minimalist",
-      "Full-Grain Leather",
-      "Court Shoes"
-    ],
-    "sizes": [
-      "UK 7",
-      "UK 8",
-      "UK 9",
-      "UK 10",
-      "UK 11"
-    ],
-    "colors": [
-      "Cloud White",
-      "White / Gum Sole",
-      "Triple Black"
-    ],
-    "specifications": {
-      "Upper": "100% Full-Grain Calfskin Leather",
-      "Lining": "Full Soft Calf Leather Interior Lining",
-      "Outsole": "Stitched Natural Rubber Margom-Style Cupsole",
-      "Insole": "Removable Memory Foam Footbed with Arch Support"
-    },
-    "features": [
-      "Buttery full-grain leather upper wipes clean easily with a cloth",
-      "Full leather interior allows comfortable sockless summer wear",
-      "Stitched 360-degree rubber cupsole won't delaminate or separate",
-      "Reinforced eyelets with waxed flat cotton laces",
-      "Subtle gold foil serial number embossed on outer heel"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 21,
-    "name": "Handcrafted Full-Grain Leather Penny Loafers",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "footwear",
-    "price": 4999,
-    "originalPrice": 6999,
-    "rating": 4.9,
-    "reviewCount": 3240,
-    "badge": "hot",
-    "description": "Timeless footwear perfection. Handcrafted from hand-burnished calfskin leather with traditional Blake stitched construction, leather sole with rubber heel insert, and classic penny strap.",
-    "tags": [
-      "Penny Loafers",
-      "Leather Shoes",
-      "Blake Stitch",
-      "Dress Loafer"
-    ],
-    "sizes": [
-      "UK 7",
-      "UK 8",
-      "UK 9",
-      "UK 10",
-      "UK 11"
-    ],
-    "colors": [
-      "Burnished Cognac Brown",
-      "Classic Black",
-      "Oxblood Burgundy"
-    ],
-    "specifications": {
-      "Leather": "Hand-Burnished Full-Grain Italian Calfskin",
-      "Construction": "Traditional Blake Stitched Sole",
-      "Heel": "Stacked Leather Heel with Vibram Rubber Top Lift",
-      "Sole": "Hand-Polished Natural Leather Sole"
-    },
-    "features": [
-      "Hand-burnished leather finish develops a rich, unique patina over time",
-      "Blake-stitched leather sole offers immediate flexibility and resoleability",
-      "Supple calfskin lining contours naturally to your foot shape",
-      "Classic saddle penny strap detail across the vamp",
-      "Arrives with a luxury shoe horn and flannel travel dust bags"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 22,
-    "name": "Men's Chelsea Suede Ankle Boots with Elastic Gusset",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "footwear",
-    "price": 4499,
-    "originalPrice": 6499,
-    "rating": 4.8,
-    "reviewCount": 2890,
-    "badge": "new",
-    "description": "Sleek and versatile. Crafted from water-treated plush calf suede with durable elastic side gores, pull tabs, and lightweight cushioned rubber sole.",
-    "tags": [
-      "Chelsea Boots",
-      "Suede Boots",
-      "Ankle Boots",
-      "Smart Casual"
-    ],
-    "sizes": [
-      "UK 7",
-      "UK 8",
-      "UK 9",
-      "UK 10",
-      "UK 11"
-    ],
-    "colors": [
-      "Tobacco Suede",
-      "Charcoal Grey",
-      "Nero Black"
-    ],
-    "specifications": {
-      "Upper": "Premium Wax-Treated Water-Resistant Calf Suede",
-      "Sole": "Lightweight Crepe-Textured Rubber Sole",
-      "Gusset": "Heavy-Duty Elastic Side Webbing",
-      "Pull Tab": "Woven Grosgrain Back Pull Loop"
-    },
-    "features": [
-      "Water-resistant treatment prevents water spots and street staining",
-      "Elastic side gussets make slipping in and out effortless",
-      "Cushioned leather insole provides support for all-day walking",
-      "Crepe rubber sole offers superior shock absorption and grip",
-      "Slim ankle shaft fits cleanly beneath slim trousers or jeans"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 23,
-    "name": "Ultra-Lightweight Engineered Mesh Running Sneakers",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "footwear",
-    "price": 3299,
-    "originalPrice": 4799,
-    "rating": 4.9,
-    "reviewCount": 5120,
-    "badge": "hot",
-    "description": "Maximum energy return. Breathable seamless engineered jacquard mesh upper with high-rebound EVA foam midsole, TPU heel clip, and high-traction rubber outsole.",
-    "tags": [
-      "Running Shoes",
-      "Athletic",
-      "Breathable Mesh",
-      "Performance"
-    ],
-    "sizes": [
-      "UK 7",
-      "UK 8",
-      "UK 9",
-      "UK 10",
-      "UK 11"
-    ],
-    "colors": [
-      "Chalk White / Orange",
-      "All Black",
-      "Wolf Grey"
-    ],
-    "specifications": {
-      "Midsole": "High-Rebound Dual-Density EVA Cushioning",
-      "Upper": "Engineered Breathable Jacquard Mesh",
-      "Weight": "240 grams (Size UK 8)",
-      "Drop": "8mm Heel-to-Toe Drop"
-    },
-    "features": [
-      "Seamless mesh upper eliminates hot spots and blisters",
-      "High-rebound responsive foam absorbs road and pavement impact",
-      "TPU molded heel counter locks the rearfoot firmly in place",
-      "Zonal rubber pods on the outsole provide wet road grip",
-      "Reflective accents along the heel for low-light night visibility"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 24,
-    "name": "Full-Grain Italian Leather Dress Belt with Brass Buckle",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "accessories",
-    "price": 1499,
-    "originalPrice": 2299,
-    "rating": 4.8,
-    "reviewCount": 4120,
-    "badge": "hot",
-    "description": "Built for a lifetime. Crafted from a single cut of 3.8mm thick vegetable-tanned full-grain Italian leather with hand-burnished edges and solid antiqued brass buckle.",
-    "tags": [
-      "Leather Belt",
-      "Full-Grain",
-      "Brass Buckle",
-      "Italian Leather"
-    ],
-    "sizes": [
-      "30",
-      "32",
-      "34",
-      "36",
-      "38",
-      "40"
-    ],
-    "colors": [
-      "Cognac Tan",
-      "Classic Black",
-      "Espresso Brown"
-    ],
-    "specifications": {
-      "Width": "35mm (1.38 inches) Ideal for Chinos and Denim",
-      "Leather": "3.8mm Solid Full-Grain Vegetable-Tanned Cowhide",
-      "Buckle": "100% Solid Cast Antique Brass",
-      "Origin": "Hand-Finished by Leather Artisans"
-    },
-    "features": [
-      "Single solid cut of leather with no bonded cardboard filler layers",
-      "Solid brass buckle attached with Chicago screws for easy buckle replacement",
-      "Hand-beveled and beeswax-burnished edges won't fray or crack",
-      "Develops a rich, lustrous leather patina through everyday wear",
-      "Includes cloth gift storage bag"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 25,
-    "name": "Minimalist Chronograph Watch with Sapphire Glass (40mm)",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "accessories",
-    "price": 4999,
-    "originalPrice": 7499,
-    "rating": 4.9,
-    "reviewCount": 2980,
-    "badge": "hot",
-    "description": "Understated precision. Stainless steel 40mm case with scratch-resistant sapphire crystal glass, Japanese quartz chronograph movement, date window, and quick-release leather strap.",
-    "tags": [
-      "Chronograph",
-      "Watch",
-      "Sapphire Glass",
-      "Minimalist"
-    ],
-    "sizes": [
-      "40mm Case (10mm Thickness, 20mm Lug Width)"
-    ],
-    "colors": [
-      "Silver Case with White Dial",
-      "Black Case with Black Dial"
-    ],
-    "specifications": {
-      "Movement": "Japanese Miyota Quartz Chronograph Movement",
-      "Glass": "Scratch-Resistant Sapphire Crystal Lens",
-      "Water Resistance": "5 ATM (50 meters / 165 feet)",
-      "Strap": "Interchangeable Quick-Release Italian Leather Strap"
-    },
-    "features": [
-      "Scratch-proof sapphire crystal keeps the dial crystal clear forever",
-      "Sub-dials measure minutes, seconds, and 24-hour time accurately",
-      "Quick-release spring bars let you swap straps in seconds without tools",
-      "Subtle date aperture window at 4 o'clock position",
-      "Arrives in a matte black velvet-lined presentation gift box"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 26,
-    "name": "Classic Polarized Acetate Sunglasses in Tortoiseshell",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "accessories",
-    "price": 1999,
-    "originalPrice": 2999,
-    "rating": 4.8,
-    "reviewCount": 3620,
-    "badge": "new",
-    "description": "Iconic timeless styling. Handcrafted from premium cellulose acetate with 100% UV400 polarized gradient lenses that eliminate glare and enhance clarity.",
-    "tags": [
-      "Sunglasses",
-      "Polarized",
-      "UV400",
-      "Tortoiseshell"
-    ],
-    "sizes": [
-      "Standard Medium Fit (52-20-145mm)"
-    ],
-    "colors": [
-      "Classic Tortoiseshell",
-      "Glossy Black with Grey Lens"
-    ],
-    "specifications": {
-      "Frame": "Hand-Polished Cellulose Acetate Frame",
-      "Lenses": "Triacetate Cellulose (TAC) Polarized UV400 Lenses",
-      "Hinges": "5-Barrel Stainless Steel Riveted Hinges",
-      "Protection": "100% UVA/UVB Eye Protection"
-    },
-    "features": [
-      "Polarized lenses eliminate blinding reflections from water and asphalt",
-      "Sturdy 5-barrel steel hinges provide a snug and wobble-free fit",
-      "Lightweight cellulose acetate sits comfortably on the nose bridge",
-      "Includes a structured hard case and microfiber cleaning cloth",
-      "Universal unisex frame shape flatters round, square, and oval face shapes"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 27,
-    "name": "Heavy-Duty Canvas & Leather Weekend Travel Duffle (42L)",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "accessories",
-    "price": 3999,
-    "originalPrice": 5999,
-    "rating": 4.9,
-    "reviewCount": 2180,
-    "badge": "hot",
-    "description": "The ideal companion for 3 to 4 day getaways. Constructed from waterproof 16 oz waxed cotton canvas trimmed with full-grain leather, padded shoulder strap, and separate shoe compartment.",
-    "tags": [
-      "Weekend Duffle",
-      "Travel Bag",
-      "Waxed Canvas",
-      "Shoe Pocket"
-    ],
-    "sizes": [
-      "One Size (42 Litres Capacity: 52 x 28 x 26 cm)"
-    ],
-    "colors": [
-      "Army Green with Brown Leather",
-      "Charcoal Black"
-    ],
-    "specifications": {
-      "Fabric": "16 oz Water-Resistant Waxed Canvas + Full-Grain Leather",
-      "Capacity": "42 Litres (Meets Airline Carry-On Overhead Regulations)",
-      "Zippers": "Heavy-Duty Solid Brass YKK Two-Way Zippers",
-      "Pockets": "Shoe Tunnel, Laptop Sleeve, 2 Exterior Quick-Access Pockets"
-    },
-    "features": [
-      "Dedicated ventilated side shoe compartment isolates footwear from clean clothes",
-      "Waterproof waxed canvas sheds rain and airport tarmac grime effortlessly",
-      "Padded removable shoulder strap and riveted leather grab handles",
-      "Interior padded sleeve comfortably fits up to 15.6-inch laptops",
-      "Metal bottom studs protect the base when placed on floors"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 28,
-    "name": "Full-Grain Leather Everyday Zip Tote Bag",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "accessories",
-    "price": 3499,
-    "originalPrice": 4999,
-    "rating": 4.8,
-    "reviewCount": 3120,
-    "badge": "new",
-    "description": "Effortless everyday carry. Crafted from soft pebble-grain leather with a secure top zipper closure, spacious interior with padded tablet sleeve, and reinforced shoulder straps.",
-    "tags": [
-      "Leather Tote",
-      "Everyday Bag",
-      "Work Bag",
-      "Pebble Grain"
-    ],
-    "sizes": [
-      "Medium (W 38cm x H 30cm x D 14cm)"
-    ],
-    "colors": [
-      "Cognac Tan",
-      "Midnight Black",
-      "Burgundy Wine"
-    ],
-    "specifications": {
-      "Material": "Pebble-Grain Full-Grain Italian Leather",
-      "Closure": "Full-Length Top YKK Metal Zipper",
-      "Straps": "Double Flat Shoulder Straps (26cm drop)",
-      "Interior": "Padded Laptop Compartment + 2 Slip Pockets + 1 Zip Pocket"
-    },
-    "features": [
-      "Pebble leather resists scuffs, scratches, and daily commuter wear",
-      "Full top zipper prevents contents from spilling when traveling",
-      "Comfortable flat shoulder straps distribute weight evenly",
-      "Spacious main compartment holds 14-inch laptops, water bottles, and books",
-      "Flat reinforced base keeps the bag standing upright when set down"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 29,
-    "name": "Vacuum Insulated Stainless Steel Tumbler (750ml)",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "accessories",
-    "price": 1299,
-    "originalPrice": 1899,
-    "rating": 4.9,
-    "reviewCount": 5410,
-    "badge": "hot",
-    "description": "Keep hydrated anywhere. Double-walled 18/8 food-grade stainless steel with vacuum insulation. Keeps drinks ice cold for 24 hours or piping hot for 12 hours with a leakproof straw lid.",
-    "tags": [
-      "Insulated Bottle",
-      "Stainless Steel",
-      "Hydration",
-      "Eco-Friendly"
-    ],
-    "sizes": [
-      "750ml (25 oz) Capacity"
-    ],
-    "colors": [
-      "Matte Black",
-      "Brushed Steel",
-      "Sage Green",
-      "Terracotta"
-    ],
-    "specifications": {
-      "Material": "18/8 Pro-Grade Stainless Steel (100% BPA Free)",
-      "Insulation": "TempShield Double-Wall Vacuum Insulation",
-      "Performance": "Cold for 24 Hours / Hot for 12 Hours",
-      "Lid": "Leak-Proof 2-in-1 Chug & Straw Spout Lid"
-    },
-    "features": [
-      "Pure 18/8 stainless steel leaves no metallic taste in drinks",
-      "Powder-coated non-slip exterior stays sweat-free without condensation",
-      "Fits perfectly inside standard vehicle cup holders and backpack side pockets",
-      "Wide mouth design accommodates full-size ice cubes and easy cleaning",
-      "Integrated flexible silicone carry loop handle"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 30,
-    "name": "Full-Grain Leather Slim Bifold Wallet with RFID Shield",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "accessories",
-    "price": 1199,
-    "originalPrice": 1799,
-    "rating": 4.8,
-    "reviewCount": 4180,
-    "badge": "hot",
-    "description": "Slim, pocket-friendly, and secure. Crafted from premium vegetable-tanned leather with built-in RFID blocking shield, 8 card slots, and dual currency cash compartments.",
-    "tags": [
-      "Leather Wallet",
-      "RFID Shield",
-      "Bifold",
-      "Slim Wallet"
-    ],
-    "sizes": [
-      "Closed: 11cm x 9cm x 1.2cm (Ultra-Slim)"
-    ],
-    "colors": [
-      "Cognac Brown",
-      "Classic Black",
-      "Espresso"
-    ],
-    "specifications": {
-      "Leather": "Top-Grain Vegetable-Tanned Italian Leather",
-      "Security": "Certified RFID-Blocking Inner Lining (13.56 MHz)",
-      "Capacity": "8 Card Slots + 2 Hidden Pockets + 1 Full-Length Bill Compartment"
-    },
-    "features": [
-      "Ultra-slim 1.2cm profile sits comfortably in front or back pants pockets",
-      "Advanced RFID-blocking mesh prevents wireless credit card skimming",
-      "Precision turned edges and heavy-duty nylon contrast stitching",
-      "Quick-access thumb notch on primary everyday card slot",
-      "Comes packaged in an embossed gift box"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 31,
-    "name": "Men's Classic Corduroy Button-Down Overshirt",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "shirts",
-    "price": 2699,
-    "originalPrice": 3999,
-    "rating": 4.8,
-    "reviewCount": 1940,
-    "badge": "new",
-    "description": "A seasonal layering favorite. Soft 12-wale cotton corduroy with twin button-flap chest pockets, point collar, and a relaxed straight cut that wears well over tees.",
-    "tags": [
-      "Corduroy",
-      "Overshirt",
-      "Autumn Wear",
-      "Workwear"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Caramel Tan",
-      "Forest Green",
-      "Washed Black"
-    ],
-    "specifications": {
-      "Fabric": "100% Cotton 12-Wale Corduroy",
-      "Fit": "Relaxed Overshirt Fit",
-      "Buttons": "Tortoiseshell Matte Buttons",
-      "Wash Care": "Machine Wash Cold Inside Out"
-    },
-    "features": [
-      "Plush 12-wale velvety corduroy texture keeps you cozy in chilly breeze",
-      "Two functional button-flap chest pockets",
-      "Straight hemline with side splits designed for layering",
-      "Heavy-duty button placket with reinforced contrast stitching",
-      "Garment washed for ultra-soft hand feel with zero stiffness"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 32,
-    "name": "Men's Athletic Fit Commuter Stretch Pants",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "pants",
-    "price": 2799,
-    "originalPrice": 3999,
-    "rating": 4.9,
-    "reviewCount": 3210,
-    "badge": "hot",
-    "description": "Engineered for life in motion. Water-repellent technical stretch twill with hidden zippered security pockets, gusseted crotch, and an athletic tapered leg for cycling and commuting.",
-    "tags": [
-      "Commuter Pants",
-      "Water-Repellent",
-      "4-Way Stretch",
-      "Technical"
-    ],
-    "sizes": [
-      "30",
-      "32",
-      "34",
-      "36",
-      "38"
-    ],
-    "colors": [
-      "Navy Blue",
-      "Slate Grey",
-      "Black"
-    ],
-    "specifications": {
-      "Fabric": "90% Technical Polyester, 10% Spandex 4-Way Stretch",
-      "Coating": "DWR Water-Resistant Finish",
-      "Pockets": "5 Pockets (including 1 Hidden Zipper Passport Pocket)",
-      "Crotch": "Full Mobility Diamond Inseam Gusset"
-    },
-    "features": [
-      "Four-way stretch technical fabric flexes comfortably through bike commutes",
-      "DWR treatment sheds coffee spills and sudden light drizzle",
-      "Hidden zippered side pocket keeps keys and phone secure during motion",
-      "Reflective interior cuff strip reveals when rolled up on bike pedals",
-      "Wrinkle-resistant wash-and-wear performance"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 33,
-    "name": "Men's Waffle-Knit Thermal Long-Sleeve Henley",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "tshirts",
-    "price": 1699,
-    "originalPrice": 2499,
-    "rating": 4.8,
-    "reviewCount": 2840,
-    "badge": "new",
-    "description": "A rugged casual staple. Heavyweight combed cotton waffle knit with a 3-button henley placket, ribbed cuffs, and flatlock anti-chafe stitching.",
-    "tags": [
-      "Henley",
-      "Thermal Waffle",
-      "Long Sleeve",
-      "Casual"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Heather Charcoal",
-      "Oatmeal",
-      "Navy"
-    ],
-    "specifications": {
-      "Fabric": "100% Combed Cotton Waffle Thermal Knit (260 GSM)",
-      "Placket": "3-Button Henley with Herringbone Twill Placket Facing",
-      "Cuffs": "Ribbed Knit Cuffs with Elastane",
-      "Fit": "Athletic Tailored Fit"
-    },
-    "features": [
-      "Textured waffle thermal knit traps body heat for natural insulation",
-      "Soft brushed interior feels comfortable against bare skin",
-      "Herringbone-reinforced button placket resists stretching over time",
-      "Durable flatlock seams eliminate friction and chafing",
-      "Curved hemline layers smoothly under flannels or jackets"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 34,
-    "name": "Lightweight Packable Down Puffer Jacket",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "outerwear",
-    "price": 4999,
-    "originalPrice": 6999,
-    "rating": 4.9,
-    "reviewCount": 3890,
-    "badge": "hot",
-    "description": "Cloud-like warmth that packs down into a travel pouch. 650 fill power ethically-sourced duck down with a water-resistant ripstop nylon shell, stand collar, and zippered hand-warmer pockets.",
-    "tags": [
-      "Puffer Jacket",
-      "Packable Down",
-      "650 Fill Power",
-      "Winter Outerwear"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      "Midnight Black",
-      "Steel Blue",
-      "Olive Drab"
-    ],
-    "specifications": {
-      "Insulation": "90/10 RDS-Certified Duck Down (650 Fill Power)",
-      "Shell": "20D Ultralight Ripstop Nylon with DWR Coating",
-      "Pockets": "2 Exterior Zip Pockets, 2 Interior Drop Pockets",
-      "Weight": "320 grams (Includes Matching Stuffsack)"
-    },
-    "features": [
-      "High-loft 650 fill power down delivers exceptional thermal warmth",
-      "Packs down into its own matching travel pouch for effortless carry",
-      "DWR water-resistant finish sheds light drizzle and snow flurries",
-      "Elastic bound cuffs and drawcord hem seal out cold wind drafts",
-      "Soft microfleece-lined front pockets warm cold hands instantly"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 35,
-    "name": "Classic Suede Penny Driving Moccasins",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "footwear",
-    "price": 3899,
-    "originalPrice": 5499,
-    "rating": 4.8,
-    "reviewCount": 1720,
-    "badge": "new",
-    "description": "Relaxed resort comfort. Handcrafted from velvety water-repellent Italian suede with traditional moccasin tubular stitching and segmented rubber pebble driving sole.",
-    "tags": [
-      "Driving Shoes",
-      "Suede Moccasins",
-      "Penny Loafer",
-      "Casual"
-    ],
-    "sizes": [
-      "UK 7",
-      "UK 8",
-      "UK 9",
-      "UK 10",
-      "UK 11"
-    ],
-    "colors": [
-      "Navy Blue Suede",
-      "Tobacco Brown",
-      "Stone Sand"
-    ],
-    "specifications": {
-      "Upper": "100% Water-Treated Italian Calf Suede",
-      "Sole": "Segmented Rubber Grip Pebble Driving Sole",
-      "Insole": "Cushioned Leather Footbed",
-      "Construction": "Hand-Stitched Tubular Moccasin"
-    },
-    "features": [
-      "Segmented rubber pebble sole provides unmatched pedal sensitivity and floor grip",
-      "Tubular moccasin construction wraps the foot in seamless suede comfort",
-      "Soft breathable leather lining for effortless barefoot wear",
-      "Classic penny strap detail across the vamp with hand-stitched apron",
-      "Lightweight and flexible enough to roll into weekend luggage"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 36,
-    "name": "Classic Heritage Washed Cotton Baseball Cap",
-    "brand": "SHOPWAVE ATELIER",
-    "category": "accessories",
-    "price": 999,
-    "originalPrice": 1499,
-    "rating": 4.8,
-    "reviewCount": 4890,
-    "badge": "hot",
-    "description": "An understated, unconstructed 6-panel dad hat. Made from 100% pre-washed cotton twill with an antiqued brass buckle closure and subtle tonal embroidered atelier crest.",
-    "tags": [
-      "Baseball Cap",
-      "Dad Hat",
-      "Cotton Twill",
-      "Headwear"
-    ],
-    "sizes": [
-      "One Size Fits Most (Adjustable Strapback)"
-    ],
-    "colors": [
-      "Washed Navy",
-      "Charcoal Black",
-      "Vintage Khaki"
-    ],
-    "specifications": {
-      "Fabric": "100% Pre-Washed Cotton Twill",
-      "Profile": "Low-Profile 6-Panel Unstructured Crown",
-      "Closure": "Adjustable Strapback with Embossed Brass Buckle",
-      "Brim": "Pre-Curved Sun Visor"
-    },
-    "features": [
-      "Enzyme-washed cotton for an authentic broken-in vintage feel",
-      "Antiqued brass slider buckle customizes fit for all head sizes",
-      "Pre-curved brim shields eyes from harsh sunlight",
-      "Interior cotton sweatband absorbs forehead moisture",
-      "Six stitched ventilation eyelets promote continuous airflow"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  }
-];
-
-export const formatPrice = (price) =>
-  new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(price);
-
-export const getDiscount = (price, original) =>
-  original ? Math.round(((original - price) / original) * 100) : null;
-
-export const renderStars = (rating) => {
-  const full = Math.floor(rating);
-  const half = rating % 1 >= 0.5 ? 1 : 0;
-  const empty = 5 - full - half;
-  return '★'.repeat(full) + (half ? '½' : '') + '☆'.repeat(empty);
-};
+export function formatPrice(price) {
+  return '₹' + price.toLocaleString('en-IN');
+}

@@ -134,7 +134,7 @@ export default function HomePage() {
 
           <div style={{ textAlign: 'center', marginTop: '3.5rem' }}>
             <Link to="/products" className="btn-gucci-outline-lg">
-              VIEW ALL 36 PRODUCTS →
+              VIEW ALL {products.length} ESSENTIALS →
             </Link>
           </div>
         </div>
