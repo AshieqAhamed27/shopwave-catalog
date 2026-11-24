@@ -5714,3 +5714,215 @@ body {
     overflow-x: auto;
   }
 }
+
+
+/* ==========================================================================
+   Clean Atelier Navbar & Logo Styling
+   ========================================================================== */
+
+.clean-top-bar {
+  background: #050505;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 6px 0;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #a1a1aa;
+}
+
+.gucci-bar-sep {
+  color: rgba(255, 255, 255, 0.2);
+  margin: 0 0.5rem;
+  font-size: 0.6rem;
+}
+
+.clean-navbar {
+  padding: 0.85rem 0;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease;
+}
+
+.clean-navbar.scrolled {
+  padding: 0.65rem 0;
+  background: rgba(7, 7, 7, 0.98);
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.clean-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.clean-link {
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #a1a1aa;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.2s ease;
+}
+
+.clean-link:hover {
+  color: #ffffff;
+}
+
+.clean-link.active {
+  color: #ffffff;
+}
+
+.clean-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gold-primary);
+  border-radius: 1px;
+}
+
+.clean-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+}
+
+.clean-search-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #a1a1aa;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.clean-search-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.clean-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #a1a1aa;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.clean-icon-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.clean-signin-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.clean-signin-btn:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+  background: rgba(197, 160, 89, 0.08);
+}
+
+.clean-account-btn {
+  border-radius: 20px;
+  padding: 4px 12px 4px 6px;
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  background: rgba(197, 160, 89, 0.06);
+}
+
+.mobile-menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.mobile-nav-drawer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(13, 13, 13, 0.98);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1.5rem 0 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.85);
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #e4e4e7;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.mobile-nav-item:hover,
+.mobile-nav-item.active {
+  color: var(--gold-primary);
+}
+
+.mobile-nav-footer {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 1024px) {
+  .clean-nav-links {
+    display: none;
+  }
+  .mobile-menu-toggle {
+    display: flex;
+  }
+}
