@@ -2,208 +2,106 @@
   "categories": [
     {
       "id": "all",
-      "label": "All Products",
+      "label": "All Collection",
       "icon": "✦"
     },
     {
-      "id": "electronics",
-      "label": "Electronics",
+      "id": "sneakers",
+      "label": "Sneakers & Footwear",
+      "icon": "👟"
+    },
+    {
+      "id": "apparel",
+      "label": "Luxury Apparel",
+      "icon": "🧥"
+    },
+    {
+      "id": "originals",
+      "label": "Adidas Originals",
       "icon": "⚡"
     },
     {
-      "id": "fashion",
-      "label": "Fashion",
-      "icon": "👗"
+      "id": "performance",
+      "label": "Performance & Running",
+      "icon": "🏃"
     },
     {
-      "id": "home",
-      "label": "Home & Living",
-      "icon": "🏠"
-    },
-    {
-      "id": "sports",
-      "label": "Sports",
-      "icon": "🏋️"
-    },
-    {
-      "id": "beauty",
-      "label": "Beauty",
-      "icon": "✨"
+      "id": "accessories",
+      "label": "Bags & Accessories",
+      "icon": "🎒"
     }
   ],
   "products": [
     {
       "id": 1,
-      "name": "ArcPro X1 Wireless Headphones",
-      "category": "electronics",
-      "price": 12999,
-      "originalPrice": 18999,
-      "rating": 4.8,
-      "reviewCount": 2341,
+      "name": "Adidas Originals Samba OG Leather Shoes",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "sneakers",
+      "price": 10999,
+      "originalPrice": 13999,
+      "rating": 4.9,
+      "reviewCount": 9480,
       "badge": "hot",
-      "description": "Industry-leading noise cancellation, 30-hour battery life, and ultra-premium build quality. The ArcPro X1 redefines what wireless audio feels like — with adaptive EQ, transparency mode, and seamless multi-device pairing.",
+      "description": "Born on the pitch, the Samba is an undisputed icon of street style. Featuring a premium soft leather upper, classic suede T-toe overlay, textured gum rubber cupsole, and metallic gold foil 'Samba' lettering.",
       "tags": [
-        "Wireless",
-        "Noise Cancelling",
-        "Bluetooth 5.3",
-        "30hr Battery"
+        "Samba",
+        "Originals",
+        "Leather Sneaker",
+        "Gum Sole"
       ],
-      "features": [
-        "Active Noise Cancellation (ANC)",
-        "Transparency Mode",
-        "30-hour battery life",
-        "Wireless charging case",
-        "Bluetooth 5.3 multipoint",
-        "Foldable premium design"
+      "sizes": [
+        "UK 6",
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "SONY",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Cloud White / Core Black / Gum",
+        "Core Black / Cloud White / Gum"
       ],
       "specifications": {
-        "Brand": "SONY",
-        "Model": "ArcPro X1 Wireless Headphones",
-        "Category": "ELECTRONICS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Upper Material": "Full Grain Leather with Suede T-Toe",
+        "Outsole": "Semi-Translucent Textured Gum Rubber",
+        "Closure": "Flat Lace Closure",
+        "Lining": "Soft Synthetic Leather Lining",
+        "Origin": "Vietnam / India",
+        "Collection": "Adidas Originals Heritage"
       },
+      "features": [
+        "Iconic reinforced suede T-toe toe cap design",
+        "Supple full grain leather upper with serrated 3-Stripes",
+        "Signature low-profile gum rubber cupsole for traction",
+        "Gold foil embossed Samba branding on lateral quarter",
+        "Ortholite moisture-wicking comfort sockliner"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 2,
-      "name": "NovaSmart Watch Ultra",
-      "category": "electronics",
-      "price": 24999,
-      "originalPrice": 34999,
-      "rating": 4.6,
-      "reviewCount": 1876,
-      "badge": "sale",
-      "description": "Your health, style, and productivity — unified in one brilliant device. Features a 2.1\" AMOLED display, ECG monitoring, blood oxygen tracking, and 7-day battery.",
+      "name": "Adidas Ultraboost Light High-Performance Running Shoes",
+      "brand": "ADIDAS PERFORMANCE",
+      "category": "performance",
+      "price": 18999,
+      "originalPrice": 22999,
+      "rating": 4.9,
+      "reviewCount": 6310,
+      "badge": "hot",
+      "description": "Experience epic energy return with our lightest Ultraboost ever. Engineered with 30% lighter Light BOOST material, Primeknit+ FORGED textile upper that molds to your foot, and Continental Rubber outsole for superior grip in wet and dry conditions.",
       "tags": [
-        "AMOLED",
-        "Health Monitor",
-        "GPS",
-        "7-day Battery"
+        "Ultraboost",
+        "Light BOOST",
+        "Primeknit+",
+        "Continental Rubber"
       ],
-      "features": [
-        "2.1\" AMOLED always-on display",
-        "ECG & Blood Oxygen sensor",
-        "Built-in GPS",
-        "7-day battery life",
-        "100+ workout modes",
-        "IP68 water resistant"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "APPLE",
-      "sizes": null,
-      "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
-      ],
-      "specifications": {
-        "Brand": "APPLE",
-        "Model": "NovaSmart Watch Ultra",
-        "Category": "ELECTRONICS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
-      },
-      "assured": true,
-      "deliveryDays": 1
-    },
-    {
-      "id": 3,
-      "name": "Lumera 4K Action Camera",
-      "category": "electronics",
-      "price": 19500,
-      "originalPrice": null,
-      "rating": 4.7,
-      "reviewCount": 892,
-      "badge": "new",
-      "description": "Capture your adventures in cinematic 4K at 120fps. HyperSmooth 4.0 stabilization, voice commands, and a rugged waterproof design.",
-      "tags": [
-        "4K 120fps",
-        "HyperSmooth",
-        "Waterproof",
-        "Voice Control"
-      ],
-      "features": [
-        "4K at 120fps video",
-        "HyperSmooth 4.0 stabilization",
-        "Waterproof to 10m",
-        "HDR + Night Lapse modes",
-        "Voice control support",
-        "Live streaming capable"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "GOPRO",
-      "sizes": null,
-      "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
-      ],
-      "specifications": {
-        "Brand": "GOPRO",
-        "Model": "Lumera 4K Action Camera",
-        "Category": "ELECTRONICS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
-      },
-      "assured": true,
-      "deliveryDays": 1
-    },
-    {
-      "id": 4,
-      "name": "Velvet Cloud Premium Sneakers",
-      "category": "fashion",
-      "price": 7999,
-      "originalPrice": 11999,
-      "rating": 4.5,
-      "reviewCount": 3210,
-      "badge": "sale",
-      "description": "Ultra-lightweight foam midsole meets breathable engineered knit upper. Comfort that lasts all day, style that turns heads.",
-      "tags": [
-        "Lightweight",
-        "Knit Upper",
-        "Foam Sole",
-        "Unisex"
-      ],
-      "features": [
-        "Engineered knit upper",
-        "Ultra-light foam midsole",
-        "Breathable mesh lining",
-        "Flexible rubber outsole",
-        "Available sizes 5-12",
-        "Machine washable"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "PUMA",
       "sizes": [
         "UK 7",
         "UK 8",
@@ -212,536 +110,673 @@
         "UK 11"
       ],
       "colors": [
-        "Chalk White",
-        "Core Black",
-        "Wolf Gray"
+        "Core Black / Solar Red",
+        "Cloud White / Crystal White",
+        "Lucid Cyan"
       ],
       "specifications": {
-        "Type": "Running / Lifestyle Sneakers",
-        "Sole Material": "EVA Rubber Foam Cushioning",
-        "Upper Material": "Breathable Engineered Mesh",
-        "Closure": "Lace-Up",
-        "Occasion": "Sports / Casual Running",
-        "Country of Origin": "India"
+        "Midsole": "Light BOOST Foam (30% Lighter)",
+        "Upper": "Adidas Primeknit+ FORGED Textile",
+        "Outsole": "Continental Better Rubber",
+        "Drop": "10 mm (Heel: 30 mm / Forefoot: 20 mm)",
+        "Weight": "293 g (Size UK 8.5)",
+        "Collection": "Adidas Running Performance"
       },
+      "features": [
+        "30% lighter BOOST capsule generation providing maximum bounce",
+        "Foot-hugging Primeknit+ FORGED textile prevents pressure points",
+        "Linear Energy Push (LEP) system tuned for stiffer toe-off",
+        "Continental Natural Performance Rubber grip on wet roads",
+        "Upper yarn contains at least 50% Parley Ocean Plastic"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+      ],
+      "assured": true,
+      "deliveryDays": 1
+    },
+    {
+      "id": 3,
+      "name": "Adidas Originals Gazelle Indoor Suede Classic Shoes",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "sneakers",
+      "price": 11999,
+      "originalPrice": 14999,
+      "rating": 4.8,
+      "reviewCount": 4290,
+      "badge": "new",
+      "description": "The 1979 indoor classic returns. Crafted with buttery-soft suede upper, translucent gum rubber cupsole that wraps around the silhouette, and contrasting leather 3-Stripes. An eternal streetwear grail.",
+      "tags": [
+        "Gazelle",
+        "Suede",
+        "Gum Sole",
+        "Terrace Icon"
+      ],
+      "sizes": [
+        "UK 6",
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
+      ],
+      "colors": [
+        "Collegiate Navy / Gum",
+        "Scarlet Red / Cloud White",
+        "Bliss Pink"
+      ],
+      "specifications": {
+        "Upper Material": "Premium Pigskin Suede Upper",
+        "Outsole": "Translucent Wrapped Gum Rubber",
+        "Collar": "Soft Leather Collar and Tongue",
+        "Branding": "Gold Foil Trefoil on Heel Tab",
+        "Collection": "Originals Terrace Culture"
+      },
+      "features": [
+        "Ultra-soft brushed premium pigskin suede finish",
+        "Iconic translucent gum rubber outsole with Trefoil tread",
+        "Gold foil Gazelle stamping parallel to 3-Stripes",
+        "Padded collar and tongue for cushioned everyday wear",
+        "Reinforced toe cap for heritage silhouette stability"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80"
+      ],
+      "assured": true,
+      "deliveryDays": 1
+    },
+    {
+      "id": 4,
+      "name": "Adidas Y-3 Qasa High Yohji Yamamoto Luxury Neoprene Sneakers",
+      "brand": "Y-3 LUXURY",
+      "category": "sneakers",
+      "price": 34999,
+      "originalPrice": 42999,
+      "rating": 4.9,
+      "reviewCount": 1480,
+      "badge": "limited",
+      "description": "Designed in collaboration with visionary Japanese master Yohji Yamamoto. The avant-garde Y-3 Qasa High returns with its iconic tubular EVA outsole, elasticated criss-cross strap wrapping, and luxurious neoprene upper with premium poron sockliner.",
+      "tags": [
+        "Y-3",
+        "Yohji Yamamoto",
+        "High-Fashion",
+        "Tubular"
+      ],
+      "sizes": [
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
+      ],
+      "colors": [
+        "Triple Black",
+        "Black / Off-White"
+      ],
+      "specifications": {
+        "Designer": "Yohji Yamamoto for Adidas",
+        "Upper": "Technical Neoprene with Elastic Straps",
+        "Outsole": "Signature Tubular EVA Outsole",
+        "Insole": "Poron Performance Cushioning",
+        "Collection": "Y-3 Runway Luxury"
+      },
+      "features": [
+        "Visionary high-fashion ninja boot silhouette with stretch straps",
+        "Technical neoprene inner bootie molds like a second skin",
+        "Sculpted futuristic EVA tubular tire-inspired sole unit",
+        "Yohji Yamamoto laser-etched signature on lateral side",
+        "Includes luxury Y-3 branded dust bag and collector box"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 5,
-      "name": "Meridian Leather Tote Bag",
-      "category": "fashion",
-      "price": 5499,
-      "originalPrice": 7999,
-      "rating": 4.9,
-      "reviewCount": 674,
-      "badge": "hot",
-      "description": "Hand-stitched premium leather with a spacious interior, brass hardware, and timeless minimalist design. Work or weekend — it carries everything.",
+      "name": "Adidas Originals Forum Low Classic 84 Retro Shoes",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "originals",
+      "price": 9999,
+      "originalPrice": 12999,
+      "rating": 4.7,
+      "reviewCount": 5120,
+      "badge": "sale",
+      "description": "More than just a shoe, the Forum is an attitude. Debuting on the basketball hardwood in 1984, this modern re-issue showcases the iconic criss-cross ankle X-strap, coated leather upper, and vintage off-white midsole.",
       "tags": [
-        "Genuine Leather",
-        "Spacious",
-        "Brass Hardware",
-        "Unisex"
+        "Forum Low",
+        "Retro Hardwood",
+        "Ankle Strap",
+        "1984"
       ],
-      "features": [
-        "Full-grain leather exterior",
-        "Brass-tone hardware accents",
-        "Padded laptop sleeve",
-        "Interior zipper pocket",
-        "Adjustable shoulder strap",
-        "Handcrafted in Italy"
+      "sizes": [
+        "UK 6",
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "LAVIE",
       "colors": [
-        "Cognac Tan",
-        "Midnight Black",
-        "Burgundy"
+        "Off-White / Royal Blue",
+        "Cloud White / Core Black"
       ],
       "specifications": {
-        "Type": "Shoulder Tote Bag",
-        "Material": "Full Grain Vegan Leather",
-        "Compartments": "3 Main + 1 Zip Pocket",
-        "Closure": "YKK Top Zipper",
-        "Occasion": "Work / Everyday / Travel",
-        "Country of Origin": "India"
+        "Upper": "Coated Leather and Suede Trim",
+        "Strap": "Removable Hook-and-Loop Ankle X-Strap",
+        "Midsole": "Heritage EVA Drop-In Midsole",
+        "Outsole": "High-Traction Pivot-Circle Rubber",
+        "Collection": "Adidas Originals Basketball"
       },
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+      "features": [
+        "Authentic 1984 cross-strap ankle lockdown system",
+        "Heavyweight supple tumbled leather with suede collar",
+        "Vintage off-white aged cupsole finish",
+        "Embossed Trefoil logo on lateral side and tongue",
+        "Padded mesh tongue and terry cloth lining"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 6,
-      "name": "Men's Slim Fit Cut-Away Collar Casual Shirt",
-      "category": "fashion",
-      "price": 699,
-      "originalPrice": 1999,
-      "rating": 4.4,
-      "reviewCount": 4820,
+      "name": "Adidas Adicolor Classics Firebird Track Jacket",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "apparel",
+      "price": 6999,
+      "originalPrice": 8999,
+      "rating": 4.9,
+      "reviewCount": 7840,
       "badge": "hot",
-      "description": "Upgrade your smart-casual wardrobe with this slim-fit casual shirt crafted from 100% breathable combed cotton. Features a modern cut-away collar, button placket, curved hem, and single chest pocket. Perfect for casual outings, office fridays, and evening dinners.",
+      "description": "The heartbeat of adidas sportswear heritage. Crafted from lustrous recycled tricot with a stand-up collar, ribbed cuffs, and iconic engineered white 3-Stripes running down the raglan sleeves. Embroidered Trefoil emblem on the left chest.",
       "tags": [
-        "Casual Shirt",
-        "Slim Fit",
-        "100% Cotton",
-        "Full Sleeve"
+        "Firebird",
+        "Track Jacket",
+        "3-Stripes",
+        "Adicolor"
       ],
-      "features": [
-        "100% breathable combed cotton for all-day comfort",
-        "Structured slim silhouette tailored through chest and waist",
-        "Reinforced dual-stitch seams and curved hemline",
-        "Pre-shrunk fabric to prevent post-wash shrinkage",
-        "Single chest patch pocket with subtle tonal embroidery"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "HIGHLANDER",
       "sizes": [
+        "XS",
         "S",
         "M",
         "L",
         "XL",
-        "XXL"
+        "2XL"
       ],
       "colors": [
-        "Sky Blue",
-        "Classic White",
-        "Navy Blue",
-        "Olive"
+        "Black / White 3-Stripes",
+        "Collegiate Green",
+        "Bold Red"
       ],
       "specifications": {
-        "Fabric": "100% Combed Cotton",
-        "Fit": "Slim Fit",
-        "Pattern": "Solid Structured",
-        "Collar": "Cut-Away Collar",
-        "Sleeve": "Full Sleeve with Button Cuffs",
-        "Occasion": "Casual / Smart Casual",
-        "Wash Care": "Machine Wash Cold, Warm Iron",
-        "Country of Origin": "India"
+        "Material": "100% Recycled Polyester Tricot (Lustrous Finish)",
+        "Fit": "Regular Authentic Tracksuit Fit",
+        "Collar": "Stand-Up Funnel Collar",
+        "Closure": "Full Zip with Custom Trefoil Puller",
+        "Pockets": "Dual Concealed Zip Hand Pockets",
+        "Collection": "Adicolor Heritage"
       },
+      "features": [
+        "Glossy vintage-feel heavyweight tricot fabric",
+        "Full zipper front with high funnel neck wind protection",
+        "Contrasting engineered 3-Stripes tape along both sleeves",
+        "Intricately embroidered white Trefoil crest on chest",
+        "Ribbed cuffs and hem that keep warmth locked in"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 7,
-      "name": "Glow Arc Minimal Desk Lamp",
-      "category": "home",
-      "price": 4599,
-      "originalPrice": 6299,
-      "rating": 4.6,
-      "reviewCount": 543,
-      "badge": "sale",
-      "description": "Architect-inspired LED desk lamp with touch-sensitive dimmer, 3 color temperatures, and a 360° adjustable arm. Charge your phone wirelessly at the base.",
+      "name": "Adidas Adicolor Classics Firebird Relaxed Track Pants",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "apparel",
+      "price": 5999,
+      "originalPrice": 7999,
+      "rating": 4.8,
+      "reviewCount": 6190,
+      "badge": "hot",
+      "description": "The matching bottom to the world's most recognizable tracksuit. Cut in a straight-leg relaxed silhouette with side zip pockets, pintuck pleats down the front of the legs, and an elastic waistband with drawcord.",
       "tags": [
-        "LED",
-        "Wireless Charging",
-        "Touch Dimmer",
-        "USB-C"
+        "Firebird Pants",
+        "Track Pants",
+        "Pintuck",
+        "Streetwear"
       ],
-      "features": [
-        "Adjustable brightness 0-100%",
-        "3 color temperatures",
-        "360° flexible arm",
-        "Wireless Qi charging base",
-        "USB-C pass-through port",
-        "Auto-off timer function"
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "PHILIPS",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Black / White 3-Stripes",
+        "Night Indigo",
+        "Collegiate Green"
       ],
       "specifications": {
-        "Brand": "PHILIPS",
-        "Model": "Glow Arc Minimal Desk Lamp",
-        "Category": "HOME",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Material": "100% Recycled Polyester Tricot",
+        "Fit": "Straight Leg Relaxed Silhouette",
+        "Waist": "Elastic Waistband with Adjustable Drawcord",
+        "Details": "Front Pintuck Creases and Ankle Zips",
+        "Collection": "Adicolor Heritage"
       },
+      "features": [
+        "Stitched vertical pintuck pleat maintains sharp silhouette",
+        "Contrast white 3-Stripes stitched down both outer seams",
+        "Ankle side zippers for custom drape over chunky sneakers",
+        "Secure zippered side pockets for smartphone and keys",
+        "Embroidered Trefoil logo on upper left thigh"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 8,
-      "name": "Nordic Minimal Wall Clock",
-      "category": "home",
-      "price": 2199,
-      "originalPrice": null,
-      "rating": 4.3,
-      "reviewCount": 288,
-      "badge": "new",
-      "description": "Scandinavian design meets silent sweep mechanism. Solid walnut frame with a matte white face. Makes time look beautiful.",
+      "name": "Adidas Originals Trefoil Heavyweight French Terry Hoodie",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "originals",
+      "price": 6499,
+      "originalPrice": 8499,
+      "rating": 4.9,
+      "reviewCount": 8920,
+      "badge": "hot",
+      "description": "An everyday luxury essential. Tailored from 450 GSM ultra-heavyweight cotton French terry for maximum drape and structural silhouette. Showcases an oversized flock-printed Trefoil on the chest, crossover hood, and kangaroo pouch pocket.",
       "tags": [
-        "Silent Sweep",
-        "Walnut Frame",
-        "Scandinavian",
-        "Battery Powered"
+        "Trefoil",
+        "Heavyweight Hoodie",
+        "French Terry",
+        "Cozy"
       ],
-      "features": [
-        "Silent sweep mechanism",
-        "Solid walnut wood frame",
-        "Matte white dial face",
-        "30cm diameter",
-        "Single AA battery",
-        "Handcrafted in Denmark"
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1533090161767-e6ffed986b88?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "IKEA",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Medium Heather Grey",
+        "Core Black",
+        "Off White"
       ],
       "specifications": {
-        "Brand": "IKEA",
-        "Model": "Nordic Minimal Wall Clock",
-        "Category": "HOME",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Fabric": "100% Heavyweight French Terry Cotton (450 GSM)",
+        "Fit": "Oversized Streetwear Silhouette",
+        "Hood": "Dual-Layer Crossover Drawcord Hood",
+        "Pocket": "Kangaroo Pouch Pocket",
+        "Collection": "Adidas Originals Core"
       },
+      "features": [
+        "Heavyweight 450 GSM French terry cotton with brushed interior",
+        "Thick crossover drawstring hood holds its shape perfectly",
+        "Giant iconic rubberized Trefoil crest emblazoned on front",
+        "Ribbed side gussets provide natural ease of movement",
+        "Heavy-gauge ribbed cuffs and waistband prevent draft"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 9,
-      "name": "ProFlex Resistance Band Set",
-      "category": "sports",
-      "price": 1899,
-      "originalPrice": 2799,
-      "rating": 4.5,
-      "reviewCount": 4320,
+      "name": "Adidas Tiro 24 Pro Tapered Training Track Pants",
+      "brand": "ADIDAS PERFORMANCE",
+      "category": "performance",
+      "price": 4999,
+      "originalPrice": 6499,
+      "rating": 4.7,
+      "reviewCount": 9140,
       "badge": "hot",
-      "description": "Professional-grade latex resistance bands with 5 resistance levels (5–45 kg). Stackable, durable, and comes with a mesh bag + exercise guide.",
+      "description": "The global football standard. Built for elite training with AEROREADY sweat-wicking technology, ankle zippers for quick shoe changes, mesh inserts for ventilation, and a tapered silhouette that stays close through sprints and pivots.",
       "tags": [
-        "5-45kg Resistance",
-        "Stackable",
-        "Latex",
-        "Starter Kit"
+        "Tiro 24",
+        "Aeroready",
+        "Football Training",
+        "Tapered"
       ],
-      "features": [
-        "5 resistance levels included",
-        "Medical-grade latex",
-        "Stackable design (up to 45kg)",
-        "Comfortable foam handles",
-        "Ankle straps included",
-        "Digital exercise guide"
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "BOLDFIT",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Team Navy Blue / White",
+        "Black / Reflective Silver"
       ],
       "specifications": {
-        "Brand": "BOLDFIT",
-        "Model": "ProFlex Resistance Band Set",
-        "Category": "SPORTS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Technology": "AEROREADY Moisture Absorbing",
+        "Fit": "Slim Athletic Tapered Fit",
+        "Material": "100% Recycled Polyester Doubleknit",
+        "Ankles": "Heavy Duty Ankle Leg Zippers",
+        "Collection": "Adidas Football Pro"
       },
+      "features": [
+        "AEROREADY high-tech yarn pulls moisture away rapidly",
+        "Engineered mesh calf panels maximize cooling airflow",
+        "Calf-to-ankle zippers enable fast removal over boots",
+        "Drawcord on elastic waist for personalized dynamic hold",
+        "Heat-transferred 3-Stripes and Performance badge"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 10,
-      "name": "QuantumRun Carbon Running Shoes",
-      "category": "sports",
-      "price": 15999,
-      "originalPrice": 20999,
-      "rating": 4.8,
-      "reviewCount": 1097,
-      "badge": "limited",
-      "description": "Carbon fiber plate + nitrogen-infused foam = your fastest race yet. Used by marathon runners worldwide. Lightweight at just 198g.",
+      "name": "Adidas Terrex Free Hiker 2.0 Gore-Tex Waterproof Boots",
+      "brand": "ADIDAS TERREX",
+      "category": "performance",
+      "price": 21999,
+      "originalPrice": 26999,
+      "rating": 4.9,
+      "reviewCount": 3210,
+      "badge": "new",
+      "description": "Trek without limits. Combining lightweight trail-runner agility with heavy-duty boot support. Powered by full-length BOOST midsole cushioning, a waterproof and breathable GORE-TEX membrane, and Continental lugged outsole.",
       "tags": [
-        "Carbon Plate",
-        "Race Ready",
-        "198g",
-        "Nitrogen Foam"
+        "Terrex",
+        "Gore-Tex",
+        "Boost",
+        "Continental",
+        "Trail"
       ],
-      "features": [
-        "Full-length carbon fiber plate",
-        "Nitrogen-infused foam midsole",
-        "Ultra-thin mesh upper",
-        "Weight: 198g (US9)",
-        "Marathon race certified",
-        "Heel-to-toe drop: 8mm"
+      "sizes": [
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "NIKE",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Wonder Steel / Impact Orange",
+        "Core Black / Grey"
       ],
       "specifications": {
-        "Brand": "NIKE",
-        "Model": "QuantumRun Carbon Running Shoes",
-        "Category": "SPORTS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Membrane": "GORE-TEX Extended Comfort Waterproof",
+        "Midsole": "Full-Length BOOST Cushioning",
+        "Outsole": "Continental Lugged Trail Rubber",
+        "Upper": "Abrasion-Resistant Engineered Mesh with TPU",
+        "Collection": "Adidas Terrex Outdoor"
       },
+      "features": [
+        "Guaranteed waterproof breathable GORE-TEX lining keeps feet dry",
+        "Responsive full-length BOOST delivers endless energy on rocky trails",
+        "Continental rubber outsole with 4.5mm lugs grips mud and wet rock",
+        "Molded external heel clip and EVA stabilization frame",
+        "Seamless welded overlays protect against trail debris"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 11,
-      "name": "Velvet Glow Skincare Kit",
-      "category": "beauty",
-      "price": 3899,
-      "originalPrice": 5499,
-      "rating": 4.7,
-      "reviewCount": 2890,
-      "badge": "sale",
-      "description": "Complete 5-step Korean skincare routine in a luxury gift set. Hyaluronic acid serum, retinol night cream, vitamin C moisturizer, gentle cleanser + toner.",
+      "name": "Adidas Originals Superstar Foundation Shell-Toe Shoes",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "originals",
+      "price": 8999,
+      "originalPrice": 11999,
+      "rating": 4.8,
+      "reviewCount": 11200,
+      "badge": "hot",
+      "description": "From 1970 basketball courts to Run-DMC hip-hop stages. The timeless Superstar features its unmistakable ribbed rubber shell toe, serrated 3-Stripes, smooth leather upper, and herringbone tread cupsole.",
       "tags": [
-        "Korean Skincare",
-        "Hyaluronic Acid",
-        "Retinol",
-        "Gift Set"
+        "Superstar",
+        "Shell Toe",
+        "Hip Hop Icon",
+        "Leather"
       ],
-      "features": [
-        "Hyaluronic acid serum (30ml)",
-        "Retinol night cream (50ml)",
-        "Vitamin C moisturizer (60ml)",
-        "Gentle foaming cleanser",
-        "Balancing rose toner",
-        "Cruelty-free & vegan"
+      "sizes": [
+        "UK 6",
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "MINIMALIST",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Cloud White / Core Black",
+        "Core Black / Cloud White"
       ],
       "specifications": {
-        "Brand": "MINIMALIST",
-        "Model": "Velvet Glow Skincare Kit",
-        "Category": "BEAUTY",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Toe Cap": "Iconic Protective Ribbed Rubber Shell Toe",
+        "Upper": "Full Grain Smooth Leather Upper",
+        "Lining": "Breathable Mesh Sockliner",
+        "Outsole": "Herringbone Pattern Vulcanized Rubber",
+        "Collection": "Adidas Originals Core"
       },
+      "features": [
+        "Signature protective rubber shell toe cap",
+        "Full grain leather upper with serrated 3-Stripes",
+        "Gold foil Superstar box logo on lateral quarter",
+        "Herringbone-pattern cupsole providing high durability",
+        "Padded collar and tongue for everyday streetwear comfort"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 12,
-      "name": "Aura Matte Luxury Lipstick Collection",
-      "category": "beauty",
-      "price": 1599,
-      "originalPrice": null,
-      "rating": 4.6,
-      "reviewCount": 5640,
-      "badge": "new",
-      "description": "Bold, long-lasting matte finish with 12-hour wear. Infused with vitamin E and jojoba oil for comfortable, non-drying wear. Set of 6 curated shades.",
+      "name": "Adidas by Stella McCartney Luxury Running Windbreaker",
+      "brand": "STELLA McCARTNEY",
+      "category": "apparel",
+      "price": 19999,
+      "originalPrice": 24999,
+      "rating": 4.9,
+      "reviewCount": 1820,
+      "badge": "limited",
+      "description": "High performance meets runway elegance. Stella McCartney redefines the running jacket with reflective silver technical fabric, storm-proof bungee cords, packable hood, and breathable underarm laser perforations.",
       "tags": [
-        "12-Hour Wear",
-        "Matte Finish",
-        "Vitamin E",
-        "6 Shades"
+        "Stella McCartney",
+        "Luxury Sport",
+        "Windbreaker",
+        "Designer"
       ],
-      "features": [
-        "12-hour long-lasting formula",
-        "Non-drying matte finish",
-        "Vitamin E & jojoba oil",
-        "Cruelty-free & vegan",
-        "6 curated shade range",
-        "Recyclable packaging"
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1599732487317-567406a14705?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1563178406-4cdc2923acbc?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "M.A.C",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Silver Metallic / Black",
+        "Core White / Acid Yellow"
       ],
       "specifications": {
-        "Brand": "M.A.C",
-        "Model": "Aura Matte Luxury Lipstick Collection",
-        "Category": "BEAUTY",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Collaboration": "Adidas by Stella McCartney",
+        "Material": "100% Recycled Metallic Wind-Proof Ripstop",
+        "Fit": "Relaxed Cocoon Silhouette with Cinch Bungees",
+        "Waterproofing": "DWR PFC-Free Water Repellent Coating",
+        "Collection": "Stella McCartney Runway Sport"
       },
+      "features": [
+        "Ultra-reflective metallic technical ripstop fabric",
+        "Packable design folds directly into its own interior pocket",
+        "Laser-cut ventilation ports along back yoke and arms",
+        "Two-way water-sealed AquaGuard zipper with designer pull",
+        "Signature circular Stella McCartney rubber badge on back"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 13,
-      "name": "Horizon SoundBar 5.1 Dolby Atmos",
-      "category": "electronics",
-      "price": 16999,
-      "originalPrice": 22999,
-      "rating": 4.8,
-      "reviewCount": 1420,
-      "badge": "hot",
-      "description": "Immerse yourself in cinematic 3D surround sound with Dolby Atmos and a dedicated wireless subwoofer. Crystal-clear dialogue and punchy bass bring movies, gaming, and music to life.",
+      "name": "Y-3 Yohji Yamamoto Luxury Tech-Nylon Bomber Jacket",
+      "brand": "Y-3 LUXURY",
+      "category": "apparel",
+      "price": 38999,
+      "originalPrice": 48999,
+      "rating": 5,
+      "reviewCount": 920,
+      "badge": "limited",
+      "description": "The pinnacle of luxury streetwear. Crafted from heavy Japanese flight satin nylon with PrimaLoft insulation, asymmetrical dual-zip front, signature Y-3 matte logo print on the back, and ribbed cashmere-blend collar.",
       "tags": [
-        "Dolby Atmos",
-        "Wireless Subwoofer",
-        "Bluetooth 5.3",
-        "HDMI eARC"
+        "Y-3",
+        "Bomber Jacket",
+        "Yohji Yamamoto",
+        "PrimaLoft"
       ],
-      "features": [
-        "Dolby Atmos 5.1 surround sound",
-        "Wireless deep-bass subwoofer",
-        "HDMI eARC & optical inputs",
-        "Bluetooth 5.3 streaming",
-        "Dedicated dialog enhancement",
-        "Wall-mountable slim profile"
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1558403194-611308249627?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "JBL",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Midnight Obsidian",
+        "Off-White Chalk"
       ],
       "specifications": {
-        "Brand": "JBL",
-        "Model": "Horizon SoundBar 5.1 Dolby Atmos",
-        "Category": "ELECTRONICS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Designer": "Yohji Yamamoto for Adidas Y-3",
+        "Shell": "Heavyweight Japanese Flight Satin Nylon",
+        "Insulation": "PrimaLoft Gold Eco Insulation",
+        "Trim": "Merino Wool and Cashmere Ribbed Trims",
+        "Collection": "Y-3 Paris Fashion Week Collection"
       },
+      "features": [
+        "High-density water-resistant Japanese flight satin",
+        "PrimaLoft Gold Eco down-alternative insulation for thermal warmth",
+        "Asymmetrical two-way front zipper with extended pull tabs",
+        "Tonal soft-touch Y-3 logo screenprint spanning the back",
+        "Multiple concealed utility sleeve pockets and internal chest holster"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 14,
-      "name": "NeoTab Pro 12.4\" OLED Tablet",
-      "category": "electronics",
-      "price": 38999,
-      "originalPrice": 47999,
-      "rating": 4.7,
-      "reviewCount": 965,
+      "name": "Adidas Z.N.E. Premium Full-Zip Athleisure Track Top",
+      "brand": "ADIDAS PERFORMANCE",
+      "category": "apparel",
+      "price": 8999,
+      "originalPrice": 11999,
+      "rating": 4.8,
+      "reviewCount": 4720,
       "badge": "new",
-      "description": "Ultra-slim flagship tablet featuring a vivid 120Hz OLED display, octacore powerhouse performance, and precision stylus included. Perfect for digital art, work, and 4K entertainment.",
+      "description": "Zero Negative Energy. Engineered to help athletes focus before competition. Features four-way stretch spacer fabric, moisture-absorbing AEROREADY, concealed zip pockets, and a clean minimalist aesthetic.",
       "tags": [
-        "120Hz OLED",
-        "Stylus Included",
-        "All-Day Battery",
-        "Quad Speakers"
+        "ZNE",
+        "Zero Negative Energy",
+        "Athleisure",
+        "Warm Up"
       ],
-      "features": [
-        "12.4\" 2.8K OLED 120Hz display",
-        "Active pressure-sensitive stylus included",
-        "Quad AKG-tuned stereo speakers",
-        "10,090 mAh battery with 45W fast charge",
-        "Ultra-thin 5.7mm aluminum body",
-        "Wi-Fi 6E connectivity"
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1527690789675-4ea7d8d49a9b?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "SAMSUNG",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Chalk Pearl",
+        "Core Black",
+        "Silver Violet"
       ],
       "specifications": {
-        "Brand": "SAMSUNG",
-        "Model": "NeoTab Pro 12.4\" OLED Tablet",
-        "Category": "ELECTRONICS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Fabric": "60% Cotton, 40% Recycled Polyester Spacer Doubleknit",
+        "Technology": "AEROREADY 4-Way Stretch",
+        "Fit": "Standard Modern Tapered Fit",
+        "Collar": "Ergonomic High Scuba Neck",
+        "Collection": "Adidas Z.N.E. Athleisure"
       },
+      "features": [
+        "Premium four-way stretch doubleknit fabric blocks distractions",
+        "Fast-release zip allows instant one-pull removal before game",
+        "Laser-cut concealed front zip pockets with rubber tape seals",
+        "Thumbhole cuffs keep sleeves securely in place during warm-ups",
+        "Matte rubberized silicone 3-Stripes branding on back shoulder"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 15,
-      "name": "Men's Tapered Slim-Fit Stretch Denim Jeans",
-      "category": "fashion",
-      "price": 1499,
-      "originalPrice": 3999,
-      "rating": 4.6,
-      "reviewCount": 8410,
+      "name": "Adidas Tiro Cargo Streetwear Utility Pants",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "apparel",
+      "price": 6499,
+      "originalPrice": 8499,
+      "rating": 4.7,
+      "reviewCount": 5410,
       "badge": "hot",
-      "description": "Classic 5-pocket indigo stretch denim jeans designed with a mid-rise waist and tapered leg opening. Blended with premium elastane for effortless flexibility whether you're commuting or lounging. Finished with whiskering and subtle stone wash fading.",
+      "description": "A streetwear remix of our iconic pitch pants. Blending football DNA with utilitarian cargo storage. Features dual snap-flap bellows cargo pockets, ankle zips, and contrast white 3-Stripes running down the thighs.",
       "tags": [
-        "Denim Jeans",
-        "Stretch Cotton",
-        "Slim Tapered",
-        "5-Pocket"
+        "Cargo Pants",
+        "Tiro",
+        "Streetwear",
+        "Utility"
       ],
-      "features": [
-        "Authentic heavy-duty 12.5 oz ring-spun denim",
-        "2% active stretch elastane prevents knee bagging",
-        "Reinforced copper rivets at key stress points",
-        "Classic 5-pocket styling with signature arcuate stitch",
-        "Comfort-stretch waistband contouring natural waist"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1604176354204-9268737828e4?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "LEVI'S",
       "sizes": [
         "30",
         "32",
@@ -750,45 +785,23 @@
         "38"
       ],
       "colors": [
-        "Medium Indigo",
-        "Dark Blue Wash",
-        "Jet Black"
+        "Legend Earth Green",
+        "Core Black",
+        "Sand Khaki"
       ],
       "specifications": {
-        "Fabric": "98% Cotton, 2% Elastane (Stretch Denim)",
-        "Fit": "Slim Tapered Fit",
-        "Waist Rise": "Mid Rise",
-        "Wash": "Lightly Washed with Whiskers",
-        "Fly": "Zip Fly with Shank Button",
-        "Occasion": "Daily Casual / Weekend",
-        "Wash Care": "Machine Wash Inside Out, Do Not Bleach",
-        "Country of Origin": "India"
+        "Material": "Heavy Cotton Twill with Stretch Elastane",
+        "Fit": "Tapered Cargo Fit",
+        "Pockets": "6 Pockets (2 Hand, 2 Cargo Bellows, 2 Back)",
+        "Closure": "Drawcord Elastic Waistband",
+        "Collection": "Adidas Originals Streetwear"
       },
-      "assured": true,
-      "deliveryDays": 1
-    },
-    {
-      "id": 16,
-      "name": "Men's Slim Fit Cotton Chino Cargo Trousers",
-      "category": "fashion",
-      "price": 1199,
-      "originalPrice": 2799,
-      "rating": 4.3,
-      "reviewCount": 3150,
-      "badge": "new",
-      "description": "Versatile multi-pocket cotton twill chino trousers tailored for modern utility and sleek streetwear style. Featuring gusseted cargo thigh pockets, rear welt pockets, and a clean flat front with stretch comfort waistband.",
-      "tags": [
-        "Cargo Pants",
-        "Chinos",
-        "Cotton Twill",
-        "Utility"
-      ],
       "features": [
-        "High-density cotton twill weave resists tears and scuffs",
-        "Twin expandable cargo pockets with secure snap flaps",
-        "Articulated knees allow full range of motion",
-        "Flat-front waistband with sturdy belt loops",
-        "Breathable fabric suitable for all-season wear"
+        "Rugged cotton twill blended with 3% stretch for flexibility",
+        "Expandable bellows thigh cargo pockets with magnetic closures",
+        "Classic signature 3-Stripes stitched on outer thighs",
+        "Adjustable bungee toggles at ankles for customized cuff styling",
+        "Deep front hand pockets and reinforced belt loops"
       ],
       "images": [
         "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
@@ -796,54 +809,51 @@
         "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80"
       ],
-      "brand": "ROADSTER",
-      "sizes": [
-        "30",
-        "32",
-        "34",
-        "36",
-        "38"
-      ],
-      "colors": [
-        "Khaki Beige",
-        "Olive Green",
-        "Charcoal Gray",
-        "Navy Blue"
-      ],
-      "specifications": {
-        "Fabric": "97% Cotton Twill, 3% Spandex",
-        "Fit": "Slim Straight Fit",
-        "Waist Rise": "Mid Rise",
-        "Pockets": "6 Pockets (2 Hand, 2 Cargo Flap, 2 Back)",
-        "Occasion": "Outdoor / Casual / Streetwear",
-        "Wash Care": "Machine Wash Warm",
-        "Country of Origin": "India"
-      },
       "assured": true,
       "deliveryDays": 1
     },
     {
-      "id": 17,
-      "name": "Men's Solid Pure Combed Cotton Crewneck T-Shirt",
-      "category": "fashion",
-      "price": 499,
-      "originalPrice": 1299,
-      "rating": 4.5,
-      "reviewCount": 12940,
+      "id": 16,
+      "name": "Adidas Aeroready 3-Stripes Performance Training Tee",
+      "brand": "ADIDAS PERFORMANCE",
+      "category": "performance",
+      "price": 2499,
+      "originalPrice": 3499,
+      "rating": 4.8,
+      "reviewCount": 14200,
       "badge": "hot",
-      "description": "An everyday essential built to last. Crafted from 220 GSM bio-washed combed cotton with an ultra-soft hand feel. Retains its vibrant color and structured shape through countless wash cycles without pilling or fading.",
+      "description": "The ultimate training t-shirt. Crafted from ultra-breathable mock eyelet fabric powered by moisture-wicking AEROREADY to keep you cool and dry through intense HIIT, weightlifting, and cardio sessions.",
       "tags": [
-        "T-Shirt",
-        "100% Cotton",
-        "Crew Neck",
-        "Bio-Washed"
+        "Aeroready",
+        "Performance Tee",
+        "Gym",
+        "Moisture Wicking"
       ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        "Core Black / White",
+        "Royal Blue",
+        "Carbon Grey"
+      ],
+      "specifications": {
+        "Technology": "AEROREADY Moisture Absorption",
+        "Fabric": "100% Recycled Polyester Mock Eyelet",
+        "Fit": "Athletic Regular Fit",
+        "Seams": "Forward-Shifted Flatlock Anti-Chafe Seams",
+        "Collection": "Adidas Training"
+      },
       "features": [
-        "Heavyweight 220 GSM combed cotton fabric",
-        "Silicone bio-wash treatment for anti-pilling softness",
-        "Lycra ribbed collar prevents neck sagging over time",
-        "Double-stitched hem and sleeves for added durability",
-        "Tagless neck label for scratch-free comfort"
+        "AEROREADY fabric absorbs moisture and manages body climate",
+        "Mesh back panel promotes rapid heat dissipation",
+        "Ergonomic curved hem provides full coverage during overhead lifts",
+        "Anti-chafe flatlock seams prevent skin irritation during runs",
+        "3-Stripes wrapping cleanly across the upper back shoulders"
       ],
       "images": [
         "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
@@ -851,938 +861,993 @@
         "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
       ],
-      "brand": "PUMA",
+      "assured": true,
+      "deliveryDays": 1
+    },
+    {
+      "id": 17,
+      "name": "Adidas Originals 3-Stripes Heavyweight Cotton Tee",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "originals",
+      "price": 2999,
+      "originalPrice": 3999,
+      "rating": 4.9,
+      "reviewCount": 9810,
+      "badge": "hot",
+      "description": "Simplicity done to perfection. Cut from dense 240 GSM single jersey cotton. Styled with contrast ribbed collar and cuffs, contrast 3-Stripes stitched down the shoulders, and embroidered Trefoil logo.",
+      "tags": [
+        "Originals Tee",
+        "Heavyweight",
+        "3-Stripes",
+        "California"
+      ],
       "sizes": [
         "S",
         "M",
         "L",
         "XL",
-        "XXL"
+        "2XL"
       ],
       "colors": [
-        "Jet Black",
-        "Heather Gray",
-        "Classic White",
-        "Navy Blue"
+        "Pure White / Black 3-Stripes",
+        "Black / White",
+        "Collegiate Burgundy"
       ],
       "specifications": {
-        "Fabric": "100% Super Combed Bio-Washed Cotton (220 GSM)",
-        "Fit": "Regular Comfort Fit",
-        "Neckline": "Ribbed Crew Neck",
-        "Sleeve": "Half Sleeve",
-        "Occasion": "Daily Wear / Lounge / Gym",
-        "Wash Care": "Machine Wash Gentle, Dry in Shade",
-        "Country of Origin": "India"
+        "Fabric": "100% Heavyweight Single Jersey Cotton (240 GSM)",
+        "Fit": "Classic Heritage Fit",
+        "Collar": "Contrast Ribbed Crew Neck and Sleeve Bands",
+        "Crest": "Embroidered Trefoil on Chest",
+        "Collection": "Adidas Originals Heritage"
       },
+      "features": [
+        "Dense 240 GSM ring-spun cotton holds a structured drape",
+        "Woven 3-Stripes tape running from neckband to sleeve cuffs",
+        "Contrast retro ringer collar and sleeve binding",
+        "Finely embroidered tonal Trefoil emblem on left chest",
+        "Pre-shrunk treatment retains fit after countless washes"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 18,
-      "name": "AromaMist Ceramic Essential Oil Diffuser",
-      "category": "home",
-      "price": 2799,
-      "originalPrice": 3999,
-      "rating": 4.7,
-      "reviewCount": 1890,
-      "badge": "hot",
-      "description": "Hand-crafted ceramic ultrasonic aroma diffuser that elevates your living space. Whisper-quiet misting, ambient warm night-light, and auto shut-off protection.",
+      "name": "Adidas Originals Handball Spezial Suede Shoes",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "sneakers",
+      "price": 10999,
+      "originalPrice": 13999,
+      "rating": 4.9,
+      "reviewCount": 3840,
+      "badge": "new",
+      "description": "First introduced in 1979 for elite indoor handball players, the Spezial is now a global terrace icon. Featuring a rich suede upper, soft gum rubber sole, and gold foil 'Spezial' branding.",
       "tags": [
-        "Ultrasonic",
-        "Handmade Ceramic",
-        "Warm Ambient LED",
-        "Auto Shut-Off"
+        "Spezial",
+        "Suede",
+        "Terrace",
+        "Gum Sole"
       ],
-      "features": [
-        "Handcrafted matte ceramic cover",
-        "Whisper-quiet ultrasonic mist technology",
-        "Dual mist modes (continuous and intermittent)",
-        "Soothing ambient LED glow",
-        "BPA-free water reservoir (180ml)",
-        "Auto shut-off when water runs out"
+      "sizes": [
+        "UK 6",
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1602928321679-560bb453f190?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "MUJI",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Light Blue / Cloud White",
+        "Aluminium / Core Black",
+        "Collegiate Green"
       ],
       "specifications": {
-        "Brand": "MUJI",
-        "Model": "AromaMist Ceramic Essential Oil Diffuser",
-        "Category": "HOME",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Upper": "Rich Velvety Suede with Synthetic Leather Overlays",
+        "Outsole": "Gum Rubber Cushioning Outsole",
+        "Branding": "Gold Foil Spezial Stamping",
+        "Collection": "Adidas Originals Spezial Series"
       },
+      "features": [
+        "Plush pigskin suede with deep color saturation",
+        "Low-profile gum rubber outsole with micro-pivot circles",
+        "Metallic gold Spezial script lettering along outer stripe",
+        "Cushioned OrthoLite sockliner keeps feet comfortable all day",
+        "Reinforced heel counter keeps shape securely intact"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 19,
-      "name": "Haven Velvet Ergonomic Accent Chair",
-      "category": "home",
-      "price": 14499,
-      "originalPrice": 19999,
-      "rating": 4.8,
-      "reviewCount": 630,
-      "badge": "sale",
-      "description": "Mid-century modern accent chair upholstered in plush stain-resistant velvet with high-density foam padding and sturdy tapered brass-tipped metal legs.",
+      "name": "Adidas Predator Elite Fold-Over Tongue Football Cleats",
+      "brand": "ADIDAS PERFORMANCE",
+      "category": "performance",
+      "price": 24999,
+      "originalPrice": 29999,
+      "rating": 5,
+      "reviewCount": 2190,
+      "badge": "limited",
+      "description": "The legend returns. Celebrating 30 years of goal-scoring mastery with the iconic fold-over tongue with strap, Strikeskin grippy rubber fins on the forefoot, and Controlframe 2.0 firm ground outsole.",
       "tags": [
-        "Stain-Resistant Velvet",
-        "Ergonomic",
-        "Brass Accents",
-        "High-Density Foam"
+        "Predator",
+        "Fold-Over Tongue",
+        "Strikeskin",
+        "Firm Ground"
       ],
-      "features": [
-        "Stain-resistant performance velvet",
-        "Contoured ergonomic backrest",
-        "High-resilience foam cushion",
-        "Sturdy steel frame with brass-finish feet",
-        "Weight capacity up to 150 kg",
-        "Easy 15-minute assembly"
+      "sizes": [
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1580481077195-c990d0b6eb01?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1519947486513-ce6419a70125?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "WEST ELM",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Lucid Lemon / Core Black",
+        "Core Black / Solar Red"
       ],
       "specifications": {
-        "Brand": "WEST ELM",
-        "Model": "Haven Velvet Ergonomic Accent Chair",
-        "Category": "HOME",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Tongue": "Iconic Fold-Over Tongue with Elastic Anchoring Strap",
+        "Grip Technology": "Rubber Strikeskin Precision Elements",
+        "Outsole": "Controlframe 2.0 High-Speed Stability Plate",
+        "Upper": "HybridTouch 2.0 Synthetic Suede",
+        "Collection": "Adidas Football Elite"
       },
+      "features": [
+        "Classic fold-over tongue creates a clean strike zone for shots",
+        "Strategically placed Strikeskin rubber fins generate lethal swerve",
+        "HybridTouch 2.0 upper offers buttery touch and molded comfort",
+        "Controlframe 2.0 outsole delivers explosive acceleration",
+        "Worn by top world champions and international superstars"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 20,
-      "name": "Artisan Ceramic Dinnerware Set",
-      "category": "home",
-      "price": 4999,
-      "originalPrice": 6999,
-      "rating": 4.6,
-      "reviewCount": 880,
-      "badge": "new",
-      "description": "16-piece handcrafted stoneware dinnerware set featuring an organic speckled glaze and exposed earthy rim. Microwave, oven, and dishwasher safe.",
+      "name": "Adidas by Stella McCartney Luxury Gym Duffel Bag",
+      "brand": "STELLA McCARTNEY",
+      "category": "accessories",
+      "price": 16999,
+      "originalPrice": 20999,
+      "rating": 4.9,
+      "reviewCount": 1620,
+      "badge": "limited",
+      "description": "A masterclass in sustainable high-fashion athleisure. Features a water-resistant matte recycled nylon shell, separate ventilated shoe compartment, padded laptop compartment, and detachable yoga mat carry straps.",
       "tags": [
-        "Handcrafted Stoneware",
-        "16-Piece Set",
-        "Dishwasher Safe",
-        "Lead-Free"
+        "Stella McCartney",
+        "Duffel Bag",
+        "Luxury Gym",
+        "Designer Bag"
       ],
-      "features": [
-        "16-piece set (4 dinner plates, 4 salad plates, 4 bowls, 4 mugs)",
-        "Natural speckled reactive glaze finish",
-        "Chip-resistant durable stoneware",
-        "Microwave and dishwasher safe",
-        "Oven safe up to 200°C",
-        "100% lead and cadmium free"
+      "sizes": [
+        "One Size (45L Capacity)"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "FABINDIA",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Matte Black",
+        "Granite Grey"
       ],
       "specifications": {
-        "Brand": "FABINDIA",
-        "Model": "Artisan Ceramic Dinnerware Set",
-        "Category": "HOME",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Dimensions": "55 cm x 30 cm x 28 cm (45 Litres)",
+        "Material": "100% Recycled Matte Nylon with Water-Repellent Finish",
+        "Straps": "Padded Removable Shoulder Strap + Top Grab Handles",
+        "Pockets": "Shoe Garage + Wet Pocket + Padded 15' Laptop Sleeve",
+        "Collection": "Stella McCartney Luxury Accessories"
       },
+      "features": [
+        "Separate bottom zippered compartment stores sweaty gym shoes",
+        "Exterior adjustable compression straps securely hold a yoga mat",
+        "Water-repellent technical nylon keeps workout gear dry",
+        "Soft padded interior sleeve protects tablets and laptops",
+        "Embossed Stella McCartney circular silicone plaque on front"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1546938576-6e6a64f317cc?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 21,
-      "name": "AeroHydro Insulated Stainless Steel Bottle",
-      "category": "sports",
-      "price": 1799,
-      "originalPrice": 2499,
-      "rating": 4.9,
-      "reviewCount": 3820,
+      "name": "Adidas Originals Trefoil Classic Monogram Backpack",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "accessories",
+      "price": 4999,
+      "originalPrice": 6999,
+      "rating": 4.8,
+      "reviewCount": 4830,
       "badge": "hot",
-      "description": "Double-wall vacuum insulated 32oz sports bottle engineered with 18/8 pro-grade stainless steel. Keeps drinks ice cold for 24 hours or steaming hot for 12 hours.",
+      "description": "Elevate your daily carry. Featuring a jacquard Trefoil monogram woven pattern, dual zip main compartment, front utility pocket, and ergonomic padded shoulder straps for all-day comfort.",
       "tags": [
-        "Vacuum Insulated",
-        "24hr Cold / 12hr Hot",
-        "18/8 Steel",
-        "Leak-Proof"
+        "Backpack",
+        "Trefoil",
+        "Monogram",
+        "Daypack"
       ],
-      "features": [
-        "Double-wall vacuum insulation",
-        "32 oz (950ml) capacity",
-        "Leak-proof chug and straw lids included",
-        "Pro-grade 18/8 food-safe stainless steel",
-        "Sweat-free powder-coated exterior",
-        "BPA and phthalate-free"
+      "sizes": [
+        "One Size (24L)"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "HYDRO FLASK",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Night Indigo",
+        "Core Black"
       ],
       "specifications": {
-        "Brand": "HYDRO FLASK",
-        "Model": "AeroHydro Insulated Stainless Steel Bottle",
-        "Category": "SPORTS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Capacity": "24 Litres (42 cm x 30 cm x 15 cm)",
+        "Fabric": "Jacquard Woven Monogram Twill",
+        "Hardware": "Branded Metallic Trefoil Zipper Pulls",
+        "Collection": "Adidas Originals Accessories"
       },
+      "features": [
+        "Subtle all-over jacquard woven Trefoil monogram print",
+        "Padded air-mesh shoulder straps reduce shoulder strain",
+        "Front zippered organizer pocket with key clip",
+        "Internal slip sleeve fits laptops up to 15.6 inches",
+        "Reinforced heavy-duty TPE base resists abrasions"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1546938576-6e6a64f317cc?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 22,
-      "name": "ApexGrip Non-Slip Eco Yoga Mat",
-      "category": "sports",
-      "price": 2999,
-      "originalPrice": 4299,
+      "name": "Adidas Terrex Agravic Flow 2.0 Trail Running Shoes",
+      "brand": "ADIDAS TERREX",
+      "category": "performance",
+      "price": 13999,
+      "originalPrice": 16999,
       "rating": 4.8,
-      "reviewCount": 1760,
+      "reviewCount": 2940,
       "badge": "sale",
-      "description": "Premium 6mm high-density natural tree rubber yoga mat with laser-etched alignment lines and sweat-activated non-slip grip. Free carrying strap included.",
+      "description": "Conquer technical single-tracks and alpine scrambles with Lightstrike cushioning, rock protection plate, and Continental rubber lugs engineered for downhill braking and uphill traction.",
       "tags": [
-        "Natural Rubber",
-        "Alignment Lines",
-        "Non-Slip Grip",
-        "Eco-Friendly"
+        "Terrex",
+        "Trail Running",
+        "Lightstrike",
+        "Continental"
       ],
-      "features": [
-        "6mm extra-thick joint cushioning",
-        "Natural biodegradable tree rubber base",
-        "Laser-etched body alignment system",
-        "Sweat-activated dry grip surface",
-        "Includes premium cotton carrying sling",
-        "Free from PVC, silicones, and toxic phthalates"
+      "sizes": [
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "DECATHLON",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Core Black / Turbo Orange",
+        "Solar Yellow"
       ],
       "specifications": {
-        "Brand": "DECATHLON",
-        "Model": "ApexGrip Non-Slip Eco Yoga Mat",
-        "Category": "SPORTS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Cushioning": "Lightstrike Ultra-Light Pro Midsole",
+        "Protection": "Pro-Moderator Rock Plate",
+        "Grip": "Continental Lugged Rubber Sole",
+        "Collection": "Adidas Terrex Trail"
       },
+      "features": [
+        "Lightstrike foam absorbs hard downhill impacts effortlessly",
+        "Engineered mesh upper breathes and drains water rapidly",
+        "Promoderator support prevents excessive foot twisting on rocks",
+        "Abrasion-resistant mudguard repels trail dirt and roots",
+        "Continental rubber compound grips slick wet stones"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 23,
-      "name": "Botanical Nectar Hair Repair Serum",
-      "category": "beauty",
-      "price": 2199,
-      "originalPrice": 2999,
-      "rating": 4.7,
-      "reviewCount": 2150,
-      "badge": "new",
-      "description": "Intensive leave-in hair elixir formulated with Moroccan argan oil, keratin peptides, and marula oil to tame frizz, heal split ends, and impart a glass-like shine.",
+      "name": "Adidas Adizero Adios Pro 3 Marathon Racing Shoes",
+      "brand": "ADIDAS PERFORMANCE",
+      "category": "performance",
+      "price": 24999,
+      "originalPrice": 28999,
+      "rating": 5,
+      "reviewCount": 3100,
+      "badge": "hot",
+      "description": "The shoe of world marathon record breakers. Powered by dual layers of resilient Lightstrike Pro foam, ENERGYRODS 2.0 carbon-infused rods that mirror foot anatomy, and an ultra-lightweight mesh upper.",
       "tags": [
-        "Argan & Marula Oil",
-        "Keratin Peptides",
-        "Heat Protection",
-        "Anti-Frizz"
+        "Adizero",
+        "Carbon Plate",
+        "Marathon",
+        "EnergyRods"
       ],
-      "features": [
-        "Cold-pressed Moroccan argan oil",
-        "Heat protectant up to 230°C",
-        "Repairs split ends and strengthens cuticle",
-        "Lightweight non-greasy formula",
-        "Sulfate, paraben, and cruelty-free",
-        "Signature jasmine and vanilla scent"
+      "sizes": [
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1608248597359-25f0a207ba83?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "THE ORDINARY",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Solar Red / Lucid Cyan",
+        "Core Black / Cloud White"
       ],
       "specifications": {
-        "Brand": "THE ORDINARY",
-        "Model": "Botanical Nectar Hair Repair Serum",
-        "Category": "BEAUTY",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Rods": "ENERGYRODS 2.0 Carbon-Infused Rods",
+        "Foam": "Dual Layer Lightstrike Pro Foam",
+        "Weight": "215 grams",
+        "Collection": "Adidas Adizero Racing"
       },
+      "features": [
+        "Anatomical carbon EnergyRods 2.0 deliver propulsion through toe-off",
+        "Two resilient slabs of Lightstrike Pro return unmatched energy",
+        "Ultra-thin Celermesh 2.0 upper locks down midfoot securely",
+        "Continental lightweight textile rubber outsole for cornering",
+        "Approved by World Athletics for official competitive marathons"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 24,
-      "name": "Rose Quartz Facial Sculpting Roller",
-      "category": "beauty",
-      "price": 1899,
-      "originalPrice": 2599,
+      "name": "Adidas Originals Stan Smith Luxe Leather Minimalist Shoes",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "originals",
+      "price": 12999,
+      "originalPrice": 15999,
       "rating": 4.8,
-      "reviewCount": 3100,
+      "reviewCount": 15400,
       "badge": "hot",
-      "description": "100% authentic Brazilian rose quartz dual-ended facial roller and heart-shaped Gua Sha tool. Depuffs, cools, stimulates lymphatic drainage, and boosts skin radiance.",
+      "description": "The pinnacle iteration of the legendary tennis shoe. Crafted from ultra-supple buttery European leather, full leather lining, folded clean edge seams, and perforated 3-Stripes.",
       "tags": [
-        "Real Rose Quartz",
-        "Gua Sha Included",
-        "Lymphatic Drainage",
-        "Depuffing"
+        "Stan Smith",
+        "Luxe",
+        "Tennis Heritage",
+        "Clean White"
       ],
-      "features": [
-        "100% certified Brazilian rose quartz",
-        "Dual-ended roller (large & mini stone)",
-        "Matching heart Gua Sha sculpting stone",
-        "Silent silicone rolling mechanism",
-        "Naturally cool to soothe inflammation",
-        "Velvet pouch & gift box included"
+      "sizes": [
+        "UK 6",
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1512290900672-1f0236a29dfb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "FOREST ESSENTIALS",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Cloud White / Fairway Green",
+        "Cloud White / Navy"
       ],
       "specifications": {
-        "Brand": "FOREST ESSENTIALS",
-        "Model": "Rose Quartz Facial Sculpting Roller",
-        "Category": "BEAUTY",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Leather": "Ultra-Supple Butter-Soft Full Grain European Leather",
+        "Lining": "Full Glove Leather Interior Lining",
+        "Perforations": "Subtle Tri-Perforated 3-Stripes",
+        "Collection": "Adidas Originals Luxe Tier"
       },
+      "features": [
+        "Ultra-luxurious buttery European calf leather construction",
+        "Glove leather interior lining provides plush barefoot comfort",
+        "Clean folded-edge stitch finish for high-end designer appeal",
+        "Debossed metallic foil Stan Smith portrait badge on tongue",
+        "Timeless minimalist silhouette pairs with suits or streetwear"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 25,
-      "name": "AuraBeam 4K Laser Smart Projector",
-      "category": "electronics",
-      "price": 42999,
-      "originalPrice": 59999,
+      "name": "Adidas x Ivy Park Luxury Quilted Reversible Puffer Jacket",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "apparel",
+      "price": 28999,
+      "originalPrice": 35999,
       "rating": 4.9,
-      "reviewCount": 740,
-      "badge": "hot",
-      "description": "True 4K UHD laser projection up to 150 inches with 2500 ANSI lumens, HDR10+, Android TV built-in, and Harman Kardon acoustics.",
+      "reviewCount": 1120,
+      "badge": "limited",
+      "description": "A show-stopping collaboration piece. Heavyweight oversized quilted down jacket with reversible contrast lining, detachable hood, snap storm flap, and tonal silicone co-branded patch.",
       "tags": [
-        "4K UHD",
-        "2500 ANSI Lumens",
-        "Android TV",
-        "Harman Kardon"
+        "Ivy Park",
+        "Puffer Jacket",
+        "Reversible",
+        "Runway"
       ],
-      "features": [
-        "4K UHD laser technology",
-        "2500 ANSI lumens high brightness",
-        "Up to 150-inch display size",
-        "Built-in Android TV with voice remote",
-        "Dual 10W Harman Kardon speakers",
-        "Auto focus and keystone correction"
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1461151304267-38535e780c79?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1595769816263-9b910be24d5f?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "XGIMI",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Dark Brown / Solar Orange",
+        "Off-White / Acid Yellow"
       ],
       "specifications": {
-        "Brand": "XGIMI",
-        "Model": "AuraBeam 4K Laser Smart Projector",
-        "Category": "ELECTRONICS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Filling": "80/20 Duck Down and Feather Insulation (650 Fill Power)",
+        "Shell": "Gloss Technical Ripstop Nylon with DWR",
+        "Reversible": "Dual Sided with Alternate Colorway",
+        "Collection": "Adidas x Ivy Park Collaboration"
       },
+      "features": [
+        "Premium 650 fill power duck down delivers cloud-like warmth",
+        "Reversible design offers two striking luxury streetwear looks",
+        "Detachable oversized insulated storm hood with drawcord",
+        "Fleece-lined hand-warmer pockets with magnetic snap closures",
+        "Signature 3-Stripes quilted into the down baffling"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 26,
-      "name": "MechStrike RGB Mechanical Gaming Keyboard",
-      "category": "electronics",
-      "price": 6999,
-      "originalPrice": 9499,
-      "rating": 4.7,
-      "reviewCount": 2890,
-      "badge": "sale",
-      "description": "Hot-swappable linear mechanical switches, per-key RGB backlighting, aircraft-grade aluminum top plate, and magnetic memory foam wrist rest.",
+      "name": "Adidas Originals Campus 00s Chunky Suede Skate Shoes",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "sneakers",
+      "price": 9999,
+      "originalPrice": 12999,
+      "rating": 4.9,
+      "reviewCount": 8740,
+      "badge": "hot",
+      "description": "The viral Y2K sensation. Reimagined with exaggerated proportions, ultra-fat laces, heavily padded tongue, plush suede upper, and vintage off-white midsole. The defining skate silhouette of the decade.",
       "tags": [
-        "Hot-Swappable",
-        "RGB Backlit",
-        "Aluminum Frame",
-        "Linear Switches"
+        "Campus 00s",
+        "Chunky Suede",
+        "Fat Laces",
+        "Y2K Skate"
       ],
-      "features": [
-        "Hot-swappable mechanical switches",
-        "Per-key customizable RGB illumination",
-        "Solid aircraft aluminum top plate",
-        "Magnetic plush wrist rest included",
-        "1000Hz polling rate with N-key rollover",
-        "Detachable braided USB-C cable"
+      "sizes": [
+        "UK 6",
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1541140532154-b024d705b909?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "KEYCHRON",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Core Black / Footwear White",
+        "Grey Three / Cloud White",
+        "Forest Green"
       ],
       "specifications": {
-        "Brand": "KEYCHRON",
-        "Model": "MechStrike RGB Mechanical Gaming Keyboard",
-        "Category": "ELECTRONICS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Upper": "Heavyweight Plush Shaggy Suede",
+        "Laces": "Signature 20mm Ultra-Fat Skate Laces",
+        "Tongue": "Overstuffed Foam Tongue with Embossed Trefoil",
+        "Outsole": "Durable Grippy Rubber Cupsole",
+        "Collection": "Adidas Originals Y2K Skate"
       },
+      "features": [
+        "Exaggerated chunky 2000s skate aesthetic with fat laces",
+        "Plush shaggy suede upper with contrast giant serrated stripes",
+        "Heavily padded collar and puffy tongue cradle the ankle",
+        "Off-white aged rubber cupsole with herringbone tread",
+        "Includes two pairs of contrasting color fat laces"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 27,
-      "name": "Women's High-Rise Ankle Length Skinny Stretch Jeans",
-      "category": "fashion",
-      "price": 1299,
-      "originalPrice": 3199,
-      "rating": 4.7,
-      "reviewCount": 5120,
-      "badge": "hot",
-      "description": "Flattering high-rise skinny jeans designed to hug your curves from hip to ankle. Super-stretch denim offers second-skin comfort with incredible shape retention that won't bag out. Ankle-grazing length pairs effortlessly with sneakers or heels.",
+      "name": "Adidas Performance 3-Stripes Steel Water Bottle (1L)",
+      "brand": "ADIDAS PERFORMANCE",
+      "category": "accessories",
+      "price": 2499,
+      "originalPrice": 3499,
+      "rating": 4.8,
+      "reviewCount": 3910,
+      "badge": "new",
+      "description": "Double-walled vacuum insulated 18/8 stainless steel bottle. Keeps drinks ice cold for 24 hours or piping hot for 12 hours. Features wide-mouth design with leakproof silicone-sealed sport cap.",
       "tags": [
-        "Women Jeans",
-        "High Rise",
-        "Skinny Fit",
-        "Super Stretch"
+        "Water Bottle",
+        "Insulated",
+        "Stainless Steel",
+        "Hydration"
       ],
-      "features": [
-        "Super-stretch denim sculpts and holds its silhouette",
-        "High-rise contour waistband eliminates gap at the back",
-        "Clean ankle-length hemline with double stitch",
-        "Deep functional front and back pockets",
-        "Breathable fabric blend comfortable all year round"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "DENIM LAB",
       "sizes": [
-        "26",
-        "28",
-        "30",
-        "32",
-        "34"
+        "1 Litre (32 oz)"
       ],
       "colors": [
-        "Washed Indigo",
-        "Carbon Black",
-        "Sky Blue Wash"
+        "Matte Black",
+        "Stainless Silver",
+        "Solar Red"
       ],
       "specifications": {
-        "Fabric": "78% Cotton, 20% Polyester, 2% Elastane",
-        "Fit": "Skinny High-Rise Fit",
-        "Waist Rise": "High Rise (10.5-inch)",
-        "Length": "Ankle Length",
-        "Closure": "Zip Fly with Single Button",
-        "Occasion": "Casual / Party / Office",
-        "Wash Care": "Machine Wash Cold, Hang Dry",
-        "Country of Origin": "India"
+        "Material": "18/8 Pro-Grade Stainless Steel (BPA Free)",
+        "Insulation": "TempShield Double-Wall Vacuum Insulation",
+        "Performance": "Cold for 24 Hours / Hot for 12 Hours",
+        "Collection": "Adidas Training Accessories"
       },
+      "features": [
+        "Pro-grade 18/8 stainless steel won't retain or transfer flavors",
+        "TempShield double-wall vacuum insulation prevents condensation",
+        "Textured powder-coat matte exterior provides non-slip grip",
+        "Leak-proof screw lid with integrated TPU finger carry loop",
+        "Laser-etched Adidas Performance Badge of Sport"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 28,
-      "name": "Men's Rugged Washed Denim Trucker Jacket",
-      "category": "fashion",
-      "price": 1899,
-      "originalPrice": 4599,
-      "rating": 4.7,
-      "reviewCount": 4120,
-      "badge": "new",
-      "description": "The iconic denim jacket reimagined with vintage wash character and durable brass hardware. Features point collar, dual flap chest pockets, welt hand pockets, and adjustable waist tabs. The quintessential layering piece for any casual outfit.",
+      "name": "Adidas Pro Training 10mm Dual-Grip Yoga & Fitness Mat",
+      "brand": "ADIDAS PERFORMANCE",
+      "category": "accessories",
+      "price": 3999,
+      "originalPrice": 5499,
+      "rating": 4.8,
+      "reviewCount": 2810,
+      "badge": "hot",
+      "description": "Engineered for maximum joint comfort during yoga, pilates, and floor workouts. 10mm thick high-density NBR foam with ribbed base for floor traction and smooth textured top surface with carry strap.",
       "tags": [
-        "Denim Jacket",
-        "Trucker",
-        "Vintage Wash",
-        "Outerwear"
+        "Yoga Mat",
+        "10mm Cushion",
+        "Fitness Mat",
+        "Workout"
       ],
-      "features": [
-        "Heavy 13 oz durable ring-spun denim cotton",
-        "Antiqued brass shank buttons and contrast stitching",
-        "Adjustable side waist tabs for custom fit tapering",
-        "Dual button-flap chest pockets and interior phone stash",
-        "Pre-washed for instant broken-in comfort"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "ALLEN SOLLY",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
+        "183 cm x 61 cm x 10 mm"
       ],
       "colors": [
-        "Vintage Blue Wash",
-        "Stone Wash",
-        "Charcoal Gray"
+        "Core Black",
+        "Raw Steel Blue",
+        "Solar Red"
       ],
       "specifications": {
-        "Fabric": "100% Heavy Duty Cotton Denim (13 oz)",
-        "Fit": "Regular Boxy Fit",
-        "Collar": "Point Spread Collar",
-        "Closure": "Full Button Placket with Shank Buttons",
-        "Pockets": "4 Pockets (2 Chest Button Flap, 2 Side Welt)",
-        "Occasion": "Winter / Travel / Layering",
-        "Wash Care": "Machine Wash Cold, Hang to Dry",
-        "Country of Origin": "India"
+        "Thickness": "10mm High-Density Cushioning Foam",
+        "Dimensions": "183 cm x 61 cm",
+        "Includes": "Elasticated Hook-and-Loop Shoulder Carry Strap",
+        "Collection": "Adidas Training Hardware"
       },
+      "features": [
+        "Extra thick 10mm padding protects knees and spine on hard floors",
+        "Dual textured surface: smooth top grip and ribbed floor anchor",
+        "Lightweight, rollable design with quick-wrap shoulder sling",
+        "Easy-to-clean moisture-resistant closed-cell material",
+        "Embossed large Adidas Performance Badge of Sport logo"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 29,
-      "name": "BaristaPro Espresso & Cappuccino Machine",
-      "category": "home",
-      "price": 18499,
-      "originalPrice": 24999,
-      "rating": 4.8,
-      "reviewCount": 1390,
-      "badge": "hot",
-      "description": "20-bar professional Italian pump espresso maker with integrated conical burr grinder, micro-foam steam wand, and digital temperature control.",
+      "name": "Adidas Club Performance Tennis Racket Holdall Bag",
+      "brand": "ADIDAS PERFORMANCE",
+      "category": "accessories",
+      "price": 8999,
+      "originalPrice": 11999,
+      "rating": 4.9,
+      "reviewCount": 1420,
+      "badge": "new",
+      "description": "Designed for competitive tennis players. Features two thermal-lined racket compartments holding up to 6 rackets, ventilated footwear tunnel, accessory pockets, and ergonomic backpack straps.",
       "tags": [
-        "20-Bar Pump",
-        "Burr Grinder",
-        "Steam Wand",
-        "PID Temperature"
+        "Tennis Bag",
+        "Racket Holdall",
+        "Thermal Guard",
+        "Pro Club"
       ],
-      "features": [
-        "20-bar high-pressure Italian pump",
-        "Integrated conical burr coffee grinder",
-        "Commercial-style micro-foam steam wand",
-        "PID precise digital temperature control",
-        "Single and double shot portafilters",
-        "1.8L removable water reservoir"
+      "sizes": [
+        "6-Racket Capacity (78 cm x 35 cm x 30 cm)"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "DE'LONGHI",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Black / Solar Yellow",
+        "White / Lucid Cyan"
       ],
       "specifications": {
-        "Brand": "DE'LONGHI",
-        "Model": "BaristaPro Espresso & Cappuccino Machine",
-        "Category": "HOME",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Capacity": "Holds up to 6 Full-Size Tennis Rackets",
+        "Technology": "Climate Protection Thermal Foil Lining",
+        "Compartments": "2 Racket + 1 Apparel + 1 Shoe Garage",
+        "Collection": "Adidas Tennis Performance"
       },
+      "features": [
+        "Thermal guard interior shield protects racket strings from heat",
+        "Dedicated ventilated shoe tunnel isolates court clay and dust",
+        "Padded air-mesh backpack shoulder harness with chest buckle",
+        "Heavyweight 900D coated polyester resists courtside scuffs",
+        "Reflective 3-Stripes ensure visibility during late night matches"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1546938576-6e6a64f317cc?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 30,
-      "name": "ZenBreeze Silent HEPA Air Purifier",
-      "category": "home",
-      "price": 8999,
-      "originalPrice": 12999,
-      "rating": 4.7,
-      "reviewCount": 2010,
-      "badge": "sale",
-      "description": "True HEPA H13 filtration removes 99.97% of airborne allergens, pollen, dust, and pet dander. Ultra-quiet sleep mode and real-time air quality ring.",
+      "name": "Adidas UEFA Champions League Pro Match Football",
+      "brand": "ADIDAS PERFORMANCE",
+      "category": "accessories",
+      "price": 12999,
+      "originalPrice": 15999,
+      "rating": 5,
+      "reviewCount": 4210,
+      "badge": "hot",
+      "description": "The official match ball of European nights. Thermally bonded seamless surface for more predictable trajectory, better touch, and lower water uptake. FIFA Quality Pro certified with iconic star panel graphics.",
       "tags": [
-        "H13 HEPA",
-        "99.97% Allergen Removal",
-        "Silent 24dB",
-        "Smart Sensor"
+        "Champions League",
+        "Match Ball",
+        "FIFA Quality Pro",
+        "Thermally Bonded"
       ],
-      "features": [
-        "3-stage True HEPA H13 filtration",
-        "Covers rooms up to 450 sq ft",
-        "Whisper-quiet sleep mode at 24dB",
-        "Real-time color air quality sensor",
-        "Timer with 2h, 4h, and 8h settings",
-        "Energy Star certified efficiency"
+      "sizes": [
+        "Size 5 (Official Match Ball)"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "DYSON",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "White / Glory Blue / Metallic Gold"
       ],
       "specifications": {
-        "Brand": "DYSON",
-        "Model": "ZenBreeze Silent HEPA Air Purifier",
-        "Category": "HOME",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Certification": "FIFA Quality Pro Highest Rating",
+        "Construction": "100% Polyurethane Thermally Bonded Seamless Cover",
+        "Bladder": "High-Grade Butyl Bladder for Air Retention",
+        "Collection": "UEFA Champions League Official"
       },
+      "features": [
+        "Thermally bonded seamless surface delivers truer aerodynamic flight",
+        "Textured surface structure creates optimal spin control in wet weather",
+        "Highest FIFA rating passed for circumference, weight, and rebound",
+        "High-grade butyl bladder ensures maximum pressure retention",
+        "Official UEFA Champions League crest and star panel design"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1614632537423-1e6c2e7e0aab?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 31,
-      "name": "HydroGlow Ceramic Self-Watering Planters",
-      "category": "home",
-      "price": 2499,
-      "originalPrice": 3499,
-      "rating": 4.6,
-      "reviewCount": 890,
-      "badge": "new",
-      "description": "Set of 3 modern ceramic planters equipped with sub-irrigation reservoir technology that keeps your indoor plants hydrated for up to two weeks.",
+      "name": "Adidas Originals Trefoil Washed Cotton Dad Cap",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "accessories",
+      "price": 1999,
+      "originalPrice": 2799,
+      "rating": 4.8,
+      "reviewCount": 6420,
+      "badge": "hot",
+      "description": "A relaxed, low-profile dad cap crafted from 100% pre-washed cotton twill for an instant broken-in feel. Features an embroidered Trefoil crest on the front and metal slider strapback closure.",
       "tags": [
-        "Self-Watering",
-        "Set of 3",
-        "Hand-Glazed Ceramic",
-        "Indoor Plants"
+        "Dad Cap",
+        "Trefoil",
+        "Cotton Twill",
+        "Strapback"
       ],
-      "features": [
-        "Sub-irrigation self-watering reservoir",
-        "Set of 3 sizes (4\", 6\", 8\")",
-        "Hand-glazed matte minimalist finish",
-        "Prevents over and under-watering",
-        "Removable drainage plug option",
-        "High-fired durable stoneware"
+      "sizes": [
+        "One Size Fits Most (Adjustable)"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "CHUMBAK",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Washed Black",
+        "Chalk White",
+        "Night Indigo"
       ],
       "specifications": {
-        "Brand": "CHUMBAK",
-        "Model": "HydroGlow Ceramic Self-Watering Planters",
-        "Category": "HOME",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Fabric": "100% Pre-Washed Cotton Twill",
+        "Closure": "Adjustable Strapback with Embossed Metal Slider",
+        "Profile": "Relaxed Unstructured 6-Panel Crown",
+        "Collection": "Adidas Originals Core"
       },
+      "features": [
+        "Pre-washed vintage enzyme finish for instant soft drape",
+        "3D embroidered contrast Trefoil insignia on front crown",
+        "Pre-curved brim shields eyes from bright outdoor sunlight",
+        "Embossed metal slider buckle customizes fit for all head sizes",
+        "Interior moisture-absorbing sweatband keeps forehead dry"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 32,
-      "name": "ApexPro Smart Adjustable Dumbbell Set",
-      "category": "sports",
-      "price": 19999,
-      "originalPrice": 27999,
+      "name": "Adidas Y-3 Yohji Yamamoto Luxury Graphic Logo Tee",
+      "brand": "Y-3 LUXURY",
+      "category": "apparel",
+      "price": 14999,
+      "originalPrice": 18999,
       "rating": 4.9,
-      "reviewCount": 1520,
-      "badge": "hot",
-      "description": "Rapid-dial adjustment system replaces 15 sets of weights in one compact footprint. Adjust from 2.5 kg to 24 kg per dumbbell in seconds.",
+      "reviewCount": 940,
+      "badge": "limited",
+      "description": "An understated statement of luxury. Cut from dense 280 GSM mercerized organic cotton with a sculptural drape. Featuring a high-density rubberized Y-3 Yohji Yamamoto signature graphic on the back spine.",
       "tags": [
-        "2.5–24kg",
-        "Rapid Dial",
-        "Replaces 15 Weights",
-        "Anti-Slip Grip"
+        "Y-3",
+        "Designer Tee",
+        "Yohji Yamamoto",
+        "Mercerized Cotton"
       ],
-      "features": [
-        "Rapid dial weight selection",
-        "Adjusts from 2.5kg to 24kg per dumbbell",
-        "Space-saving compact design",
-        "Textured ergonomic knurled handle",
-        "Heavy-duty steel weight plates",
-        "Custom storage docking trays included"
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "BOWFLEX",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Raw White",
+        "Core Black"
       ],
       "specifications": {
-        "Brand": "BOWFLEX",
-        "Model": "ApexPro Smart Adjustable Dumbbell Set",
-        "Category": "SPORTS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Designer": "Yohji Yamamoto for Adidas",
+        "Fabric": "100% Organic Mercerized Cotton (280 GSM)",
+        "Fit": "Architectural Boxy Oversized Silhouette",
+        "Collection": "Y-3 Paris Collection"
       },
+      "features": [
+        "Silky smooth mercerized cotton with substantial heavy drape",
+        "Architectural boxy fit with dropped shoulders and wide sleeves",
+        "Raised high-density silicone Y-3 signature across upper spine",
+        "Thick double-layer ribbed collar prevents neckline stretch",
+        "Handcrafted finishing details adhering to luxury runway standards"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 33,
-      "name": "TrailBlazer Carbon Fiber Trekking Poles",
-      "category": "sports",
-      "price": 3499,
-      "originalPrice": 4799,
-      "rating": 4.7,
-      "reviewCount": 980,
-      "badge": "limited",
-      "description": "Ultra-lightweight 100% carbon fiber trekking poles with ergonomic natural cork grips, quick flick-lock height adjustment, and all-terrain accessories.",
+      "name": "Adidas Terrex Xperior Primaloft Insulated Jacket",
+      "brand": "ADIDAS TERREX",
+      "category": "performance",
+      "price": 17999,
+      "originalPrice": 22999,
+      "rating": 4.9,
+      "reviewCount": 2120,
+      "badge": "hot",
+      "description": "Packable alpine warmth. Engineered for fast-paced mountaineering and cold trail runs. Filled with PrimaLoft Gold Active+ synthetic insulation that retains thermal power even when soaking wet.",
       "tags": [
-        "100% Carbon Fiber",
-        "Natural Cork Grip",
-        "Flick Lock",
-        "Ultra-Light 210g"
+        "Terrex",
+        "Primaloft",
+        "Alpine",
+        "Packable Warmth"
       ],
-      "features": [
-        "100% high-density carbon fiber shafts",
-        "Weight: only 210g per pole",
-        "Moisture-wicking natural cork grips",
-        "Quick-cam aluminum flip locks",
-        "Includes mud baskets, snow baskets & rubber tips",
-        "Collapses to 62cm for easy travel"
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "BLACK DIAMOND",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Wonder Steel",
+        "Core Black",
+        "Impact Orange"
       ],
       "specifications": {
-        "Brand": "BLACK DIAMOND",
-        "Model": "TrailBlazer Carbon Fiber Trekking Poles",
-        "Category": "SPORTS",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Insulation": "PrimaLoft Gold Active+ Breathable Insulation",
+        "Shell": "Pertex Quantum GL Ultralight Ripstop",
+        "Packability": "Stows inside its own chest pocket",
+        "Collection": "Adidas Terrex Mountaineering"
       },
+      "features": [
+        "PrimaLoft Gold Active insulation stretches and regulates body heat",
+        "Ultralight Pertex Quantum ripstop outer blocks chilling summit winds",
+        "Under-helmet scuba hood with elastic binding seals out spindrift",
+        "Two-way harness-compatible front zipper for belaying",
+        "Packs down to the size of an orange into its own internal pocket"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 34,
-      "name": "L'Éclat 24K Gold Rejuvenating Night Serum",
-      "category": "beauty",
-      "price": 4299,
-      "originalPrice": 5999,
+      "name": "Adidas Originals NMD_R1 V2 Tech-Knit Streetwear Shoes",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "sneakers",
+      "price": 13999,
+      "originalPrice": 16999,
       "rating": 4.8,
-      "reviewCount": 2470,
+      "reviewCount": 7920,
       "badge": "hot",
-      "description": "Luxury anti-aging nighttime elixir infused with pure 24K gold flakes, multi-peptide complex, and botanical squalane to restore elasticity and firmness.",
+      "description": "Born from city exploration. Combining 80s racing heritage with cutting-edge tech. Features a stretchy sock-like knit upper, full-length responsive BOOST midsole, and signature futuristic TPU midsole plugs.",
       "tags": [
-        "24K Gold Flakes",
-        "Multi-Peptides",
-        "Squalane",
-        "Anti-Aging"
+        "NMD",
+        "Boost",
+        "Streetwear",
+        "Sock-like Knit"
       ],
-      "features": [
-        "Real 24K gold nano-flakes for collagen support",
-        "Matrixyl 3000 multi-peptide complex",
-        "Plant-derived olive squalane base",
-        "Visibly diminishes fine lines and wrinkles",
-        "Fast-absorbing non-sticky texture",
-        "Dermatologist tested & cruelty-free"
+      "sizes": [
+        "UK 7",
+        "UK 8",
+        "UK 9",
+        "UK 10",
+        "UK 11"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1608248597359-25f0a207ba83?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "ESTÉE LAUDER",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Core Black / Signal Pink",
+        "Cloud White / Core Black"
       ],
       "specifications": {
-        "Brand": "ESTÉE LAUDER",
-        "Model": "L'Éclat 24K Gold Rejuvenating Night Serum",
-        "Category": "BEAUTY",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Midsole": "Full-Length Responsive BOOST with Molded EVA Plugs",
+        "Upper": "Stretchy Sock-Like Engineered Knit",
+        "Heel Tab": "Heel Pull with Multilingual Brand Motto",
+        "Collection": "Adidas Originals Urban Nomads"
       },
+      "features": [
+        "Flexible sock-like knit upper moves naturally with every stride",
+        "Full-length BOOST midsole delivers cloud-like all-day cushioning",
+        "Iconic TPU midsole stabilizer plugs inspired by archival 80s racers",
+        "Textured heel pull loop featuring 'The Brand with the 3 Stripes'",
+        "Translucent rubber outsole reveals BOOST cushioning through windows"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 35,
-      "name": "SonicGlow Deep Cleansing Facial Brush",
-      "category": "beauty",
-      "price": 2699,
-      "originalPrice": 3799,
-      "rating": 4.7,
-      "reviewCount": 1830,
+      "name": "Adidas Adicolor 70s Heritage Velour Tracksuit Jacket",
+      "brand": "ADIDAS ORIGINALS",
+      "category": "originals",
+      "price": 9999,
+      "originalPrice": 12999,
+      "rating": 4.9,
+      "reviewCount": 3120,
       "badge": "new",
-      "description": "Ultra-hygienic sonic silicone facial cleanser delivering 8,000 pulses per minute across 12 intensity settings. 100% waterproof with wireless charging.",
+      "description": "A decadent homage to 1970s disco and sportswear luxury. Crafted from ultra-plush velvet-touch velour with gold-trimmed metal hardware, oversized retro collar, and tonal engineered 3-Stripes down the arms.",
       "tags": [
-        "Sonic Pulses",
-        "Hygienic Silicone",
-        "12 Speeds",
-        "IPX7 Waterproof"
+        "Velour",
+        "Adicolor 70s",
+        "Disco Heritage",
+        "Luxury Tracksuit"
       ],
-      "features": [
-        "8,000 sonic transdermal pulsations per minute",
-        "Medical-grade ultra-soft antibacterial silicone",
-        "12 adjustable intensity vibration levels",
-        "IPX7 100% shower-safe waterproof rating",
-        "Magnetic inductive charging dock",
-        "Up to 300 uses on a single full charge"
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "FOREO",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Collegiate Green",
+        "Deep Burgundy",
+        "Midnight Blue"
       ],
       "specifications": {
-        "Brand": "FOREO",
-        "Model": "SonicGlow Deep Cleansing Facial Brush",
-        "Category": "BEAUTY",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Material": "Ultra-Plush Cotton-Blend Velour (Velvet Finish)",
+        "Hardware": "Brushed Gold Metal Zipper and Puller",
+        "Collar": "Exaggerated 1970s Fold-Over Spread Collar",
+        "Collection": "Adicolor 70s Archive Collection"
       },
+      "features": [
+        "Decadent velvet-soft velour fabric with subtle light shimmer",
+        "Vintage brushed gold-tone full front zip with custom Trefoil tab",
+        "Contrast cream 3-Stripes running down both raglan sleeves",
+        "Embroidered metallic gold Trefoil crest on left chest",
+        "Elasticated waistband and cuffs maintain an authentic blouson silhouette"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 36,
-      "name": "VelvetAura French Vanilla Scented Candle",
-      "category": "beauty",
-      "price": 1499,
-      "originalPrice": 1999,
-      "rating": 4.9,
-      "reviewCount": 3180,
-      "badge": "sale",
-      "description": "Hand-poured 100% natural soy wax candle scented with Madagascar vanilla, tonka bean, and warm amber. Clean-burning wooden wick with 60-hour burn time.",
+      "name": "Adidas by Stella McCartney Ultraboost 22 Luxury Running Shoes",
+      "brand": "STELLA McCARTNEY",
+      "category": "performance",
+      "price": 22999,
+      "originalPrice": 27999,
+      "rating": 5,
+      "reviewCount": 2480,
+      "badge": "limited",
+      "description": "High fashion meets marathon engineering. Featuring a striking sculptural bio-based TPU cage enclosing full-length BOOST, Primeknit 360 sock upper, and Continental rubber tread designed by Stella McCartney.",
       "tags": [
-        "Natural Soy Wax",
-        "Wooden Wick",
-        "60hr Burn Time",
-        "Madagascar Vanilla"
+        "Stella McCartney",
+        "Ultraboost",
+        "Runway Runner",
+        "Designer"
       ],
-      "features": [
-        "100% pure organic soy wax",
-        "Crackling natural wood wick",
-        "Madagascar vanilla & warm amber scent notes",
-        "Up to 60 hours of clean burn time",
-        "Reusable amber glass apothecary jar",
-        "Free from parabens, paraffin, and phthalates"
+      "sizes": [
+        "UK 5",
+        "UK 6",
+        "UK 7",
+        "UK 8",
+        "UK 9"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80"
-      ],
-      "brand": "BATH & BODY WORKS",
-      "sizes": null,
       "colors": [
-        "Black",
-        "Silver",
-        "Navy Blue"
+        "Core Black / Flash Orange",
+        "Chalk White / Pastel Pink"
       ],
       "specifications": {
-        "Brand": "BATH & BODY WORKS",
-        "Model": "VelvetAura French Vanilla Scented Candle",
-        "Category": "BEAUTY",
-        "Warranty": "1 Year Domestic Warranty",
-        "Country of Origin": "India"
+        "Collaboration": "Adidas by Stella McCartney",
+        "Midsole": "100% Full-Length BOOST Cushioning",
+        "Cage": "Architectural Bio-Based Floating TPU Cage",
+        "Outsole": "Continental Better Rubber",
+        "Collection": "Stella McCartney Runway Performance"
       },
+      "features": [
+        "Futuristic sculpted floating TPU midfoot cage provides lockdown",
+        "Continuous BOOST energy return propels every step effortlessly",
+        "Primeknit sockliner engineered with recycled ocean plastic yarns",
+        "Stella McCartney logo emblazoned along heel counter and tongue",
+        "Continental rubber outsole engineered for wet road grip"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+      ],
       "assured": true,
       "deliveryDays": 1
     }

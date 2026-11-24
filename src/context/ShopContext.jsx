@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect } from 'react';
 
 const ShopContext = createContext(null);
 
@@ -8,12 +8,45 @@ export function ShopProvider({ children }) {
   const [cartOpen, setCartOpen] = useState(false);
   const [toasts, setToasts] = useState([]);
 
+  // ---- Auth State (adiClub Luxury Member) ----
+  const [user, setUser] = useState(() => {
+    try {
+      const saved = localStorage.getItem('adiclub_user');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
+
   // ---- Toast ----
   const addToast = useCallback((message, type = 'success') => {
     const id = Date.now();
     setToasts(prev => [...prev, { id, message, type }]);
     setTimeout(() => setToasts(prev => prev.filter(t => t.id !== id)), 3000);
   }, []);
+
+  // ---- Login & Register ----
+  const login = useCallback((userData) => {
+    const defaultUser = {
+      name: userData?.name || 'Ashieq Ahamed',
+      email: userData?.email || 'ashieq@adiclub.in',
+      phone: userData?.phone || '+91 98765 43210',
+      tier: 'adiClub Level 3',
+      points: 3450,
+      joined: 'Member since 2024',
+      avatar: 'AA',
+      ...userData
+    };
+    setUser(defaultUser);
+    localStorage.setItem('adiclub_user', JSON.stringify(defaultUser));
+    addToast(`Welcome back, ${defaultUser.name}! (adiClub Level 3) ⚡`, 'success');
+  }, [addToast]);
+
+  const logout = useCallback(() => {
+    setUser(null);
+    localStorage.removeItem('adiclub_user');
+    addToast('Logged out of your adiClub account.', 'info');
+  }, [addToast]);
 
   // ---- Cart ----
   const addToCart = useCallback((product) => {
@@ -66,6 +99,7 @@ export function ShopProvider({ children }) {
 
   return (
     <ShopContext.Provider value={{
+      user, login, logout,
       cart, addToCart, removeFromCart, updateQty, clearCart, cartTotal, cartCount,
       wishlist, toggleWishlist, isInWishlist,
       cartOpen, setCartOpen,

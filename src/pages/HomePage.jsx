@@ -4,17 +4,17 @@ import { products, formatPrice, renderStars } from '../data/products';
 import ProductCard from '../components/ProductCard';
 
 const featuredCategories = [
-  { id: 'electronics', label: 'Electronics', icon: '⚡', desc: 'Cutting-edge gadgets', color: '#6c63ff' },
-  { id: 'fashion', label: 'Fashion', icon: '👗', desc: 'Style redefined', color: '#f472b6' },
-  { id: 'home', label: 'Home & Living', icon: '🏠', desc: 'Comfort & style', color: '#22d3ee' },
-  { id: 'sports', label: 'Sports', icon: '🏋️', desc: 'Push your limits', color: '#34d399' },
-  { id: 'beauty', label: 'Beauty', icon: '✨', desc: 'Glow naturally', color: '#fb923c' },
+  { id: 'sneakers', label: 'Sneakers & Footwear', icon: '👟', desc: 'Samba, Gazelle & Ultraboost', color: '#6c63ff' },
+  { id: 'apparel', label: 'Luxury Apparel', icon: '🧥', desc: 'Firebird Tracksuits & Hoodies', color: '#f472b6' },
+  { id: 'originals', label: 'Adidas Originals', icon: '⚡', desc: 'Timeless 3-Stripes Heritage', color: '#22d3ee' },
+  { id: 'performance', label: 'Performance & Sport', icon: '🏃', desc: 'Boost, Aeroready & Football', color: '#34d399' },
+  { id: 'accessories', label: 'Bags & Accessories', icon: '🎒', desc: 'Stella McCartney Bags & Gear', color: '#fb923c' },
 ];
 
 export default function HomePage() {
-  const { addToCart } = useShop();
-  const featured = products.filter(p => p.badge === 'hot' || p.badge === 'sale').slice(0, 4);
-  const newest = products.filter(p => p.badge === 'new');
+  const { user } = useShop();
+  const featured = products.filter(p => p.badge === 'hot' || p.badge === 'limited').slice(0, 4);
+  const newest = products.filter(p => p.badge === 'new' || p.category === 'sneakers').slice(0, 4);
 
   return (
     <main className="page">
@@ -31,35 +31,36 @@ export default function HomePage() {
         <div className="container" style={{ position: 'relative', zIndex: 1, padding: '4rem 1.5rem' }}>
           <div className="hero-content">
             <div className="hero-eyebrow">
-              <span className="hero-eyebrow-dot"></span>
-              Now Live — Premium Collection 2024
+              <span className="three-stripes-accent">///</span>
+              {user ? `WELCOME BACK, ${user.name.toUpperCase()} (ADICLUB LEVEL 3)` : 'BECOME AN ADICLUB MEMBER — GET 15% OFF'}
             </div>
 
             <h1 className="hero-title">
-              Discover Products<br />
-              <span className="word-gradient">That Define You</span>
+              YOU GOT THIS.<br />
+              <span className="word-gradient">ORIGINALS & LUXURY SPORT</span>
             </h1>
 
             <p className="hero-description">
-              ShopWave curates the finest electronics, fashion, home decor, sports gear,
-              and beauty essentials — all in one beautifully designed catalog. Find your
-              next favorite thing.
+              Step into the world of iconic terrace heritage, cutting-edge Ultraboost engineering,
+              and luxury Y-3 Yohji Yamamoto collaborations. Designed for champions on and off the street.
             </p>
 
             <div className="hero-cta">
               <Link to="/products" className="btn btn-primary btn-lg" id="hero-shop-btn">
-                Explore Products →
+                Explore The Collection →
               </Link>
-              <Link to="/about" className="btn btn-outline btn-lg" id="hero-about-btn">
-                Our Story
-              </Link>
+              {!user && (
+                <Link to="/login" className="btn btn-outline btn-lg" id="hero-adiclub-btn">
+                  Join adiClub (15% Off)
+                </Link>
+              )}
             </div>
 
             <div className="hero-stats">
               {[
-                { value: '12,000+', label: 'Happy Customers' },
-                { value: '500+', label: 'Premium Products' },
-                { value: '4.8★', label: 'Average Rating' },
+                { value: '100% Authentic', label: 'Official Heritage Gear' },
+                { value: 'Free Delivery', label: 'For All adiClub Members' },
+                { value: '4.9★', label: 'Customer Satisfaction' },
               ].map((stat, i) => (
                 <div key={i}>
                   <div className="hero-stat-value">{stat.value}</div>
@@ -71,50 +72,48 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== ADICLUB MEMBER STRIP ===== */}
+      <section className="adiclub-member-strip">
+        <div className="container strip-content">
+          <div className="strip-text-col">
+            <span className="strip-badge">ADICLUB EXCLUSIVE</span>
+            <h3 className="strip-title">EARN POINTS. UNLOCK SNEAKER DROPS. GET 15% OFF.</h3>
+            <p className="strip-desc">Join millions of creators worldwide. Earn 10 points for every ₹100 spent and access exclusive drops.</p>
+          </div>
+          <Link to="/login" className="strip-btn">
+            {user ? 'VIEW MEMBER PERKS →' : 'SIGN UP FOR FREE →'}
+          </Link>
+        </div>
+      </section>
+
       {/* ===== CATEGORIES ===== */}
       <section className="section" style={{ paddingBottom: '2rem' }}>
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Collections</span>
+            <span className="section-label">Iconic Collections</span>
             <h2 className="section-title">
-              Shop by <span className="gradient-text">Category</span>
+              Shop by <span className="gradient-text">Division</span>
             </h2>
             <p className="section-subtitle">
-              Handpicked collections across every lifestyle. Dive into the world of premium products.
+              From archival terrace sneakers to avant-garde luxury sportswear collaborations.
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: '1rem' }}>
+          <div className="categories-grid">
             {featuredCategories.map(cat => (
               <Link
                 key={cat.id}
                 to={`/products?category=${cat.id}`}
-                className="card"
-                id={`category-${cat.id}`}
-                style={{
-                  padding: '1.75rem 1.25rem',
-                  textAlign: 'center',
-                  display: 'block',
-                  textDecoration: 'none',
-                }}
+                className="category-card"
+                id={`cat-${cat.id}`}
+                style={{ '--accent': cat.color }}
               >
-                <div style={{
-                  width: 56, height: 56,
-                  borderRadius: '14px',
-                  background: `${cat.color}20`,
-                  border: `1px solid ${cat.color}30`,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '1.5rem',
-                  margin: '0 auto 1rem',
-                }}>
+                <div className="category-icon" style={{ background: `${cat.color}20`, color: cat.color }}>
                   {cat.icon}
                 </div>
-                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '0.95rem', marginBottom: '0.25rem' }}>
-                  {cat.label}
-                </h3>
-                <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>{cat.desc}</p>
+                <h3 className="category-name">{cat.label}</h3>
+                <p className="category-desc">{cat.desc}</p>
+                <span className="category-arrow" style={{ color: cat.color }}>Explore →</span>
               </Link>
             ))}
           </div>
@@ -125,100 +124,66 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">🔥 Trending</span>
+            <span className="section-label">Hype Releases</span>
             <h2 className="section-title">
-              <span className="gradient-text">Featured</span> Products
+              Featured <span className="gradient-text">Sneakers & Apparel</span>
             </h2>
-            <p className="section-subtitle">
-              Our most loved products right now. Bestsellers, flash deals, and fan favorites.
-            </p>
+            <p className="section-subtitle">The most coveted icons of the season — Samba OG, Ultraboost Light & Y-3.</p>
           </div>
-          <div className="products-grid">
-            {featured.map(p => <ProductCard key={p.id} product={p} />)}
-          </div>
-          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-            <Link to="/products" className="btn btn-outline" id="view-all-featured-btn">
-              View All Products →
-            </Link>
-          </div>
-        </div>
-      </section>
 
-      {/* ===== PROMO BANNER ===== */}
-      <section style={{ padding: '0 0 5rem' }}>
-        <div className="container">
-          <div style={{
-            background: 'linear-gradient(135deg, rgba(108,99,255,0.12) 0%, rgba(244,114,182,0.08) 100%)',
-            border: '1px solid rgba(108,99,255,0.2)',
-            borderRadius: 'var(--radius-xl)',
-            padding: '3.5rem 3rem',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            gap: '2rem',
-            flexWrap: 'wrap',
-            position: 'relative',
-            overflow: 'hidden',
-          }}>
-            <div style={{ position: 'absolute', top: -60, right: -60, width: 250, height: 250, background: 'var(--accent-primary)', borderRadius: '50%', filter: 'blur(80px)', opacity: 0.1 }}></div>
-            <div>
-              <span className="section-label" style={{ marginBottom: '0.75rem', display: 'inline-block' }}>Limited Time</span>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>
-                Up to <span style={{ background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-pink))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>40% OFF</span> on Sale Items
-              </h2>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
-                Don't miss our biggest sale of the season. Limited stock, unlimited style.
-              </p>
-            </div>
-            <Link to="/products?badge=sale" className="btn btn-primary btn-lg" id="promo-shop-btn" style={{ flexShrink: 0 }}>
-              Shop the Sale →
+          <div className="products-grid">
+            {featured.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+            <Link to="/products" className="btn btn-outline btn-lg">
+              View All 36 Products →
             </Link>
           </div>
         </div>
       </section>
 
       {/* ===== NEW ARRIVALS ===== */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="section" style={{ background: 'linear-gradient(180deg, transparent, rgba(108, 99, 255, 0.04), transparent)' }}>
         <div className="container">
           <div className="section-header">
-            <span className="section-label">✨ Just Dropped</span>
+            <span className="section-label">Just Landed</span>
             <h2 className="section-title">
-              <span className="gradient-text">New Arrivals</span>
+              New <span className="gradient-text">Arrivals</span>
             </h2>
-            <p className="section-subtitle">Fresh picks that just landed. Be the first to own them.</p>
+            <p className="section-subtitle">Fresh silhouettes straight from the design archives and Parisian runways.</p>
           </div>
+
           <div className="products-grid">
-            {newest.map(p => <ProductCard key={p.id} product={p} />)}
+            {newest.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ===== FEATURES STRIP ===== */}
-      <section style={{ padding: '0 0 5rem' }}>
+      {/* ===== BRAND PROMISE ===== */}
+      <section className="section" style={{ borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
+          <div className="features-grid">
             {[
-              { icon: '🚚', title: 'Free Delivery', desc: 'On orders above ₹999' },
-              { icon: '↩️', title: '30-Day Returns', desc: 'Hassle-free returns' },
-              { icon: '🔒', title: 'Secure Payments', desc: 'SSL encrypted checkout' },
-              { icon: '💬', title: '24/7 Support', desc: 'Always here to help' },
+              { icon: '👟', title: '100% Authentic Originals', desc: 'Direct from heritage design vaults with verified craftsmanship certification.' },
+              { icon: '🚚', title: 'Free Express Shipping', desc: 'Doorstep dispatch with live GPS tracking on all adiClub member orders.' },
+              { icon: '🔄', title: '30-Day Hassle-Free Returns', desc: 'Complimentary doorstep return pickups and instant refunds.' },
+              { icon: '⚡', title: 'adiClub Member Rewards', desc: 'Accumulate points, unlock VIP access to sneaker drops, and exclusive events.' },
             ].map((f, i) => (
-              <div key={i} style={{
-                display: 'flex', alignItems: 'center', gap: '1rem',
-                padding: '1.25rem', background: 'var(--bg-glass)',
-                border: '1px solid var(--border-subtle)',
-                borderRadius: 'var(--radius-md)',
-              }}>
-                <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>{f.icon}</span>
-                <div>
-                  <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '0.9rem', marginBottom: '0.15rem' }}>{f.title}</div>
-                  <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>{f.desc}</div>
-                </div>
+              <div key={i} className="feature-card">
+                <div className="feature-icon">{f.icon}</div>
+                <h3 className="feature-title">{f.title}</h3>
+                <p className="feature-desc">{f.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
+
     </main>
   );
 }
