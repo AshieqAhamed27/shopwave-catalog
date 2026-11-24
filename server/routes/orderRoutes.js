@@ -29,7 +29,7 @@ function saveOrders(orders) {
 // POST /api/orders - create a new order
 router.post('/orders', (req, res) => {
   try {
-    const { items, customer, paymentMethod = 'card' } = req.body;
+    const { items, customer, paymentMethod = 'card', paymentDetails } = req.body;
 
     if (!items || !Array.isArray(items) || items.length === 0) {
       return res.status(400).json({ success: false, error: 'Order must contain at least one item' });
@@ -39,6 +39,9 @@ router.post('/orders', (req, res) => {
     const shipping = subtotal > 999 ? 0 : 99;
     const total = subtotal + shipping;
 
+    const transactionId = paymentDetails?.transactionId || `TXN_${Date.now()}_${Math.floor(1000 + Math.random() * 9000)}`;
+    const isCod = (paymentMethod === 'cod' || paymentDetails?.method === 'cod');
+
     const newOrder = {
       id: `ORD-${Date.now()}-${Math.floor(100 + Math.random() * 900)}`,
       createdAt: new Date().toISOString(),
@@ -46,7 +49,9 @@ router.post('/orders', (req, res) => {
       customer: {
         name: customer?.name || 'Guest Shopper',
         email: customer?.email || 'guest@shopwave.local',
+        phone: customer?.phone || '+91 98765 43210',
         address: customer?.address || '123 Wave Street, Tech Hub',
+        city: customer?.city || 'Chennai',
       },
       items: items.map(item => ({
         id: item.id,
@@ -60,7 +65,16 @@ router.post('/orders', (req, res) => {
         shipping,
         total,
       },
-      paymentMethod,
+      paymentMethod: paymentDetails?.method || paymentMethod,
+      payment: {
+        transactionId: isCod ? `COD_PENDING_${Date.now()}` : transactionId,
+        method: paymentDetails?.method || paymentMethod,
+        status: isCod ? 'PENDING_ON_DELIVERY' : 'PAID',
+        paidAt: isCod ? null : (paymentDetails?.paidAt || new Date().toISOString()),
+        upiId: paymentDetails?.upiId || null,
+        bankName: paymentDetails?.bankName || null,
+        cardLast4: paymentDetails?.cardLast4 || null,
+      },
     };
 
     const orders = getOrders();

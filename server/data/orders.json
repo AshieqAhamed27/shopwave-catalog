@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": "ORD-1795495264907-483",
+    "createdAt": "2026-11-24T04:41:04.907Z",
+    "status": "confirmed",
+    "customer": {
+      "name": "Ashieq Ahamed",
+      "email": "guest@shopwave.local",
+      "phone": "9876543210",
+      "address": "GST Road",
+      "city": "Chennai"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "ArcPro X1 Wireless Headphones",
+        "price": 12999,
+        "qty": 1,
+        "image": ""
+      }
+    ],
+    "pricing": {
+      "subtotal": 12999,
+      "shipping": 0,
+      "total": 12999
+    },
+    "paymentMethod": "upi",
+    "payment": {
+      "transactionId": "TXN_TEST_123456",
+      "method": "upi",
+      "status": "PAID",
+      "paidAt": "2026-11-24T04:41:04.873Z",
+      "upiId": "ashieq@oksbi",
+      "bankName": null,
+      "cardLast4": null
+    }
+  }
+]
