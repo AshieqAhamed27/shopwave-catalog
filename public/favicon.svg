@@ -1,29 +1,8 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="sw-fav-grad" x1="2" y1="2" x2="46" y2="46" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#6c63ff" />
-      <stop offset="50%" stop-color="#8b5cf6" />
-      <stop offset="100%" stop-color="#22d3ee" />
-    </linearGradient>
-    <linearGradient id="sw-fav-wave" x1="6" y1="28" x2="42" y2="28" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#22d3ee" />
-    </linearGradient>
-    <linearGradient id="sw-fav-spark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f472b6" />
-      <stop offset="100%" stop-color="#fb923c" />
-    </linearGradient>
-  </defs>
-
-  <!-- Modern Shopping Bag Silhouette with Rounded Contours -->
-  <rect x="6" y="14" width="36" height="30" rx="9" fill="url(#sw-fav-grad)" />
-
-  <!-- Bag Handle -->
-  <path d="M17 15V10C17 6.13401 20.134 3 24 3C27.866 3 31 6.13401 31 10V15" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" />
-
-  <!-- Electric Ocean Wave Crest -->
-  <path d="M8 29C12 24 16 33 22 28C28 23 32 31 40 26" stroke="url(#sw-fav-wave)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
-
-  <!-- Dynamic Spark -->
-  <path d="M24 18L25.2 21.2L28.5 22L25.2 22.8L24 26L22.8 22.8L19.5 22L22.8 21.2L24 18Z" fill="url(#sw-fav-spark)" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0c0c0c"/>
+  <circle cx="32" cy="32" r="28" stroke="#c5a059" stroke-width="1.8" stroke-opacity="0.9"/>
+  <!-- Left G -->
+  <path d="M34 20C26.5 20 21 25.5 21 32C21 38.5 26.5 44 34 44C38.5 44 42 41.8 43.5 39H34V35H47.5V40.5C45 45.2 40 48 34 48C24 48 16.5 40.8 16.5 32C16.5 23.2 24 16 34 16C39.8 16 45 19 47.5 23.5L44 26C42.2 22.2 38.5 20 34 20Z" fill="#c5a059"/>
+  <!-- Right Inverted Interlocking G -->
+  <path d="M30 44C37.5 44 43 38.5 43 32C43 25.5 37.5 20 30 20C25.5 20 22 22.2 20.5 25H30V29H16.5V23.5C19 18.8 24 16 30 16C40 16 47.5 23.2 47.5 32C47.5 40.8 40 48 30 48C24.2 48 19 45 16.5 40.5L20 38C21.8 41.8 25.5 44 30 44Z" fill="#ffffff" fill-opacity="0.9"/>
 </svg>

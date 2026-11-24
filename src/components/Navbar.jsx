@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { NavLink, Link, useNavigate } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
 import BrandLogo from './BrandLogo';
 
@@ -7,7 +7,6 @@ export default function Navbar() {
   const { cartCount, wishlist, setCartOpen, user, logout } = useShop();
   const [scrolled, setScrolled] = useState(false);
   const [userDropdown, setUserDropdown] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -16,94 +15,110 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="navbar-wrapper">
-      {/* Top adiClub Member Announcement Banner */}
-      <div className="adiclub-top-banner">
-        <div className="container banner-inner">
-          <span className="banner-badge">ADICLUB EXCLUSIVE</span>
-          <span className="banner-text">
-            JOIN ADICLUB & GET 15% OFF + FREE EXPRESS DELIVERY ON ALL SNEAKERS & APPAREL
+    <header className="gucci-nav-header">
+      {/* Top Luxury Announcement Bar */}
+      <div className="gucci-top-bar">
+        <div className="container bar-content">
+          <span className="gucci-bar-tag">GUCCI ATELIER</span>
+          <span className="gucci-bar-text">
+            COMPLIMENTARY EXPRESS DELIVERY & SIGNATURE GIFT PACKAGING ON ALL CREATIONS
           </span>
-          <Link to="/login" className="banner-cta">
-            {user ? 'VIEW MEMBER PERKS →' : 'JOIN FOR FREE →'}
-          </Link>
+          <Link to="/products" className="gucci-bar-link">DISCOVER NEW ARRIVALS</Link>
         </div>
       </div>
 
-      <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
-        {/* Logo */}
-        <Link to="/" className="nav-logo" style={{ textDecoration: 'none' }}>
-          <BrandLogo size="md" />
-        </Link>
+      <nav className={`gucci-navbar${scrolled ? ' scrolled' : ''}`}>
+        <div className="container nav-inner-wrap">
+          {/* Gucci Brand Logo */}
+          <Link to="/" className="nav-brand-link" style={{ textDecoration: 'none' }}>
+            <BrandLogo size="md" />
+          </Link>
 
-        {/* Links */}
-        <div className="nav-links">
-          <NavLink to="/" end className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>Home</NavLink>
-          <NavLink to="/products" className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>Products</NavLink>
-          <NavLink to="/wishlist" className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>Wishlist</NavLink>
-          <NavLink to="/about" className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>About</NavLink>
-        </div>
+          {/* Luxury Department Links */}
+          <div className="gucci-nav-links">
+            <NavLink to="/products" end className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
+              ALL CREATIONS
+            </NavLink>
+            <NavLink to="/products?category=handbags" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
+              HANDBAGS
+            </NavLink>
+            <NavLink to="/products?category=shoes" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
+              SHOES
+            </NavLink>
+            <NavLink to="/products?category=apparel" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
+              READY-TO-WEAR
+            </NavLink>
+            <NavLink to="/products?category=accessories" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
+              JEWELRY & ACCESSORIES
+            </NavLink>
+            <NavLink to="/products?category=beauty" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
+              BEAUTY
+            </NavLink>
+          </div>
 
-        {/* Actions */}
-        <div className="nav-actions">
-          {/* User Auth Profile / Login */}
-          {user ? (
-            <div className="nav-user-dropdown-wrap">
-              <button
-                className="nav-user-profile-btn"
-                onClick={() => setUserDropdown(!userDropdown)}
-                title="adiClub Member Account"
-              >
-                <span className="user-avatar-sm">{user.avatar || 'AA'}</span>
-                <span className="user-points-pill">3,450 pts</span>
-              </button>
+          {/* Right Action Icons */}
+          <div className="gucci-nav-actions">
+            {/* My Gucci Account */}
+            {user ? (
+              <div className="gucci-account-dropdown-wrap">
+                <button
+                  type="button"
+                  className="gucci-account-btn logged-in"
+                  onClick={() => setUserDropdown(!userDropdown)}
+                  title="My Gucci Profile"
+                >
+                  <span className="account-initials">{user.avatar || 'GC'}</span>
+                  <span className="account-label">{user.name.split(' ')[0]}</span>
+                </button>
 
-              {userDropdown && (
-                <div className="nav-user-menu" onMouseLeave={() => setUserDropdown(false)}>
-                  <div className="user-menu-header">
-                    <p className="user-menu-name">{user.name}</p>
-                    <span className="user-menu-tier">⚡ {user.tier}</span>
+                {userDropdown && (
+                  <div className="gucci-account-menu" onMouseLeave={() => setUserDropdown(false)}>
+                    <div className="menu-header">
+                      <p className="menu-name">{user.name}</p>
+                      <span className="menu-tier">GUCCI PRIVILEGE CLIENT</span>
+                    </div>
+                    <div className="menu-sep" />
+                    <Link to="/login" className="menu-link" onClick={() => setUserDropdown(false)}>
+                      My Profile & Orders
+                    </Link>
+                    <Link to="/wishlist" className="menu-link" onClick={() => setUserDropdown(false)}>
+                      Saved Items ({wishlist.length})
+                    </Link>
+                    <div className="menu-sep" />
+                    <button
+                      type="button"
+                      className="menu-link logout"
+                      onClick={() => { logout(); setUserDropdown(false); }}
+                    >
+                      Sign Out
+                    </button>
                   </div>
-                  <div className="user-menu-divider" />
-                  <Link to="/login" className="user-menu-item" onClick={() => setUserDropdown(false)}>
-                    adiClub Dashboard & Perks
-                  </Link>
-                  <Link to="/wishlist" className="user-menu-item" onClick={() => setUserDropdown(false)}>
-                    My Wishlist ({wishlist.length})
-                  </Link>
-                  <div className="user-menu-divider" />
-                  <button
-                    className="user-menu-item logout-btn"
-                    onClick={() => { logout(); setUserDropdown(false); }}
-                  >
-                    Sign Out
-                  </button>
-                </div>
-              )}
-            </div>
-          ) : (
-            <Link to="/login" className="nav-login-btn" title="Log in or join adiClub">
-              <span className="login-icon">👤</span>
-              <span className="login-label">LOG IN</span>
-            </Link>
-          )}
+                )}
+              </div>
+            ) : (
+              <Link to="/login" className="gucci-account-btn" title="Sign In to My Gucci">
+                <span className="account-icon">👤</span>
+                <span className="account-text">SIGN IN</span>
+              </Link>
+            )}
 
-          {/* Wishlist */}
-          <NavLink to="/wishlist" className="nav-icon-btn" id="nav-wishlist-btn" title="Wishlist">
-            ♥
-            {wishlist.length > 0 && <span className="nav-badge">{wishlist.length}</span>}
-          </NavLink>
+            {/* Saved Items */}
+            <NavLink to="/wishlist" className="gucci-action-icon" title="Saved Items">
+              <span className="icon-symbol">♡</span>
+              {wishlist.length > 0 && <span className="gucci-badge">{wishlist.length}</span>}
+            </NavLink>
 
-          {/* Cart */}
-          <button
-            className="nav-icon-btn"
-            id="nav-cart-btn"
-            title="Open cart"
-            onClick={() => setCartOpen(true)}
-          >
-            🛒
-            {cartCount > 0 && <span className="nav-badge">{cartCount}</span>}
-          </button>
+            {/* Shopping Bag */}
+            <button
+              type="button"
+              className="gucci-action-icon bag-btn"
+              onClick={() => setCartOpen(true)}
+              title="Shopping Bag"
+            >
+              <span className="icon-symbol">🛍</span>
+              {cartCount > 0 && <span className="gucci-badge">{cartCount}</span>}
+            </button>
+          </div>
         </div>
       </nav>
     </header>

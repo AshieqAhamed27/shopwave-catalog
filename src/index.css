@@ -4071,3 +4071,1646 @@ ul, ol {
     padding-right: 0;
   }
 }
+
+
+/* ==========================================================================
+   GUCCI HAUTE COUTURE LUXURY DESIGN SYSTEM & ALIGNED UI
+   ========================================================================== */
+
+
+
+:root {
+  --font-display: 'Playfair Display', 'Cinzel', Didot, Georgia, serif;
+  --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --gold-primary: #c5a059;
+  --gold-accent: #d4af37;
+  --gold-light: #f3e5ab;
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #0f0f0f;
+  --bg-card: #121212;
+  --text-primary: #ffffff;
+  --text-secondary: #c4c4c4;
+  --text-muted: #7e7e7e;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-gold: rgba(197, 160, 89, 0.35);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+/* --- Gucci Top Bar & Navigation --- */
+.gucci-nav-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.gucci-top-bar {
+  background: #000000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: #d1d5db;
+  text-transform: uppercase;
+}
+
+.bar-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.gucci-bar-tag {
+  color: var(--gold-primary);
+  font-weight: 800;
+  letter-spacing: 0.22em;
+}
+
+.gucci-bar-text {
+  font-weight: 600;
+}
+
+.gucci-bar-link {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.gucci-bar-link:hover {
+  color: var(--gold-primary);
+}
+
+.gucci-navbar {
+  background: rgba(10, 10, 10, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 1.1rem 0;
+  transition: all 0.3s ease;
+}
+
+.gucci-navbar.scrolled {
+  background: rgba(8, 8, 8, 0.98);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  padding: 0.85rem 0;
+}
+
+.nav-inner-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.gucci-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.gucci-nav-link {
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #b0b0b0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  position: relative;
+  padding: 4px 0;
+}
+
+.gucci-nav-link:hover,
+.gucci-nav-link.active {
+  color: #ffffff;
+}
+
+.gucci-nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--gold-primary);
+}
+
+.gucci-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.gucci-account-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--border-subtle);
+  border-radius: 2px;
+  padding: 6px 12px;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.gucci-account-btn:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+}
+
+.gucci-account-btn.logged-in {
+  padding: 4px 10px 4px 4px;
+}
+
+.account-initials {
+  width: 24px;
+  height: 24px;
+  background: var(--gold-primary);
+  color: #000000;
+  font-size: 0.7rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.gucci-action-icon {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.15rem;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.gucci-action-icon:hover {
+  color: var(--gold-primary);
+}
+
+.gucci-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: var(--gold-primary);
+  color: #000000;
+  font-size: 0.65rem;
+  font-weight: 900;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gucci-account-dropdown-wrap {
+  position: relative;
+}
+
+.gucci-account-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 260px;
+  background: #111111;
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
+  padding: 1rem 0;
+  z-index: 100;
+}
+
+.menu-header {
+  padding: 0.25rem 1.25rem 0.75rem;
+}
+
+.menu-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 2px;
+}
+
+.menu-tier {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--gold-primary);
+}
+
+.menu-sep {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 0.5rem 0;
+}
+
+.menu-link {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: #d1d5db;
+  text-decoration: none;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-link:hover {
+  background: rgba(197, 160, 89, 0.1);
+  color: var(--gold-light);
+}
+
+.menu-link.logout {
+  color: #ef4444;
+}
+
+/* --- Gucci Aligned Product Grid & Cards --- */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 3.5rem 2rem;
+  align-items: stretch;
+}
+
+.gucci-luxury-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gucci-luxury-card:hover {
+  border-color: rgba(197, 160, 89, 0.45);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
+  transform: translateY(-4px);
+}
+
+.gucci-card-media-wrap {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: #0d0d0d;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gucci-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gucci-luxury-card:hover .gucci-card-image {
+  transform: scale(1.05);
+}
+
+.gucci-card-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--gold-primary);
+  background: rgba(10, 10, 10, 0.85);
+  border: 1px solid var(--border-gold);
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+.gucci-card-wishlist {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(10, 10, 10, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 5;
+}
+
+.gucci-card-wishlist:hover,
+.gucci-card-wishlist.active {
+  color: #e11d48;
+  border-color: #e11d48;
+  background: rgba(225, 29, 72, 0.15);
+}
+
+.gucci-angle-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 10px;
+  border-radius: 99px;
+  z-index: 4;
+}
+
+.gucci-angle-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.gucci-angle-dot.active,
+.gucci-angle-dot:hover {
+  background: var(--gold-primary);
+  transform: scale(1.3);
+}
+
+.gucci-card-hover-actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 10, 0.95);
+  border-top: 1px solid var(--border-subtle);
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.25s ease;
+  z-index: 6;
+}
+
+.gucci-luxury-card:hover .gucci-card-hover-actions {
+  transform: translateY(0);
+}
+
+.gucci-quick-bag-btn {
+  width: 100%;
+  background: none;
+  border: 1px solid var(--border-gold);
+  color: var(--gold-light);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  padding: 9px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.gucci-quick-bag-btn:hover {
+  background: var(--gold-primary);
+  color: #000000;
+}
+
+/* Card Body with Perfect UI Alignment */
+.gucci-card-body {
+  padding: 1.25rem 1rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.gucci-card-collection {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.gucci-card-title {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+  min-height: 2.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.gucci-card-price {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #f3f4f6;
+  margin-top: auto;
+}
+
+.gucci-card-service-note {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* --- Gucci Homepage Hero & Campaign --- */
+.gucci-hero-campaign {
+  position: relative;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #000000 url('https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1920&q=85') center/cover no-repeat;
+  padding: 6rem 1.5rem;
+}
+
+.gucci-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+.gucci-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+}
+
+.gucci-hero-eyebrow {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.gucci-hero-heading {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin: 0 0 1.25rem;
+  text-transform: uppercase;
+}
+
+.gucci-heading-italic {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold-light);
+}
+
+.gucci-hero-subtext {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e5e7eb;
+  max-width: 620px;
+  margin: 0 auto 2.5rem;
+  font-weight: 400;
+}
+
+.gucci-hero-cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.btn-gucci-solid-lg {
+  padding: 1rem 2.25rem;
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-gucci-solid-lg:hover {
+  background: var(--gold-primary);
+  border-color: var(--gold-primary);
+  color: #000000;
+}
+
+.btn-gucci-outline-lg {
+  padding: 1rem 2.25rem;
+  background: transparent;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-gucci-outline-lg:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+}
+
+.btn-gucci-gold-lg {
+  padding: 1rem 2.25rem;
+  background: var(--gold-primary);
+  color: #000000;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--gold-primary);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-gucci-gold-lg:hover {
+  background: #d4af37;
+  border-color: #d4af37;
+  transform: translateY(-2px);
+}
+
+/* --- Gucci Section Headers --- */
+.gucci-section {
+  padding: 5.5rem 0;
+}
+
+.gucci-section-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 3.5rem;
+}
+
+.section-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.section-main-title {
+  font-family: var(--font-display);
+  font-size: 2.35rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.section-sub {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+/* --- Gucci Departments Grid --- */
+.gucci-dept-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.gucci-dept-card {
+  display: flex;
+  flex-direction: column;
+  background: #111111;
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.35s ease;
+}
+
+.gucci-dept-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-5px);
+}
+
+.dept-img-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.dept-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gucci-dept-card:hover .dept-img-wrap img {
+  transform: scale(1.08);
+}
+
+.dept-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.dept-info {
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.dept-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.35rem;
+}
+
+.dept-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0 0 0.85rem;
+}
+
+.dept-link {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--gold-primary);
+  margin-top: auto;
+}
+
+/* --- Gucci Services & Brand Promise --- */
+.gucci-services-section {
+  background: #090909;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 4.5rem 0;
+}
+
+.gucci-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+.gucci-service-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-mark {
+  color: var(--gold-primary);
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-card-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+}
+
+.service-card-desc {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* --- Gucci Product Detail Page (PDP) Layout --- */
+.gucci-pdp-page {
+  padding-bottom: 6rem;
+}
+
+.gucci-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin: 1.5rem 0 2rem;
+}
+
+.gucci-breadcrumb a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.gucci-breadcrumb a:hover {
+  color: var(--gold-primary);
+}
+
+.gucci-pdp-layout {
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  gap: 4.5rem;
+  align-items: start;
+}
+
+.gucci-pdp-gallery {
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.gucci-gallery-container {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.gucci-thumbs-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 76px;
+}
+
+.gucci-thumb-btn {
+  width: 76px;
+  height: 76px;
+  background: #111111;
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.gucci-thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gucci-thumb-btn:hover,
+.gucci-thumb-btn.active {
+  border-color: var(--gold-primary);
+}
+
+.gucci-main-stage {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  background: #0d0d0d;
+  border: 1px solid var(--border-subtle);
+  position: relative;
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+.gucci-main-stage-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gucci-pdp-wishlist-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(10, 10, 10, 0.75);
+  border: 1px solid var(--border-subtle);
+  color: #ffffff;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 5;
+}
+
+.gucci-pdp-wishlist-btn:hover,
+.gucci-pdp-wishlist-btn.active {
+  color: #e11d48;
+  border-color: #e11d48;
+}
+
+.gucci-pdp-zoom-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+
+.gucci-atelier-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--gold-primary);
+  border: 1px solid var(--border-gold);
+  padding: 8px;
+  text-align: center;
+}
+
+/* Gucci PDP Details Column */
+.gucci-pdp-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.gucci-pdp-line-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+}
+
+.gucci-pdp-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  margin: 0.35rem 0 0.75rem;
+}
+
+.gucci-pdp-price {
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.gucci-pdp-tax-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.gucci-variant-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.25rem;
+}
+
+.variant-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.variant-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+
+.gucci-size-guide-link {
+  font-size: 0.75rem;
+  color: var(--gold-primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.gucci-color-pills {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.gucci-color-pill {
+  padding: 7px 14px;
+  background: #111111;
+  border: 1px solid var(--border-subtle);
+  color: #e5e7eb;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.gucci-color-pill:hover,
+.gucci-color-pill.active {
+  border-color: var(--gold-primary);
+  background: rgba(197, 160, 89, 0.12);
+  color: var(--gold-light);
+}
+
+.gucci-size-grid {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.gucci-size-btn {
+  min-width: 52px;
+  height: 42px;
+  padding: 0 10px;
+  background: #111111;
+  border: 1px solid var(--border-subtle);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gucci-size-btn:hover,
+.gucci-size-btn.active {
+  border-color: var(--gold-primary);
+  background: rgba(197, 160, 89, 0.15);
+  color: var(--gold-light);
+}
+
+.gucci-pdp-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.5rem;
+}
+
+/* Gucci Services Box */
+.gucci-services-box {
+  background: #111111;
+  border: 1px solid var(--border-subtle);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.gucci-service-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.service-icon {
+  font-size: 1.25rem;
+  color: var(--gold-primary);
+}
+
+.service-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin: 0 0 2px;
+}
+
+.service-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Tabs */
+.gucci-pdp-tabs {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.5rem;
+}
+
+.tabs-header {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.tab-title-btn {
+  background: none;
+  border: none;
+  padding: 0.75rem 0;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.tab-title-btn.active {
+  color: #ffffff;
+}
+
+.tab-title-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gold-primary);
+}
+
+.tab-body {
+  padding: 1.5rem 0;
+}
+
+.gucci-story-text {
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: #d1d5db;
+  margin: 0 0 1rem;
+}
+
+.gucci-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.gucci-features-list li::before {
+  content: '✦ ';
+  color: var(--gold-primary);
+  margin-right: 6px;
+}
+
+.gucci-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.gucci-specs-table tr {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.gucci-specs-table .spec-k {
+  padding: 8px 0;
+  width: 35%;
+  color: var(--text-muted);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.gucci-specs-table .spec-v {
+  padding: 8px 0;
+  color: #ffffff;
+}
+
+.gucci-related-section {
+  margin-top: 6rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 4.5rem;
+}
+
+/* --- Gucci My Account / Login Page --- */
+.gucci-account-page {
+  padding-bottom: 6rem;
+}
+
+.gucci-auth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.gucci-auth-editorial {
+  padding-right: 2rem;
+}
+
+.editorial-crest {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  color: var(--gold-primary);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.editorial-title {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  margin: 0 0 1.25rem;
+  line-height: 1.15;
+}
+
+.editorial-sub {
+  color: var(--gold-light);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.editorial-desc {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.editorial-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.perk-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.perk-bullet {
+  color: var(--gold-primary);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.perk-h {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.25rem;
+}
+
+.perk-p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.gucci-form-box {
+  background: #111111;
+  border: 1px solid var(--border-subtle);
+  padding: 2.5rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+}
+
+.gucci-tab-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 2rem;
+}
+
+.gucci-tab-btn {
+  background: none;
+  border: none;
+  padding: 0.9rem;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.gucci-tab-btn.active {
+  color: #ffffff;
+}
+
+.gucci-tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gold-primary);
+}
+
+.gucci-demo-login-bar {
+  background: rgba(197, 160, 89, 0.08);
+  border: 1px dashed var(--border-gold);
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.demo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.demo-badge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--gold-primary);
+}
+
+.demo-sub {
+  font-size: 0.76rem;
+  color: #d1d5db;
+}
+
+.btn-gucci-gold-sm {
+  background: var(--gold-primary);
+  color: #000000;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.btn-gucci-gold-sm:hover {
+  background: var(--gold-accent);
+}
+
+.gucci-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.gucci-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.gucci-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gucci-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: #e5e7eb;
+}
+
+.gucci-forgot-btn {
+  background: none;
+  border: none;
+  color: var(--gold-primary);
+  font-size: 0.75rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.gucci-input {
+  width: 100%;
+  background: #080808;
+  border: 1px solid var(--border-subtle);
+  padding: 0.85rem 1rem;
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.gucci-input:focus {
+  outline: none;
+  border-color: var(--gold-primary);
+}
+
+.gucci-password-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.gucci-eye-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.gucci-remember-row {
+  margin: 0.25rem 0;
+}
+
+.gucci-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.78rem;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.gucci-checkbox-label input {
+  accent-color: var(--gold-primary);
+}
+
+.gucci-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.75rem 0 1.25rem;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+}
+
+.gucci-divider::before,
+.gucci-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-subtle);
+}
+
+.gucci-social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.gucci-social-btn {
+  padding: 0.85rem;
+  background: #080808;
+  border: 1px solid var(--border-subtle);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.gucci-social-btn:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-light);
+}
+
+.gucci-disclaimer {
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 1.5rem 0 0;
+}
+
+/* Gucci Profile Card When Logged In */
+.gucci-account-card {
+  background: #111111;
+  border: 1px solid var(--border-gold);
+  padding: 3rem 2.5rem;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+}
+
+.account-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.account-avatar-lg {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: var(--gold-primary);
+  color: #000000;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.account-tier-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: var(--gold-primary);
+}
+
+.account-welcome-name {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0.35rem 0 0.15rem;
+}
+
+.account-welcome-email {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.account-privileges-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.privilege-box {
+  background: #080808;
+  border: 1px solid var(--border-subtle);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.privilege-k {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.privilege-v {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.privilege-sub {
+  font-size: 0.75rem;
+  color: var(--gold-primary);
+}
+
+.account-services-list {
+  background: rgba(197, 160, 89, 0.05);
+  border: 1px solid var(--border-gold);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.services-heading {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1rem;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: #d1d5db;
+  margin-bottom: 0.65rem;
+}
+
+.gold-check {
+  color: var(--gold-primary);
+  font-weight: 900;
+}
+
+.account-actions-row {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .gucci-dept-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gucci-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gucci-pdp-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .gucci-pdp-gallery {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .gucci-hero-heading {
+    font-size: 2.35rem;
+  }
+  .gucci-dept-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gucci-services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  .gucci-auth-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .gucci-gallery-container {
+    flex-direction: column-reverse;
+  }
+  .gucci-thumbs-strip {
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+  }
+}

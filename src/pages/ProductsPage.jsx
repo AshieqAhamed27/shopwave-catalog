@@ -1,15 +1,15 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { products, categories, formatPrice } from '../data/products';
+import { products, categories } from '../data/products';
 import ProductCard from '../components/ProductCard';
 import CustomSelect from '../components/CustomSelect';
 
 const sortOptions = [
-  { value: 'default', label: 'Sort: Default' },
-  { value: 'price-asc', label: 'Price: Low to High' },
+  { value: 'default', label: 'Sort: Featured Creations' },
   { value: 'price-desc', label: 'Price: High to Low' },
-  { value: 'rating', label: 'Top Rated ★' },
-  { value: 'popular', label: 'Most Popular 🔥' },
+  { value: 'price-asc', label: 'Price: Low to High' },
+  { value: 'popular', label: 'Most Coveted' },
+  { value: 'rating', label: 'Client Favorites ★' },
 ];
 
 export default function ProductsPage() {
@@ -43,7 +43,7 @@ export default function ProductsPage() {
       list = list.filter(p =>
         p.name.toLowerCase().includes(q) ||
         p.category.toLowerCase().includes(q) ||
-        p.tags.some(t => t.toLowerCase().includes(q))
+        p.tags?.some(t => t.toLowerCase().includes(q))
       );
     }
 
@@ -58,28 +58,42 @@ export default function ProductsPage() {
 
   return (
     <main className="page">
-      {/* Page Banner */}
-      <div className="page-banner">
-        <div className="page-banner-bg" />
-        <div className="container" style={{ position: 'relative' }}>
-          <h1 className="page-banner-title">
-            All <span style={{ background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-pink))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Products</span>
+      {/* Gucci Collection Banner */}
+      <div className="page-banner" style={{ background: '#090909', borderBottom: '1px solid var(--border-subtle)', padding: '4.5rem 0' }}>
+        <div className="container" style={{ textAlign: 'center' }}>
+          <span style={{ fontSize: '0.74rem', fontWeight: 800, letterSpacing: '0.3em', color: 'var(--gold-primary)', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem' }}>
+            HOUSE OF GUCCI — FIRENZE 1921
+          </span>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '2.8rem', fontWeight: 700, color: '#ffffff', letterSpacing: '0.06em', margin: 0, textTransform: 'uppercase' }}>
+            {activeCategory === 'all' ? 'All Creations' : categories.find(c => c.id === activeCategory)?.label || 'Collection'}
           </h1>
-          <p className="page-banner-subtitle">
-            {products.length} premium products across {categories.length - 1} categories
+          <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', marginTop: '0.65rem' }}>
+            Discover {filtered.length} iconic creations handcrafted with over a century of Florentine artistry.
           </p>
         </div>
       </div>
 
-      <div className="container" style={{ padding: '2.5rem 1.5rem 5rem' }}>
-        {/* Category Pills */}
-        <div className="categories-bar" style={{ marginBottom: '1.5rem' }}>
+      <div className="container" style={{ padding: '3rem 1.5rem 6rem' }}>
+        {/* Luxury Category Department Bar */}
+        <div className="categories-bar" style={{ display: 'flex', justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
           {categories.map(cat => (
             <button
               key={cat.id}
               className={`category-pill${activeCategory === cat.id ? ' active' : ''}`}
               id={`cat-filter-${cat.id}`}
               onClick={() => setCategory(cat.id)}
+              style={{
+                borderRadius: '2px',
+                fontFamily: 'var(--font-body)',
+                fontSize: '0.74rem',
+                fontWeight: 700,
+                letterSpacing: '0.14em',
+                textTransform: 'uppercase',
+                padding: '8px 16px',
+                borderColor: activeCategory === cat.id ? 'var(--gold-primary)' : 'var(--border-subtle)',
+                background: activeCategory === cat.id ? 'rgba(197, 160, 89, 0.12)' : 'transparent',
+                color: activeCategory === cat.id ? 'var(--gold-light)' : 'var(--text-secondary)'
+              }}
             >
               <span className="category-pill-icon">{cat.icon}</span>
               {cat.label}
@@ -87,51 +101,62 @@ export default function ProductsPage() {
           ))}
         </div>
 
-        {/* Filter Toolbar */}
-        <div className="filter-toolbar">
-          <div className="filter-left">
-            {/* Search */}
-            <div className="search-bar">
-              <span className="search-icon">🔍</span>
-              <input
-                type="text"
-                className="search-input"
-                id="product-search"
-                placeholder="Search products, brands, tags…"
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-              />
-            </div>
-            <span className="results-count">
-              <strong>{filtered.length}</strong> products found
-            </span>
+        {/* Filter / Search / Sort Bar */}
+        <div className="products-controls" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '3rem', paddingBottom: '1.5rem', borderBottom: '1px solid var(--border-subtle)' }}>
+          {/* Search Box */}
+          <div className="search-box" style={{ maxWidth: '360px', flex: 1 }}>
+            <span className="search-icon">🔍</span>
+            <input
+              type="text"
+              placeholder="Search by model, leather, or code..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="search-input"
+              id="search-input"
+              style={{ background: '#0e0e0e', borderColor: 'var(--border-subtle)', fontSize: '0.85rem' }}
+            />
+            {search && (
+              <button
+                className="search-clear"
+                onClick={() => setSearch('')}
+                title="Clear"
+              >
+                ✕
+              </button>
+            )}
           </div>
 
-          {/* Sort */}
-          <CustomSelect
-            options={sortOptions}
-            value={sort}
-            onChange={setSort}
-            id="product-sort"
-          />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+            <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: 600 }}>
+              {filtered.length} {filtered.length === 1 ? 'CREATION' : 'CREATIONS'}
+            </span>
+            <CustomSelect
+              options={sortOptions}
+              value={sort}
+              onChange={setSort}
+              id="sort-select"
+            />
+          </div>
         </div>
 
-        {/* Grid */}
-        {filtered.length > 0 ? (
-          <div className="products-grid">
-            {filtered.map(p => <ProductCard key={p.id} product={p} />)}
-          </div>
-        ) : (
-          <div className="products-empty">
-            <div className="empty-icon">🔍</div>
-            <h3 className="empty-title">No products found</h3>
-            <p className="empty-desc">Try adjusting your search or filters.</p>
+        {/* Aligned Products Grid */}
+        {filtered.length === 0 ? (
+          <div className="products-empty" style={{ textAlign: 'center', padding: '5rem 0' }}>
+            <div style={{ fontSize: '3rem', marginBottom: '1rem', color: 'var(--gold-primary)' }}>✦</div>
+            <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', color: '#ffffff', marginBottom: '0.5rem' }}>No Matching Creations Found</h3>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>Try adjusting your search criteria or explore all collections.</p>
             <button
-              className="btn btn-primary"
+              className="btn-gucci-solid-lg"
               onClick={() => { setSearch(''); setCategory('all'); }}
             >
-              Clear Filters
+              Reset Filters
             </button>
+          </div>
+        ) : (
+          <div className="products-grid">
+            {filtered.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
           </div>
         )}
       </div>

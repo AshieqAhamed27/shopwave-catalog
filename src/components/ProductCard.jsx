@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
-import { formatPrice, getDiscount } from '../data/products';
+import { formatPrice } from '../data/products';
 
 export default function ProductCard({ product }) {
   const { addToCart, toggleWishlist, isInWishlist } = useShop();
@@ -10,34 +10,31 @@ export default function ProductCard({ product }) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
-  const discount = getDiscount(product.price, product.originalPrice);
-
   const handleCardClick = (e) => {
-    // Don't navigate if clicking action buttons or thumbnail dots
-    if (e.target.closest('.product-card-actions') || e.target.closest('.add-to-cart-btn') || e.target.closest('.card-thumb-dot')) return;
+    if (e.target.closest('.gucci-card-wishlist') || e.target.closest('.gucci-quick-bag-btn') || e.target.closest('.gucci-angle-dot')) return;
     navigate(`/products/${product.id}`);
   };
 
-  // On hover, show image 1 (flip view) if available, otherwise image 0
   const currentImage = (isHovered && product.images && product.images.length > 1)
     ? product.images[activeImageIndex === 0 ? 1 : activeImageIndex]
     : (product.images && product.images[activeImageIndex]) || product.images?.[0] || './placeholder.svg';
 
   return (
     <article
-      className="product-card fk-style-card"
+      className="gucci-luxury-card"
       onClick={handleCardClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => { setIsHovered(false); setActiveImageIndex(0); }}
       role="button"
       tabIndex={0}
+      aria-label={product.name}
     >
-      {/* Image Container */}
-      <div className="product-card-image-wrapper">
+      {/* Visual Frame */}
+      <div className="gucci-card-media-wrap">
         <img
           src={currentImage}
           alt={product.name}
-          className="product-card-image"
+          className="gucci-card-image"
           loading="lazy"
           onError={(e) => {
             e.currentTarget.onerror = null;
@@ -45,111 +42,74 @@ export default function ProductCard({ product }) {
           }}
         />
 
-        {/* Badge */}
+        {/* Minimal Luxury Badge */}
         {product.badge && (
-          <span className={`product-card-badge badge-${product.badge}`}>
-            {product.badge === 'hot' ? '🔥 Hot Deal' :
-             product.badge === 'new' ? '✨ New' :
-             product.badge === 'sale' ? '💰 Sale' :
-             product.badge === 'limited' ? '⏳ Limited' : product.badge}
+          <span className="gucci-card-badge">
+            {product.badge === 'hot' ? 'SIGNATURE' :
+             product.badge === 'new' ? 'NEW COLLECTION' :
+             product.badge === 'limited' ? 'EXCLUSIVITY' : product.badge.toUpperCase()}
           </span>
         )}
 
-        {/* Wishlist and Quick View Actions */}
-        <div className="product-card-actions">
-          <button
-            className={`product-action-btn${inWishlist ? ' in-wishlist' : ''}`}
-            onClick={(e) => { e.stopPropagation(); toggleWishlist(product); }}
-            title={inWishlist ? 'Remove from wishlist' : 'Add to wishlist'}
-            id={`wishlist-btn-${product.id}`}
-          >
-            {inWishlist ? '♥' : '♡'}
-          </button>
-          <button
-            className="product-action-btn"
-            onClick={(e) => { e.stopPropagation(); navigate(`/products/${product.id}`); }}
-            title="Quick view"
-          >
-            👁
-          </button>
-        </div>
+        {/* Wishlist Button */}
+        <button
+          className={`gucci-card-wishlist${inWishlist ? ' active' : ''}`}
+          onClick={(e) => { e.stopPropagation(); toggleWishlist(product); }}
+          title={inWishlist ? 'Remove from Saved Items' : 'Save to Wishlist'}
+          aria-label="Save to Wishlist"
+        >
+          {inWishlist ? '♥' : '♡'}
+        </button>
 
-        {/* Multi-angle preview dots */}
+        {/* Angle Preview Dots */}
         {product.images && product.images.length > 1 && (
-          <div className="card-thumb-dots">
+          <div className="gucci-angle-dots">
             {product.images.slice(0, 4).map((_, idx) => (
-              <span
+              <button
                 key={idx}
-                className={`card-thumb-dot${(activeImageIndex === idx || (isHovered && activeImageIndex === 0 && idx === 1)) ? ' active' : ''}`}
+                type="button"
+                className={`gucci-angle-dot${(activeImageIndex === idx || (isHovered && activeImageIndex === 0 && idx === 1)) ? ' active' : ''}`}
                 onMouseEnter={(e) => { e.stopPropagation(); setActiveImageIndex(idx); }}
+                onClick={(e) => { e.stopPropagation(); setActiveImageIndex(idx); }}
+                aria-label={`View angle ${idx + 1}`}
               />
             ))}
           </div>
         )}
+
+        {/* Quick Add Overlay on Hover */}
+        <div className="gucci-card-hover-actions">
+          <button
+            type="button"
+            className="gucci-quick-bag-btn"
+            onClick={(e) => { e.stopPropagation(); addToCart(product); }}
+          >
+            + ADD TO SHOPPING BAG
+          </button>
+        </div>
       </div>
 
-      {/* Card Details */}
-      <div className="product-card-body">
-        {/* Brand Name */}
-        <div className="product-card-brand-row">
-          <span className="product-card-brand">{product.brand || 'ShopWave'}</span>
-          {product.assured && (
-            <span className="fk-assured-pill" title="ShopWave Assured Quality">
-              <span className="assured-lightning">⚡</span> Assured
-            </span>
-          )}
-        </div>
+      {/* Aligned Card Body */}
+      <div className="gucci-card-body">
+        {/* Collection / Line */}
+        <span className="gucci-card-collection">
+          {product.tags?.[0] || 'GUCCI FLORENCE'}
+        </span>
 
         {/* Title */}
-        <h3 className="product-card-name" title={product.name}>
+        <h3 className="gucci-card-title" title={product.name}>
           {product.name}
         </h3>
 
-        {/* Rating Pill & Review Count */}
-        <div className="product-card-rating-row">
-          <span className="fk-rating-pill">
-            {product.rating} <span className="star-icon">★</span>
-          </span>
-          <span className="fk-rating-count">
-            ({product.reviewCount ? product.reviewCount.toLocaleString() : '1,240'})
-          </span>
+        {/* Price */}
+        <div className="gucci-card-price">
+          {formatPrice(product.price)}
         </div>
 
-        {/* Sizes Preview for apparel/shoes */}
-        {product.sizes && product.sizes.length > 0 && (
-          <div className="product-card-sizes-row">
-            <span className="sizes-label">Size:</span>
-            <span className="sizes-list">
-              {product.sizes.slice(0, 4).join(', ')}{product.sizes.length > 4 ? '+' : ''}
-            </span>
-          </div>
-        )}
-
-        {/* Price Row (Flipkart / Amazon format) */}
-        <div className="product-card-footer">
-          <div className="product-price-block">
-            <div className="price-row-main">
-              <span className="price-current">{formatPrice(product.price)}</span>
-              {product.originalPrice && (
-                <span className="price-original">{formatPrice(product.originalPrice)}</span>
-              )}
-              {discount && (
-                <span className="price-discount-tag">{discount}% off</span>
-              )}
-            </div>
-            <span className="delivery-hint">Free delivery by Tomorrow</span>
-          </div>
-
-          <button
-            className="add-to-cart-btn"
-            id={`add-cart-${product.id}`}
-            onClick={(e) => { e.stopPropagation(); addToCart(product); }}
-            title="Add to cart"
-            aria-label="Add to cart"
-          >
-            +
-          </button>
-        </div>
+        {/* Complimentary Service Note */}
+        <span className="gucci-card-service-note">
+          Complimentary Delivery & Gift Packaging
+        </span>
       </div>
     </article>
   );

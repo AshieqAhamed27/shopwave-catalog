@@ -1,134 +1,95 @@
 import { Link } from 'react-router-dom';
-import { useShop } from '../context/ShopContext';
-import { products, formatPrice, renderStars } from '../data/products';
+import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
 
-const featuredCategories = [
-  { id: 'sneakers', label: 'Sneakers & Footwear', icon: '👟', desc: 'Samba, Gazelle & Ultraboost', color: '#6c63ff' },
-  { id: 'apparel', label: 'Luxury Apparel', icon: '🧥', desc: 'Firebird Tracksuits & Hoodies', color: '#f472b6' },
-  { id: 'originals', label: 'Adidas Originals', icon: '⚡', desc: 'Timeless 3-Stripes Heritage', color: '#22d3ee' },
-  { id: 'performance', label: 'Performance & Sport', icon: '🏃', desc: 'Boost, Aeroready & Football', color: '#34d399' },
-  { id: 'accessories', label: 'Bags & Accessories', icon: '🎒', desc: 'Stella McCartney Bags & Gear', color: '#fb923c' },
+const luxuryDepartments = [
+  { id: 'handbags', label: 'Handbags & Leather', desc: 'The Jackie 1961, Horsebit 1955 & GG Marmont', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80' },
+  { id: 'shoes', label: 'Shoes & Loafers', desc: 'The 1953 Horsebit Loafer & Princetown Mules', image: 'https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80' },
+  { id: 'apparel', label: 'Ready-to-Wear', desc: 'Tailored Wool Blazers, Silk Shirts & Cashmere', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80' },
+  { id: 'accessories', label: 'Jewelry & Accessories', desc: 'Double G Belts, Swiss Watches & 18k Gold', image: 'https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80' },
+  { id: 'beauty', label: 'Fragrance & Beauty', desc: 'Gucci Flora, Bloom & The Alchemist\'s Garden', image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80' },
 ];
 
 export default function HomePage() {
-  const { user } = useShop();
   const featured = products.filter(p => p.badge === 'hot' || p.badge === 'limited').slice(0, 4);
-  const newest = products.filter(p => p.badge === 'new' || p.category === 'sneakers').slice(0, 4);
+  const newest = products.filter(p => p.badge === 'new' || p.category === 'handbags').slice(0, 4);
 
   return (
-    <main className="page">
+    <main className="page gucci-homepage">
 
-      {/* ===== HERO ===== */}
-      <section className="hero">
-        <div className="hero-bg">
-          <div className="hero-gradient-orb orb-1"></div>
-          <div className="hero-gradient-orb orb-2"></div>
-          <div className="hero-gradient-orb orb-3"></div>
-          <div className="hero-grid-bg"></div>
+      {/* ===== HERO CAMPAIGN ===== */}
+      <section className="gucci-hero-campaign">
+        <div className="gucci-hero-media-bg">
+          <div className="gucci-hero-overlay"></div>
         </div>
 
-        <div className="container" style={{ position: 'relative', zIndex: 1, padding: '4rem 1.5rem' }}>
-          <div className="hero-content">
-            <div className="hero-eyebrow">
-              <span className="three-stripes-accent">///</span>
-              {user ? `WELCOME BACK, ${user.name.toUpperCase()} (ADICLUB LEVEL 3)` : 'BECOME AN ADICLUB MEMBER — GET 15% OFF'}
-            </div>
+        <div className="container gucci-hero-container">
+          <div className="gucci-hero-content">
+            <span className="gucci-hero-eyebrow">
+              AUTUMN WINTER 2024 — FLORENCE, ITALY
+            </span>
 
-            <h1 className="hero-title">
-              YOU GOT THIS.<br />
-              <span className="word-gradient">ORIGINALS & LUXURY SPORT</span>
+            <h1 className="gucci-hero-heading">
+              AN ENDURING SENSE<br />
+              <span className="gucci-heading-italic">OF DESIRE.</span>
             </h1>
 
-            <p className="hero-description">
-              Step into the world of iconic terrace heritage, cutting-edge Ultraboost engineering,
-              and luxury Y-3 Yohji Yamamoto collaborations. Designed for champions on and off the street.
+            <p className="gucci-hero-subtext">
+              Embrace the timeless allure of the House of Gucci. From the sculpted Jackie 1961
+              to 70 years of the iconic Horsebit loafer and runway tailoring.
             </p>
 
-            <div className="hero-cta">
-              <Link to="/products" className="btn btn-primary btn-lg" id="hero-shop-btn">
-                Explore The Collection →
+            <div className="gucci-hero-cta-row">
+              <Link to="/products" className="btn-gucci-solid-lg" id="hero-shop-btn">
+                EXPLORE THE COLLECTION
               </Link>
-              {!user && (
-                <Link to="/login" className="btn btn-outline btn-lg" id="hero-adiclub-btn">
-                  Join adiClub (15% Off)
-                </Link>
-              )}
-            </div>
-
-            <div className="hero-stats">
-              {[
-                { value: '100% Authentic', label: 'Official Heritage Gear' },
-                { value: 'Free Delivery', label: 'For All adiClub Members' },
-                { value: '4.9★', label: 'Customer Satisfaction' },
-              ].map((stat, i) => (
-                <div key={i}>
-                  <div className="hero-stat-value">{stat.value}</div>
-                  <div className="hero-stat-label">{stat.label}</div>
-                </div>
-              ))}
+              <Link to="/products?category=handbags" className="btn-gucci-outline-lg">
+                DISCOVER HANDBAGS
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ===== ADICLUB MEMBER STRIP ===== */}
-      <section className="adiclub-member-strip">
-        <div className="container strip-content">
-          <div className="strip-text-col">
-            <span className="strip-badge">ADICLUB EXCLUSIVE</span>
-            <h3 className="strip-title">EARN POINTS. UNLOCK SNEAKER DROPS. GET 15% OFF.</h3>
-            <p className="strip-desc">Join millions of creators worldwide. Earn 10 points for every ₹100 spent and access exclusive drops.</p>
-          </div>
-          <Link to="/login" className="strip-btn">
-            {user ? 'VIEW MEMBER PERKS →' : 'SIGN UP FOR FREE →'}
-          </Link>
-        </div>
-      </section>
-
-      {/* ===== CATEGORIES ===== */}
-      <section className="section" style={{ paddingBottom: '2rem' }}>
+      {/* ===== DEPARTMENTS SHOWCASE ===== */}
+      <section className="gucci-section">
         <div className="container">
-          <div className="section-header">
-            <span className="section-label">Iconic Collections</span>
-            <h2 className="section-title">
-              Shop by <span className="gradient-text">Division</span>
-            </h2>
-            <p className="section-subtitle">
-              From archival terrace sneakers to avant-garde luxury sportswear collaborations.
-            </p>
+          <div className="gucci-section-header">
+            <span className="section-eyebrow">THE ARCHIVE DEPARTMENTS</span>
+            <h2 className="section-main-title">Explore by Creation</h2>
           </div>
 
-          <div className="categories-grid">
-            {featuredCategories.map(cat => (
+          <div className="gucci-dept-grid">
+            {luxuryDepartments.map((dept) => (
               <Link
-                key={cat.id}
-                to={`/products?category=${cat.id}`}
-                className="category-card"
-                id={`cat-${cat.id}`}
-                style={{ '--accent': cat.color }}
+                key={dept.id}
+                to={`/products?category=${dept.id}`}
+                className="gucci-dept-card"
               >
-                <div className="category-icon" style={{ background: `${cat.color}20`, color: cat.color }}>
-                  {cat.icon}
+                <div className="dept-img-wrap">
+                  <img src={dept.image} alt={dept.label} loading="lazy" />
+                  <div className="dept-img-overlay" />
                 </div>
-                <h3 className="category-name">{cat.label}</h3>
-                <p className="category-desc">{cat.desc}</p>
-                <span className="category-arrow" style={{ color: cat.color }}>Explore →</span>
+                <div className="dept-info">
+                  <h3 className="dept-title">{dept.label}</h3>
+                  <p className="dept-desc">{dept.desc}</p>
+                  <span className="dept-link">DISCOVER NOW →</span>
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ===== FEATURED PRODUCTS ===== */}
-      <section className="section">
+      {/* ===== SIGNATURE HIGHLIGHTS ===== */}
+      <section className="gucci-section" style={{ background: '#090909', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
         <div className="container">
-          <div className="section-header">
-            <span className="section-label">Hype Releases</span>
-            <h2 className="section-title">
-              Featured <span className="gradient-text">Sneakers & Apparel</span>
-            </h2>
-            <p className="section-subtitle">The most coveted icons of the season — Samba OG, Ultraboost Light & Y-3.</p>
+          <div className="gucci-section-header">
+            <span className="section-eyebrow">HERITAGE PIECES</span>
+            <h2 className="section-main-title">Icons of the House</h2>
+            <p className="section-sub">
+              Signature silhouettes defining modern elegance across generations.
+            </p>
           </div>
 
           <div className="products-grid">
@@ -137,23 +98,20 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-            <Link to="/products" className="btn btn-outline btn-lg">
-              View All 36 Products →
+          <div style={{ textAlign: 'center', marginTop: '3.5rem' }}>
+            <Link to="/products" className="btn-gucci-outline-lg">
+              VIEW ALL 36 CREATIONS →
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ===== NEW ARRIVALS ===== */}
-      <section className="section" style={{ background: 'linear-gradient(180deg, transparent, rgba(108, 99, 255, 0.04), transparent)' }}>
+      {/* ===== NEW CREATIONS ===== */}
+      <section className="gucci-section">
         <div className="container">
-          <div className="section-header">
-            <span className="section-label">Just Landed</span>
-            <h2 className="section-title">
-              New <span className="gradient-text">Arrivals</span>
-            </h2>
-            <p className="section-subtitle">Fresh silhouettes straight from the design archives and Parisian runways.</p>
+          <div className="gucci-section-header">
+            <span className="section-eyebrow">FRESH FROM FLORENCE</span>
+            <h2 className="section-main-title">Latest Arrivals</h2>
           </div>
 
           <div className="products-grid">
@@ -164,22 +122,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== BRAND PROMISE ===== */}
-      <section className="section" style={{ borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)' }}>
+      {/* ===== GUCCI CLIENT SERVICES & HERITAGE ===== */}
+      <section className="gucci-services-section">
         <div className="container">
-          <div className="features-grid">
-            {[
-              { icon: '👟', title: '100% Authentic Originals', desc: 'Direct from heritage design vaults with verified craftsmanship certification.' },
-              { icon: '🚚', title: 'Free Express Shipping', desc: 'Doorstep dispatch with live GPS tracking on all adiClub member orders.' },
-              { icon: '🔄', title: '30-Day Hassle-Free Returns', desc: 'Complimentary doorstep return pickups and instant refunds.' },
-              { icon: '⚡', title: 'adiClub Member Rewards', desc: 'Accumulate points, unlock VIP access to sneaker drops, and exclusive events.' },
-            ].map((f, i) => (
-              <div key={i} className="feature-card">
-                <div className="feature-icon">{f.icon}</div>
-                <h3 className="feature-title">{f.title}</h3>
-                <p className="feature-desc">{f.desc}</p>
-              </div>
-            ))}
+          <div className="gucci-services-grid">
+            <div className="gucci-service-card">
+              <span className="service-mark">✦</span>
+              <h3 className="service-card-title">Florentine Craftsmanship</h3>
+              <p className="service-card-desc">Every piece is handcrafted by master artisans in Florence with over a century of leatherworking heritage.</p>
+            </div>
+            <div className="gucci-service-card">
+              <span className="service-mark">✦</span>
+              <h3 className="service-card-title">Signature Gift Packaging</h3>
+              <p className="service-card-desc">All purchases arrive beautifully presented in our iconic FSC-certified green box tied with a satin ribbon.</p>
+            </div>
+            <div className="gucci-service-card">
+              <span className="service-mark">✦</span>
+              <h3 className="service-card-title">Complimentary Delivery</h3>
+              <p className="service-card-desc">White-glove insured delivery dispatched directly to your residence with complimentary 30-day global returns.</p>
+            </div>
+            <div className="gucci-service-card">
+              <span className="service-mark">✦</span>
+              <h3 className="service-card-title">Client Advisory Service</h3>
+              <p className="service-card-desc">Our dedicated client advisors are available to assist you with personalized styling and inquiries.</p>
+            </div>
           </div>
         </div>
       </section>

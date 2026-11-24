@@ -1,24 +1,21 @@
 import { useState, useRef } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
-import { products, formatPrice, getDiscount, renderStars } from '../data/products';
+import { useParams, Link } from 'react-router-dom';
+import { products, formatPrice } from '../data/products';
 import { useShop } from '../context/ShopContext';
 import ProductCard from '../components/ProductCard';
 import PaymentModal from '../components/PaymentModal';
 
 export default function ProductDetailPage() {
   const { id } = useParams();
-  const navigate = useNavigate();
   const { addToCart, toggleWishlist, isInWishlist } = useShop();
 
   const [activeImage, setActiveImage] = useState(0);
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedColor, setSelectedColor] = useState(null);
-  const [pincode, setPincode] = useState('');
-  const [pincodeStatus, setPincodeStatus] = useState(null);
-  const [showSizeGuide, setShowSizeGuide] = useState(false);
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState('craftsmanship'); // 'craftsmanship' or 'details' or 'delivery'
 
-  // Zoom magnifier state
+  // Zoom state
   const [zoomStyle, setZoomStyle] = useState({ display: 'none' });
   const mainImageRef = useRef(null);
 
@@ -27,24 +24,24 @@ export default function ProductDetailPage() {
   if (!product) {
     return (
       <main className="page">
-        <div className="container" style={{ padding: '5rem 1.5rem', textAlign: 'center' }}>
-          <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>😕</div>
-          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '1.75rem', fontWeight: 700, marginBottom: '1rem' }}>
-            Product Not Found
+        <div className="container" style={{ padding: '6rem 1.5rem', textAlign: 'center' }}>
+          <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: '2rem', letterSpacing: '0.1em' }}>
+            Piece Not Found
           </h1>
-          <Link to="/products" className="btn btn-primary">Back to Products</Link>
+          <p style={{ color: 'var(--text-muted)', margin: '1rem 0 2rem' }}>
+            The requested creation is currently unavailable in the online catalog.
+          </p>
+          <Link to="/products" className="btn-gucci-solid">Return to Collection</Link>
         </div>
       </main>
     );
   }
 
-  const discount = getDiscount(product.price, product.originalPrice);
   const inWishlist = isInWishlist(product.id);
-  const related = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 4);
+  const related = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 3);
 
-  // Default selections
-  const currentSize = selectedSize || (product.sizes ? product.sizes[0] : null);
   const currentColor = selectedColor || (product.colors ? product.colors[0] : null);
+  const currentSize = selectedSize || (product.sizes ? product.sizes[0] : null);
 
   const handleMouseMove = (e) => {
     if (!mainImageRef.current) return;
@@ -55,26 +52,12 @@ export default function ProductDetailPage() {
       display: 'block',
       backgroundPosition: `${x}% ${y}%`,
       backgroundImage: `url(${product.images[activeImage]})`,
-      backgroundSize: '250%'
+      backgroundSize: '240%'
     });
   };
 
   const handleMouseLeave = () => {
     setZoomStyle({ display: 'none' });
-  };
-
-  const checkPincode = (e) => {
-    e.preventDefault();
-    if (!pincode || pincode.trim().length < 6) {
-      setPincodeStatus({ valid: false, message: 'Please enter a valid 6-digit Indian PIN code' });
-      return;
-    }
-    setPincodeStatus({
-      valid: true,
-      deliveryDate: 'Tomorrow, 9 PM',
-      charges: 'FREE',
-      codAvailable: true
-    });
   };
 
   const handleBuyNow = () => {
@@ -83,50 +66,51 @@ export default function ProductDetailPage() {
   };
 
   return (
-    <main className="page pdp-page">
+    <main className="page gucci-pdp-page">
       <div className="container">
-        {/* Breadcrumb Navigation */}
-        <nav className="breadcrumb" aria-label="Breadcrumb">
-          <Link to="/">Home</Link>
-          <span className="breadcrumb-sep">›</span>
-          <Link to="/products">Products</Link>
-          <span className="breadcrumb-sep">›</span>
-          <Link to={`/products?category=${product.category}`} style={{ textTransform: 'capitalize' }}>
-            {product.category}
+        {/* Minimalist Editorial Breadcrumb */}
+        <nav className="gucci-breadcrumb" aria-label="Breadcrumb">
+          <Link to="/">GUCCI</Link>
+          <span className="breadcrumb-sep">/</span>
+          <Link to="/products">COLLECTIONS</Link>
+          <span className="breadcrumb-sep">/</span>
+          <Link to={`/products?category=${product.category}`}>
+            {product.category.toUpperCase()}
           </Link>
-          <span className="breadcrumb-sep">›</span>
+          <span className="breadcrumb-sep">/</span>
           <span className="breadcrumb-current">{product.name}</span>
         </nav>
 
-        {/* Amazon/Flipkart 2-Column Product Layout */}
-        <div className="pdp-layout-grid">
-          {/* Left Column: Visual Gallery + Action Buttons */}
-          <div className="pdp-gallery-column">
-            <div className="pdp-visual-container">
+        {/* Gucci Split Stage */}
+        <div className="gucci-pdp-layout">
+          {/* Visual Gallery Column */}
+          <div className="gucci-pdp-gallery">
+            <div className="gucci-gallery-container">
               {/* Vertical Thumbnail Strip */}
-              <div className="pdp-thumbnail-strip">
+              <div className="gucci-thumbs-strip">
                 {product.images.map((img, i) => (
-                  <div
+                  <button
                     key={i}
-                    className={`pdp-thumb-box${activeImage === i ? ' active' : ''}`}
-                    onMouseEnter={() => setActiveImage(i)}
+                    type="button"
+                    className={`gucci-thumb-btn${activeImage === i ? ' active' : ''}`}
                     onClick={() => setActiveImage(i)}
+                    aria-label={`View creation angle ${i + 1}`}
                   >
                     <img
                       src={img}
-                      alt={`${product.name} angle ${i + 1}`}
+                      alt={`${product.name} view ${i + 1}`}
                       onError={(e) => {
                         e.currentTarget.onerror = null;
                         e.currentTarget.src = './placeholder.svg';
                       }}
                     />
-                  </div>
+                  </button>
                 ))}
               </div>
 
-              {/* Main Image with Zoom Pan */}
+              {/* Main Image Stage */}
               <div
-                className="pdp-main-image-wrap"
+                className="gucci-main-stage"
                 ref={mainImageRef}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
@@ -134,7 +118,7 @@ export default function ProductDetailPage() {
                 <img
                   src={product.images[activeImage]}
                   alt={product.name}
-                  className="pdp-main-image"
+                  className="gucci-main-stage-img"
                   id="product-main-image"
                   onError={(e) => {
                     e.currentTarget.onerror = null;
@@ -142,163 +126,56 @@ export default function ProductDetailPage() {
                   }}
                 />
 
-                {/* Wishlist floating toggle */}
+                {/* Floating Wishlist Button */}
                 <button
-                  className={`pdp-wishlist-float${inWishlist ? ' active' : ''}`}
+                  className={`gucci-pdp-wishlist-btn${inWishlist ? ' active' : ''}`}
                   onClick={() => toggleWishlist(product)}
-                  title={inWishlist ? 'Remove from wishlist' : 'Add to wishlist'}
+                  title={inWishlist ? 'Remove from Saved Items' : 'Save to Wishlist'}
                   aria-label="Wishlist"
                 >
                   {inWishlist ? '♥' : '♡'}
                 </button>
 
-                {/* Zoom Pan Overlay */}
-                <div className="pdp-zoom-overlay" style={zoomStyle} />
+                {/* Zoom Pan Lens */}
+                <div className="gucci-pdp-zoom-overlay" style={zoomStyle} />
               </div>
             </div>
 
-            {/* High-Conversion Flipkart Style Action Buttons */}
-            <div className="pdp-action-buttons">
-              <button
-                className="pdp-btn pdp-btn-cart"
-                id={`detail-add-cart-${product.id}`}
-                onClick={() => addToCart(product)}
-              >
-                <span className="btn-icon">🛒</span> ADD TO CART
-              </button>
-              <button
-                className="pdp-btn pdp-btn-buy"
-                id={`detail-buy-now-${product.id}`}
-                onClick={handleBuyNow}
-              >
-                <span className="btn-icon">⚡</span> BUY NOW
-              </button>
+            {/* Atelier Heritage Tag */}
+            <div className="gucci-atelier-tag">
+              <span className="atelier-crest">✦</span>
+              <span>HANDCRAFTED IN FLORENCE, ITALY — ARCHIVAL HERITAGE</span>
             </div>
           </div>
 
-          {/* Right Column: Information, Pricing, Offers & Specs */}
-          <div className="pdp-info-column">
-            {/* Brand Header */}
-            <div className="pdp-brand-row">
-              <span className="pdp-brand-name">{product.brand || 'SHOPWAVE SIGNATURE'}</span>
-              <span className="pdp-brand-store-link">Visit the Store</span>
-            </div>
-
-            {/* Product Title */}
-            <h1 className="pdp-product-title">{product.name}</h1>
-
-            {/* Rating Banner & Flipkart Assured Pill */}
-            <div className="pdp-rating-row">
-              <div className="fk-rating-pill-lg">
-                <span>{product.rating}</span>
-                <span className="star-icon">★</span>
-              </div>
-              <span className="pdp-rating-reviews">
-                {product.reviewCount ? product.reviewCount.toLocaleString() : '3,420'} Ratings & {Math.round(product.reviewCount * 0.15 || 450)} Reviews
+          {/* Product Details & Purchase Column */}
+          <div className="gucci-pdp-details">
+            <div className="gucci-details-header">
+              <span className="gucci-pdp-line-tag">
+                {product.tags?.[0] || 'GUCCI SIGNATURE'}
               </span>
-              {product.assured && (
-                <span className="pdp-assured-tag" title="100% Quality Assured by ShopWave">
-                  <span className="assured-lightning">⚡</span> Assured
-                </span>
-              )}
-            </div>
-
-            {/* Flipkart / Amazon Pricing Box */}
-            <div className="pdp-price-container">
-              <div className="pdp-price-row">
-                <span className="pdp-price-special">{formatPrice(product.price)}</span>
-                {product.originalPrice && (
-                  <span className="pdp-price-mrp">{formatPrice(product.originalPrice)}</span>
-                )}
-                {discount && (
-                  <span className="pdp-discount-pill">{discount}% off</span>
-                )}
+              <h1 className="gucci-pdp-title">{product.name}</h1>
+              <div className="gucci-pdp-price">
+                {formatPrice(product.price)}
               </div>
-              <p className="pdp-tax-note">Inclusive of all taxes</p>
+              <p className="gucci-pdp-tax-note">
+                Complimentary express delivery & taxes included
+              </p>
             </div>
 
-            {/* Flipkart Bank & Partner Offers Section */}
-            <div className="pdp-offers-box">
-              <h3 className="offers-title">🏷️ Available Offers</h3>
-              <ul className="offers-list">
-                <li>
-                  <strong className="offer-tag">Bank Offer</strong> 10% instant discount up to ₹500 on HDFC & SBI Credit Cards on orders above ₹1,999.
-                </li>
-                <li>
-                  <strong className="offer-tag">Special Price</strong> Get extra ₹150 off on your first order with coupon code <code>SHOPWAVE150</code>.
-                </li>
-                <li>
-                  <strong className="offer-tag">Partner Offer</strong> Sign up for ShopWave Pay Later and get ₹100 cashback on your next purchase.
-                </li>
-                <li>
-                  <strong className="offer-tag">No Cost EMI</strong> Standard EMI options available starting at ₹{Math.round(product.price / 6)}/month.
-                </li>
-              </ul>
-            </div>
-
-            {/* Size Selector for Apparel / Shoes / Accessories */}
-            {product.sizes && product.sizes.length > 0 && (
-              <div className="pdp-variant-section">
-                <div className="pdp-variant-header">
-                  <span className="variant-label">Select Size:</span>
-                  <button
-                    type="button"
-                    className="pdp-size-guide-trigger"
-                    onClick={() => setShowSizeGuide(!showSizeGuide)}
-                  >
-                    📏 Size Chart
-                  </button>
-                </div>
-                <div className="pdp-size-pills">
-                  {product.sizes.map((sz) => (
-                    <button
-                      key={sz}
-                      type="button"
-                      className={`pdp-size-pill${currentSize === sz ? ' selected' : ''}`}
-                      onClick={() => setSelectedSize(sz)}
-                    >
-                      {sz}
-                    </button>
-                  ))}
-                </div>
-
-                {/* Expandable Size Guide */}
-                {showSizeGuide && (
-                  <div className="pdp-size-guide-table">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>Size</th>
-                          <th>Chest (in)</th>
-                          <th>Waist (in)</th>
-                          <th>Length (in)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr><td>S</td><td>38</td><td>30</td><td>27.5</td></tr>
-                        <tr><td>M</td><td>40</td><td>32</td><td>28.5</td></tr>
-                        <tr><td>L</td><td>42</td><td>34</td><td>29.5</td></tr>
-                        <tr><td>XL</td><td>44</td><td>36</td><td>30.5</td></tr>
-                        <tr><td>XXL</td><td>46</td><td>38</td><td>31.5</td></tr>
-                      </tbody>
-                    </table>
-                  </div>
-                )}
-              </div>
-            )}
-
-            {/* Color Selector */}
+            {/* Colorway / Variations */}
             {product.colors && product.colors.length > 0 && (
-              <div className="pdp-variant-section">
-                <span className="variant-label">Color: <strong>{currentColor}</strong></span>
-                <div className="pdp-color-swatches">
+              <div className="gucci-variant-block">
+                <span className="variant-title">
+                  COLOR: <strong style={{ color: '#ffffff' }}>{currentColor}</strong>
+                </span>
+                <div className="gucci-color-pills">
                   {product.colors.map((c) => (
                     <button
                       key={c}
                       type="button"
-                      className={`pdp-color-chip${currentColor === c ? ' selected' : ''}`}
+                      className={`gucci-color-pill${currentColor === c ? ' active' : ''}`}
                       onClick={() => setSelectedColor(c)}
-                      title={c}
                     >
                       {c}
                     </button>
@@ -307,95 +184,129 @@ export default function ProductDetailPage() {
               </div>
             )}
 
-            {/* Delivery Pincode Checker */}
-            <div className="pdp-delivery-box">
-              <span className="delivery-title">Delivery & Services</span>
-              <form onSubmit={checkPincode} className="pdp-pincode-form">
-                <input
-                  type="text"
-                  placeholder="Enter 6-digit Pincode"
-                  value={pincode}
-                  maxLength={6}
-                  onChange={(e) => setPincode(e.target.value.replace(/\D/g, ''))}
-                  className="pdp-pincode-input"
-                />
-                <button type="submit" className="pdp-pincode-btn">Check</button>
-              </form>
-
-              {pincodeStatus && (
-                <div className={`pdp-pincode-result${pincodeStatus.valid ? ' success' : ' error'}`}>
-                  {pincodeStatus.valid ? (
-                    <>
-                      <div className="delivery-item">
-                        <span className="check-icon">✓</span> Delivery by <strong>{pincodeStatus.deliveryDate}</strong> | <strong>FREE</strong>
-                      </div>
-                      <div className="delivery-item">
-                        <span className="check-icon">✓</span> Cash on Delivery Available
-                      </div>
-                      <div className="delivery-item">
-                        <span className="check-icon">✓</span> 7 Days Replacement Policy
-                      </div>
-                    </>
-                  ) : (
-                    <div className="error-text">{pincodeStatus.message}</div>
-                  )}
+            {/* Size Options (For Shoes / Apparel / Rings / Belts) */}
+            {product.sizes && product.sizes.length > 0 && (
+              <div className="gucci-variant-block">
+                <div className="variant-title-row">
+                  <span className="variant-title">
+                    SIZE: <strong style={{ color: '#ffffff' }}>{currentSize}</strong>
+                  </span>
+                  <span className="gucci-size-guide-link">Size & Fit Guide</span>
                 </div>
-              )}
+                <div className="gucci-size-grid">
+                  {product.sizes.map((sz) => (
+                    <button
+                      key={sz}
+                      type="button"
+                      className={`gucci-size-btn${currentSize === sz ? ' active' : ''}`}
+                      onClick={() => setSelectedSize(sz)}
+                    >
+                      {sz}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Luxury Action Buttons */}
+            <div className="gucci-pdp-actions">
+              <button
+                type="button"
+                className="btn-gucci-solid-lg"
+                id={`detail-add-cart-${product.id}`}
+                onClick={() => addToCart(product)}
+              >
+                ADD TO SHOPPING BAG
+              </button>
+              <button
+                type="button"
+                className="btn-gucci-gold-lg"
+                id={`detail-buy-now-${product.id}`}
+                onClick={handleBuyNow}
+              >
+                PURCHASE & CHECKOUT NOW
+              </button>
             </div>
 
-            {/* Product Highlights / Specifications (Flipkart table) */}
-            <div className="pdp-specs-section">
-              <h3 className="specs-heading">Product Specifications</h3>
-              <table className="pdp-specs-table">
-                <tbody>
-                  {product.specifications ? (
-                    Object.entries(product.specifications).map(([key, val]) => (
-                      <tr key={key}>
-                        <td className="spec-label">{key}</td>
-                        <td className="spec-value">{val}</td>
-                      </tr>
-                    ))
-                  ) : (
-                    <>
-                      <tr><td className="spec-label">Brand</td><td className="spec-value">{product.brand || 'ShopWave'}</td></tr>
-                      <tr><td className="spec-label">Category</td><td className="spec-value">{product.category}</td></tr>
-                      <tr><td className="spec-label">Warranty</td><td className="spec-value">1 Year Domestic Warranty</td></tr>
-                      <tr><td className="spec-label">Country of Origin</td><td className="spec-value">India</td></tr>
-                    </>
-                  )}
-                </tbody>
-              </table>
-            </div>
-
-            {/* What's in the box / Key features */}
-            <div className="pdp-features-section">
-              <h3 className="features-heading">Key Features & Description</h3>
-              <p className="pdp-description-text">{product.description}</p>
-              <div className="feature-list">
-                {product.features.map((f, i) => (
-                  <div key={i} className="feature-item">
-                    <span className="feature-check">✓</span>
-                    {f}
-                  </div>
-                ))}
+            {/* Gucci Client Services Box */}
+            <div className="gucci-services-box">
+              <div className="gucci-service-row">
+                <span className="service-icon">🎁</span>
+                <div>
+                  <h4 className="service-title">Signature Gucci Gift Packaging</h4>
+                  <p className="service-sub">Delivered in an archival green gift box hand-tied with a satin ribbon.</p>
+                </div>
+              </div>
+              <div className="gucci-service-row">
+                <span className="service-icon">🚚</span>
+                <div>
+                  <h4 className="service-title">Complimentary Insured Delivery</h4>
+                  <p className="service-sub">Dispatched via secure armored courier with live signature verification.</p>
+                </div>
+              </div>
+              <div className="gucci-service-row">
+                <span className="service-icon">🔄</span>
+                <div>
+                  <h4 className="service-title">Complimentary 30-Day Returns</h4>
+                  <p className="service-sub">Doorstep collection and exchange service available worldwide.</p>
+                </div>
               </div>
             </div>
 
-            {/* Tags */}
-            <div className="product-meta-tags">
-              {product.tags.map((tag, i) => (
-                <span key={i} className="meta-tag">{tag}</span>
-              ))}
+            {/* Editorial Information Tabs */}
+            <div className="gucci-pdp-tabs">
+              <div className="tabs-header">
+                <button
+                  type="button"
+                  className={`tab-title-btn${activeTab === 'craftsmanship' ? ' active' : ''}`}
+                  onClick={() => setActiveTab('craftsmanship')}
+                >
+                  CRAFTSMANSHIP & STORY
+                </button>
+                <button
+                  type="button"
+                  className={`tab-title-btn${activeTab === 'details' ? ' active' : ''}`}
+                  onClick={() => setActiveTab('details')}
+                >
+                  SPECIFICATIONS
+                </button>
+              </div>
+
+              <div className="tab-body">
+                {activeTab === 'craftsmanship' ? (
+                  <div className="tab-pane">
+                    <p className="gucci-story-text">{product.description}</p>
+                    <ul className="gucci-features-list">
+                      {product.features?.map((f, i) => (
+                        <li key={i}>{f}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : (
+                  <div className="tab-pane">
+                    <table className="gucci-specs-table">
+                      <tbody>
+                        {product.specifications && Object.entries(product.specifications).map(([k, v]) => (
+                          <tr key={k}>
+                            <td className="spec-k">{k}</td>
+                            <td className="spec-v">{v}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Related Products Carousel */}
+        {/* Curated Recommendations */}
         {related.length > 0 && (
-          <div style={{ marginTop: '5rem' }}>
-            <div className="section-header">
-              <span className="section-label">Customers Also Viewed</span>
-              <h2 className="section-title">Similar <span className="gradient-text">Products</span></h2>
+          <div className="gucci-related-section">
+            <div className="gucci-section-header">
+              <span className="section-eyebrow">CURATED COMPLEMENTS</span>
+              <h2 className="section-main-title">You May Also Admire</h2>
             </div>
             <div className="products-grid">
               {related.map(p => <ProductCard key={p.id} product={p} />)}
@@ -404,7 +315,7 @@ export default function ProductDetailPage() {
         )}
       </div>
 
-      {/* Payment Modal for Instant Buy Now */}
+      {/* Payment Gateway Modal */}
       <PaymentModal
         isOpen={isPaymentOpen}
         onClose={() => setIsPaymentOpen(false)}

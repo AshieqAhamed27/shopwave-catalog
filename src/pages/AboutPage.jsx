@@ -1,219 +1,111 @@
 import { Link } from 'react-router-dom';
 
-const productHighlights = [
+const atelierHighlights = [
   {
-    icon: '🛍️',
-    title: 'Curated 36-Item Catalog',
-    desc: 'Explore 36 hand-selected lifestyle products across 5 diverse categories — Electronics, Fashion, Home & Living, Sports, and Beauty — complete with multi-angle high-res galleries and full specifications.',
+    icon: '✦',
+    title: 'The Florentine Heritage (1921)',
+    desc: 'Founded by Guccio Gucci in Florence, Italy. Beginning as a small leather goods workshop inspired by refined luggage at London’s Savoy Hotel, evolving into an icon of world luxury.',
   },
   {
-    icon: '🔍',
-    title: 'Smart Search & Live Filters',
-    desc: 'Instant real-time search with multi-parameter filtering by category, promotional badges (Hot, Sale, New, Limited), and instant sorting by price, customer rating, or popularity.',
+    icon: '👜',
+    title: 'Icons of Haute Maroquinerie',
+    desc: 'Discover 36 authentic archival creations: the Jackie 1961, Horsebit 1955, Bamboo 1947, Dionysus, and GG Marmont — each handcrafted from full-grain Italian calfskin.',
   },
   {
-    icon: '🛒',
-    title: 'Interactive Slide-In Cart',
-    desc: 'Slide-in drawer cart with dynamic quantity adjustments, instant subtotal calculation, free shipping threshold tracker, and single-click checkout.',
+    icon: '👞',
+    title: '70 Years of the 1953 Loafer',
+    desc: 'The iconic Horsebit 1953 loafer, permanently exhibited at the Museum of Modern Art (MoMA) in New York, celebrated for its artisanal Blake construction and equestrian hardware.',
+  },
+  {
+    icon: '🌸',
+    title: 'Haute Parfumerie & Beauty',
+    desc: 'The sensory world of Gucci Flora, Gucci Bloom, and The Alchemist’s Garden: luxury perfumes and botanical oils crafted in Grasse and Florence.',
+  },
+  {
+    icon: '🎁',
+    title: 'White-Glove Client Services',
+    desc: 'Complimentary insured worldwide delivery, signature green gift packaging with satin ribbons, and dedicated private client consultations.',
   },
   {
     icon: '⚡',
-    title: 'Full-Stack Express REST API',
-    desc: 'Integrated with an Express 5 backend server featuring RESTful endpoints for products, category filtering, and order management with persistent storage.',
+    title: 'Full-Stack Digital Atelier',
+    desc: 'Powered by modern React 19, Vite, client-side routing, and simulated secure payment gateway for high-conversion luxury retail experiences.',
   },
-  {
-    icon: '♥',
-    title: 'Live Wishlist System',
-    desc: 'One-click wishlist toggling with animated micro-interactions and live navbar counter badges so shoppers never lose their favorite finds.',
-  },
-  {
-    icon: '🛡️',
-    title: 'Offline Resilient Architecture',
-    desc: 'Built with automatic fallback mechanisms — the product experience works seamlessly whether connected to the live Node.js server or running as a static build.',
-  },
-];
-
-const values = [
-  { icon: '🎯', title: 'Quality First', desc: 'Every product is hand-curated for quality, durability, and design excellence.' },
-  { icon: '🌍', title: 'Sustainable', desc: 'We partner with eco-conscious brands to reduce our environmental footprint.' },
-  { icon: '💎', title: 'Premium Experience', desc: 'From browse to delivery — every touchpoint is crafted to delight.' },
-  { icon: '🤝', title: 'Customer Trust', desc: 'Transparent pricing, honest reviews, and 30-day hassle-free returns.' },
-  { icon: '⚡', title: 'Innovation', desc: 'We continuously evolve our platform with the latest technology.' },
-  { icon: '❤️', title: 'Community', desc: 'Built for real people. Powered by a community of passionate customers.' },
 ];
 
 export default function AboutPage() {
   return (
-    <main className="page">
-      {/* Page Banner */}
-      <div className="page-banner">
-        <div className="page-banner-bg" />
-        <div className="container" style={{ position: 'relative' }}>
-          <h1 className="page-banner-title">
-            About <span style={{ background: 'linear-gradient(135deg, var(--accent-cyan), var(--accent-primary))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>ShopWave</span>
+    <main className="page" style={{ paddingBottom: '6rem' }}>
+      {/* Banner */}
+      <div className="page-banner" style={{ background: '#090909', borderBottom: '1px solid var(--border-subtle)', padding: '5rem 0' }}>
+        <div className="container" style={{ textAlign: 'center' }}>
+          <span style={{ fontSize: '0.74rem', fontWeight: 800, letterSpacing: '0.3em', color: 'var(--gold-primary)', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem' }}>
+            ATELIER DIRETTO — FIRENZE, ITALIA
+          </span>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '3rem', fontWeight: 700, color: '#ffffff', letterSpacing: '0.06em', margin: 0 }}>
+            The House of Gucci
           </h1>
-          <p className="page-banner-subtitle">
-            A modern full-stack e-commerce catalog featuring client-side routing, state management, and an Express REST API.
+          <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', maxWidth: '650px', margin: '1rem auto 0', lineHeight: 1.6 }}>
+            Over a century of Florentine craftsmanship, groundbreaking design, and timeless Italian luxury.
           </p>
         </div>
       </div>
 
-      <div className="container">
-
-        {/* Story */}
-        <div className="about-hero-grid">
-          <div>
-            <span className="section-label" style={{ marginBottom: '1rem', display: 'inline-block' }}>Our Story</span>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, letterSpacing: '-0.02em', marginBottom: '1.25rem', lineHeight: 1.2 }}>
-              Built to Demonstrate<br />
-              <span style={{ background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-pink))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                Professional-Grade
-              </span> Full-Stack Skills
-            </h2>
-            <p style={{ color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '1.25rem' }}>
-              ShopWave was created as a Full-Stack Web Development Capstone Project — demonstrating
-              end-to-end frontend architecture, client-side routing, state management, component
-              modularity, and performance-optimized asset delivery.
-            </p>
-            <p style={{ color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '2rem' }}>
-              The project showcases React 19 + Vite 8, React Router v7, Context API, an Express REST API backend,
-              and modern CSS design systems with glassmorphism and micro-animations. It's designed
-              to demonstrate real-world full-stack thinking for evaluators and modern web standards.
-            </p>
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link to="/products" className="btn btn-primary" id="about-cta-btn">View Products →</Link>
-              <a href="https://github.com/AshieqAhamed27/shopwave-catalog" target="_blank" rel="noopener noreferrer" className="btn btn-outline">GitHub Repo</a>
-            </div>
-          </div>
-
-          {/* Visual */}
-          <div className="about-visual">
-            <div style={{
-              width: '100%',
-              aspectRatio: '4/3',
-              borderRadius: 'var(--radius-xl)',
-              background: 'linear-gradient(135deg, rgba(108,99,255,0.15) 0%, rgba(244,114,182,0.1) 50%, rgba(34,211,238,0.08) 100%)',
-              border: '1px solid var(--border-subtle)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '5rem',
-              position: 'relative',
-              overflow: 'hidden',
-            }}>
-              <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(108,99,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(108,99,255,0.05) 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
-              <div style={{ position: 'relative', textAlign: 'center' }}>
-                <div>⚡</div>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 800, marginTop: '0.5rem', background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-pink))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                  ShopWave
-                </div>
-                <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.3rem' }}>Full-Stack Project</div>
-              </div>
-              <div className="about-floating-card">
-                <div className="about-float-value">4.8★</div>
-                <div className="about-float-label">Average Rating</div>
-              </div>
-            </div>
-          </div>
+      <div className="container" style={{ padding: '4rem 1.5rem 0' }}>
+        {/* Story Section */}
+        <div style={{ maxWidth: '820px', margin: '0 auto 5rem', textAlign: 'center' }}>
+          <span style={{ color: 'var(--gold-primary)', fontSize: '1.5rem' }}>✦</span>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', fontWeight: 700, color: '#ffffff', margin: '1rem 0 1.25rem' }}>
+            Florentine Craft Meets Contemporary Elegance
+          </h2>
+          <p style={{ fontSize: '1.02rem', lineHeight: '1.8', color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+            Under the Tuscan sun in 1921, Guccio Gucci opened his first store selling leather luggage and equestrian accessories.
+            Over the decades, through the creative vision of Italian masters, the House introduced icons that transformed fashion:
+            the curved bamboo handle in 1947, the equestrian Horsebit in 1953, and the Jackie bag in 1961.
+          </p>
+          <p style={{ fontSize: '1.02rem', lineHeight: '1.8', color: 'var(--text-secondary)' }}>
+            Today, this digital catalog presents the finest expressions of that century-old heritage, combining
+            authentic materials, hand-finished edges, and impeccable aesthetics for clients worldwide.
+          </p>
         </div>
 
-        {/* Tech Stack */}
-        <section className="section">
-          <div className="section-header">
-            <span className="section-label">Tech Stack</span>
-            <h2 className="section-title">
-              Built With <span className="gradient-text">Modern Tools</span>
-            </h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '1rem' }}>
-            {[
-              { icon: '⚛️', name: 'React 19', desc: 'UI Library' },
-              { icon: '⚡', name: 'Vite 8', desc: 'Build Tool' },
-              { icon: '🚀', name: 'Node & Express', desc: 'REST API' },
-              { icon: '🔀', name: 'React Router', desc: 'Client Routing' },
-              { icon: '🎨', name: 'Vanilla CSS', desc: 'Design System' },
-              { icon: '🧩', name: 'Context API', desc: 'State Mgmt' },
-              { icon: '☁️', name: 'Render', desc: 'Live Deployment' },
-            ].map((tech, i) => (
-              <div
-                key={i}
-                style={{
-                  background: 'var(--bg-glass)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: 'var(--radius-md)',
-                  padding: '1.5rem 1rem',
-                  textAlign: 'center',
-                  transition: 'var(--transition-smooth)',
-                  cursor: 'default',
-                }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(108,99,255,0.35)'; e.currentTarget.style.transform = 'translateY(-4px)'; }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border-subtle)'; e.currentTarget.style.transform = 'translateY(0)'; }}
-              >
-                <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>{tech.icon}</div>
-                <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '0.9rem', marginBottom: '0.2rem' }}>{tech.name}</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{tech.desc}</div>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* Highlights Grid */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', marginBottom: '5rem' }}>
+          {atelierHighlights.map((h, i) => (
+            <div
+              key={i}
+              style={{
+                background: '#111111',
+                border: '1px solid var(--border-subtle)',
+                padding: '2rem',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.75rem'
+              }}
+            >
+              <span style={{ fontSize: '1.4rem', color: 'var(--gold-primary)' }}>{h.icon}</span>
+              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>
+                {h.title}
+              </h3>
+              <p style={{ fontSize: '0.88rem', lineHeight: '1.6', color: 'var(--text-muted)', margin: 0 }}>
+                {h.desc}
+              </p>
+            </div>
+          ))}
+        </div>
 
-        {/* About This Product */}
-        <section className="section" style={{ paddingTop: 0 }}>
-          <div className="section-header">
-            <span className="section-label">Product Capabilities</span>
-            <h2 className="section-title">About This <span className="gradient-text">Product</span></h2>
-            <p className="section-subtitle">
-              ShopWave is engineered as an ultra-fast, responsive, and feature-rich full-stack e-commerce catalog platform.
-            </p>
-          </div>
-          <div className="values-grid">
-            {productHighlights.map((item, i) => (
-              <div key={i} className="value-card">
-                <div className="value-icon">{item.icon}</div>
-                <h3 className="value-title">{item.title}</h3>
-                <p className="value-desc">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Values */}
-        <section className="section" style={{ paddingTop: 0 }}>
-          <div className="section-header">
-            <span className="section-label">What We Stand For</span>
-            <h2 className="section-title">Our <span className="gradient-text">Core Values</span></h2>
-          </div>
-          <div className="values-grid">
-            {values.map((v, i) => (
-              <div key={i} className="value-card">
-                <div className="value-icon">{v.icon}</div>
-                <h3 className="value-title">{v.title}</h3>
-                <p className="value-desc">{v.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* CTA Banner */}
-        <section style={{ paddingBottom: '5rem' }}>
-          <div style={{
-            background: 'linear-gradient(135deg, rgba(108,99,255,0.12), rgba(34,211,238,0.06))',
-            border: '1px solid rgba(108,99,255,0.2)',
-            borderRadius: 'var(--radius-xl)',
-            padding: '3.5rem',
-            textAlign: 'center',
-          }}>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, marginBottom: '1rem' }}>
-              Ready to <span style={{ background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-pink))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Start Shopping?</span>
-            </h2>
-            <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', maxWidth: 500, margin: '0 auto 2rem' }}>
-              Explore our curated collections and find your next favorite product.
-            </p>
-            <Link to="/products" className="btn btn-primary btn-lg" id="about-bottom-cta">
-              Explore Products →
-            </Link>
-          </div>
-        </section>
+        {/* CTA */}
+        <div style={{ textAlign: 'center', background: '#111111', border: '1px solid var(--border-gold)', padding: '3.5rem 2rem' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', color: '#ffffff', marginBottom: '1rem' }}>
+            Experience the Official Creations
+          </h2>
+          <p style={{ color: 'var(--text-muted)', maxWidth: '520px', margin: '0 auto 2rem', fontSize: '0.95rem' }}>
+            Explore 36 archival pieces with complimentary insured delivery and signature gift packaging.
+          </p>
+          <Link to="/products" className="btn-gucci-solid-lg">
+            EXPLORE THE COLLECTION →
+          </Link>
+        </div>
       </div>
     </main>
   );

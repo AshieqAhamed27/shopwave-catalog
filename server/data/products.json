@@ -2,1851 +2,1779 @@
   "categories": [
     {
       "id": "all",
-      "label": "All Collection",
+      "label": "All Creations",
       "icon": "✦"
     },
     {
-      "id": "sneakers",
-      "label": "Sneakers & Footwear",
-      "icon": "👟"
+      "id": "handbags",
+      "label": "Handbags & Leather",
+      "icon": "👜"
+    },
+    {
+      "id": "shoes",
+      "label": "Shoes & Loafers",
+      "icon": "👞"
     },
     {
       "id": "apparel",
-      "label": "Luxury Apparel",
-      "icon": "🧥"
-    },
-    {
-      "id": "originals",
-      "label": "Adidas Originals",
-      "icon": "⚡"
-    },
-    {
-      "id": "performance",
-      "label": "Performance & Running",
-      "icon": "🏃"
+      "label": "Ready-to-Wear",
+      "icon": "✨"
     },
     {
       "id": "accessories",
-      "label": "Bags & Accessories",
-      "icon": "🎒"
+      "label": "Accessories & Jewelry",
+      "icon": "💍"
+    },
+    {
+      "id": "beauty",
+      "label": "Fragrance & Beauty",
+      "icon": "🌸"
     }
   ],
   "products": [
     {
       "id": 1,
-      "name": "Adidas Originals Samba OG Leather Shoes",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "sneakers",
-      "price": 10999,
-      "originalPrice": 13999,
-      "rating": 4.9,
-      "reviewCount": 9480,
+      "name": "Gucci Jackie 1961 Small Natural Grain Shoulder Bag",
+      "brand": "GUCCI",
+      "category": "handbags",
+      "price": 245000,
+      "originalPrice": 285000,
+      "rating": 5,
+      "reviewCount": 1840,
       "badge": "hot",
-      "description": "Born on the pitch, the Samba is an undisputed icon of street style. Featuring a premium soft leather upper, classic suede T-toe overlay, textured gum rubber cupsole, and metallic gold foil 'Samba' lettering.",
+      "description": "The historical Jackie 1961 bag is presented with a contemporary aesthetic in supple natural grain leather. Embellished with its signature golden piston closure and an additional detachable strap that allows it to be worn across the body.",
       "tags": [
-        "Samba",
-        "Originals",
-        "Leather Sneaker",
-        "Gum Sole"
+        "Jackie 1961",
+        "Shoulder Bag",
+        "Natural Grain",
+        "Piston Lock"
       ],
       "sizes": [
-        "UK 6",
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "Small (W 28cm x H 19cm x D 4.5cm)"
       ],
       "colors": [
-        "Cloud White / Core Black / Gum",
-        "Core Black / Cloud White / Gum"
+        "Black Leather",
+        "Cuir Brown",
+        "Emerald Green",
+        "Rosso Ancora"
       ],
       "specifications": {
-        "Upper Material": "Full Grain Leather with Suede T-Toe",
-        "Outsole": "Semi-Translucent Textured Gum Rubber",
-        "Closure": "Flat Lace Closure",
-        "Lining": "Soft Synthetic Leather Lining",
-        "Origin": "Vietnam / India",
-        "Collection": "Adidas Originals Heritage"
+        "Origin": "Handcrafted in Florence, Italy",
+        "Material": "Supple Natural Grain Italian Calfskin",
+        "Hardware": "Light Gold-Toned Metallic Piston Closure",
+        "Lining": "Microfiber with a Suede-Like Finish",
+        "Strap": "Handle with 18cm drop; Detachable strap with 52cm drop",
+        "Dimensions": "W 28cm x H 19cm x D 4.5cm (Weight: 0.45kg)"
       },
       "features": [
-        "Iconic reinforced suede T-toe toe cap design",
-        "Supple full grain leather upper with serrated 3-Stripes",
-        "Signature low-profile gum rubber cupsole for traction",
-        "Gold foil embossed Samba branding on lateral quarter",
-        "Ortholite moisture-wicking comfort sockliner"
+        "Signature archival golden piston clasp closure",
+        "Supple vegetable-tanned natural grain Italian calfskin",
+        "Includes second detachable shoulder strap for crossbody versatility",
+        "Internal open pocket and zippered leather compartment",
+        "Arrives in signature Gucci green gift box with satin dustbag"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 2,
-      "name": "Adidas Ultraboost Light High-Performance Running Shoes",
-      "brand": "ADIDAS PERFORMANCE",
-      "category": "performance",
-      "price": 18999,
-      "originalPrice": 22999,
+      "name": "Gucci Horsebit 1955 Top Handle Handbag",
+      "brand": "GUCCI",
+      "category": "handbags",
+      "price": 265000,
+      "originalPrice": 295000,
       "rating": 4.9,
-      "reviewCount": 6310,
+      "reviewCount": 1420,
       "badge": "hot",
-      "description": "Experience epic energy return with our lightest Ultraboost ever. Engineered with 30% lighter Light BOOST material, Primeknit+ FORGED textile upper that molds to your foot, and Continental Rubber outsole for superior grip in wet and dry conditions.",
+      "description": "Introduced for Cruise 2020, the Gucci Horsebit 1955 bag is recreated from an archival design. Featuring the iconic double ring and bar equestrian motif on rich textured calf leather.",
       "tags": [
-        "Ultraboost",
-        "Light BOOST",
-        "Primeknit+",
-        "Continental Rubber"
+        "Horsebit 1955",
+        "Top Handle",
+        "Calfskin",
+        "Florence"
       ],
       "sizes": [
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "Medium (W 30cm x H 24cm x D 10cm)"
       ],
       "colors": [
-        "Core Black / Solar Red",
-        "Cloud White / Crystal White",
-        "Lucid Cyan"
+        "Cuir Brown",
+        "Ebony Black",
+        "Off-White"
       ],
       "specifications": {
-        "Midsole": "Light BOOST Foam (30% Lighter)",
-        "Upper": "Adidas Primeknit+ FORGED Textile",
-        "Outsole": "Continental Better Rubber",
-        "Drop": "10 mm (Heel: 30 mm / Forefoot: 20 mm)",
-        "Weight": "293 g (Size UK 8.5)",
-        "Collection": "Adidas Running Performance"
+        "Origin": "Made in Italy",
+        "Material": "Textured Full-Grain Calfskin Leather",
+        "Hardware": "Gold-Toned Double Ring & Bar Horsebit",
+        "Lining": "Cotton Linen Lining with Leather Trim",
+        "Dimensions": "W 30cm x H 24cm x D 10cm"
       },
       "features": [
-        "30% lighter BOOST capsule generation providing maximum bounce",
-        "Foot-hugging Primeknit+ FORGED textile prevents pressure points",
-        "Linear Energy Push (LEP) system tuned for stiffer toe-off",
-        "Continental Natural Performance Rubber grip on wet roads",
-        "Upper yarn contains at least 50% Parley Ocean Plastic"
+        "Iconic 1955 archival equestrian horsebit detail on front",
+        "Structured dome top-handle silhouette with dual zippers",
+        "Removable leather shoulder strap with 50cm drop",
+        "Interior zip pocket and smartphone slip compartment",
+        "Protective metal purse feet engraved with Gucci lettering"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 3,
-      "name": "Adidas Originals Gazelle Indoor Suede Classic Shoes",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "sneakers",
-      "price": 11999,
-      "originalPrice": 14999,
-      "rating": 4.8,
-      "reviewCount": 4290,
-      "badge": "new",
-      "description": "The 1979 indoor classic returns. Crafted with buttery-soft suede upper, translucent gum rubber cupsole that wraps around the silhouette, and contrasting leather 3-Stripes. An eternal streetwear grail.",
+      "name": "GG Marmont Small Matelassé Shoulder Bag",
+      "brand": "GUCCI",
+      "category": "handbags",
+      "price": 215000,
+      "originalPrice": 245000,
+      "rating": 4.9,
+      "reviewCount": 3820,
+      "badge": "hot",
+      "description": "The GG Marmont chain shoulder bag has a softly structured shape and a zip top closure with the Double G hardware. The chain shoulder strap has a leather shoulder detail, finished with chevron quilted leather and heart on the back.",
       "tags": [
-        "Gazelle",
-        "Suede",
-        "Gum Sole",
-        "Terrace Icon"
+        "GG Marmont",
+        "Matelassé",
+        "Double G",
+        "Chevron"
       ],
       "sizes": [
-        "UK 6",
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "Small (W 24cm x H 13cm x D 7cm)"
       ],
       "colors": [
-        "Collegiate Navy / Gum",
-        "Scarlet Red / Cloud White",
-        "Bliss Pink"
+        "Black Chevron",
+        "Porcelain Rose",
+        "Dusty Pink"
       ],
       "specifications": {
-        "Upper Material": "Premium Pigskin Suede Upper",
-        "Outsole": "Translucent Wrapped Gum Rubber",
-        "Collar": "Soft Leather Collar and Tongue",
-        "Branding": "Gold Foil Trefoil on Heel Tab",
-        "Collection": "Originals Terrace Culture"
+        "Origin": "Made in Italy",
+        "Leather": "Black Matelassé Chevron Leather with Heart on Back",
+        "Hardware": "Antique Gold-Toned Double G Hardware",
+        "Chain": "Sliding Chain Strap with 55cm Drop",
+        "Dimensions": "W 24cm x H 13cm x D 7cm"
       },
       "features": [
-        "Ultra-soft brushed premium pigskin suede finish",
-        "Iconic translucent gum rubber outsole with Trefoil tread",
-        "Gold foil Gazelle stamping parallel to 3-Stripes",
-        "Padded collar and tongue for cushioned everyday wear",
-        "Reinforced toe cap for heritage silhouette stability"
+        "Double G archival monogram hardware from the 1970s",
+        "Chevron quilted matelassé leather with subtle sheen",
+        "Embossed heart motif on the reverse side",
+        "Sliding chain strap can be worn on shoulder or crossbody",
+        "Microfiber lining with soft suede finish"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 4,
-      "name": "Adidas Y-3 Qasa High Yohji Yamamoto Luxury Neoprene Sneakers",
-      "brand": "Y-3 LUXURY",
-      "category": "sneakers",
-      "price": 34999,
-      "originalPrice": 42999,
-      "rating": 4.9,
-      "reviewCount": 1480,
-      "badge": "limited",
-      "description": "Designed in collaboration with visionary Japanese master Yohji Yamamoto. The avant-garde Y-3 Qasa High returns with its iconic tubular EVA outsole, elasticated criss-cross strap wrapping, and luxurious neoprene upper with premium poron sockliner.",
+      "name": "Dionysus GG Supreme Mini Chain Bag",
+      "brand": "GUCCI",
+      "category": "handbags",
+      "price": 185000,
+      "originalPrice": 210000,
+      "rating": 4.8,
+      "reviewCount": 2190,
+      "badge": "new",
+      "description": "A structured GG Supreme canvas bag with our textured tiger head closure—a unique detail referencing the Greek god Dionysus. The sliding chain strap can be worn multiple ways, changing between a shoulder and a top handle bag.",
       "tags": [
-        "Y-3",
-        "Yohji Yamamoto",
-        "High-Fashion",
-        "Tubular"
+        "Dionysus",
+        "GG Supreme",
+        "Tiger Head",
+        "Chain Bag"
       ],
       "sizes": [
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "Mini (W 20cm x H 15.5cm x D 5cm)"
       ],
       "colors": [
-        "Triple Black",
-        "Black / Off-White"
+        "Beige/Ebony GG Canvas with Taupe Suede",
+        "Emerald Suede"
       ],
       "specifications": {
-        "Designer": "Yohji Yamamoto for Adidas",
-        "Upper": "Technical Neoprene with Elastic Straps",
-        "Outsole": "Signature Tubular EVA Outsole",
-        "Insole": "Poron Performance Cushioning",
-        "Collection": "Y-3 Runway Luxury"
+        "Canvas": "Beige and Ebony GG Supreme Canvas (Low Environmental Impact)",
+        "Closure": "Textured Tiger Head Spur Pin Closure with Side Release",
+        "Edges": "Hand-Painted Edge Dye",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Visionary high-fashion ninja boot silhouette with stretch straps",
-        "Technical neoprene inner bootie molds like a second skin",
-        "Sculpted futuristic EVA tubular tire-inspired sole unit",
-        "Yohji Yamamoto laser-etched signature on lateral side",
-        "Includes luxury Y-3 branded dust bag and collector box"
+        "Archival tiger head spur clasp studded with Swarovski crystals",
+        "Sliding silver-toned chain strap with 40cm drop",
+        "Dual interior accordion compartments with zippered divider",
+        "Hand-finished painted black edges by Italian leather artisans",
+        "Pocket under the flap for credit cards and receipts"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 5,
-      "name": "Adidas Originals Forum Low Classic 84 Retro Shoes",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "originals",
-      "price": 9999,
-      "originalPrice": 12999,
-      "rating": 4.7,
-      "reviewCount": 5120,
-      "badge": "sale",
-      "description": "More than just a shoe, the Forum is an attitude. Debuting on the basketball hardwood in 1984, this modern re-issue showcases the iconic criss-cross ankle X-strap, coated leather upper, and vintage off-white midsole.",
+      "name": "Ophidia GG Medium Tote Bag with Web Stripe",
+      "brand": "GUCCI",
+      "category": "handbags",
+      "price": 195000,
+      "originalPrice": 225000,
+      "rating": 4.9,
+      "reviewCount": 2940,
+      "badge": "hot",
+      "description": "The world of Ophidia evolves with the addition of this medium tote bag in GG Supreme canvas, trimmed with the green and red Web stripe and Double G hardware on a textured leather tab.",
       "tags": [
-        "Forum Low",
-        "Retro Hardwood",
-        "Ankle Strap",
-        "1984"
+        "Ophidia",
+        "Tote",
+        "Web Stripe",
+        "Everyday Luxury"
       ],
       "sizes": [
-        "UK 6",
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "Medium (W 38cm x H 28cm x D 14cm)"
       ],
       "colors": [
-        "Off-White / Royal Blue",
-        "Cloud White / Core Black"
+        "Beige/Ebony with Green & Red Web",
+        "Blue GG Supreme"
       ],
       "specifications": {
-        "Upper": "Coated Leather and Suede Trim",
-        "Strap": "Removable Hook-and-Loop Ankle X-Strap",
-        "Midsole": "Heritage EVA Drop-In Midsole",
-        "Outsole": "High-Traction Pivot-Circle Rubber",
-        "Collection": "Adidas Originals Basketball"
+        "Material": "GG Supreme Canvas with Brown Leather Trim",
+        "Hardware": "Gold-Toned Double G Hardware",
+        "Handles": "Dual Leather Handles with 25cm Drop",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Authentic 1984 cross-strap ankle lockdown system",
-        "Heavyweight supple tumbled leather with suede collar",
-        "Vintage off-white aged cupsole finish",
-        "Embossed Trefoil logo on lateral side and tongue",
-        "Padded mesh tongue and terry cloth lining"
+        "Spacious interior fits 14-inch MacBook and daily essentials",
+        "Iconic equestrian-inspired green and red Web center stripe",
+        "Magnetic snap closure for effortless opening and closing",
+        "Interior zip pocket and two smartphone open slots",
+        "Reinforced leather corners and flat structured base"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 6,
-      "name": "Adidas Adicolor Classics Firebird Track Jacket",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "apparel",
-      "price": 6999,
-      "originalPrice": 8999,
-      "rating": 4.9,
-      "reviewCount": 7840,
-      "badge": "hot",
-      "description": "The heartbeat of adidas sportswear heritage. Crafted from lustrous recycled tricot with a stand-up collar, ribbed cuffs, and iconic engineered white 3-Stripes running down the raglan sleeves. Embroidered Trefoil emblem on the left chest.",
+      "name": "Gucci Diana Small Leather Tote with Bamboo Handles",
+      "brand": "GUCCI",
+      "category": "handbags",
+      "price": 325000,
+      "originalPrice": 360000,
+      "rating": 5,
+      "reviewCount": 980,
+      "badge": "limited",
+      "description": "Reflecting an era of royal sophistication, the Gucci Diana reimagines the bamboo tote introduced in 1991. Paired with detachable neon decorative leather belts that originally maintained the bamboo shape.",
       "tags": [
-        "Firebird",
-        "Track Jacket",
-        "3-Stripes",
-        "Adicolor"
+        "Diana",
+        "Bamboo Handle",
+        "Princess Diana",
+        "Royalty"
       ],
       "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
+        "Small (W 27cm x H 24cm x D 11cm)"
       ],
       "colors": [
-        "Black / White 3-Stripes",
-        "Collegiate Green",
-        "Bold Red"
+        "Emerald Green",
+        "Cuir Brown",
+        "Pure Black"
       ],
       "specifications": {
-        "Material": "100% Recycled Polyester Tricot (Lustrous Finish)",
-        "Fit": "Regular Authentic Tracksuit Fit",
-        "Collar": "Stand-Up Funnel Collar",
-        "Closure": "Full Zip with Custom Trefoil Puller",
-        "Pockets": "Dual Concealed Zip Hand Pockets",
-        "Collection": "Adicolor Heritage"
+        "Handles": "Curved Handcrafted Bamboo Handles with 11cm Drop",
+        "Belts": "Two Removable Neon Yellow Leather Belts Included",
+        "Leather": "Full Grain Smooth Italian Calfskin",
+        "Origin": "Handcrafted in Florence, Italy"
       },
       "features": [
-        "Glossy vintage-feel heavyweight tricot fabric",
-        "Full zipper front with high funnel neck wind protection",
-        "Contrasting engineered 3-Stripes tape along both sleeves",
-        "Intricately embroidered white Trefoil crest on chest",
-        "Ribbed cuffs and hem that keep warmth locked in"
+        "Authentic fire-curved bamboo handles crafted by Florentine artisans",
+        "Neon leather handle shapers paying homage to vintage designs",
+        "Double G gold-toned emblem on front leather tab",
+        "Includes both leather and web shoulder straps",
+        "Protective velvet-lined compartment and brass base studs"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 7,
-      "name": "Adidas Adicolor Classics Firebird Relaxed Track Pants",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "apparel",
-      "price": 5999,
-      "originalPrice": 7999,
-      "rating": 4.8,
-      "reviewCount": 6190,
+      "name": "Gucci Horsebit 1953 Classic Leather Loafer",
+      "brand": "GUCCI",
+      "category": "shoes",
+      "price": 92000,
+      "originalPrice": 105000,
+      "rating": 5,
+      "reviewCount": 5240,
       "badge": "hot",
-      "description": "The matching bottom to the world's most recognizable tracksuit. Cut in a straight-leg relaxed silhouette with side zip pockets, pintuck pleats down the front of the legs, and an elastic waistband with drawcord.",
+      "description": "Celebrating 70 years of an enduring menswear icon. The 1953 Horsebit loafer in black calf leather with burnished gold-toned hardware, Blake welt construction, and leather sole. Part of the permanent collection of New York's MoMA.",
       "tags": [
-        "Firebird Pants",
-        "Track Pants",
-        "Pintuck",
-        "Streetwear"
+        "Horsebit 1953",
+        "Loafer",
+        "Blake Welt",
+        "MoMA Icon"
       ],
       "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
+        "EU 39",
+        "EU 40",
+        "EU 41",
+        "EU 42",
+        "EU 43",
+        "EU 44",
+        "EU 45"
       ],
       "colors": [
-        "Black / White 3-Stripes",
-        "Night Indigo",
-        "Collegiate Green"
+        "Nero Black Calfskin",
+        "Cognac Brown",
+        "Oxblood Bordeaux"
       ],
       "specifications": {
-        "Material": "100% Recycled Polyester Tricot",
-        "Fit": "Straight Leg Relaxed Silhouette",
-        "Waist": "Elastic Waistband with Adjustable Drawcord",
-        "Details": "Front Pintuck Creases and Ankle Zips",
-        "Collection": "Adicolor Heritage"
+        "Leather": "Full Grain Italian Calfskin Leather",
+        "Hardware": "Gold-Toned 1953 Archival Horsebit",
+        "Construction": "Traditional Italian Blake Construction",
+        "Heel Height": "15mm Stacked Leather Heel",
+        "Sole": "Hand-Polished Natural Leather Sole with Gucci Script",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Stitched vertical pintuck pleat maintains sharp silhouette",
-        "Contrast white 3-Stripes stitched down both outer seams",
-        "Ankle side zippers for custom drape over chunky sneakers",
-        "Secure zippered side pockets for smartphone and keys",
-        "Embroidered Trefoil logo on upper left thigh"
+        "Historical 1953 70th Anniversary internal label",
+        "Burnished gold-toned double ring and bar horsebit hardware",
+        "Flexible Blake stitched leather sole allows effortless stride",
+        "Supple leather lining that contours perfectly to the foot",
+        "Includes bespoke Gucci shoe horn and dust bags"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 8,
-      "name": "Adidas Originals Trefoil Heavyweight French Terry Hoodie",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "originals",
-      "price": 6499,
-      "originalPrice": 8499,
+      "name": "Gucci Princetown Leather Slipper with Horsebit",
+      "brand": "GUCCI",
+      "category": "shoes",
+      "price": 88000,
+      "originalPrice": 98000,
       "rating": 4.9,
-      "reviewCount": 8920,
+      "reviewCount": 4120,
       "badge": "hot",
-      "description": "An everyday luxury essential. Tailored from 450 GSM ultra-heavyweight cotton French terry for maximum drape and structural silhouette. Showcases an oversized flock-printed Trefoil on the chest, crossover hood, and kangaroo pouch pocket.",
+      "description": "The Princetown slipper is an unconventional modern classic. Fully lined with smooth leather and topped with our signature Horsebit, the backless mule silhouette transforms formal tailoring into effortless luxury.",
       "tags": [
-        "Trefoil",
-        "Heavyweight Hoodie",
-        "French Terry",
-        "Cozy"
+        "Princetown",
+        "Mule",
+        "Slipper",
+        "Horsebit"
       ],
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41",
+        "EU 42"
       ],
       "colors": [
-        "Medium Heather Grey",
-        "Core Black",
-        "Off White"
+        "Black Leather",
+        "White Leather",
+        "Rose Gold Metallic"
       ],
       "specifications": {
-        "Fabric": "100% Heavyweight French Terry Cotton (450 GSM)",
-        "Fit": "Oversized Streetwear Silhouette",
-        "Hood": "Dual-Layer Crossover Drawcord Hood",
-        "Pocket": "Kangaroo Pouch Pocket",
-        "Collection": "Adidas Originals Core"
+        "Silhouette": "Backless Slip-On Loafer Mule",
+        "Hardware": "Gold-Toned Horsebit Detail",
+        "Sole": "Leather Sole with Rubber Heel Cap",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Heavyweight 450 GSM French terry cotton with brushed interior",
-        "Thick crossover drawstring hood holds its shape perfectly",
-        "Giant iconic rubberized Trefoil crest emblazoned on front",
-        "Ribbed side gussets provide natural ease of movement",
-        "Heavy-gauge ribbed cuffs and waistband prevent draft"
+        "Effortless slip-on backless design for modern sartorial styling",
+        "Supple Italian calfskin upper with hand-stitched apron",
+        "Glove-soft leather interior provides unmatched walking ease",
+        "Hand-painted beveled leather sole edge",
+        "Embossed Gucci crest on the insole footbed"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 9,
-      "name": "Adidas Tiro 24 Pro Tapered Training Track Pants",
-      "brand": "ADIDAS PERFORMANCE",
-      "category": "performance",
-      "price": 4999,
-      "originalPrice": 6499,
-      "rating": 4.7,
-      "reviewCount": 9140,
+      "name": "Gucci Ace Embroidered Bee Sneaker",
+      "brand": "GUCCI",
+      "category": "shoes",
+      "price": 78000,
+      "originalPrice": 89000,
+      "rating": 4.8,
+      "reviewCount": 6840,
       "badge": "hot",
-      "description": "The global football standard. Built for elite training with AEROREADY sweat-wicking technology, ankle zippers for quick shoe changes, mesh inserts for ventilation, and a tapered silhouette that stays close through sprints and pivots.",
+      "description": "The retro-inspired Ace sneaker in white leather is detailed with the blue and red Web and gold thread-embroidered bee—an archival code first introduced in Gucci ready-to-wear in the 1970s.",
       "tags": [
-        "Tiro 24",
-        "Aeroready",
-        "Football Training",
-        "Tapered"
+        "Ace Sneaker",
+        "Gold Bee",
+        "Web Stripe",
+        "White Leather"
       ],
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
+        "EU 39",
+        "EU 40",
+        "EU 41",
+        "EU 42",
+        "EU 43",
+        "EU 44",
+        "EU 45"
       ],
       "colors": [
-        "Team Navy Blue / White",
-        "Black / Reflective Silver"
+        "White with Gold Bee",
+        "Black with Gold Star"
       ],
       "specifications": {
-        "Technology": "AEROREADY Moisture Absorbing",
-        "Fit": "Slim Athletic Tapered Fit",
-        "Material": "100% Recycled Polyester Doubleknit",
-        "Ankles": "Heavy Duty Ankle Leg Zippers",
-        "Collection": "Adidas Football Pro"
+        "Leather": "White Clean Full-Grain Calfskin Leather",
+        "Embroidery": "Metallic Gold Thread Embroidered Bee Motif",
+        "Heel Detail": "Red Metallic Snakeskin Left Heel / Green Right Heel",
+        "Sole": "Rubber Cupsole with Embossed Crest",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "AEROREADY high-tech yarn pulls moisture away rapidly",
-        "Engineered mesh calf panels maximize cooling airflow",
-        "Calf-to-ankle zippers enable fast removal over boots",
-        "Drawcord on elastic waist for personalized dynamic hold",
-        "Heat-transferred 3-Stripes and Performance badge"
+        "Delicate gold metallic thread embroidery of the historic Gucci bee",
+        "Iconic green and red grosgrain Web side tape",
+        "Mismatched metallic snakeskin heel tabs on left and right shoes",
+        "Padded leather collar and cushioned insole",
+        "Durable non-slip white rubber cupsole"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 10,
-      "name": "Adidas Terrex Free Hiker 2.0 Gore-Tex Waterproof Boots",
-      "brand": "ADIDAS TERREX",
-      "category": "performance",
-      "price": 21999,
-      "originalPrice": 26999,
+      "name": "Gucci Screener GG Supreme Vintage Sneaker",
+      "brand": "GUCCI",
+      "category": "shoes",
+      "price": 95000,
+      "originalPrice": 110000,
       "rating": 4.9,
-      "reviewCount": 3210,
+      "reviewCount": 2180,
       "badge": "new",
-      "description": "Trek without limits. Combining lightweight trail-runner agility with heavy-duty boot support. Powered by full-length BOOST midsole cushioning, a waterproof and breathable GORE-TEX membrane, and Continental lugged outsole.",
+      "description": "Influenced by classic trainers from the 1970s, the Screener sneaker—named for the defensive sports move—features the Web stripe, vintage Gucci logo, and an artisanal distressed finish on GG canvas.",
       "tags": [
-        "Terrex",
-        "Gore-Tex",
-        "Boost",
-        "Continental",
-        "Trail"
+        "Screener",
+        "Vintage 70s",
+        "GG Canvas",
+        "Distressed"
       ],
       "sizes": [
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "EU 40",
+        "EU 41",
+        "EU 42",
+        "EU 43",
+        "EU 44",
+        "EU 45"
       ],
       "colors": [
-        "Wonder Steel / Impact Orange",
-        "Core Black / Grey"
+        "Butter/Green/Orange Leather & GG Canvas"
       ],
       "specifications": {
-        "Membrane": "GORE-TEX Extended Comfort Waterproof",
-        "Midsole": "Full-Length BOOST Cushioning",
-        "Outsole": "Continental Lugged Trail Rubber",
-        "Upper": "Abrasion-Resistant Engineered Mesh with TPU",
-        "Collection": "Adidas Terrex Outdoor"
+        "Upper": "Beige/Ebony GG Canvas with Treated Leather Overlays",
+        "Treatment": "Specially Treated for an All-Over Distressed Vintage Effect",
+        "Tongue": "Vintage Gucci Enamel Oval Badge",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Guaranteed waterproof breathable GORE-TEX lining keeps feet dry",
-        "Responsive full-length BOOST delivers endless energy on rocky trails",
-        "Continental rubber outsole with 4.5mm lugs grips mud and wet rock",
-        "Molded external heel clip and EVA stabilization frame",
-        "Seamless welded overlays protect against trail debris"
+        "Hand-distressed vintage finish applied individually by master craftsmen",
+        "Bi-color rubber sole with raised bee motif tread",
+        "Retro terry toweling and soft leather interior lining",
+        "Oval enamel Double G detail on tongue",
+        "Includes extra pair of custom vintage-dyed laces"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 11,
-      "name": "Adidas Originals Superstar Foundation Shell-Toe Shoes",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "originals",
-      "price": 8999,
-      "originalPrice": 11999,
-      "rating": 4.8,
-      "reviewCount": 11200,
-      "badge": "hot",
-      "description": "From 1970 basketball courts to Run-DMC hip-hop stages. The timeless Superstar features its unmistakable ribbed rubber shell toe, serrated 3-Stripes, smooth leather upper, and herringbone tread cupsole.",
+      "name": "Interlocking G Patent Leather Slingback Pump",
+      "brand": "GUCCI",
+      "category": "shoes",
+      "price": 98000,
+      "originalPrice": 115000,
+      "rating": 5,
+      "reviewCount": 1620,
+      "badge": "limited",
+      "description": "A silhouette of pure cinematic glamour. Crafted from high-shine patent leather in Rosso Ancora—the signature deep crimson of Gucci—accented by a sculpted kitten heel and miniature Interlocking G plaque.",
       "tags": [
-        "Superstar",
-        "Shell Toe",
-        "Hip Hop Icon",
-        "Leather"
+        "Slingback",
+        "Rosso Ancora",
+        "Patent Leather",
+        "Kitten Heel"
       ],
       "sizes": [
-        "UK 6",
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
       ],
       "colors": [
-        "Cloud White / Core Black",
-        "Core Black / Cloud White"
+        "Rosso Ancora Crimson",
+        "Black Patent"
       ],
       "specifications": {
-        "Toe Cap": "Iconic Protective Ribbed Rubber Shell Toe",
-        "Upper": "Full Grain Smooth Leather Upper",
-        "Lining": "Breathable Mesh Sockliner",
-        "Outsole": "Herringbone Pattern Vulcanized Rubber",
-        "Collection": "Adidas Originals Core"
+        "Material": "Mirror-Polished Patent Leather",
+        "Heel Height": "45mm Sculpted Flared Kitten Heel",
+        "Hardware": "Light Gold-Tone Interlocking G Badge",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Signature protective rubber shell toe cap",
-        "Full grain leather upper with serrated 3-Stripes",
-        "Gold foil Superstar box logo on lateral quarter",
-        "Herringbone-pattern cupsole providing high durability",
-        "Padded collar and tongue for everyday streetwear comfort"
+        "Signature Rosso Ancora crimson red lacquer finish",
+        "Pointed toe with miniature gold Interlocking G hardware",
+        "Elasticized slingback strap ensures comfortable heel grip",
+        "Hand-finished Italian leather sole with star stud accents",
+        "Padded soft leather insole for cocktail hour and galas"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 12,
-      "name": "Adidas by Stella McCartney Luxury Running Windbreaker",
-      "brand": "STELLA McCARTNEY",
+      "name": "Tailored Wool-Silk Single-Breasted Blazer with Crest",
+      "brand": "GUCCI",
       "category": "apparel",
-      "price": 19999,
-      "originalPrice": 24999,
-      "rating": 4.9,
-      "reviewCount": 1820,
-      "badge": "limited",
-      "description": "High performance meets runway elegance. Stella McCartney redefines the running jacket with reflective silver technical fabric, storm-proof bungee cords, packable hood, and breathable underarm laser perforations.",
+      "price": 285000,
+      "originalPrice": 320000,
+      "rating": 5,
+      "reviewCount": 840,
+      "badge": "hot",
+      "description": "Impeccable Florentine tailoring. Cut from a rich wool and silk twill blend with peak lapels, horn buttons embossed with the House crest, and full cupro silk lining with horsebit jacquard.",
       "tags": [
-        "Stella McCartney",
-        "Luxury Sport",
-        "Windbreaker",
-        "Designer"
+        "Blazer",
+        "Tailoring",
+        "Wool Silk",
+        "Florentine"
       ],
       "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L"
+        "IT 46",
+        "IT 48",
+        "IT 50",
+        "IT 52",
+        "IT 54"
       ],
       "colors": [
-        "Silver Metallic / Black",
-        "Core White / Acid Yellow"
+        "Midnight Navy",
+        "Black",
+        "Ivory Cream"
       ],
       "specifications": {
-        "Collaboration": "Adidas by Stella McCartney",
-        "Material": "100% Recycled Metallic Wind-Proof Ripstop",
-        "Fit": "Relaxed Cocoon Silhouette with Cinch Bungees",
-        "Waterproofing": "DWR PFC-Free Water Repellent Coating",
-        "Collection": "Stella McCartney Runway Sport"
+        "Fabric": "70% Wool, 30% Silk Twill (320 GSM)",
+        "Lining": "100% Cuir Cupro Jacquard Lining with Horsebit Motif",
+        "Buttons": "Gold-Plated Metal Crest Buttons",
+        "Cut": "Structured Single-Breasted with Half-Canvas Construction",
+        "Origin": "Tailored in Italy"
       },
       "features": [
-        "Ultra-reflective metallic technical ripstop fabric",
-        "Packable design folds directly into its own interior pocket",
-        "Laser-cut ventilation ports along back yoke and arms",
-        "Two-way water-sealed AquaGuard zipper with designer pull",
-        "Signature circular Stella McCartney rubber badge on back"
+        "Traditional Italian half-canvas construction molds to the body",
+        "Sharp peak lapels with hand-stitched pick-stitch detailing",
+        "Gleaming 24k gold-plated metal buttons featuring the Gucci family crest",
+        "Dual rear side vents and functioning four-button surgeon cuffs",
+        "Accompanied by a cedar wood hanger and travel garment bag"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 13,
-      "name": "Y-3 Yohji Yamamoto Luxury Tech-Nylon Bomber Jacket",
-      "brand": "Y-3 LUXURY",
+      "name": "GG Supreme Monogram Jacquard Silk Bowling Shirt",
+      "brand": "GUCCI",
       "category": "apparel",
-      "price": 38999,
-      "originalPrice": 48999,
-      "rating": 5,
-      "reviewCount": 920,
-      "badge": "limited",
-      "description": "The pinnacle of luxury streetwear. Crafted from heavy Japanese flight satin nylon with PrimaLoft insulation, asymmetrical dual-zip front, signature Y-3 matte logo print on the back, and ribbed cashmere-blend collar.",
+      "price": 135000,
+      "originalPrice": 155000,
+      "rating": 4.9,
+      "reviewCount": 1980,
+      "badge": "hot",
+      "description": "Relaxed sophistication. Spun from 100% heavyweight Italian mulberry silk twill with an all-over woven GG monogram jacquard, open camp bowling collar, and mother-of-pearl buttons.",
       "tags": [
-        "Y-3",
-        "Bomber Jacket",
-        "Yohji Yamamoto",
-        "PrimaLoft"
+        "Silk Shirt",
+        "Bowling Shirt",
+        "GG Jacquard",
+        "Camp Collar"
       ],
       "sizes": [
+        "XS",
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "colors": [
-        "Midnight Obsidian",
-        "Off-White Chalk"
+        "Beige & Ebony GG Jacquard",
+        "Celadon Green"
       ],
       "specifications": {
-        "Designer": "Yohji Yamamoto for Adidas Y-3",
-        "Shell": "Heavyweight Japanese Flight Satin Nylon",
-        "Insulation": "PrimaLoft Gold Eco Insulation",
-        "Trim": "Merino Wool and Cashmere Ribbed Trims",
-        "Collection": "Y-3 Paris Fashion Week Collection"
+        "Material": "100% Pure Italian Mulberry Silk Twill",
+        "Weave": "Tonal GG Monogram Jacquard",
+        "Buttons": "Genuine Australian Mother-of-Pearl Buttons",
+        "Cut": "Boxy Resort Fit with Straight Hem and Side Slits",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "High-density water-resistant Japanese flight satin",
-        "PrimaLoft Gold Eco down-alternative insulation for thermal warmth",
-        "Asymmetrical two-way front zipper with extended pull tabs",
-        "Tonal soft-touch Y-3 logo screenprint spanning the back",
-        "Multiple concealed utility sleeve pockets and internal chest holster"
+        "Heavyweight 22 momme fluid silk drape feels weightless on skin",
+        "Retro resort camp collar with loop closure",
+        "Custom mother-of-pearl buttons laser-engraved with Gucci script",
+        "Single chest patch pocket with aligned monogram pattern match",
+        "Finished French seams throughout interior for luxury durability"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 14,
-      "name": "Adidas Z.N.E. Premium Full-Zip Athleisure Track Top",
-      "brand": "ADIDAS PERFORMANCE",
+      "name": "Reversible GG Wool-Jacquard Knit Cardigan",
+      "brand": "GUCCI",
       "category": "apparel",
-      "price": 8999,
-      "originalPrice": 11999,
-      "rating": 4.8,
-      "reviewCount": 4720,
-      "badge": "new",
-      "description": "Zero Negative Energy. Engineered to help athletes focus before competition. Features four-way stretch spacer fabric, moisture-absorbing AEROREADY, concealed zip pockets, and a clean minimalist aesthetic.",
+      "price": 165000,
+      "originalPrice": 185000,
+      "rating": 4.9,
+      "reviewCount": 1490,
+      "badge": "hot",
+      "description": "An essential statement in knitwear. Knitted in Italy from ultra-fine virgin wool with a double-face jacquard technique, allowing the cardigan to be reversed between camel and dark brown.",
       "tags": [
-        "ZNE",
-        "Zero Negative Energy",
-        "Athleisure",
-        "Warm Up"
+        "Cardigan",
+        "Wool Jacquard",
+        "Reversible",
+        "Heritage Knit"
       ],
       "sizes": [
         "S",
         "M",
         "L",
-        "XL",
-        "2XL"
+        "XL"
       ],
       "colors": [
-        "Chalk Pearl",
-        "Core Black",
-        "Silver Violet"
+        "Camel / Dark Brown GG",
+        "Navy / Red GG"
       ],
       "specifications": {
-        "Fabric": "60% Cotton, 40% Recycled Polyester Spacer Doubleknit",
-        "Technology": "AEROREADY 4-Way Stretch",
-        "Fit": "Standard Modern Tapered Fit",
-        "Collar": "Ergonomic High Scuba Neck",
-        "Collection": "Adidas Z.N.E. Athleisure"
+        "Yarn": "100% Superfine Extra-Spun Virgin Wool",
+        "Knit": "Double-Faced Reversible Jacquard Knit",
+        "Closure": "Genuine Horn Button Placket",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Premium four-way stretch doubleknit fabric blocks distractions",
-        "Fast-release zip allows instant one-pull removal before game",
-        "Laser-cut concealed front zip pockets with rubber tape seals",
-        "Thumbhole cuffs keep sleeves securely in place during warm-ups",
-        "Matte rubberized silicone 3-Stripes branding on back shoulder"
+        "Double-face construction provides two entirely distinct colorways",
+        "Subtle ribbed cuffs, V-neck placket, and hemline in contrast tone",
+        "Two front patch pockets accessible on both reversible sides",
+        "All-over interlocking GG diamond monogram pattern",
+        "Generously cut for effortless layering over shirts or tees"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 15,
-      "name": "Adidas Tiro Cargo Streetwear Utility Pants",
-      "brand": "ADIDAS ORIGINALS",
+      "name": "Double-Breasted Cashmere Trench Coat with Leather Belt",
+      "brand": "GUCCI",
       "category": "apparel",
-      "price": 6499,
-      "originalPrice": 8499,
-      "rating": 4.7,
-      "reviewCount": 5410,
-      "badge": "hot",
-      "description": "A streetwear remix of our iconic pitch pants. Blending football DNA with utilitarian cargo storage. Features dual snap-flap bellows cargo pockets, ankle zips, and contrast white 3-Stripes running down the thighs.",
+      "price": 380000,
+      "originalPrice": 425000,
+      "rating": 5,
+      "reviewCount": 620,
+      "badge": "limited",
+      "description": "The epitome of outerwear elegance. Spun from double-faced brushed Mongolian cashmere with tortoiseshell buttons, storm flaps, and a matching full-grain calfskin buckle belt.",
       "tags": [
-        "Cargo Pants",
-        "Tiro",
-        "Streetwear",
-        "Utility"
+        "Cashmere Coat",
+        "Trench",
+        "Haute Couture",
+        "Leather Belt"
       ],
       "sizes": [
-        "30",
-        "32",
-        "34",
-        "36",
-        "38"
+        "IT 44",
+        "IT 46",
+        "IT 48",
+        "IT 50",
+        "IT 52"
       ],
       "colors": [
-        "Legend Earth Green",
-        "Core Black",
-        "Sand Khaki"
+        "Warm Sand Melange",
+        "Black Obsidian"
       ],
       "specifications": {
-        "Material": "Heavy Cotton Twill with Stretch Elastane",
-        "Fit": "Tapered Cargo Fit",
-        "Pockets": "6 Pockets (2 Hand, 2 Cargo Bellows, 2 Back)",
-        "Closure": "Drawcord Elastic Waistband",
-        "Collection": "Adidas Originals Streetwear"
+        "Fabric": "100% Pure Mongolian Brushed Cashmere",
+        "Belt": "Detachable Calfskin Leather Belt with Antiqued Brass Buckle",
+        "Lining": "Partial Silk Lining along Shoulders and Sleeves",
+        "Length": "Full Calf Length (120cm)",
+        "Origin": "Crafted in Florence, Italy"
       },
       "features": [
-        "Rugged cotton twill blended with 3% stretch for flexibility",
-        "Expandable bellows thigh cargo pockets with magnetic closures",
-        "Classic signature 3-Stripes stitched on outer thighs",
-        "Adjustable bungee toggles at ankles for customized cuff styling",
-        "Deep front hand pockets and reinforced belt loops"
+        "Ultra-soft brushed cloud-like cashmere provides thermal protection",
+        "Classic military storm flap, epaulets, and throat latch collar",
+        "Genuine horn buttons engraved with subtle Gucci branding",
+        "Hand-tailored leather wrapped belt buckle and sleeve cuff straps",
+        "Arrives with a luxury hardwood hanger and travel garment trunk"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 16,
-      "name": "Adidas Aeroready 3-Stripes Performance Training Tee",
-      "brand": "ADIDAS PERFORMANCE",
-      "category": "performance",
-      "price": 2499,
-      "originalPrice": 3499,
+      "name": "Classic Tailored Wool Wide-Leg Trousers",
+      "brand": "GUCCI",
+      "category": "apparel",
+      "price": 110000,
+      "originalPrice": 125000,
       "rating": 4.8,
-      "reviewCount": 14200,
-      "badge": "hot",
-      "description": "The ultimate training t-shirt. Crafted from ultra-breathable mock eyelet fabric powered by moisture-wicking AEROREADY to keep you cool and dry through intense HIIT, weightlifting, and cardio sessions.",
+      "reviewCount": 1320,
+      "badge": "new",
+      "description": "Precision lines meet fluid drapery. Crafted from high-twist wool gabardine with double forward pleats, extended tab waistband, and a relaxed wide leg that breaks elegantly over loafers.",
       "tags": [
-        "Aeroready",
-        "Performance Tee",
-        "Gym",
-        "Moisture Wicking"
+        "Wool Trousers",
+        "Pleated",
+        "Wide Leg",
+        "Sartorial"
       ],
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
+        "IT 44",
+        "IT 46",
+        "IT 48",
+        "IT 50",
+        "IT 52"
       ],
       "colors": [
-        "Core Black / White",
-        "Royal Blue",
-        "Carbon Grey"
+        "Charcoal Melange",
+        "Midnight Black",
+        "Camel"
       ],
       "specifications": {
-        "Technology": "AEROREADY Moisture Absorption",
-        "Fabric": "100% Recycled Polyester Mock Eyelet",
-        "Fit": "Athletic Regular Fit",
-        "Seams": "Forward-Shifted Flatlock Anti-Chafe Seams",
-        "Collection": "Adidas Training"
+        "Fabric": "100% High-Twist Virgin Wool Gabardine (Crease-Resistant)",
+        "Waist": "Extended Tab Waistband with Side Adjuster Buckles",
+        "Pleats": "Double Forward Front Pleats",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "AEROREADY fabric absorbs moisture and manages body climate",
-        "Mesh back panel promotes rapid heat dissipation",
-        "Ergonomic curved hem provides full coverage during overhead lifts",
-        "Anti-chafe flatlock seams prevent skin irritation during runs",
-        "3-Stripes wrapping cleanly across the upper back shoulders"
+        "High-twist wool yarn naturally repels creases throughout the day",
+        "Double forward pleats create an elegant tailored drape down the leg",
+        "Side waist adjusters allow a tailored fit without a belt",
+        "Unfinished hem allows bespoke tailoring to exact inseam length",
+        "Internal silk curtain waistband for unmatched comfort"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 17,
-      "name": "Adidas Originals 3-Stripes Heavyweight Cotton Tee",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "originals",
-      "price": 2999,
-      "originalPrice": 3999,
+      "name": "Double G Smooth Leather Belt with Antiqued Brass Buckle",
+      "brand": "GUCCI",
+      "category": "accessories",
+      "price": 48000,
+      "originalPrice": 55000,
       "rating": 4.9,
-      "reviewCount": 9810,
+      "reviewCount": 9420,
       "badge": "hot",
-      "description": "Simplicity done to perfection. Cut from dense 240 GSM single jersey cotton. Styled with contrast ribbed collar and cuffs, contrast 3-Stripes stitched down the shoulders, and embroidered Trefoil logo.",
+      "description": "The classic Double G belt in smooth heat-embossed black calfskin. Embellished with the recognizable 1970s archival Double G buckle with an antiqued brass finish. Designed to be worn on the hips or waist.",
       "tags": [
-        "Originals Tee",
-        "Heavyweight",
-        "3-Stripes",
-        "California"
+        "Double G",
+        "Leather Belt",
+        "Antiqued Brass",
+        "Archival"
       ],
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
+        "75cm",
+        "80cm",
+        "85cm",
+        "90cm",
+        "95cm",
+        "100cm",
+        "105cm"
       ],
       "colors": [
-        "Pure White / Black 3-Stripes",
-        "Black / White",
-        "Collegiate Burgundy"
+        "Nero Black with Antiqued Brass",
+        "Cuir Brown"
       ],
       "specifications": {
-        "Fabric": "100% Heavyweight Single Jersey Cotton (240 GSM)",
-        "Fit": "Classic Heritage Fit",
-        "Collar": "Contrast Ribbed Crew Neck and Sleeve Bands",
-        "Crest": "Embroidered Trefoil on Chest",
-        "Collection": "Adidas Originals Heritage"
+        "Width": "4cm / 1.5 inches",
+        "Material": "Smooth Vegetable-Tanned Italian Leather",
+        "Buckle": "Antiqued Shiny Brass Double G Buckle",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Dense 240 GSM ring-spun cotton holds a structured drape",
-        "Woven 3-Stripes tape running from neckband to sleeve cuffs",
-        "Contrast retro ringer collar and sleeve binding",
-        "Finely embroidered tonal Trefoil emblem on left chest",
-        "Pre-shrunk treatment retains fit after countless washes"
+        "Iconic 1970s Double G belt buckle cast in solid brass",
+        "Beveled smooth edge finish hand-waxed by Italian artisans",
+        "Versatile 4cm width fits through standard denim and trouser loops",
+        "Heat-embossed Gucci logo and serial number on the interior suede",
+        "Includes protective cloth pouch and green gift packaging"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 18,
-      "name": "Adidas Originals Handball Spezial Suede Shoes",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "sneakers",
-      "price": 10999,
-      "originalPrice": 13999,
-      "rating": 4.9,
-      "reviewCount": 3840,
-      "badge": "new",
-      "description": "First introduced in 1979 for elite indoor handball players, the Spezial is now a global terrace icon. Featuring a rich suede upper, soft gum rubber sole, and gold foil 'Spezial' branding.",
+      "name": "G-Timeless 38mm Automatic Watch with Bee Motif",
+      "brand": "GUCCI",
+      "category": "accessories",
+      "price": 195000,
+      "originalPrice": 225000,
+      "rating": 5,
+      "reviewCount": 1120,
+      "badge": "hot",
+      "description": "Swiss watchmaking tradition meets Florentine poetry. Featuring a sunbrushed golden dial centered with a sculpted golden bee motif, automatic Swiss movement with 38-hour power reserve, and a stainless steel 9-link bracelet.",
       "tags": [
-        "Spezial",
-        "Suede",
-        "Terrace",
-        "Gum Sole"
+        "G-Timeless",
+        "Swiss Watch",
+        "Automatic",
+        "Bee Motif"
       ],
       "sizes": [
-        "UK 6",
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "38mm Case Diameter"
       ],
       "colors": [
-        "Light Blue / Cloud White",
-        "Aluminium / Core Black",
-        "Collegiate Green"
+        "Stainless Steel with Gold Dial",
+        "Two-Tone Gold & Steel"
       ],
       "specifications": {
-        "Upper": "Rich Velvety Suede with Synthetic Leather Overlays",
-        "Outsole": "Gum Rubber Cushioning Outsole",
-        "Branding": "Gold Foil Spezial Stamping",
-        "Collection": "Adidas Originals Spezial Series"
+        "Movement": "Swiss Made ETA 2824-2 Automatic Movement",
+        "Case": "Stainless Steel (38mm Diameter, 10mm Thickness)",
+        "Crystal": "Sapphire Crystal with Anti-Reflective Coating",
+        "Water Resistance": "5 ATM (50 meters / 160 feet)",
+        "Origin": "Swiss Made"
       },
       "features": [
-        "Plush pigskin suede with deep color saturation",
-        "Low-profile gum rubber outsole with micro-pivot circles",
-        "Metallic gold Spezial script lettering along outer stripe",
-        "Cushioned OrthoLite sockliner keeps feet comfortable all day",
-        "Reinforced heel counter keeps shape securely intact"
+        "Sculpted central bee motif serving as a poetic hour emblem",
+        "Exhibition transparent caseback revealing decorated rotor and jewels",
+        "Scratch-resistant sapphire crystal with anti-reflective treatment",
+        "9-link stainless steel bracelet with push-button butterfly deployment",
+        "Certified Swiss chronometric precision with 2-year international warranty"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 19,
-      "name": "Adidas Predator Elite Fold-Over Tongue Football Cleats",
-      "brand": "ADIDAS PERFORMANCE",
-      "category": "performance",
-      "price": 24999,
-      "originalPrice": 29999,
-      "rating": 5,
-      "reviewCount": 2190,
-      "badge": "limited",
-      "description": "The legend returns. Celebrating 30 years of goal-scoring mastery with the iconic fold-over tongue with strap, Strikeskin grippy rubber fins on the forefoot, and Controlframe 2.0 firm ground outsole.",
+      "name": "Horsebit Detail Acetate Square Sunglasses",
+      "brand": "GUCCI",
+      "category": "accessories",
+      "price": 42000,
+      "originalPrice": 48000,
+      "rating": 4.8,
+      "reviewCount": 3410,
+      "badge": "new",
+      "description": "Bold 1970s Italian glamour. Oversized square sunglasses crafted from thick hand-polished tortoiseshell acetate with 100% UVA/UVB gradient lenses and gold-toned miniature Horsebit temples.",
       "tags": [
-        "Predator",
-        "Fold-Over Tongue",
-        "Strikeskin",
-        "Firm Ground"
+        "Sunglasses",
+        "Horsebit",
+        "Tortoiseshell",
+        "Italian Eyewear"
       ],
       "sizes": [
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "Standard Fit (Lens: 54mm / Bridge: 20mm / Temple: 145mm)"
       ],
       "colors": [
-        "Lucid Lemon / Core Black",
-        "Core Black / Solar Red"
+        "Havana Tortoiseshell",
+        "Shiny Black with Grey Lens"
       ],
       "specifications": {
-        "Tongue": "Iconic Fold-Over Tongue with Elastic Anchoring Strap",
-        "Grip Technology": "Rubber Strikeskin Precision Elements",
-        "Outsole": "Controlframe 2.0 High-Speed Stability Plate",
-        "Upper": "HybridTouch 2.0 Synthetic Suede",
-        "Collection": "Adidas Football Elite"
+        "Frame": "Hand-Polished High-Grade Italian Cellulose Acetate",
+        "Lenses": "100% UVA/UVB Category 3 Gradient Tint Lenses",
+        "Details": "Miniature Gold-Tone Metal Horsebit on Temples",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Classic fold-over tongue creates a clean strike zone for shots",
-        "Strategically placed Strikeskin rubber fins generate lethal swerve",
-        "HybridTouch 2.0 upper offers buttery touch and molded comfort",
-        "Controlframe 2.0 outsole delivers explosive acceleration",
-        "Worn by top world champions and international superstars"
+        "Full spectrum 100% UVA and UVB eye protection against harsh glare",
+        "Subtle laser-engraved Gucci signature on the corner of the lens",
+        "Five-barrel metal hinges for lifelong temple stability",
+        "Accompanied by a jewel-toned velvet hard case with satin lining",
+        "Includes microfiber cleaning cloth and authenticity certification"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 20,
-      "name": "Adidas by Stella McCartney Luxury Gym Duffel Bag",
-      "brand": "STELLA McCARTNEY",
+      "name": "Interlocking G 18k Yellow Gold Signet Ring",
+      "brand": "GUCCI",
       "category": "accessories",
-      "price": 16999,
-      "originalPrice": 20999,
-      "rating": 4.9,
-      "reviewCount": 1620,
+      "price": 145000,
+      "originalPrice": 165000,
+      "rating": 5,
+      "reviewCount": 890,
       "badge": "limited",
-      "description": "A masterclass in sustainable high-fashion athleisure. Features a water-resistant matte recycled nylon shell, separate ventilated shoe compartment, padded laptop compartment, and detachable yoga mat carry straps.",
+      "description": "Cast in solid 18-karat yellow gold with an antiqued satin finish. The signet ring features an engraved rope border around a raised Interlocking G emblem, honoring archival signet rings worn by Florentine royalty.",
       "tags": [
-        "Stella McCartney",
-        "Duffel Bag",
-        "Luxury Gym",
-        "Designer Bag"
+        "Fine Jewelry",
+        "18k Gold",
+        "Signet Ring",
+        "Interlocking G"
       ],
       "sizes": [
-        "One Size (45L Capacity)"
+        "IT 12",
+        "IT 14",
+        "IT 16",
+        "IT 18",
+        "IT 20",
+        "IT 22"
       ],
       "colors": [
-        "Matte Black",
-        "Granite Grey"
+        "18k Solid Yellow Gold"
       ],
       "specifications": {
-        "Dimensions": "55 cm x 30 cm x 28 cm (45 Litres)",
-        "Material": "100% Recycled Matte Nylon with Water-Repellent Finish",
-        "Straps": "Padded Removable Shoulder Strap + Top Grab Handles",
-        "Pockets": "Shoe Garage + Wet Pocket + Padded 15' Laptop Sleeve",
-        "Collection": "Stella McCartney Luxury Accessories"
+        "Gold": "18 Karat Solid Yellow Gold (750/1000 Purity)",
+        "Width": "12mm Face Diameter (Weight: 9.8g)",
+        "Hallmark": "Official Italian Assay Hallmark and Gucci Registration",
+        "Origin": "Handmade in Arezzo, Italy"
       },
       "features": [
-        "Separate bottom zippered compartment stores sweaty gym shoes",
-        "Exterior adjustable compression straps securely hold a yoga mat",
-        "Water-repellent technical nylon keeps workout gear dry",
-        "Soft padded interior sleeve protects tablets and laptops",
-        "Embossed Stella McCartney circular silicone plaque on front"
+        "Crafted from 100% certified recycled solid 18k yellow gold",
+        "Hand-chiseled rope border detailing framing the Interlocking G",
+        "Satin brushed gold finish resistant to everyday micro-scratches",
+        "Comfort-fit tapered inner band for effortless daily wear",
+        "Presented in a luxury velvet jewelry box with authenticity passport"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1546938576-6e6a64f317cc?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 21,
-      "name": "Adidas Originals Trefoil Classic Monogram Backpack",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "accessories",
-      "price": 4999,
-      "originalPrice": 6999,
-      "rating": 4.8,
-      "reviewCount": 4830,
+      "name": "Gucci Flora Gorgeous Gardenia Eau de Parfum (100ml)",
+      "brand": "GUCCI",
+      "category": "beauty",
+      "price": 16500,
+      "originalPrice": 19500,
+      "rating": 4.9,
+      "reviewCount": 8420,
       "badge": "hot",
-      "description": "Elevate your daily carry. Featuring a jacquard Trefoil monogram woven pattern, dual zip main compartment, front utility pocket, and ergonomic padded shoulder straps for all-day comfort.",
+      "description": "A joyful floral signature built around the White Gardenia blossom blended with solar Jasmine Grandiflorum absolute, Pear Blossom accord, and a touch of Brown Sugar. Housed in a lacquered pink glass bottle.",
       "tags": [
-        "Backpack",
-        "Trefoil",
-        "Monogram",
-        "Daypack"
+        "Flora",
+        "Gardenia",
+        "Eau de Parfum",
+        "Floral Fragrance"
       ],
       "sizes": [
-        "One Size (24L)"
+        "100ml / 3.3 fl. oz."
       ],
       "colors": [
-        "Night Indigo",
-        "Core Black"
+        "Lacquered Pink Porcelain Glass"
       ],
       "specifications": {
-        "Capacity": "24 Litres (42 cm x 30 cm x 15 cm)",
-        "Fabric": "Jacquard Woven Monogram Twill",
-        "Hardware": "Branded Metallic Trefoil Zipper Pulls",
-        "Collection": "Adidas Originals Accessories"
+        "Fragrance Family": "Floral Fruity Gourmand",
+        "Top Notes": "Pear Blossom Accord, Italian Mandarin, Red Berries",
+        "Heart Notes": "White Gardenia, Jasmine Grandiflorum Absolute, Frangipani",
+        "Base Notes": "Patchouli, Warm Brown Sugar Accord",
+        "Origin": "Made in France"
       },
       "features": [
-        "Subtle all-over jacquard woven Trefoil monogram print",
-        "Padded air-mesh shoulder straps reduce shoulder strain",
-        "Front zippered organizer pocket with key clip",
-        "Internal slip sleeve fits laptops up to 15.6 inches",
-        "Reinforced heavy-duty TPE base resists abrasions"
+        "Precious White Gardenia extract harvested at peak morning blossom",
+        "Lacquered pink glass flacon adorned with Vittorio Accornero's Flora motif",
+        "Long-lasting Eau de Parfum concentration with intoxicating sillage",
+        "Shiny ribbed gold cap engraved with the Gucci logo",
+        "Boxed in FSC-certified paper printed with archival garden botanical artwork"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1546938576-6e6a64f317cc?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 22,
-      "name": "Adidas Terrex Agravic Flow 2.0 Trail Running Shoes",
-      "brand": "ADIDAS TERREX",
-      "category": "performance",
-      "price": 13999,
-      "originalPrice": 16999,
-      "rating": 4.8,
-      "reviewCount": 2940,
-      "badge": "sale",
-      "description": "Conquer technical single-tracks and alpine scrambles with Lightstrike cushioning, rock protection plate, and Continental rubber lugs engineered for downhill braking and uphill traction.",
+      "name": "Gucci Bloom Intense Eau de Parfum (100ml)",
+      "brand": "GUCCI",
+      "category": "beauty",
+      "price": 17500,
+      "originalPrice": 20500,
+      "rating": 5,
+      "reviewCount": 4890,
+      "badge": "hot",
+      "description": "A hypnotic deep floral nectar inspired by moonlight. Intensifying the original white floral bouquet of Tuberose and Jasmine with nocturnal Lady of the Night flower, enriched by Patchouli and crystal Moss.",
       "tags": [
-        "Terrex",
-        "Trail Running",
-        "Lightstrike",
-        "Continental"
+        "Gucci Bloom",
+        "Intense",
+        "Tuberose",
+        "Moonlight Florals"
       ],
       "sizes": [
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "100ml / 3.3 fl. oz."
       ],
       "colors": [
-        "Core Black / Turbo Orange",
-        "Solar Yellow"
+        "Black Toile de Jouy Lacquered Glass"
       ],
       "specifications": {
-        "Cushioning": "Lightstrike Ultra-Light Pro Midsole",
-        "Protection": "Pro-Moderator Rock Plate",
-        "Grip": "Continental Lugged Rubber Sole",
-        "Collection": "Adidas Terrex Trail"
+        "Concentration": "Eau de Parfum Intense",
+        "Key Ingredients": "Jasmine Sambac, Rangoon Creeper, Night-Blooming Jasmine",
+        "Base": "Patchouli Heart, Coconut Essence, Crystal Moss",
+        "Origin": "Made in France"
       },
       "features": [
-        "Lightstrike foam absorbs hard downhill impacts effortlessly",
-        "Engineered mesh upper breathes and drains water rapidly",
-        "Promoderator support prevents excessive foot twisting on rocks",
-        "Abrasion-resistant mudguard repels trail dirt and roots",
-        "Continental rubber compound grips slick wet stones"
+        "Rich nocturnal blooming jasmine creates an intoxicating evening trail",
+        "Lacquered black glass flacon with crimson Toile de Jouy Herbarium pattern",
+        "Captures the lush atmosphere of an enchanted botanical garden at night",
+        "Superior 10-12 hour projection and lasting longevity",
+        "Includes complimentary 5ml travel spray in gift packaging"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 23,
-      "name": "Adidas Adizero Adios Pro 3 Marathon Racing Shoes",
-      "brand": "ADIDAS PERFORMANCE",
-      "category": "performance",
-      "price": 24999,
-      "originalPrice": 28999,
-      "rating": 5,
-      "reviewCount": 3100,
+      "name": "Rouge à Lèvres Satin Lipstick in Gold Art Deco Tube",
+      "brand": "GUCCI",
+      "category": "beauty",
+      "price": 4900,
+      "originalPrice": 5800,
+      "rating": 4.9,
+      "reviewCount": 6120,
       "badge": "hot",
-      "description": "The shoe of world marathon record breakers. Powered by dual layers of resilient Lightstrike Pro foam, ENERGYRODS 2.0 carbon-infused rods that mirror foot anatomy, and an ultra-lightweight mesh upper.",
+      "description": "Creamy, long-lasting color with a luminous satin finish. Delivers intense pigmentation with an ultra-light moisturizing formula infused with natural oils. Encased in a gold-toned tube etched with an Art Deco decorative pattern.",
       "tags": [
-        "Adizero",
-        "Carbon Plate",
-        "Marathon",
-        "EnergyRods"
+        "Lipstick",
+        "Goldie Red",
+        "Art Deco",
+        "Satin Finish"
       ],
       "sizes": [
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "3.5g / 0.12 oz."
       ],
       "colors": [
-        "Solar Red / Lucid Cyan",
-        "Core Black / Cloud White"
+        "25* Goldie Red (The Iconic Red)",
+        "208 They Met in Argentina",
+        "505 Janet Rust"
       ],
       "specifications": {
-        "Rods": "ENERGYRODS 2.0 Carbon-Infused Rods",
-        "Foam": "Dual Layer Lightstrike Pro Foam",
-        "Weight": "215 grams",
-        "Collection": "Adidas Adizero Racing"
+        "Finish": "Luminous Satin Silk Finish",
+        "Casing": "Precious Gold-Tone Metal with Art Deco Engraving",
+        "Formula": "Dermatologically Tested, Infused with Natural Waxes",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Anatomical carbon EnergyRods 2.0 deliver propulsion through toe-off",
-        "Two resilient slabs of Lightstrike Pro return unmatched energy",
-        "Ultra-thin Celermesh 2.0 upper locks down midfoot securely",
-        "Continental lightweight textile rubber outsole for cornering",
-        "Approved by World Athletics for official competitive marathons"
+        "Intensely pigmented in one stroke without feathering or bleeding",
+        "Infused with natural conditioning oils for supple all-day hydration",
+        "Heirloom-quality reusable gold metal casing inspired by vintage vanity art",
+        "Subtle violet and soft fruity scent notes",
+        "The exact signature red lip worn across Gucci runway models"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 24,
-      "name": "Adidas Originals Stan Smith Luxe Leather Minimalist Shoes",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "originals",
-      "price": 12999,
-      "originalPrice": 15999,
-      "rating": 4.8,
-      "reviewCount": 15400,
-      "badge": "hot",
-      "description": "The pinnacle iteration of the legendary tennis shoe. Crafted from ultra-supple buttery European leather, full leather lining, folded clean edge seams, and perforated 3-Stripes.",
+      "name": "The Alchemist's Garden: A Song for the Rose Perfumed Oil",
+      "brand": "GUCCI",
+      "category": "beauty",
+      "price": 36000,
+      "originalPrice": 42000,
+      "rating": 5,
+      "reviewCount": 680,
+      "badge": "limited",
+      "description": "From Gucci's Haute Parfumerie collection, The Alchemist's Garden. Formulated as a rich perfumed oil with pure Bulgarian Rose essence, sweet woods, and amber musks, contained in a precious lacquered sage-green glass dropper bottle.",
       "tags": [
-        "Stan Smith",
-        "Luxe",
-        "Tennis Heritage",
-        "Clean White"
+        "Alchemist's Garden",
+        "Haute Parfumerie",
+        "Bulgarian Rose",
+        "Perfume Oil"
       ],
       "sizes": [
-        "UK 6",
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "20ml / 0.67 fl. oz."
       ],
       "colors": [
-        "Cloud White / Fairway Green",
-        "Cloud White / Navy"
+        "Lacquered Sage-Green Bottle with Gold Foil Print"
       ],
       "specifications": {
-        "Leather": "Ultra-Supple Butter-Soft Full Grain European Leather",
-        "Lining": "Full Glove Leather Interior Lining",
-        "Perforations": "Subtle Tri-Perforated 3-Stripes",
-        "Collection": "Adidas Originals Luxe Tier"
+        "Format": "Concentrated Perfumed Oil with Glass Pipette Dropper",
+        "Key Note": "Pure Bulgarian Rose Absolute, Sweet Musks, Cedarwood",
+        "Layering": "Designed to be layered with Eaux de Parfum and Acque Profumate",
+        "Origin": "Crafted in Grasse, France"
       },
       "features": [
-        "Ultra-luxurious buttery European calf leather construction",
-        "Glove leather interior lining provides plush barefoot comfort",
-        "Clean folded-edge stitch finish for high-end designer appeal",
-        "Debossed metallic foil Stan Smith portrait badge on tongue",
-        "Timeless minimalist silhouette pairs with suits or streetwear"
+        "Highest concentration of pure natural Bulgarian rose absolute",
+        "Glass pipette dropper delivers precise single-drop pulse-point application",
+        "Vintage apothecary bottle finished with gold lettering and rose artwork",
+        "Envelops skin in a silken, deeply intimate scented aura",
+        "Presented in an ornamental gold-embossed keepsake presentation box"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 25,
-      "name": "Adidas x Ivy Park Luxury Quilted Reversible Puffer Jacket",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "apparel",
-      "price": 28999,
-      "originalPrice": 35999,
-      "rating": 4.9,
-      "reviewCount": 1120,
+      "name": "Gucci Savoy GG Supreme Cabin Trolley Suitcase",
+      "brand": "GUCCI",
+      "category": "handbags",
+      "price": 310000,
+      "originalPrice": 350000,
+      "rating": 5,
+      "reviewCount": 540,
       "badge": "limited",
-      "description": "A show-stopping collaboration piece. Heavyweight oversized quilted down jacket with reversible contrast lining, detachable hood, snap storm flap, and tonal silicone co-branded patch.",
+      "description": "The Gucci Savoy luggage collection pays homage to Guccio Gucci’s beginnings at The Savoy hotel in London. This 4-wheel cabin trolley is crafted from durable GG Supreme canvas with green and red Web and brown leather trim.",
       "tags": [
-        "Ivy Park",
-        "Puffer Jacket",
-        "Reversible",
-        "Runway"
+        "Gucci Savoy",
+        "Cabin Trolley",
+        "Luggage",
+        "The Savoy"
       ],
       "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
+        "Cabin Size (W 38cm x H 51cm x D 21cm, 35 Litres)"
       ],
       "colors": [
-        "Dark Brown / Solar Orange",
-        "Off-White / Acid Yellow"
+        "Beige/Ebony GG Canvas with Brown Leather"
       ],
       "specifications": {
-        "Filling": "80/20 Duck Down and Feather Insulation (650 Fill Power)",
-        "Shell": "Gloss Technical Ripstop Nylon with DWR",
-        "Reversible": "Dual Sided with Alternate Colorway",
-        "Collection": "Adidas x Ivy Park Collaboration"
+        "Capacity": "35 Litres (International Cabin Luggage Size Compliant)",
+        "Wheels": "360-Degree 4-Wheel Multi-Directional Spinner Wheels",
+        "Telescopic Handle": "Multi-Stage Aluminum Retractable Pull Handle",
+        "Lock": "Integrated TSA Combination Padlock and Leather Key Clochette",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Premium 650 fill power duck down delivers cloud-like warmth",
-        "Reversible design offers two striking luxury streetwear looks",
-        "Detachable oversized insulated storm hood with drawcord",
-        "Fleece-lined hand-warmer pockets with magnetic snap closures",
-        "Signature 3-Stripes quilted into the down baffling"
+        "Ultra-smooth 360-degree four-wheel system glides effortlessly across terminals",
+        "Durable scratch-resistant GG Supreme coated canvas",
+        "Interior organization straps with palladium-finish double G buckles",
+        "Includes customizable leather luggage ID tag and key clochette",
+        "Protective heavy-duty travel cover included"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 26,
-      "name": "Adidas Originals Campus 00s Chunky Suede Skate Shoes",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "sneakers",
-      "price": 9999,
-      "originalPrice": 12999,
+      "name": "Ophidia GG Medium Duffle Bag with Web Stripe",
+      "brand": "GUCCI",
+      "category": "handbags",
+      "price": 220000,
+      "originalPrice": 250000,
       "rating": 4.9,
-      "reviewCount": 8740,
+      "reviewCount": 1680,
       "badge": "hot",
-      "description": "The viral Y2K sensation. Reimagined with exaggerated proportions, ultra-fat laces, heavily padded tongue, plush suede upper, and vintage off-white midsole. The defining skate silhouette of the decade.",
+      "description": "The classic weekender. Crafted from GG Supreme canvas, inlaid with the house green and red Web stripe, and finished with textured brown leather trim, double top handles, and a detachable shoulder strap.",
       "tags": [
-        "Campus 00s",
-        "Chunky Suede",
-        "Fat Laces",
-        "Y2K Skate"
+        "Ophidia",
+        "Duffle Bag",
+        "Weekend Holdall",
+        "Web Stripe"
       ],
       "sizes": [
-        "UK 6",
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "Medium (W 44cm x H 27cm x D 24cm)"
       ],
       "colors": [
-        "Core Black / Footwear White",
-        "Grey Three / Cloud White",
-        "Forest Green"
+        "Beige & Ebony GG Canvas with Brown Leather"
       ],
       "specifications": {
-        "Upper": "Heavyweight Plush Shaggy Suede",
-        "Laces": "Signature 20mm Ultra-Fat Skate Laces",
-        "Tongue": "Overstuffed Foam Tongue with Embossed Trefoil",
-        "Outsole": "Durable Grippy Rubber Cupsole",
-        "Collection": "Adidas Originals Y2K Skate"
+        "Material": "GG Supreme Canvas with Leather Corner Guards",
+        "Strap": "Detachable Green and Red Web Shoulder Strap (50cm drop)",
+        "Lock": "Lock with Key Holder and Leather Clochette",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Exaggerated chunky 2000s skate aesthetic with fat laces",
-        "Plush shaggy suede upper with contrast giant serrated stripes",
-        "Heavily padded collar and puffy tongue cradle the ankle",
-        "Off-white aged rubber cupsole with herringbone tread",
-        "Includes two pairs of contrasting color fat laces"
+        "Optimal dimensions for a 3-day luxury weekend getaway",
+        "Two-way heavy gauge zipper with padlock and key clochette",
+        "Reinforced double leather handles and sturdy base studs",
+        "Interior zip pocket and two large open compartments",
+        "Removable leather luggage tag with gold foil Double G"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 27,
-      "name": "Adidas Performance 3-Stripes Steel Water Bottle (1L)",
-      "brand": "ADIDAS PERFORMANCE",
+      "name": "Gucci 25H Ultra-Thin Steel Luxury Swiss Watch (40mm)",
+      "brand": "GUCCI",
       "category": "accessories",
-      "price": 2499,
-      "originalPrice": 3499,
-      "rating": 4.8,
-      "reviewCount": 3910,
-      "badge": "new",
-      "description": "Double-walled vacuum insulated 18/8 stainless steel bottle. Keeps drinks ice cold for 24 hours or piping hot for 12 hours. Features wide-mouth design with leakproof silicone-sealed sport cap.",
+      "price": 280000,
+      "originalPrice": 315000,
+      "rating": 5,
+      "reviewCount": 740,
+      "badge": "limited",
+      "description": "With its sleek 4mm ultra-thin silhouette, the Gucci 25H is inspired by modern architectural forms. Featuring a multi-layered brushed steel case, horizontal satin-finish dial with Interlocking G motif, and an integrated five-link bracelet.",
       "tags": [
-        "Water Bottle",
-        "Insulated",
-        "Stainless Steel",
-        "Hydration"
+        "Gucci 25H",
+        "Ultra-Thin",
+        "Swiss Luxury",
+        "Integrated Bracelet"
       ],
       "sizes": [
-        "1 Litre (32 oz)"
+        "40mm Case Diameter (Ultra-Thin 4.0mm Profile)"
       ],
       "colors": [
-        "Matte Black",
-        "Stainless Silver",
-        "Solar Red"
+        "Monochrome Brushed Stainless Steel",
+        "Steel & Gold Bezel"
       ],
       "specifications": {
-        "Material": "18/8 Pro-Grade Stainless Steel (BPA Free)",
-        "Insulation": "TempShield Double-Wall Vacuum Insulation",
-        "Performance": "Cold for 24 Hours / Hot for 12 Hours",
-        "Collection": "Adidas Training Accessories"
+        "Thickness": "Ultra-Thin 4.0mm Profile",
+        "Case": "Brushed and Polished Stainless Steel",
+        "Dial": "Silver Horizontal Satin-Brushed Dial with Interlocking G",
+        "Glass": "Anti-Reflective Sapphire Crystal Glass",
+        "Movement": "Swiss Made Precision Quartz Movement",
+        "Origin": "Swiss Made"
       },
       "features": [
-        "Pro-grade 18/8 stainless steel won't retain or transfer flavors",
-        "TempShield double-wall vacuum insulation prevents condensation",
-        "Textured powder-coat matte exterior provides non-slip grip",
-        "Leak-proof screw lid with integrated TPU finger carry loop",
-        "Laser-etched Adidas Performance Badge of Sport"
+        "Ultra-thin 4mm architectural case rests seamlessly under dress shirts",
+        "Integrated five-link stainless steel bracelet contours wrist ergonomically",
+        "Invisible butterfly folding clasp with safety pushers",
+        "Water resistant to 30 meters / 3 ATM",
+        "Accompanied by high-lacquer wooden collector presentation box"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 28,
-      "name": "Adidas Pro Training 10mm Dual-Grip Yoga & Fitness Mat",
-      "brand": "ADIDAS PERFORMANCE",
+      "name": "GG Monogram Wool & Cashmere Fringe Shawl",
+      "brand": "GUCCI",
       "category": "accessories",
-      "price": 3999,
-      "originalPrice": 5499,
-      "rating": 4.8,
-      "reviewCount": 2810,
+      "price": 52000,
+      "originalPrice": 59000,
+      "rating": 4.9,
+      "reviewCount": 4210,
       "badge": "hot",
-      "description": "Engineered for maximum joint comfort during yoga, pilates, and floor workouts. 10mm thick high-density NBR foam with ribbed base for floor traction and smooth textured top surface with carry strap.",
+      "description": "An iconic winter accessory. Jacquard-woven in Italy from an ultra-soft blend of virgin wool and cashmere. Features the classic GG diamond pattern on one side and a contrast tonal reverse with hand-finished eyelash fringes.",
       "tags": [
-        "Yoga Mat",
-        "10mm Cushion",
-        "Fitness Mat",
-        "Workout"
+        "Wool Scarf",
+        "Cashmere",
+        "GG Shawl",
+        "Fringe"
       ],
       "sizes": [
-        "183 cm x 61 cm x 10 mm"
+        "140cm x 140cm Square"
       ],
       "colors": [
-        "Core Black",
-        "Raw Steel Blue",
-        "Solar Red"
+        "Anthracite Grey & Black",
+        "Camel & Cocoa Brown",
+        "Soft Pink"
       ],
       "specifications": {
-        "Thickness": "10mm High-Density Cushioning Foam",
-        "Dimensions": "183 cm x 61 cm",
-        "Includes": "Elasticated Hook-and-Loop Shoulder Carry Strap",
-        "Collection": "Adidas Training Hardware"
+        "Fabric": "70% Virgin Wool, 30% Cashmere",
+        "Dimensions": "140cm x 140cm (Large Square Shawl)",
+        "Edges": "Delicate Hand-Fringed Eyelash Borders",
+        "Origin": "Woven in Biella, Italy"
       },
       "features": [
-        "Extra thick 10mm padding protects knees and spine on hard floors",
-        "Dual textured surface: smooth top grip and ribbed floor anchor",
-        "Lightweight, rollable design with quick-wrap shoulder sling",
-        "Easy-to-clean moisture-resistant closed-cell material",
-        "Embossed large Adidas Performance Badge of Sport logo"
+        "Sublime cloud-soft hand feel with luxurious cashmere warmth",
+        "Generous 140cm square allows versatile draping, wrapping, and tying",
+        "Reversible two-tone GG jacquard design complements coats and suits",
+        "Woven Gucci signature label in bottom corner",
+        "Folded inside signature tissue with embossed Gucci seal"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 29,
-      "name": "Adidas Club Performance Tennis Racket Holdall Bag",
-      "brand": "ADIDAS PERFORMANCE",
-      "category": "accessories",
-      "price": 8999,
-      "originalPrice": 11999,
-      "rating": 4.9,
-      "reviewCount": 1420,
-      "badge": "new",
-      "description": "Designed for competitive tennis players. Features two thermal-lined racket compartments holding up to 6 rackets, ventilated footwear tunnel, accessory pockets, and ergonomic backpack straps.",
+      "name": "Gucci Bamboo 1947 Mini Handbag with Bamboo Turnlock",
+      "brand": "GUCCI",
+      "category": "handbags",
+      "price": 340000,
+      "originalPrice": 380000,
+      "rating": 5,
+      "reviewCount": 490,
+      "badge": "limited",
+      "description": "A testament to Italian artisanal innovation. Created in 1947 amid post-war material shortages, Guccio Gucci used lightweight, durable bamboo heated over an open flame. Features the curved bamboo top handle and matching bamboo turnlock.",
       "tags": [
-        "Tennis Bag",
-        "Racket Holdall",
-        "Thermal Guard",
-        "Pro Club"
+        "Bamboo 1947",
+        "Mini Bag",
+        "Florentine Craft",
+        "Artisanal"
       ],
       "sizes": [
-        "6-Racket Capacity (78 cm x 35 cm x 30 cm)"
+        "Mini (W 17cm x H 12cm x D 7.5cm)"
       ],
       "colors": [
-        "Black / Solar Yellow",
-        "White / Lucid Cyan"
+        "Off-White Calfskin",
+        "Nero Black",
+        "Turquoise"
       ],
       "specifications": {
-        "Capacity": "Holds up to 6 Full-Size Tennis Rackets",
-        "Technology": "Climate Protection Thermal Foil Lining",
-        "Compartments": "2 Racket + 1 Apparel + 1 Shoe Garage",
-        "Collection": "Adidas Tennis Performance"
+        "Handle": "Hand-Bent Flame-Treated Bamboo Top Handle",
+        "Closure": "Carved Bamboo Turnlock Clasp",
+        "Leather": "Full Grain Smooth Box Calf Leather",
+        "Straps": "Includes One Leather Strap and One Web Shoulder Strap",
+        "Origin": "Handcrafted in Florence, Italy"
       },
       "features": [
-        "Thermal guard interior shield protects racket strings from heat",
-        "Dedicated ventilated shoe tunnel isolates court clay and dust",
-        "Padded air-mesh backpack shoulder harness with chest buckle",
-        "Heavyweight 900D coated polyester resists courtside scuffs",
-        "Reflective 3-Stripes ensure visibility during late night matches"
+        "Each bamboo handle is heated and shaped by hand, making every bag unique",
+        "Carved matching bamboo turnlock closure with gold-tone hardware",
+        "Includes leather interior pocket with vanity mirror in leather sleeve",
+        "Two interchangeable shoulder straps: matching leather and red/green web",
+        "Preserved in a bespoke satin-lined collector presentation trunk"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1546938576-6e6a64f317cc?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 30,
-      "name": "Adidas UEFA Champions League Pro Match Football",
-      "brand": "ADIDAS PERFORMANCE",
-      "category": "accessories",
-      "price": 12999,
-      "originalPrice": 15999,
-      "rating": 5,
-      "reviewCount": 4210,
-      "badge": "hot",
-      "description": "The official match ball of European nights. Thermally bonded seamless surface for more predictable trajectory, better touch, and lower water uptake. FIFA Quality Pro certified with iconic star panel graphics.",
+      "name": "Gucci Blondie Medium Top Handle Bag with Round GG",
+      "brand": "GUCCI",
+      "category": "handbags",
+      "price": 275000,
+      "originalPrice": 310000,
+      "rating": 4.9,
+      "reviewCount": 880,
+      "badge": "new",
+      "description": "The Gucci Blondie draws inspiration from a 1971 patent archival model. Its defining feature is the bold circular Interlocking G emblem, set against supple leather with clean geometric lines.",
       "tags": [
-        "Champions League",
-        "Match Ball",
-        "FIFA Quality Pro",
-        "Thermally Bonded"
+        "Blondie",
+        "Top Handle",
+        "Round GG",
+        "1971 Archive"
       ],
       "sizes": [
-        "Size 5 (Official Match Ball)"
+        "Medium (W 29cm x H 22cm x D 10cm)"
       ],
       "colors": [
-        "White / Glory Blue / Metallic Gold"
+        "Rosso Ancora Deep Red",
+        "Black Calfskin",
+        "Ivory"
       ],
       "specifications": {
-        "Certification": "FIFA Quality Pro Highest Rating",
-        "Construction": "100% Polyurethane Thermally Bonded Seamless Cover",
-        "Bladder": "High-Grade Butyl Bladder for Air Retention",
-        "Collection": "UEFA Champions League Official"
+        "Leather": "Supple Smooth Semi-Gloss Calfskin",
+        "Hardware": "Gold-Tone Circular Cut-Out Interlocking G",
+        "Interior": "Two Main Compartments with Center Zipper Divider",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Thermally bonded seamless surface delivers truer aerodynamic flight",
-        "Textured surface structure creates optimal spin control in wet weather",
-        "Highest FIFA rating passed for circumference, weight, and rebound",
-        "High-grade butyl bladder ensures maximum pressure retention",
-        "Official UEFA Champions League crest and star panel design"
+        "Prominent circular cutout Interlocking G archival emblem",
+        "Structured top handle plus detachable leather shoulder strap",
+        "Magnetic snap closure for seamless everyday access",
+        "Interior zip pocket and two flat wall pockets",
+        "Gold-toned protective metal feet on base"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1614632537423-1e6c2e7e0aab?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 31,
-      "name": "Adidas Originals Trefoil Washed Cotton Dad Cap",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "accessories",
-      "price": 1999,
-      "originalPrice": 2799,
-      "rating": 4.8,
-      "reviewCount": 6420,
+      "name": "Gucci Jordaan Slim Leather Loafer",
+      "brand": "GUCCI",
+      "category": "shoes",
+      "price": 94000,
+      "originalPrice": 108000,
+      "rating": 5,
+      "reviewCount": 3890,
       "badge": "hot",
-      "description": "A relaxed, low-profile dad cap crafted from 100% pre-washed cotton twill for an instant broken-in feel. Features an embroidered Trefoil crest on the front and metal slider strapback closure.",
+      "description": "A refined interpretation of the iconic Horsebit shoe, the Jordaan features a slimmer shape with a narrower toe and lower vamp, crafted from butter-soft burnished Italian leather.",
       "tags": [
-        "Dad Cap",
-        "Trefoil",
-        "Cotton Twill",
-        "Strapback"
+        "Jordaan",
+        "Slim Loafer",
+        "Horsebit",
+        "Burnished Leather"
       ],
       "sizes": [
-        "One Size Fits Most (Adjustable)"
+        "EU 39",
+        "EU 40",
+        "EU 41",
+        "EU 42",
+        "EU 43",
+        "EU 44",
+        "EU 45"
       ],
       "colors": [
-        "Washed Black",
-        "Chalk White",
-        "Night Indigo"
+        "Burnished Cocoa Brown",
+        "Nero Black",
+        "Oxblood"
       ],
       "specifications": {
-        "Fabric": "100% Pre-Washed Cotton Twill",
-        "Closure": "Adjustable Strapback with Embossed Metal Slider",
-        "Profile": "Relaxed Unstructured 6-Panel Crown",
-        "Collection": "Adidas Originals Core"
+        "Leather": "Hand-Burnished Calfskin with Antique Patina",
+        "Cut": "Slim Silhouette with Elongated Toe",
+        "Sole": "Ultra-Flexible Blake-Stitched Leather Sole",
+        "Origin": "Handmade in Florence, Italy"
       },
       "features": [
-        "Pre-washed vintage enzyme finish for instant soft drape",
-        "3D embroidered contrast Trefoil insignia on front crown",
-        "Pre-curved brim shields eyes from bright outdoor sunlight",
-        "Embossed metal slider buckle customizes fit for all head sizes",
-        "Interior moisture-absorbing sweatband keeps forehead dry"
+        "Hand-burnished leather finish develops a rich unique patina over time",
+        "Slender modern profile flatters both slim tailoring and casual denim",
+        "Miniature golden Horsebit hardware on the vamp",
+        "Ultra-soft leather lining requires zero break-in period",
+        "Hand-cut beveled leather soles with rubber heel reinforcement"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 32,
-      "name": "Adidas Y-3 Yohji Yamamoto Luxury Graphic Logo Tee",
-      "brand": "Y-3 LUXURY",
+      "name": "Silk Twill Flora Print Pleated Midi Skirt",
+      "brand": "GUCCI",
       "category": "apparel",
-      "price": 14999,
-      "originalPrice": 18999,
+      "price": 155000,
+      "originalPrice": 175000,
       "rating": 4.9,
-      "reviewCount": 940,
-      "badge": "limited",
-      "description": "An understated statement of luxury. Cut from dense 280 GSM mercerized organic cotton with a sculptural drape. Featuring a high-density rubberized Y-3 Yohji Yamamoto signature graphic on the back spine.",
+      "reviewCount": 780,
+      "badge": "new",
+      "description": "An eternal floral fantasy. Originally commissioned in 1966 for Princess Grace of Monaco, the Flora pattern blossoms across accordion-pleated Italian silk twill with an elasticized silk waistband.",
       "tags": [
-        "Y-3",
-        "Designer Tee",
-        "Yohji Yamamoto",
-        "Mercerized Cotton"
+        "Flora Print",
+        "Silk Skirt",
+        "Pleated",
+        "Princess Grace"
       ],
       "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
+        "IT 38",
+        "IT 40",
+        "IT 42",
+        "IT 44",
+        "IT 46"
       ],
       "colors": [
-        "Raw White",
-        "Core Black"
+        "Multicolor Flora on Ivory Silk"
       ],
       "specifications": {
-        "Designer": "Yohji Yamamoto for Adidas",
-        "Fabric": "100% Organic Mercerized Cotton (280 GSM)",
-        "Fit": "Architectural Boxy Oversized Silhouette",
-        "Collection": "Y-3 Paris Collection"
+        "Fabric": "100% Heavy Silk Twill (Dry Clean Only)",
+        "Print": "Archival Flora Botanical Print (37 Flower Species)",
+        "Waist": "Shirred Elasticized Silk Waistband",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Silky smooth mercerized cotton with substantial heavy drape",
-        "Architectural boxy fit with dropped shoulders and wide sleeves",
-        "Raised high-density silicone Y-3 signature across upper spine",
-        "Thick double-layer ribbed collar prevents neckline stretch",
-        "Handcrafted finishing details adhering to luxury runway standards"
+        "Master artist Vittorio Accornero's legendary 1966 Flora illustration",
+        "Sharp permanent knife pleats maintain rhythmic fluid motion when walking",
+        "Lined with soft silk habotai for complete opacity and smooth drape",
+        "Concealed side zipper with delicate hook-and-eye closure",
+        "Versatile midi length pairs with boots or slingbacks"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 33,
-      "name": "Adidas Terrex Xperior Primaloft Insulated Jacket",
-      "brand": "ADIDAS TERREX",
-      "category": "performance",
-      "price": 17999,
-      "originalPrice": 22999,
-      "rating": 4.9,
-      "reviewCount": 2120,
-      "badge": "hot",
-      "description": "Packable alpine warmth. Engineered for fast-paced mountaineering and cold trail runs. Filled with PrimaLoft Gold Active+ synthetic insulation that retains thermal power even when soaking wet.",
+      "name": "Gucci Horsebit Leather Weekend Holdall",
+      "brand": "GUCCI",
+      "category": "handbags",
+      "price": 290000,
+      "originalPrice": 330000,
+      "rating": 5,
+      "reviewCount": 420,
+      "badge": "limited",
+      "description": "Handcrafted in Florence from pebble-grain black leather. Accented with the house Horsebit emblem, heavy brass hardware, luggage tag, and a wide canvas web strap for international journeys.",
       "tags": [
-        "Terrex",
-        "Primaloft",
-        "Alpine",
-        "Packable Warmth"
+        "Weekend Holdall",
+        "Travel Bag",
+        "Pebble Grain",
+        "Horsebit"
       ],
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
+        "Large (W 50cm x H 30cm x D 25cm)"
       ],
       "colors": [
-        "Wonder Steel",
-        "Core Black",
-        "Impact Orange"
+        "Nero Black Pebble Leather",
+        "Cuir Tan"
       ],
       "specifications": {
-        "Insulation": "PrimaLoft Gold Active+ Breathable Insulation",
-        "Shell": "Pertex Quantum GL Ultralight Ripstop",
-        "Packability": "Stows inside its own chest pocket",
-        "Collection": "Adidas Terrex Mountaineering"
+        "Leather": "Heavy Pebble-Grain Calfskin Leather",
+        "Hardware": "Solid Brushed Brass Hardware",
+        "Strap": "Adjustable & Detachable Web Shoulder Strap (55cm drop)",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "PrimaLoft Gold Active insulation stretches and regulates body heat",
-        "Ultralight Pertex Quantum ripstop outer blocks chilling summit winds",
-        "Under-helmet scuba hood with elastic binding seals out spindrift",
-        "Two-way harness-compatible front zipper for belaying",
-        "Packs down to the size of an orange into its own internal pocket"
+        "Supple yet resilient pebble leather resists scratches and travel wear",
+        "Generous capacity accommodates up to 5 days of tailored garments",
+        "Two-way brass zipper with leather pulls and combination padlock",
+        "Reinforced dual grab handles with leather snap keeper",
+        "Cotton linen lining with padded interior tablet and laptop sleeve"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 34,
-      "name": "Adidas Originals NMD_R1 V2 Tech-Knit Streetwear Shoes",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "sneakers",
-      "price": 13999,
-      "originalPrice": 16999,
-      "rating": 4.8,
-      "reviewCount": 7920,
+      "name": "Double G Matelassé Leather Zip Wallet",
+      "brand": "GUCCI",
+      "category": "accessories",
+      "price": 68000,
+      "originalPrice": 78000,
+      "rating": 4.9,
+      "reviewCount": 3120,
       "badge": "hot",
-      "description": "Born from city exploration. Combining 80s racing heritage with cutting-edge tech. Features a stretchy sock-like knit upper, full-length responsive BOOST midsole, and signature futuristic TPU midsole plugs.",
+      "description": "A compact continental wallet in soft chevron matelassé leather with Double G hardware. Features twelve card slots, three bill compartments, and a zippered coin pocket.",
       "tags": [
-        "NMD",
-        "Boost",
-        "Streetwear",
-        "Sock-like Knit"
+        "Zip Wallet",
+        "Double G",
+        "Matelassé",
+        "Leather Goods"
       ],
       "sizes": [
-        "UK 7",
-        "UK 8",
-        "UK 9",
-        "UK 10",
-        "UK 11"
+        "W 19cm x H 10.5cm x D 2.5cm"
       ],
       "colors": [
-        "Core Black / Signal Pink",
-        "Cloud White / Core Black"
+        "Black Chevron Leather",
+        "Dusty Pink",
+        "Porcelain White"
       ],
       "specifications": {
-        "Midsole": "Full-Length Responsive BOOST with Molded EVA Plugs",
-        "Upper": "Stretchy Sock-Like Engineered Knit",
-        "Heel Tab": "Heel Pull with Multilingual Brand Motto",
-        "Collection": "Adidas Originals Urban Nomads"
+        "Material": "Matelassé Chevron Calfskin Leather",
+        "Slots": "12 Credit Card Slots, 3 Bill Compartments, 1 Coin Zip Pocket",
+        "Hardware": "Antiqued Gold-Toned Double G",
+        "Origin": "Made in Italy"
       },
       "features": [
-        "Flexible sock-like knit upper moves naturally with every stride",
-        "Full-length BOOST midsole delivers cloud-like all-day cushioning",
-        "Iconic TPU midsole stabilizer plugs inspired by archival 80s racers",
-        "Textured heel pull loop featuring 'The Brand with the 3 Stripes'",
-        "Translucent rubber outsole reveals BOOST cushioning through windows"
+        "All-around smooth zip closure keeps contents safe and secure",
+        "Generous twelve card capacity and dedicated zippered coin divider",
+        "Supple quilted chevron leather with iconic Double G plaque",
+        "Full grain leather and moire interior lining",
+        "Fits all major international currencies and full-sized smartphones"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 35,
-      "name": "Adidas Adicolor 70s Heritage Velour Tracksuit Jacket",
-      "brand": "ADIDAS ORIGINALS",
-      "category": "originals",
-      "price": 9999,
-      "originalPrice": 12999,
-      "rating": 4.9,
-      "reviewCount": 3120,
+      "name": "Gucci Mémoire d'une Odeur Mineral Aromatic Fragrance",
+      "brand": "GUCCI",
+      "category": "beauty",
+      "price": 15500,
+      "originalPrice": 18000,
+      "rating": 4.8,
+      "reviewCount": 2940,
       "badge": "new",
-      "description": "A decadent homage to 1970s disco and sportswear luxury. Crafted from ultra-plush velvet-touch velour with gold-trimmed metal hardware, oversized retro collar, and tonal engineered 3-Stripes down the arms.",
+      "description": "A universal elixir transcending gender and time. Roman Chamomile and Indian Coral Jasmine are blended with precious Musks, Cedarwood, and warm Sandalwood, presented in a vintage grooved green bottle with a gold cap.",
       "tags": [
-        "Velour",
-        "Adicolor 70s",
-        "Disco Heritage",
-        "Luxury Tracksuit"
+        "Mémoire",
+        "Mineral Aromatic",
+        "Chamomile",
+        "Universal"
       ],
       "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
+        "100ml / 3.3 fl. oz."
       ],
       "colors": [
-        "Collegiate Green",
-        "Deep Burgundy",
-        "Midnight Blue"
+        "Fluted Light Green Glass with Gold Crown Cap"
       ],
       "specifications": {
-        "Material": "Ultra-Plush Cotton-Blend Velour (Velvet Finish)",
-        "Hardware": "Brushed Gold Metal Zipper and Puller",
-        "Collar": "Exaggerated 1970s Fold-Over Spread Collar",
-        "Collection": "Adicolor 70s Archive Collection"
+        "Fragrance Category": "Mineral Aromatic (Universal Genderless)",
+        "Top Notes": "Roman Chamomile, Bitter Almond",
+        "Heart Notes": "Indian Coral Jasmine NaturePrint, Precious Musks",
+        "Base Notes": "Vanilla, Cedarwood, Sandalwood",
+        "Origin": "Made in France"
       },
       "features": [
-        "Decadent velvet-soft velour fabric with subtle light shimmer",
-        "Vintage brushed gold-tone full front zip with custom Trefoil tab",
-        "Contrast cream 3-Stripes running down both raglan sleeves",
-        "Embroidered metallic gold Trefoil crest on left chest",
-        "Elasticated waistband and cuffs maintain an authentic blouson silhouette"
+        "Groundbreaking Roman Chamomile note brings nostalgic mineral freshness",
+        "Exquisite fluted vintage green glass flacon inspired by ancient Roman columns",
+        "Crown-shaped shiny gold-toned cap embossed with Gucci star engravings",
+        "Box decorated with a starry night sky inspired by Giotto's frescoes in Padua",
+        "Intimate and ethereal scent profile suitable for everyday contemplation"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
     },
     {
       "id": 36,
-      "name": "Adidas by Stella McCartney Ultraboost 22 Luxury Running Shoes",
-      "brand": "STELLA McCARTNEY",
-      "category": "performance",
-      "price": 22999,
-      "originalPrice": 27999,
+      "name": "Gucci Flora Silk Foulard Scarf (90cm)",
+      "brand": "GUCCI",
+      "category": "accessories",
+      "price": 45000,
+      "originalPrice": 52000,
       "rating": 5,
-      "reviewCount": 2480,
-      "badge": "limited",
-      "description": "High fashion meets marathon engineering. Featuring a striking sculptural bio-based TPU cage enclosing full-length BOOST, Primeknit 360 sock upper, and Continental rubber tread designed by Stella McCartney.",
+      "reviewCount": 2420,
+      "badge": "hot",
+      "description": "The historical Flora print was created for Grace Kelly, Princess of Monaco, in 1966. Printed on fluid organic silk twill with delicate hand-rolled edges, portraying 37 botanical floral species in luminous watercolor tones.",
       "tags": [
-        "Stella McCartney",
-        "Ultraboost",
-        "Runway Runner",
-        "Designer"
+        "Silk Foulard",
+        "Flora",
+        "Hand-Rolled",
+        "Princess Grace"
       ],
       "sizes": [
-        "UK 5",
-        "UK 6",
-        "UK 7",
-        "UK 8",
-        "UK 9"
+        "90cm x 90cm Square"
       ],
       "colors": [
-        "Core Black / Flash Orange",
-        "Chalk White / Pastel Pink"
+        "Ivory with Multicolor Flora & Gold Border"
       ],
       "specifications": {
-        "Collaboration": "Adidas by Stella McCartney",
-        "Midsole": "100% Full-Length BOOST Cushioning",
-        "Cage": "Architectural Bio-Based Floating TPU Cage",
-        "Outsole": "Continental Better Rubber",
-        "Collection": "Stella McCartney Runway Performance"
+        "Silk": "100% Organic Italian Silk Twill (18 Momme)",
+        "Edges": "Exquisite Artisanal Hand-Rolled and Hand-Stitched Edges",
+        "Dimensions": "90cm x 90cm",
+        "Origin": "Hand-Printed in Como, Italy"
       },
       "features": [
-        "Futuristic sculpted floating TPU midfoot cage provides lockdown",
-        "Continuous BOOST energy return propels every step effortlessly",
-        "Primeknit sockliner engineered with recycled ocean plastic yarns",
-        "Stella McCartney logo emblazoned along heel counter and tongue",
-        "Continental rubber outsole engineered for wet road grip"
+        "Historic botanical illustration hand-printed by master silk artisans in Lake Como",
+        "Pure organic silk twill boasts breathtaking color vibrancy and luster",
+        "Signature hand-rolled border requires over 45 minutes of needlework per piece",
+        "Can be worn as a neck foulard, hair scarf, draped over shoulders, or framed",
+        "Includes presentation box tied with a branded emerald green satin bow"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
       ],
       "assured": true,
       "deliveryDays": 1
