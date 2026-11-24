@@ -68,7 +68,7 @@ export default function PaymentModal({
   // Card Fields
   const [card, setCard] = useState({
     number: '4532 8920 1934 7721',
-    name: 'ASHIEQ AHAMED',
+    name: user?.name ? user.name.toUpperCase() : 'ASHIEQ AHAMED',
     expiry: '08/29',
     cvv: '821',
   });
@@ -124,11 +124,11 @@ export default function PaymentModal({
   const fillDemoCard = () => {
     setCard({
       number: '4532 8920 1934 7721',
-      name: 'ASHIEQ AHAMED',
+      name: user?.name ? user.name.toUpperCase() : 'ASHIEQ AHAMED',
       expiry: '08/29',
       cvv: '821',
     });
-    addToast('Demo card credentials auto-filled! 💳', 'info');
+    addToast('Card details auto-filled 💳', 'info');
   };
 
   const handleCardNumberChange = (e) => {
@@ -151,7 +151,7 @@ export default function PaymentModal({
     return `${m}:${s < 10 ? '0' : ''}${s}`;
   };
 
-  // Simulated Payment Trigger
+  // Payment Execution Simulation
   const handlePay = () => {
     if (!customer.name.trim()) {
       alert('Please enter your full name for shipping.');
@@ -195,7 +195,7 @@ export default function PaymentModal({
         transactionId: activeTab === 'cod' ? `COD-PENDING-${Date.now().toString().slice(-6)}` : txnId,
         method: activeTab,
         status: activeTab === 'cod' ? 'PENDING_ON_DELIVERY' : 'PAID',
-        gateway: 'ShopWave In-App Simulated Gateway (Viva Mode)',
+        gateway: 'ShopWave Secure Gateway',
         paidAt: activeTab === 'cod' ? null : paidAt,
         upiId: activeTab === 'upi' ? upiId : null,
         bankName: activeTab === 'netbanking' ? selectedBank : null,
@@ -400,11 +400,6 @@ export default function PaymentModal({
             padding-top: 20px;
             border-top: 1px dashed #d1d5db;
           }
-          .viva-note {
-            font-size: 11px;
-            color: #4b5563;
-            max-width: 450px;
-          }
           .signature-box {
             text-align: center;
             min-width: 180px;
@@ -451,8 +446,8 @@ export default function PaymentModal({
             </div>
             <div class="meta-col text-right">
               <h4>TRANSACTION METRICS</h4>
-              <p><strong>Gateway:</strong> ShopWave Simulated Gateway (RBI-Mode)</p>
-              <p><strong>Txn Ref:</strong> <code style="font-family: monospace;">${confirmedOrder.payment?.transactionId || 'TXN-RBI-90214'}</code></p>
+              <p><strong>Gateway:</strong> ShopWave Secure Gateway</p>
+              <p><strong>Txn Ref:</strong> <code style="font-family: monospace;">${confirmedOrder.payment?.transactionId || 'TXN-90214'}</code></p>
               <p><strong>Shipping Mode:</strong> Complimentary Atelier White-Glove Express</p>
               <p><strong>Est. Delivery:</strong> Within 48 Hours with Real-Time Tracking</p>
             </div>
@@ -504,12 +499,8 @@ export default function PaymentModal({
           </div>
 
           <div class="stamp-box">
-            <div class="viva-note">
-              <strong>College Viva / Academic Project Verification:</strong><br>
-              Developed by <strong>ASHIEQ AHAMED S A (RRN: 230071601031)</strong><br>
-              Bachelor of Technology in Computer Science & Engineering<br>
-              B.S. Abdur Rahman Crescent Institute of Science and Technology, Chennai.<br>
-              <em>This is a verified in-app simulated payment gateway receipt designed for zero-setup live evaluation.</em>
+            <div style="color: #6b7280; font-size: 11px;">
+              This is an authenticated computer-generated invoice from ShopWave Atelier.
             </div>
             <div class="signature-box">
               <div style="color: #c5a880; font-weight: bold; font-size: 13px;">✦ SHOPWAVE ATELIER</div>
@@ -540,10 +531,10 @@ export default function PaymentModal({
         {/* Luxury Top Banner */}
         <div className="viva-gateway-topbar">
           <div className="viva-badge-wrap">
-            <span className="viva-shield-icon">🛡️</span>
+            <span className="viva-shield-icon">🔒</span>
             <div>
-              <span className="viva-title">SHOPWAVE SIMULATED GATEWAY</span>
-              <span className="viva-sub">ZERO-SETUP LIVE PAYMENT ENGINE • COLLEGE VIVA READY</span>
+              <span className="viva-title">SHOPWAVE SECURE CHECKOUT</span>
+              <span className="viva-sub">256-BIT SSL ENCRYPTED GATEWAY • IN-APP SIMULATED SETTLEMENT</span>
             </div>
           </div>
           {step !== 'processing' && (
@@ -569,52 +560,11 @@ export default function PaymentModal({
               </div>
             </div>
 
-            {/* Quick Demo Pre-fill for Viva */}
-            <div className="viva-quick-fill-strip">
-              <span className="strip-label">⚡ VIVA EXAMINER QUICK DEMO:</span>
-              <button
-                type="button"
-                className="btn-viva-chip"
-                onClick={() => {
-                  setCustomer({
-                    name: 'Ashieq Ahamed',
-                    phone: '9876543210',
-                    email: 'ashieq@shopwave.in',
-                    address: 'No. 42, Crescent Avenue, GST Road, Vandalur',
-                    city: 'Chennai',
-                    pincode: '600048',
-                    state: 'Tamil Nadu'
-                  });
-                  addToast('Prefilled student test profile (Ashieq Ahamed)', 'info');
-                }}
-              >
-                👤 Student (Ashieq)
-              </button>
-              <button
-                type="button"
-                className="btn-viva-chip"
-                onClick={() => {
-                  setCustomer({
-                    name: 'Faculty Evaluator',
-                    phone: '9444012345',
-                    email: 'examiner@crescent.education',
-                    address: 'Department of CSE, BSA Crescent Campus',
-                    city: 'Chennai',
-                    pincode: '600048',
-                    state: 'Tamil Nadu'
-                  });
-                  addToast('Prefilled Faculty Examiner test profile', 'info');
-                }}
-              >
-                🎓 Faculty Examiner
-              </button>
-            </div>
-
             {/* Customer Details */}
             <div className="viva-section">
               <div className="viva-section-hdr">
                 <span className="section-icon">📍</span>
-                <h4 className="section-title">Shipping & Contact Destination</h4>
+                <h4 className="section-title">Shipping & Contact Details</h4>
               </div>
               <div className="viva-input-row-2">
                 <div className="viva-field">
@@ -637,7 +587,7 @@ export default function PaymentModal({
                 </div>
               </div>
               <div className="viva-field" style={{ marginTop: '0.6rem' }}>
-                <label>Street & Doorstep Address</label>
+                <label>Delivery Address</label>
                 <input
                   type="text"
                   value={customer.address}
@@ -677,7 +627,7 @@ export default function PaymentModal({
             <div className="viva-section" style={{ marginTop: '1.25rem' }}>
               <div className="viva-section-hdr">
                 <span className="section-icon">💳</span>
-                <h4 className="section-title">Select Simulated Payment Channel</h4>
+                <h4 className="section-title">Payment Method</h4>
               </div>
 
               {/* Tabs */}
@@ -716,7 +666,7 @@ export default function PaymentModal({
                 >
                   <span className="tab-glyph">📦</span>
                   <span className="tab-title">Cash on Delivery</span>
-                  <span className="tab-sub">OTP Verified Handover</span>
+                  <span className="tab-sub">Doorstep Handover</span>
                 </button>
               </div>
 
@@ -778,7 +728,7 @@ export default function PaymentModal({
 
                     {showQr && (
                       <div className="qr-display-box">
-                        {/* High Quality Simulated Vector QR */}
+                        {/* High Quality Vector QR */}
                         <div className="vector-qr-wrap">
                           <svg className="simulated-qr-svg" viewBox="0 0 100 100" width="140" height="140">
                             {/* Position Detection Squares */}
@@ -819,18 +769,18 @@ export default function PaymentModal({
                           </svg>
                         </div>
                         <div className="qr-info-meta">
-                          <div className="qr-target-merchant">ShopWave Atelier Verified Merchant</div>
+                          <div className="qr-target-merchant">ShopWave Atelier Merchant</div>
                           <div className="qr-target-amt">Amount: ₹{grandTotal.toLocaleString('en-IN')}</div>
-                          <div className="qr-scan-hint">Scan with any UPI application on your smartphone to pay</div>
+                          <div className="qr-scan-hint">Scan with Google Pay, PhonePe, Paytm, or any UPI app to pay</div>
                           <button
                             type="button"
                             className="btn-viva-approve"
                             onClick={() => {
-                              addToast('Simulating mobile UPI app notification approval... 📲', 'info');
+                              addToast('Simulating mobile UPI approval... 📲', 'info');
                               handlePay();
                             }}
                           >
-                            ⚡ One-Click Simulate UPI Push Approval
+                            ⚡ Simulate Mobile UPI Approval
                           </button>
                         </div>
                       </div>
@@ -842,7 +792,7 @@ export default function PaymentModal({
               {/* TAB 2: CREDIT / DEBIT CARD */}
               {activeTab === 'card' && (
                 <div className="viva-channel-panel">
-                  {/* 3D Glassmorphic Interactive Virtual Card */}
+                  {/* 3D Glassmorphic Virtual Card */}
                   <div
                     className="viva-virtual-card"
                     style={{ background: currentBrand.bg }}
@@ -878,9 +828,9 @@ export default function PaymentModal({
                   </div>
 
                   <div className="card-demo-bar">
-                    <span className="hint-text">Pre-loaded Viva Test Credentials:</span>
+                    <span className="hint-text">Test Card:</span>
                     <button type="button" className="btn-viva-fill" onClick={fillDemoCard}>
-                      ⚡ Auto-Fill Demo Card
+                      ⚡ Auto-Fill Card
                     </button>
                   </div>
 
@@ -935,7 +885,7 @@ export default function PaymentModal({
               {activeTab === 'netbanking' && (
                 <div className="viva-channel-panel">
                   <p className="viva-panel-desc">
-                    Select your bank to route through encrypted Core Banking Gateway:
+                    Select your bank to route through secure Core Banking Portal:
                   </p>
                   <div className="banks-interactive-grid">
                     {banks.map((b) => (
@@ -965,14 +915,13 @@ export default function PaymentModal({
                     <div>
                       <h4 className="cod-title">Cash / UPI Doorstep Delivery</h4>
                       <p className="cod-desc">
-                        Pay with cash or scan dynamic delivery courier QR code upon arrival.
-                        Doorstep deliveries are protected with contactless OTP verification.
+                        Pay with cash or scan delivery QR code upon arrival at your doorstep.
                       </p>
                     </div>
                   </div>
 
                   <div className="viva-field" style={{ marginTop: '0.8rem' }}>
-                    <label>Enter Delivery Confirmation OTP (Simulated: <strong>{simulatedOtp}</strong>)</label>
+                    <label>Delivery Confirmation OTP</label>
                     <div style={{ display: 'flex', gap: '8px' }}>
                       <input
                         type="text"
@@ -1003,14 +952,14 @@ export default function PaymentModal({
                 onClick={handlePay}
               >
                 {activeTab === 'cod'
-                  ? 'Confirm COD Order Handover 📦'
-                  : `Authorize & Pay ₹${grandTotal.toLocaleString('en-IN')} Securely 🔒`}
+                  ? 'Confirm COD Order 📦'
+                  : `Pay ₹${grandTotal.toLocaleString('en-IN')} Securely 🔒`}
               </button>
 
               <div className="viva-security-trust-bar">
-                <span>🛡️ RBI Approved Simulation</span>
+                <span>🛡️ RBI Approved</span>
                 <span>•</span>
-                <span>🔒 256-Bit TLS 1.3</span>
+                <span>🔒 256-Bit SSL</span>
                 <span>•</span>
                 <span>⚡ Instant Settlement</span>
               </div>
@@ -1029,7 +978,7 @@ export default function PaymentModal({
               <div className="radar-wave wave-2"></div>
             </div>
 
-            <h3 className="viva-proc-heading">Processing Simulated Transaction</h3>
+            <h3 className="viva-proc-heading">Processing Transaction</h3>
             <p className="viva-proc-status">{processStatus}</p>
 
             <div className="viva-progress-bar-wrap">
@@ -1052,9 +1001,9 @@ export default function PaymentModal({
               <span className="crest-glyph">✓</span>
             </div>
 
-            <h3 className="success-heading">Payment Verified & Confirmed!</h3>
+            <h3 className="success-heading">Payment Successful!</h3>
             <p className="success-message">
-              Your transaction has successfully settled on the ShopWave platform.
+              Your order has been confirmed and placed with ShopWave Atelier.
             </p>
 
             {/* Receipt Card */}
@@ -1069,10 +1018,10 @@ export default function PaymentModal({
               </div>
               <div className="receipt-row">
                 <span className="rc-k">Payment Method:</span>
-                <span className="rc-v uppercase">{confirmedOrder.payment?.method} (Simulated Gateway)</span>
+                <span className="rc-v uppercase">{confirmedOrder.payment?.method}</span>
               </div>
               <div className="receipt-row">
-                <span className="rc-k">Amount Settled:</span>
+                <span className="rc-k">Amount Paid:</span>
                 <span className="rc-v gold font-lg">₹{confirmedOrder.pricing.total.toLocaleString('en-IN')}</span>
               </div>
               <div className="receipt-row">
@@ -1080,7 +1029,7 @@ export default function PaymentModal({
                 <span className="rc-v">{confirmedOrder.customer.name}, {confirmedOrder.customer.city}</span>
               </div>
               <div className="receipt-row">
-                <span className="rc-k">Estimated Handover:</span>
+                <span className="rc-k">Estimated Delivery:</span>
                 <span className="rc-v">Complimentary Express (Within 48h)</span>
               </div>
             </div>
