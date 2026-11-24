@@ -13,7 +13,7 @@ export default function ProductDetailPage() {
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedColor, setSelectedColor] = useState(null);
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState('craftsmanship'); // 'craftsmanship' or 'details' or 'delivery'
+  const [activeTab, setActiveTab] = useState('craftsmanship'); // 'craftsmanship' or 'details'
 
   // Zoom state
   const [zoomStyle, setZoomStyle] = useState({ display: 'none' });
@@ -26,12 +26,12 @@ export default function ProductDetailPage() {
       <main className="page">
         <div className="container" style={{ padding: '6rem 1.5rem', textAlign: 'center' }}>
           <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: '2rem', letterSpacing: '0.1em' }}>
-            Piece Not Found
+            Product Not Found
           </h1>
           <p style={{ color: 'var(--text-muted)', margin: '1rem 0 2rem' }}>
-            The requested creation is currently unavailable in the online catalog.
+            The requested apparel item is currently unavailable in the online catalog.
           </p>
-          <Link to="/products" className="btn-gucci-solid">Return to Collection</Link>
+          <Link to="/products" className="btn-gucci-solid">Return to Catalog</Link>
         </div>
       </main>
     );
@@ -42,6 +42,10 @@ export default function ProductDetailPage() {
 
   const currentColor = selectedColor || (product.colors ? product.colors[0] : null);
   const currentSize = selectedSize || (product.sizes ? product.sizes[0] : null);
+
+  const discountPercent = product.originalPrice && product.originalPrice > product.price
+    ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+    : null;
 
   const handleMouseMove = (e) => {
     if (!mainImageRef.current) return;
@@ -70,9 +74,9 @@ export default function ProductDetailPage() {
       <div className="container">
         {/* Minimalist Editorial Breadcrumb */}
         <nav className="gucci-breadcrumb" aria-label="Breadcrumb">
-          <Link to="/">GUCCI</Link>
+          <Link to="/">SHOPWAVE ATELIER</Link>
           <span className="breadcrumb-sep">/</span>
-          <Link to="/products">COLLECTIONS</Link>
+          <Link to="/products">COLLECTION</Link>
           <span className="breadcrumb-sep">/</span>
           <Link to={`/products?category=${product.category}`}>
             {product.category.toUpperCase()}
@@ -81,7 +85,7 @@ export default function ProductDetailPage() {
           <span className="breadcrumb-current">{product.name}</span>
         </nav>
 
-        {/* Gucci Split Stage */}
+        {/* Split Stage */}
         <div className="gucci-pdp-layout">
           {/* Visual Gallery Column */}
           <div className="gucci-pdp-gallery">
@@ -94,7 +98,7 @@ export default function ProductDetailPage() {
                     type="button"
                     className={`gucci-thumb-btn${activeImage === i ? ' active' : ''}`}
                     onClick={() => setActiveImage(i)}
-                    aria-label={`View creation angle ${i + 1}`}
+                    aria-label={`View angle ${i + 1}`}
                   >
                     <img
                       src={img}
@@ -141,25 +145,48 @@ export default function ProductDetailPage() {
               </div>
             </div>
 
-            {/* Atelier Heritage Tag */}
+            {/* Atelier Quality Tag */}
             <div className="gucci-atelier-tag">
               <span className="atelier-crest">✦</span>
-              <span>HANDCRAFTED IN FLORENCE, ITALY — ARCHIVAL HERITAGE</span>
+              <span>100% ETHICALLY CRAFTED APPAREL — TAILORED FOR LIFE</span>
             </div>
           </div>
 
           {/* Product Details & Purchase Column */}
           <div className="gucci-pdp-details">
             <div className="gucci-details-header">
-              <span className="gucci-pdp-line-tag">
-                {product.tags?.[0] || 'GUCCI SIGNATURE'}
-              </span>
-              <h1 className="gucci-pdp-title">{product.name}</h1>
-              <div className="gucci-pdp-price">
-                {formatPrice(product.price)}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.4rem' }}>
+                <span className="gucci-pdp-line-tag">
+                  {product.tags?.[0] || 'SHOPWAVE ATELIER ESSENTIAL'}
+                </span>
+                {product.rating && (
+                  <span style={{ fontSize: '0.85rem', color: '#c5a059', fontWeight: 600 }}>
+                    ★ {product.rating} <span style={{ color: 'rgba(255,255,255,0.45)', fontWeight: 400 }}>({product.reviewCount || 150} verified reviews)</span>
+                  </span>
+                )}
               </div>
+
+              <h1 className="gucci-pdp-title">{product.name}</h1>
+
+              {/* Price row with original price and discount */}
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.85rem', flexWrap: 'wrap', marginTop: '0.5rem' }}>
+                <div className="gucci-pdp-price" style={{ margin: 0 }}>
+                  {formatPrice(product.price)}
+                </div>
+                {product.originalPrice && product.originalPrice > product.price && (
+                  <>
+                    <span style={{ textDecoration: 'line-through', color: 'rgba(255,255,255,0.45)', fontSize: '1.15rem' }}>
+                      {formatPrice(product.originalPrice)}
+                    </span>
+                    <span style={{ color: '#4ade80', fontSize: '0.9rem', fontWeight: 700, background: 'rgba(74, 222, 128, 0.1)', padding: '2px 8px', borderRadius: '4px' }}>
+                      {discountPercent}% OFF
+                    </span>
+                  </>
+                )}
+              </div>
+
               <p className="gucci-pdp-tax-note">
-                Complimentary express delivery & taxes included
+                Inclusive of all taxes • Complimentary delivery on orders over ₹1,999
               </p>
             </div>
 
@@ -184,14 +211,14 @@ export default function ProductDetailPage() {
               </div>
             )}
 
-            {/* Size Options (For Shoes / Apparel / Rings / Belts) */}
+            {/* Size Options (Shirts, Pants, T-Shirts, Shoes) */}
             {product.sizes && product.sizes.length > 0 && (
               <div className="gucci-variant-block">
                 <div className="variant-title-row">
                   <span className="variant-title">
-                    SIZE: <strong style={{ color: '#ffffff' }}>{currentSize}</strong>
+                    SELECT SIZE: <strong style={{ color: '#c5a059' }}>{currentSize}</strong>
                   </span>
-                  <span className="gucci-size-guide-link">Size & Fit Guide</span>
+                  <span className="gucci-size-guide-link">Size Chart & Fit Guide</span>
                 </div>
                 <div className="gucci-size-grid">
                   {product.sizes.map((sz) => (
@@ -208,7 +235,7 @@ export default function ProductDetailPage() {
               </div>
             )}
 
-            {/* Luxury Action Buttons */}
+            {/* Action Buttons */}
             <div className="gucci-pdp-actions">
               <button
                 type="button"
@@ -224,31 +251,31 @@ export default function ProductDetailPage() {
                 id={`detail-buy-now-${product.id}`}
                 onClick={handleBuyNow}
               >
-                PURCHASE & CHECKOUT NOW
+                BUY NOW WITH 1-CLICK
               </button>
             </div>
 
-            {/* Gucci Client Services Box */}
+            {/* E-Commerce Guarantee Box */}
             <div className="gucci-services-box">
-              <div className="gucci-service-row">
-                <span className="service-icon">🎁</span>
-                <div>
-                  <h4 className="service-title">Signature Gucci Gift Packaging</h4>
-                  <p className="service-sub">Delivered in an archival green gift box hand-tied with a satin ribbon.</p>
-                </div>
-              </div>
               <div className="gucci-service-row">
                 <span className="service-icon">🚚</span>
                 <div>
-                  <h4 className="service-title">Complimentary Insured Delivery</h4>
-                  <p className="service-sub">Dispatched via secure armored courier with live signature verification.</p>
+                  <h4 className="service-title">Free Express Delivery</h4>
+                  <p className="service-sub">Dispatched within 24 hours. Estimated delivery: 2-3 business days.</p>
                 </div>
               </div>
               <div className="gucci-service-row">
                 <span className="service-icon">🔄</span>
                 <div>
-                  <h4 className="service-title">Complimentary 30-Day Returns</h4>
-                  <p className="service-sub">Doorstep collection and exchange service available worldwide.</p>
+                  <h4 className="service-title">30-Day Hassle-Free Returns & Exchanges</h4>
+                  <p className="service-sub">Doorstep pickup available across all serviceable pincodes in India.</p>
+                </div>
+              </div>
+              <div className="gucci-service-row">
+                <span className="service-icon">🛡</span>
+                <div>
+                  <h4 className="service-title">100% Authentic Quality Guarantee</h4>
+                  <p className="service-sub">Direct from certified ethical mills. Grade-A long-staple natural fabrics.</p>
                 </div>
               </div>
             </div>
@@ -261,14 +288,14 @@ export default function ProductDetailPage() {
                   className={`tab-title-btn${activeTab === 'craftsmanship' ? ' active' : ''}`}
                   onClick={() => setActiveTab('craftsmanship')}
                 >
-                  CRAFTSMANSHIP & STORY
+                  PRODUCT DETAILS & FEATURES
                 </button>
                 <button
                   type="button"
                   className={`tab-title-btn${activeTab === 'details' ? ' active' : ''}`}
                   onClick={() => setActiveTab('details')}
                 >
-                  SPECIFICATIONS
+                  SPECIFICATIONS & CARE
                 </button>
               </div>
 
@@ -305,8 +332,8 @@ export default function ProductDetailPage() {
         {related.length > 0 && (
           <div className="gucci-related-section">
             <div className="gucci-section-header">
-              <span className="section-eyebrow">CURATED COMPLEMENTS</span>
-              <h2 className="section-main-title">You May Also Admire</h2>
+              <span className="section-eyebrow">COMPLETE THE LOOK</span>
+              <h2 className="section-main-title">You May Also Like</h2>
             </div>
             <div className="products-grid">
               {related.map(p => <ProductCard key={p.id} product={p} />)}

@@ -1,659 +1,64 @@
-// Product catalog data for ShopWave (Gucci Haute Couture & Luxury Edition)
+// Product catalog data for ShopWave (Premium Apparel & Lifestyle E-Commerce)
 
 export const FALLBACK_IMAGE = './placeholder.svg';
 
 export const categories = [
   {
     "id": "all",
-    "label": "All Creations",
+    "label": "All Collections",
     "icon": "✦"
   },
   {
-    "id": "handbags",
-    "label": "Handbags & Leather",
-    "icon": "👜"
+    "id": "shirts",
+    "label": "Shirts & Tops",
+    "icon": "👔"
   },
   {
-    "id": "shoes",
-    "label": "Shoes & Loafers",
+    "id": "pants",
+    "label": "Pants & Denim",
+    "icon": "👖"
+  },
+  {
+    "id": "tshirts",
+    "label": "Tees & Knitwear",
+    "icon": "👕"
+  },
+  {
+    "id": "outerwear",
+    "label": "Jackets & Blazers",
+    "icon": "🧥"
+  },
+  {
+    "id": "footwear",
+    "label": "Shoes & Sneakers",
     "icon": "👞"
   },
   {
-    "id": "apparel",
-    "label": "Ready-to-Wear",
-    "icon": "✨"
-  },
-  {
     "id": "accessories",
-    "label": "Accessories & Jewelry",
-    "icon": "💍"
-  },
-  {
-    "id": "beauty",
-    "label": "Fragrance & Beauty",
-    "icon": "🌸"
+    "label": "Bags & Accessories",
+    "icon": "🎒"
   }
 ];
 
 export const products = [
   {
     "id": 1,
-    "name": "Gucci Jackie 1961 Small Natural Grain Shoulder Bag",
-    "brand": "GUCCI",
-    "category": "handbags",
-    "price": 245000,
-    "originalPrice": 285000,
-    "rating": 5,
-    "reviewCount": 1840,
-    "badge": "hot",
-    "description": "The historical Jackie 1961 bag is presented with a contemporary aesthetic in supple natural grain leather. Embellished with its signature golden piston closure and an additional detachable strap that allows it to be worn across the body.",
-    "tags": [
-      "Jackie 1961",
-      "Shoulder Bag",
-      "Natural Grain",
-      "Piston Lock"
-    ],
-    "sizes": [
-      "Small (W 28cm x H 19cm x D 4.5cm)"
-    ],
-    "colors": [
-      "Black Leather",
-      "Cuir Brown",
-      "Emerald Green",
-      "Rosso Ancora"
-    ],
-    "specifications": {
-      "Origin": "Handcrafted in Florence, Italy",
-      "Material": "Supple Natural Grain Italian Calfskin",
-      "Hardware": "Light Gold-Toned Metallic Piston Closure",
-      "Lining": "Microfiber with a Suede-Like Finish",
-      "Strap": "Handle with 18cm drop; Detachable strap with 52cm drop",
-      "Dimensions": "W 28cm x H 19cm x D 4.5cm (Weight: 0.45kg)"
-    },
-    "features": [
-      "Signature archival golden piston clasp closure",
-      "Supple vegetable-tanned natural grain Italian calfskin",
-      "Includes second detachable shoulder strap for crossbody versatility",
-      "Internal open pocket and zippered leather compartment",
-      "Arrives in signature Gucci green gift box with satin dustbag"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 2,
-    "name": "Gucci Horsebit 1955 Top Handle Handbag",
-    "brand": "GUCCI",
-    "category": "handbags",
-    "price": 265000,
-    "originalPrice": 295000,
-    "rating": 4.9,
-    "reviewCount": 1420,
-    "badge": "hot",
-    "description": "Introduced for Cruise 2020, the Gucci Horsebit 1955 bag is recreated from an archival design. Featuring the iconic double ring and bar equestrian motif on rich textured calf leather.",
-    "tags": [
-      "Horsebit 1955",
-      "Top Handle",
-      "Calfskin",
-      "Florence"
-    ],
-    "sizes": [
-      "Medium (W 30cm x H 24cm x D 10cm)"
-    ],
-    "colors": [
-      "Cuir Brown",
-      "Ebony Black",
-      "Off-White"
-    ],
-    "specifications": {
-      "Origin": "Made in Italy",
-      "Material": "Textured Full-Grain Calfskin Leather",
-      "Hardware": "Gold-Toned Double Ring & Bar Horsebit",
-      "Lining": "Cotton Linen Lining with Leather Trim",
-      "Dimensions": "W 30cm x H 24cm x D 10cm"
-    },
-    "features": [
-      "Iconic 1955 archival equestrian horsebit detail on front",
-      "Structured dome top-handle silhouette with dual zippers",
-      "Removable leather shoulder strap with 50cm drop",
-      "Interior zip pocket and smartphone slip compartment",
-      "Protective metal purse feet engraved with Gucci lettering"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 3,
-    "name": "GG Marmont Small Matelassé Shoulder Bag",
-    "brand": "GUCCI",
-    "category": "handbags",
-    "price": 215000,
-    "originalPrice": 245000,
-    "rating": 4.9,
+    "name": "Men's Slim Fit Oxford Cotton Button-Down Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "shirts",
+    "price": 2499,
+    "originalPrice": 3999,
+    "rating": 4.8,
     "reviewCount": 3820,
     "badge": "hot",
-    "description": "The GG Marmont chain shoulder bag has a softly structured shape and a zip top closure with the Double G hardware. The chain shoulder strap has a leather shoulder detail, finished with chevron quilted leather and heart on the back.",
+    "description": "A perennial smart-casual essential. Crafted from 100% breathable pinpoint Oxford cotton with an authentic button-down collar, box pleat at the back for freedom of movement, and curved hemline.",
     "tags": [
-      "GG Marmont",
-      "Matelassé",
-      "Double G",
-      "Chevron"
+      "Oxford Shirt",
+      "100% Cotton",
+      "Slim Fit",
+      "Button-Down"
     ],
     "sizes": [
-      "Small (W 24cm x H 13cm x D 7cm)"
-    ],
-    "colors": [
-      "Black Chevron",
-      "Porcelain Rose",
-      "Dusty Pink"
-    ],
-    "specifications": {
-      "Origin": "Made in Italy",
-      "Leather": "Black Matelassé Chevron Leather with Heart on Back",
-      "Hardware": "Antique Gold-Toned Double G Hardware",
-      "Chain": "Sliding Chain Strap with 55cm Drop",
-      "Dimensions": "W 24cm x H 13cm x D 7cm"
-    },
-    "features": [
-      "Double G archival monogram hardware from the 1970s",
-      "Chevron quilted matelassé leather with subtle sheen",
-      "Embossed heart motif on the reverse side",
-      "Sliding chain strap can be worn on shoulder or crossbody",
-      "Microfiber lining with soft suede finish"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 4,
-    "name": "Dionysus GG Supreme Mini Chain Bag",
-    "brand": "GUCCI",
-    "category": "handbags",
-    "price": 185000,
-    "originalPrice": 210000,
-    "rating": 4.8,
-    "reviewCount": 2190,
-    "badge": "new",
-    "description": "A structured GG Supreme canvas bag with our textured tiger head closure—a unique detail referencing the Greek god Dionysus. The sliding chain strap can be worn multiple ways, changing between a shoulder and a top handle bag.",
-    "tags": [
-      "Dionysus",
-      "GG Supreme",
-      "Tiger Head",
-      "Chain Bag"
-    ],
-    "sizes": [
-      "Mini (W 20cm x H 15.5cm x D 5cm)"
-    ],
-    "colors": [
-      "Beige/Ebony GG Canvas with Taupe Suede",
-      "Emerald Suede"
-    ],
-    "specifications": {
-      "Canvas": "Beige and Ebony GG Supreme Canvas (Low Environmental Impact)",
-      "Closure": "Textured Tiger Head Spur Pin Closure with Side Release",
-      "Edges": "Hand-Painted Edge Dye",
-      "Origin": "Made in Italy"
-    },
-    "features": [
-      "Archival tiger head spur clasp studded with Swarovski crystals",
-      "Sliding silver-toned chain strap with 40cm drop",
-      "Dual interior accordion compartments with zippered divider",
-      "Hand-finished painted black edges by Italian leather artisans",
-      "Pocket under the flap for credit cards and receipts"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 5,
-    "name": "Ophidia GG Medium Tote Bag with Web Stripe",
-    "brand": "GUCCI",
-    "category": "handbags",
-    "price": 195000,
-    "originalPrice": 225000,
-    "rating": 4.9,
-    "reviewCount": 2940,
-    "badge": "hot",
-    "description": "The world of Ophidia evolves with the addition of this medium tote bag in GG Supreme canvas, trimmed with the green and red Web stripe and Double G hardware on a textured leather tab.",
-    "tags": [
-      "Ophidia",
-      "Tote",
-      "Web Stripe",
-      "Everyday Luxury"
-    ],
-    "sizes": [
-      "Medium (W 38cm x H 28cm x D 14cm)"
-    ],
-    "colors": [
-      "Beige/Ebony with Green & Red Web",
-      "Blue GG Supreme"
-    ],
-    "specifications": {
-      "Material": "GG Supreme Canvas with Brown Leather Trim",
-      "Hardware": "Gold-Toned Double G Hardware",
-      "Handles": "Dual Leather Handles with 25cm Drop",
-      "Origin": "Made in Italy"
-    },
-    "features": [
-      "Spacious interior fits 14-inch MacBook and daily essentials",
-      "Iconic equestrian-inspired green and red Web center stripe",
-      "Magnetic snap closure for effortless opening and closing",
-      "Interior zip pocket and two smartphone open slots",
-      "Reinforced leather corners and flat structured base"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 6,
-    "name": "Gucci Diana Small Leather Tote with Bamboo Handles",
-    "brand": "GUCCI",
-    "category": "handbags",
-    "price": 325000,
-    "originalPrice": 360000,
-    "rating": 5,
-    "reviewCount": 980,
-    "badge": "limited",
-    "description": "Reflecting an era of royal sophistication, the Gucci Diana reimagines the bamboo tote introduced in 1991. Paired with detachable neon decorative leather belts that originally maintained the bamboo shape.",
-    "tags": [
-      "Diana",
-      "Bamboo Handle",
-      "Princess Diana",
-      "Royalty"
-    ],
-    "sizes": [
-      "Small (W 27cm x H 24cm x D 11cm)"
-    ],
-    "colors": [
-      "Emerald Green",
-      "Cuir Brown",
-      "Pure Black"
-    ],
-    "specifications": {
-      "Handles": "Curved Handcrafted Bamboo Handles with 11cm Drop",
-      "Belts": "Two Removable Neon Yellow Leather Belts Included",
-      "Leather": "Full Grain Smooth Italian Calfskin",
-      "Origin": "Handcrafted in Florence, Italy"
-    },
-    "features": [
-      "Authentic fire-curved bamboo handles crafted by Florentine artisans",
-      "Neon leather handle shapers paying homage to vintage designs",
-      "Double G gold-toned emblem on front leather tab",
-      "Includes both leather and web shoulder straps",
-      "Protective velvet-lined compartment and brass base studs"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 7,
-    "name": "Gucci Horsebit 1953 Classic Leather Loafer",
-    "brand": "GUCCI",
-    "category": "shoes",
-    "price": 92000,
-    "originalPrice": 105000,
-    "rating": 5,
-    "reviewCount": 5240,
-    "badge": "hot",
-    "description": "Celebrating 70 years of an enduring menswear icon. The 1953 Horsebit loafer in black calf leather with burnished gold-toned hardware, Blake welt construction, and leather sole. Part of the permanent collection of New York's MoMA.",
-    "tags": [
-      "Horsebit 1953",
-      "Loafer",
-      "Blake Welt",
-      "MoMA Icon"
-    ],
-    "sizes": [
-      "EU 39",
-      "EU 40",
-      "EU 41",
-      "EU 42",
-      "EU 43",
-      "EU 44",
-      "EU 45"
-    ],
-    "colors": [
-      "Nero Black Calfskin",
-      "Cognac Brown",
-      "Oxblood Bordeaux"
-    ],
-    "specifications": {
-      "Leather": "Full Grain Italian Calfskin Leather",
-      "Hardware": "Gold-Toned 1953 Archival Horsebit",
-      "Construction": "Traditional Italian Blake Construction",
-      "Heel Height": "15mm Stacked Leather Heel",
-      "Sole": "Hand-Polished Natural Leather Sole with Gucci Script",
-      "Origin": "Made in Italy"
-    },
-    "features": [
-      "Historical 1953 70th Anniversary internal label",
-      "Burnished gold-toned double ring and bar horsebit hardware",
-      "Flexible Blake stitched leather sole allows effortless stride",
-      "Supple leather lining that contours perfectly to the foot",
-      "Includes bespoke Gucci shoe horn and dust bags"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 8,
-    "name": "Gucci Princetown Leather Slipper with Horsebit",
-    "brand": "GUCCI",
-    "category": "shoes",
-    "price": 88000,
-    "originalPrice": 98000,
-    "rating": 4.9,
-    "reviewCount": 4120,
-    "badge": "hot",
-    "description": "The Princetown slipper is an unconventional modern classic. Fully lined with smooth leather and topped with our signature Horsebit, the backless mule silhouette transforms formal tailoring into effortless luxury.",
-    "tags": [
-      "Princetown",
-      "Mule",
-      "Slipper",
-      "Horsebit"
-    ],
-    "sizes": [
-      "EU 36",
-      "EU 37",
-      "EU 38",
-      "EU 39",
-      "EU 40",
-      "EU 41",
-      "EU 42"
-    ],
-    "colors": [
-      "Black Leather",
-      "White Leather",
-      "Rose Gold Metallic"
-    ],
-    "specifications": {
-      "Silhouette": "Backless Slip-On Loafer Mule",
-      "Hardware": "Gold-Toned Horsebit Detail",
-      "Sole": "Leather Sole with Rubber Heel Cap",
-      "Origin": "Made in Italy"
-    },
-    "features": [
-      "Effortless slip-on backless design for modern sartorial styling",
-      "Supple Italian calfskin upper with hand-stitched apron",
-      "Glove-soft leather interior provides unmatched walking ease",
-      "Hand-painted beveled leather sole edge",
-      "Embossed Gucci crest on the insole footbed"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 9,
-    "name": "Gucci Ace Embroidered Bee Sneaker",
-    "brand": "GUCCI",
-    "category": "shoes",
-    "price": 78000,
-    "originalPrice": 89000,
-    "rating": 4.8,
-    "reviewCount": 6840,
-    "badge": "hot",
-    "description": "The retro-inspired Ace sneaker in white leather is detailed with the blue and red Web and gold thread-embroidered bee—an archival code first introduced in Gucci ready-to-wear in the 1970s.",
-    "tags": [
-      "Ace Sneaker",
-      "Gold Bee",
-      "Web Stripe",
-      "White Leather"
-    ],
-    "sizes": [
-      "EU 39",
-      "EU 40",
-      "EU 41",
-      "EU 42",
-      "EU 43",
-      "EU 44",
-      "EU 45"
-    ],
-    "colors": [
-      "White with Gold Bee",
-      "Black with Gold Star"
-    ],
-    "specifications": {
-      "Leather": "White Clean Full-Grain Calfskin Leather",
-      "Embroidery": "Metallic Gold Thread Embroidered Bee Motif",
-      "Heel Detail": "Red Metallic Snakeskin Left Heel / Green Right Heel",
-      "Sole": "Rubber Cupsole with Embossed Crest",
-      "Origin": "Made in Italy"
-    },
-    "features": [
-      "Delicate gold metallic thread embroidery of the historic Gucci bee",
-      "Iconic green and red grosgrain Web side tape",
-      "Mismatched metallic snakeskin heel tabs on left and right shoes",
-      "Padded leather collar and cushioned insole",
-      "Durable non-slip white rubber cupsole"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 10,
-    "name": "Gucci Screener GG Supreme Vintage Sneaker",
-    "brand": "GUCCI",
-    "category": "shoes",
-    "price": 95000,
-    "originalPrice": 110000,
-    "rating": 4.9,
-    "reviewCount": 2180,
-    "badge": "new",
-    "description": "Influenced by classic trainers from the 1970s, the Screener sneaker—named for the defensive sports move—features the Web stripe, vintage Gucci logo, and an artisanal distressed finish on GG canvas.",
-    "tags": [
-      "Screener",
-      "Vintage 70s",
-      "GG Canvas",
-      "Distressed"
-    ],
-    "sizes": [
-      "EU 40",
-      "EU 41",
-      "EU 42",
-      "EU 43",
-      "EU 44",
-      "EU 45"
-    ],
-    "colors": [
-      "Butter/Green/Orange Leather & GG Canvas"
-    ],
-    "specifications": {
-      "Upper": "Beige/Ebony GG Canvas with Treated Leather Overlays",
-      "Treatment": "Specially Treated for an All-Over Distressed Vintage Effect",
-      "Tongue": "Vintage Gucci Enamel Oval Badge",
-      "Origin": "Made in Italy"
-    },
-    "features": [
-      "Hand-distressed vintage finish applied individually by master craftsmen",
-      "Bi-color rubber sole with raised bee motif tread",
-      "Retro terry toweling and soft leather interior lining",
-      "Oval enamel Double G detail on tongue",
-      "Includes extra pair of custom vintage-dyed laces"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 11,
-    "name": "Interlocking G Patent Leather Slingback Pump",
-    "brand": "GUCCI",
-    "category": "shoes",
-    "price": 98000,
-    "originalPrice": 115000,
-    "rating": 5,
-    "reviewCount": 1620,
-    "badge": "limited",
-    "description": "A silhouette of pure cinematic glamour. Crafted from high-shine patent leather in Rosso Ancora—the signature deep crimson of Gucci—accented by a sculpted kitten heel and miniature Interlocking G plaque.",
-    "tags": [
-      "Slingback",
-      "Rosso Ancora",
-      "Patent Leather",
-      "Kitten Heel"
-    ],
-    "sizes": [
-      "EU 36",
-      "EU 37",
-      "EU 38",
-      "EU 39",
-      "EU 40",
-      "EU 41"
-    ],
-    "colors": [
-      "Rosso Ancora Crimson",
-      "Black Patent"
-    ],
-    "specifications": {
-      "Material": "Mirror-Polished Patent Leather",
-      "Heel Height": "45mm Sculpted Flared Kitten Heel",
-      "Hardware": "Light Gold-Tone Interlocking G Badge",
-      "Origin": "Made in Italy"
-    },
-    "features": [
-      "Signature Rosso Ancora crimson red lacquer finish",
-      "Pointed toe with miniature gold Interlocking G hardware",
-      "Elasticized slingback strap ensures comfortable heel grip",
-      "Hand-finished Italian leather sole with star stud accents",
-      "Padded soft leather insole for cocktail hour and galas"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 12,
-    "name": "Tailored Wool-Silk Single-Breasted Blazer with Crest",
-    "brand": "GUCCI",
-    "category": "apparel",
-    "price": 285000,
-    "originalPrice": 320000,
-    "rating": 5,
-    "reviewCount": 840,
-    "badge": "hot",
-    "description": "Impeccable Florentine tailoring. Cut from a rich wool and silk twill blend with peak lapels, horn buttons embossed with the House crest, and full cupro silk lining with horsebit jacquard.",
-    "tags": [
-      "Blazer",
-      "Tailoring",
-      "Wool Silk",
-      "Florentine"
-    ],
-    "sizes": [
-      "IT 46",
-      "IT 48",
-      "IT 50",
-      "IT 52",
-      "IT 54"
-    ],
-    "colors": [
-      "Midnight Navy",
-      "Black",
-      "Ivory Cream"
-    ],
-    "specifications": {
-      "Fabric": "70% Wool, 30% Silk Twill (320 GSM)",
-      "Lining": "100% Cuir Cupro Jacquard Lining with Horsebit Motif",
-      "Buttons": "Gold-Plated Metal Crest Buttons",
-      "Cut": "Structured Single-Breasted with Half-Canvas Construction",
-      "Origin": "Tailored in Italy"
-    },
-    "features": [
-      "Traditional Italian half-canvas construction molds to the body",
-      "Sharp peak lapels with hand-stitched pick-stitch detailing",
-      "Gleaming 24k gold-plated metal buttons featuring the Gucci family crest",
-      "Dual rear side vents and functioning four-button surgeon cuffs",
-      "Accompanied by a cedar wood hanger and travel garment bag"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 13,
-    "name": "GG Supreme Monogram Jacquard Silk Bowling Shirt",
-    "brand": "GUCCI",
-    "category": "apparel",
-    "price": 135000,
-    "originalPrice": 155000,
-    "rating": 4.9,
-    "reviewCount": 1980,
-    "badge": "hot",
-    "description": "Relaxed sophistication. Spun from 100% heavyweight Italian mulberry silk twill with an all-over woven GG monogram jacquard, open camp bowling collar, and mother-of-pearl buttons.",
-    "tags": [
-      "Silk Shirt",
-      "Bowling Shirt",
-      "GG Jacquard",
-      "Camp Collar"
-    ],
-    "sizes": [
-      "XS",
       "S",
       "M",
       "L",
@@ -661,1124 +66,1790 @@ export const products = [
       "XXL"
     ],
     "colors": [
-      "Beige & Ebony GG Jacquard",
-      "Celadon Green"
+      "Sky Blue",
+      "Classic White",
+      "Navy Blue",
+      "Soft Pink"
     ],
     "specifications": {
-      "Material": "100% Pure Italian Mulberry Silk Twill",
-      "Weave": "Tonal GG Monogram Jacquard",
-      "Buttons": "Genuine Australian Mother-of-Pearl Buttons",
-      "Cut": "Boxy Resort Fit with Straight Hem and Side Slits",
-      "Origin": "Made in Italy"
+      "Fabric": "100% Long-Staple Combed Oxford Cotton",
+      "Weave": "Pinpoint Basketweave",
+      "Collar": "Classic Button-Down Collar with Interlining",
+      "Cuffs": "Adjustable Two-Button Barrel Cuffs",
+      "Occasion": "Work, Dinner, Weekend Casual",
+      "Wash Care": "Machine Wash Warm, Tumble Dry Low"
     },
     "features": [
-      "Heavyweight 22 momme fluid silk drape feels weightless on skin",
-      "Retro resort camp collar with loop closure",
-      "Custom mother-of-pearl buttons laser-engraved with Gucci script",
-      "Single chest patch pocket with aligned monogram pattern match",
-      "Finished French seams throughout interior for luxury durability"
+      "Heavyweight 6.5 oz breathable long-staple cotton",
+      "Pre-shrunk fabric ensures exact fit after laundering",
+      "Genuine mother-of-pearl finish buttons with cross-stitching",
+      "Tailored slim silhouette contours cleanly through waist and chest",
+      "Single chest spade pocket with reinforced stress points"
     ],
     "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1
   },
   {
-    "id": 14,
-    "name": "Reversible GG Wool-Jacquard Knit Cardigan",
-    "brand": "GUCCI",
-    "category": "apparel",
-    "price": 165000,
-    "originalPrice": 185000,
+    "id": 2,
+    "name": "Men's Relaxed Pure French Linen Casual Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "shirts",
+    "price": 2999,
+    "originalPrice": 4599,
     "rating": 4.9,
-    "reviewCount": 1490,
+    "reviewCount": 2410,
     "badge": "hot",
-    "description": "An essential statement in knitwear. Knitted in Italy from ultra-fine virgin wool with a double-face jacquard technique, allowing the cardigan to be reversed between camel and dark brown.",
+    "description": "Lightweight, airy, and naturally cooling. Spun from 100% Normandy French flax linen with a relaxed silhouette, spread collar, and garment-dyed wash for effortless summer sophistication.",
     "tags": [
-      "Cardigan",
-      "Wool Jacquard",
-      "Reversible",
-      "Heritage Knit"
+      "Linen Shirt",
+      "Pure Linen",
+      "Relaxed Fit",
+      "Summer Essential"
     ],
     "sizes": [
       "S",
       "M",
       "L",
-      "XL"
+      "XL",
+      "XXL"
     ],
     "colors": [
-      "Camel / Dark Brown GG",
-      "Navy / Red GG"
+      "Natural Sand",
+      "Optic White",
+      "Sage Green",
+      "Sea Breeze Blue"
     ],
     "specifications": {
-      "Yarn": "100% Superfine Extra-Spun Virgin Wool",
-      "Knit": "Double-Faced Reversible Jacquard Knit",
-      "Closure": "Genuine Horn Button Placket",
-      "Origin": "Made in Italy"
+      "Fabric": "100% French Flax Linen",
+      "Weight": "165 GSM Breathable Linen Weave",
+      "Collar": "Casual Soft Spread Collar",
+      "Fit": "Relaxed Resort Cut",
+      "Wash Care": "Machine Wash Cold, Hang Dry"
     },
     "features": [
-      "Double-face construction provides two entirely distinct colorways",
-      "Subtle ribbed cuffs, V-neck placket, and hemline in contrast tone",
-      "Two front patch pockets accessible on both reversible sides",
-      "All-over interlocking GG diamond monogram pattern",
-      "Generously cut for effortless layering over shirts or tees"
+      "Sourced from premium French flax fields for ultra-soft drape",
+      "Natural moisture-wicking and thermo-regulating fibers",
+      "Garment-washed for instant lived-in comfort",
+      "Curved hemline looks elegant untucked with chinos or shorts",
+      "Reinforced French seams throughout the interior"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1
   },
   {
-    "id": 15,
-    "name": "Double-Breasted Cashmere Trench Coat with Leather Belt",
-    "brand": "GUCCI",
-    "category": "apparel",
-    "price": 380000,
-    "originalPrice": 425000,
-    "rating": 5,
-    "reviewCount": 620,
-    "badge": "limited",
-    "description": "The epitome of outerwear elegance. Spun from double-faced brushed Mongolian cashmere with tortoiseshell buttons, storm flaps, and a matching full-grain calfskin buckle belt.",
-    "tags": [
-      "Cashmere Coat",
-      "Trench",
-      "Haute Couture",
-      "Leather Belt"
-    ],
-    "sizes": [
-      "IT 44",
-      "IT 46",
-      "IT 48",
-      "IT 50",
-      "IT 52"
-    ],
-    "colors": [
-      "Warm Sand Melange",
-      "Black Obsidian"
-    ],
-    "specifications": {
-      "Fabric": "100% Pure Mongolian Brushed Cashmere",
-      "Belt": "Detachable Calfskin Leather Belt with Antiqued Brass Buckle",
-      "Lining": "Partial Silk Lining along Shoulders and Sleeves",
-      "Length": "Full Calf Length (120cm)",
-      "Origin": "Crafted in Florence, Italy"
-    },
-    "features": [
-      "Ultra-soft brushed cloud-like cashmere provides thermal protection",
-      "Classic military storm flap, epaulets, and throat latch collar",
-      "Genuine horn buttons engraved with subtle Gucci branding",
-      "Hand-tailored leather wrapped belt buckle and sleeve cuff straps",
-      "Arrives with a luxury hardwood hanger and travel garment trunk"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 16,
-    "name": "Classic Tailored Wool Wide-Leg Trousers",
-    "brand": "GUCCI",
-    "category": "apparel",
-    "price": 110000,
-    "originalPrice": 125000,
+    "id": 3,
+    "name": "Men's Tailored Bengal Stripe Poplin Formal Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "shirts",
+    "price": 2799,
+    "originalPrice": 4299,
     "rating": 4.8,
-    "reviewCount": 1320,
+    "reviewCount": 1890,
     "badge": "new",
-    "description": "Precision lines meet fluid drapery. Crafted from high-twist wool gabardine with double forward pleats, extended tab waistband, and a relaxed wide leg that breaks elegantly over loafers.",
+    "description": "Classic British sartorial style. High-density 100% two-ply cotton poplin woven in crisp navy Bengal stripes. Features a semi-spread cutaway collar and convertible double cuffs.",
     "tags": [
-      "Wool Trousers",
-      "Pleated",
-      "Wide Leg",
-      "Sartorial"
+      "Formal Shirt",
+      "Striped",
+      "Poplin",
+      "Business Dress"
     ],
     "sizes": [
-      "IT 44",
-      "IT 46",
-      "IT 48",
-      "IT 50",
-      "IT 52"
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
     ],
     "colors": [
-      "Charcoal Melange",
-      "Midnight Black",
-      "Camel"
+      "Navy Bengal Stripe",
+      "Sky Blue Stripe"
     ],
     "specifications": {
-      "Fabric": "100% High-Twist Virgin Wool Gabardine (Crease-Resistant)",
-      "Waist": "Extended Tab Waistband with Side Adjuster Buckles",
-      "Pleats": "Double Forward Front Pleats",
-      "Origin": "Made in Italy"
+      "Fabric": "100% Two-Ply Combed Egyptian Cotton Poplin",
+      "Collar": "Semi-Spread Cutaway Collar with Removable Stays",
+      "Cuffs": "Convertible Button & French Cuff Compatible",
+      "Occasion": "Boardroom, Formal Business, Wedding"
     },
     "features": [
-      "High-twist wool yarn naturally repels creases throughout the day",
-      "Double forward pleats create an elegant tailored drape down the leg",
-      "Side waist adjusters allow a tailored fit without a belt",
-      "Unfinished hem allows bespoke tailoring to exact inseam length",
-      "Internal silk curtain waistband for unmatched comfort"
+      "High-thread count 100s two-ply smooth poplin weave",
+      "Wrinkle-resistant easy-iron finish stays crisp all day",
+      "Precision stripe matching across placket and collar",
+      "Removable brass collar stays included",
+      "Clean French front placket with iridescent buttons"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 4,
+    "name": "Men's Cuban Camp Collar Resort Textured Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "shirts",
+    "price": 2299,
+    "originalPrice": 3499,
+    "rating": 4.7,
+    "reviewCount": 3120,
+    "badge": "hot",
+    "description": "Retro seaside elegance. Designed with an open Cuban camp collar, straight vented hemline, and waffle-textured breathable cotton blend that drapes fluidly.",
+    "tags": [
+      "Camp Collar",
+      "Cuban Shirt",
+      "Resort Wear",
+      "Summer"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ivory Ecru",
+      "Olive Drab",
+      "Midnight Black"
+    ],
+    "specifications": {
+      "Fabric": "85% Cotton, 15% Viscose Waffle Knit",
+      "Collar": "Retro Cuban Camp Collar",
+      "Hem": "Straight Cut Hem with Side Vents",
+      "Fit": "Relaxed Boxy Fit"
+    },
+    "features": [
+      "Open camp collar lies flat against the collarbone comfortably",
+      "Subtle waffle textured weave allows continuous cooling airflow",
+      "Straight square hem tailored specifically to be worn untucked",
+      "Tonal natural wood-effect resin buttons",
+      "Pre-washed for non-shrink durability"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1
   },
   {
-    "id": 17,
-    "name": "Double G Smooth Leather Belt with Antiqued Brass Buckle",
-    "brand": "GUCCI",
-    "category": "accessories",
-    "price": 48000,
-    "originalPrice": 55000,
+    "id": 5,
+    "name": "Women's Oversized Silk-Blend Button-Up Blouse",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "shirts",
+    "price": 3499,
+    "originalPrice": 4999,
     "rating": 4.9,
-    "reviewCount": 9420,
-    "badge": "hot",
-    "description": "The classic Double G belt in smooth heat-embossed black calfskin. Embellished with the recognizable 1970s archival Double G buckle with an antiqued brass finish. Designed to be worn on the hips or waist.",
+    "reviewCount": 1680,
+    "badge": "new",
+    "description": "Fluid, feminine, and effortlessly chic. Crafted from luxurious sand-washed mulberry silk blend with dropped shoulders, elongated cuffs, and curved high-low hem.",
     "tags": [
-      "Double G",
-      "Leather Belt",
-      "Antiqued Brass",
-      "Archival"
+      "Silk Blouse",
+      "Oversized",
+      "Women Tops",
+      "Drape"
     ],
     "sizes": [
-      "75cm",
-      "80cm",
-      "85cm",
-      "90cm",
-      "95cm",
-      "100cm",
-      "105cm"
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
     "colors": [
-      "Nero Black with Antiqued Brass",
-      "Cuir Brown"
+      "Champagne Cream",
+      "Soft Mauve",
+      "Jet Black"
     ],
     "specifications": {
-      "Width": "4cm / 1.5 inches",
-      "Material": "Smooth Vegetable-Tanned Italian Leather",
-      "Buckle": "Antiqued Shiny Brass Double G Buckle",
-      "Origin": "Made in Italy"
+      "Fabric": "70% Sand-Washed Mulberry Silk, 30% Lyocell",
+      "Fit": "Oversized Fluid Drape",
+      "Collar": "Spread Point Collar",
+      "Wash Care": "Hand Wash Cold or Dry Clean"
     },
     "features": [
-      "Iconic 1970s Double G belt buckle cast in solid brass",
-      "Beveled smooth edge finish hand-waxed by Italian artisans",
-      "Versatile 4cm width fits through standard denim and trouser loops",
-      "Heat-embossed Gucci logo and serial number on the interior suede",
-      "Includes protective cloth pouch and green gift packaging"
+      "Sand-washed finish gives a velvety matte peach-skin texture",
+      "Elongated architectural cuffs with dual pearl buttons",
+      "High-low curved hemline tucks smoothly into high-waist trousers",
+      "Breathable, lightweight, and gentle on sensitive skin",
+      "Minimalist concealed button placket"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 6,
+    "name": "Men's Tailored Stretch Cotton Chino Trousers",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "pants",
+    "price": 2499,
+    "originalPrice": 3799,
+    "rating": 4.8,
+    "reviewCount": 5120,
+    "badge": "hot",
+    "description": "The definitive modern pant. Made from 97% combed cotton twill infused with 3% spandex for all-day comfort. Features a mid-rise waist, flat front, and tailored slim leg.",
+    "tags": [
+      "Chino Trousers",
+      "Stretch Cotton",
+      "Slim Fit",
+      "Smart Casual"
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "British Khaki",
+      "Navy Blue",
+      "Olive Green",
+      "Charcoal Grey"
+    ],
+    "specifications": {
+      "Fabric": "97% Combed Cotton Twill, 3% Elastane",
+      "Rise": "Mid-Rise (10.5 inches)",
+      "Leg": "Tailored Slim Tapered Leg (14-inch opening)",
+      "Pockets": "Front Slant Pockets & Rear Button Welt Pockets"
+    },
+    "features": [
+      "Premium high-density twill resists scuffs and knees bagging out",
+      "Interior curtain waistband prevents shirt from untucking",
+      "Heavy-duty YKK brass zipper fly with sturdy horn button",
+      "Clean flat-front silhouette pairs seamlessly with blazers or polos",
+      "Garment washed for ultra-soft hand feel"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 7,
+    "name": "Men's Classic Straight Selvedge-Look Denim Jeans",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "pants",
+    "price": 2999,
+    "originalPrice": 4499,
+    "rating": 4.9,
+    "reviewCount": 4680,
+    "badge": "hot",
+    "description": "Heavyweight 12.5 oz ring-spun indigo denim with 2% comfort stretch. Cut with a timeless straight leg, copper hardware, and authentic vintage stone washing.",
+    "tags": [
+      "Denim Jeans",
+      "Straight Leg",
+      "Indigo Wash",
+      "5-Pocket"
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Vintage Medium Indigo",
+      "Dark Rinse",
+      "Washed Black"
+    ],
+    "specifications": {
+      "Denim Weight": "12.5 oz Authentic Ring-Spun Denim",
+      "Composition": "98% Cotton, 2% Spandex",
+      "Fly": "Heavy-Duty Brass Zip Fly with Shank Button",
+      "Hardware": "Reinforced Copper Rivets at Strain Points"
+    },
+    "features": [
+      "Classic 5-pocket styling with coin pocket and spade back pockets",
+      "Subtle whiskering and hand-sanded thigh highlights",
+      "Comfort stretch waistband contours without pinching",
+      "Triple-needle reinforced chain-stitch inseam",
+      "Genuine full-grain leather patch on back waistband"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1604176354204-9268737828e4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 8,
+    "name": "Men's Pleated Wool-Blend Tailored Dress Trousers",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "pants",
+    "price": 3499,
+    "originalPrice": 5299,
+    "rating": 4.8,
+    "reviewCount": 1940,
+    "badge": "new",
+    "description": "The modern gentleman's trouser. High-twist wool blend with double forward pleats, side waist adjusters, extended waistband tab, and a fluid tapered drape.",
+    "tags": [
+      "Dress Trousers",
+      "Wool Blend",
+      "Pleated",
+      "Sartorial"
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Charcoal Melange",
+      "Navy Blue",
+      "Camel Tan"
+    ],
+    "specifications": {
+      "Fabric": "65% Virgin Wool, 33% Polyester, 2% Elastane",
+      "Waist": "Extended Tab Waistband with Side Buckle Adjusters",
+      "Leg": "Classic Tapered with 1.5-inch Turn-Up Cuffs",
+      "Wash Care": "Dry Clean Recommended"
+    },
+    "features": [
+      "Double forward pleats create an elegant vertical drape down the leg",
+      "Side metal buckle adjusters eliminate the need for a belt",
+      "Crease-resistant high-twist yarn looks impeccable all day",
+      "Interior French fly and hook-and-bar closure for clean front",
+      "Pre-cuffed 1.5-inch hem breaks neatly above shoes"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 9,
+    "name": "Men's Utility Cotton Cargo Jogger Pants",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "pants",
+    "price": 2699,
+    "originalPrice": 3999,
+    "rating": 4.7,
+    "reviewCount": 3890,
+    "badge": "hot",
+    "description": "Functional utility meets urban streetwear. Crafted from durable cotton ripstop with expandable dual cargo pockets, drawstring elastic waist, and ribbed ankle cuffs.",
+    "tags": [
+      "Cargo Pants",
+      "Joggers",
+      "Utility",
+      "Streetwear"
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Olive Green",
+      "Black Obsidian",
+      "Khaki Beige"
+    ],
+    "specifications": {
+      "Fabric": "98% Cotton Ripstop Weave, 2% Spandex",
+      "Pockets": "6 Pockets (2 Hand, 2 Snap Cargo, 2 Rear)",
+      "Waist": "Elasticized Drawcord Waistband",
+      "Ankles": "Ribbed Snug Ankle Cuffs"
+    },
+    "features": [
+      "Heavy-duty ripstop cross-hatch weave resists tears and abrasion",
+      "Ergonomic articulated knees provide unrestricted mobility",
+      "Deep cargo pockets with hidden magnetic snap flaps",
+      "Reinforced seat and crotch gusset prevents seam blowouts",
+      "Snug ribbed cuffs highlight high-top and low-top sneakers"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 10,
+    "name": "Women's High-Waist Wide-Leg Pleated Trousers",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "pants",
+    "price": 2899,
+    "originalPrice": 4299,
+    "rating": 4.9,
+    "reviewCount": 2840,
+    "badge": "hot",
+    "description": "A silhouette of modern power and elegance. Features a flattering high-rise contour waistband, deep front pleats, and an elongated fluid wide leg that moves gracefully.",
+    "tags": [
+      "Wide Leg",
+      "High Waist",
+      "Women Trousers",
+      "Pleated"
+    ],
+    "sizes": [
+      "26",
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "colors": [
+      "Warm Taupe",
+      "Ivory Cream",
+      "Midnight Black"
+    ],
+    "specifications": {
+      "Fabric": "78% Polyester, 18% Rayon, 4% Spandex Crepe",
+      "Rise": "High Rise (11.5 inches)",
+      "Leg": "Wide Palazzo Leg Silhouette",
+      "Inseam": "32 inches"
+    },
+    "features": [
+      "Substantial crepe fabric creates a lengthening, slimming drape",
+      "Wide contoured waistband eliminates gap at the lower back",
+      "Functional deep side slant pockets that lie completely flat",
+      "Concealed side zipper with hook-and-eye closure",
+      "Pairs effortlessly with cropped tees, bodysuits, or blazers"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 11,
+    "name": "Men's Premium Heavyweight Cotton Crewneck T-Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "tshirts",
+    "price": 1299,
+    "originalPrice": 1999,
+    "rating": 4.8,
+    "reviewCount": 8420,
+    "badge": "hot",
+    "description": "The gold standard of daily tees. Tailored from substantial 240 GSM combed cotton with a silicone bio-wash for unmatched softness. Retains its boxy shape and neckline through countless washes.",
+    "tags": [
+      "Heavyweight Tee",
+      "100% Cotton",
+      "Crewneck",
+      "Essential"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Jet Black",
+      "Optic White",
+      "Heather Grey",
+      "Vintage Olive"
+    ],
+    "specifications": {
+      "Fabric": "100% Super-Combed Ring-Spun Cotton (240 GSM)",
+      "Collar": "1x1 Lycra Ribbed Crewneck (Won't Sag)",
+      "Fit": "Classic Regular Boxy Fit",
+      "Finish": "Silicone Bio-Washed and Anti-Pilling"
+    },
+    "features": [
+      "Heavyweight 240 GSM density prevents transparency",
+      "Lycra-infused ribbed collar keeps its shape wear after wear",
+      "Double-needle stitching along hem and sleeve cuffs",
+      "Pre-shrunk fabric ensures exact post-wash dimensional stability",
+      "Tagless heat-transferred neck label for itch-free comfort"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 12,
+    "name": "Men's Mercerized Cotton Slim-Fit Polo Shirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "tshirts",
+    "price": 1999,
+    "originalPrice": 2999,
+    "rating": 4.8,
+    "reviewCount": 3120,
+    "badge": "new",
+    "description": "Refined smart-casual style. Mercerized double-combed cotton delivers a subtle silky sheen, rich color depth, and exceptional softness. Features a knit ribbed collar and three-button placket.",
+    "tags": [
+      "Polo Shirt",
+      "Mercerized Cotton",
+      "Slim Fit",
+      "Luxe Casual"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Navy Blue",
+      "Pure White",
+      "Burgundy",
+      "Forest Green"
+    ],
+    "specifications": {
+      "Fabric": "100% Double-Mercerized Combed Cotton Piqué",
+      "Collar": "Structured Knit Collar (Won't Curl)",
+      "Placket": "3-Button Placket with Genuine Shell Buttons",
+      "Vents": "Side Vents with Herringbone Tape Reinforcement"
+    },
+    "features": [
+      "Mercerization treatment adds a lustrous finish and enhanced colorfastness",
+      "Structured ribbed collar stays sharp without rolling or curling",
+      "Natural shell-look buttons with laser-etched edge detailing",
+      "Ventilated side hem slits allow comfortable wear untucked",
+      "Breathable piqué mesh structure keeps skin cool in heat"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 13,
+    "name": "100% Pure Mongolian Cashmere Crewneck Sweater",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "tshirts",
+    "price": 5999,
+    "originalPrice": 8999,
+    "rating": 5,
+    "reviewCount": 1420,
+    "badge": "hot",
+    "description": "The height of everyday luxury. Knitted from grade-A 2-ply Mongolian cashmere for extraordinary warmth without weight. Features a classic crew neckline and ribbed trims.",
+    "tags": [
+      "Cashmere Sweater",
+      "Pure Cashmere",
+      "Knitwear",
+      "Winter Luxury"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Oatmeal Heather",
+      "Charcoal Melange",
+      "Midnight Navy",
+      "Black"
+    ],
+    "specifications": {
+      "Yarn": "100% Grade-A Mongolian Cashmere (15.5 micron thickness)",
+      "Knit Gauge": "12-Gauge 2-Ply Fine Knit",
+      "Details": "Ribbed Collar, Cuffs, and Hem with Spandex Recovery",
+      "Wash Care": "Hand Wash Cold or Dry Clean"
+    },
+    "features": [
+      "Grade-A long fibers resist pilling and soften with every wash",
+      "Provides three times the warmth of standard sheep's wool",
+      "Featherweight 260g total weight feels like a warm cloud on skin",
+      "Ribbed cuffs and waistband with subtle elastic recovery",
+      "Includes a breathable cedar-lined storage bag"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 14,
+    "name": "Heavyweight French Terry Pullover Hoodie",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "tshirts",
+    "price": 2999,
+    "originalPrice": 4499,
+    "rating": 4.9,
+    "reviewCount": 4890,
+    "badge": "hot",
+    "description": "An architectural streetwear hoodie. Built from 450 GSM ultra-heavyweight cotton French terry with a double-layered hood, kangaroo pouch pocket, and ribbed side gussets.",
+    "tags": [
+      "Heavy Hoodie",
+      "French Terry",
+      "450 GSM",
+      "Streetwear"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Medium Grey Heather",
+      "Washed Black",
+      "Forest Green"
+    ],
+    "specifications": {
+      "Fabric": "100% Combed Cotton French Terry (450 GSM)",
+      "Hood": "Double-Layered Self-Fabric Hood without Drawstrings",
+      "Pockets": "Bar-Tacked Kangaroo Front Pouch",
+      "Gussets": "Ribbed Side Panels for Natural Range of Motion"
+    },
+    "features": [
+      "Substantial 450 GSM terry holds an impressive sculptural drape",
+      "Clean drawstring-free hood stands upright without collapsing",
+      "Side rib gussets reduce torso restriction when stretching or sitting",
+      "Heavy 2x2 ribbed cuffs seal out wind and draft",
+      "Reinforced flatlock seams throughout the body"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 15,
+    "name": "Merino Wool Blend V-Neck Knit Cardigan",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "tshirts",
+    "price": 3699,
+    "originalPrice": 5299,
+    "rating": 4.8,
+    "reviewCount": 1840,
+    "badge": "new",
+    "description": "Vintage ivy league sophistication. Knitted in a fine gauge from extra-fine Australian Merino wool. Features a deep V-neckline, real horn buttons, and twin front welt pockets.",
+    "tags": [
+      "Cardigan",
+      "Merino Wool",
+      "V-Neck",
+      "Layering"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Camel Brown",
+      "Navy Blue",
+      "Charcoal Melange"
+    ],
+    "specifications": {
+      "Yarn": "80% Extra-Fine Merino Wool, 20% Recycled Nylon",
+      "Gauge": "12-Gauge Lightweight Knit",
+      "Buttons": "5-Button Placket with Natural Horn Buttons",
+      "Wash Care": "Hand Wash Cold or Machine Wool Cycle"
+    },
+    "features": [
+      "Extra-fine Merino wool naturally regulates warmth without itching",
+      "Genuine horn buttons with laser-finished edge detail",
+      "Two front welt patch pockets for glasses or everyday items",
+      "Ribbed cuffs and hem provide a snug, tailored fit over dress shirts",
+      "Versatile transitional piece for autumn, winter, and spring"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 16,
+    "name": "Classic Denim Trucker Jacket in Vintage Indigo",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "outerwear",
+    "price": 3999,
+    "originalPrice": 5999,
+    "rating": 4.9,
+    "reviewCount": 4210,
+    "badge": "hot",
+    "description": "An American heritage staple. Built from 13.5 oz heavy ring-spun cotton denim with antique brass shank buttons, dual button-flap chest pockets, welt hand pockets, and waist tabs.",
+    "tags": [
+      "Denim Jacket",
+      "Trucker",
+      "13.5oz Denim",
+      "Outerwear"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Vintage Indigo Wash",
+      "Washed Black",
+      "Stonewash Blue"
+    ],
+    "specifications": {
+      "Denim Weight": "13.5 oz Heavyweight 100% Cotton Denim",
+      "Hardware": "Antiqued Solid Brass Shank Buttons",
+      "Pockets": "4 Pockets (2 Chest Flap, 2 Side Welt)",
+      "Tabs": "Adjustable Waist Button Tabs on Back"
+    },
+    "features": [
+      "Rigid 13.5 oz denim softened with stone washing for immediate comfort",
+      "Reinforced double-felled seams built to last for decades",
+      "Point collar with classic V-shaped front chest panel stitching",
+      "Side waist tabs allow quick adjustment from straight to tapered fit",
+      "Internal deep drop pockets hold passports and smartphones"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 17,
+    "name": "Genuine Full-Grain Leather Moto Biker Jacket",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "outerwear",
+    "price": 8999,
+    "originalPrice": 12999,
+    "rating": 5,
+    "reviewCount": 1640,
+    "badge": "hot",
+    "description": "Rebel elegance. Handcrafted from supple 1.2mm top-grain cowhide leather with heavy-gauge silver YKK zippers, snap-down notch lapels, zippered cuffs, and a quilted satin lining.",
+    "tags": [
+      "Leather Jacket",
+      "Moto Biker",
+      "Genuine Leather",
+      "Cowhide"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Obsidian Black",
+      "Distressed Brown"
+    ],
+    "specifications": {
+      "Leather": "100% Top-Grain Cowhide Leather (1.2mm Thickness)",
+      "Zippers": "Heavy-Duty YKK #8 Metal Zippers",
+      "Lining": "Quilted Diamond Satin Interior Lining",
+      "Hardware": "Brushed Nickel Snap Hardware"
+    },
+    "features": [
+      "Full 1.2mm top-grain leather breaks in beautifully with age",
+      "Asymmetrical front zip closure blocks wind when riding",
+      "Bi-swing action back shoulders provide complete arm movement",
+      "Zippered sleeve cuffs expand over watches or gloves",
+      "Three zippered exterior pockets and dual interior holster pockets"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1
   },
   {
     "id": 18,
-    "name": "G-Timeless 38mm Automatic Watch with Bee Motif",
-    "brand": "GUCCI",
-    "category": "accessories",
-    "price": 195000,
-    "originalPrice": 225000,
-    "rating": 5,
-    "reviewCount": 1120,
-    "badge": "hot",
-    "description": "Swiss watchmaking tradition meets Florentine poetry. Featuring a sunbrushed golden dial centered with a sculpted golden bee motif, automatic Swiss movement with 38-hour power reserve, and a stainless steel 9-link bracelet.",
+    "name": "Men's Tailored Wool-Blend Single-Breasted Blazer",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "outerwear",
+    "price": 5499,
+    "originalPrice": 7999,
+    "rating": 4.9,
+    "reviewCount": 2210,
+    "badge": "new",
+    "description": "Sharp sartorial styling. Tailored from a refined wool and silk twill blend with notch lapels, natural soft shoulders, double rear vents, and two-button front closure.",
     "tags": [
-      "G-Timeless",
-      "Swiss Watch",
-      "Automatic",
-      "Bee Motif"
+      "Tailored Blazer",
+      "Wool Blend",
+      "Sport Coat",
+      "Smart Casual"
     ],
     "sizes": [
-      "38mm Case Diameter"
+      "38R",
+      "40R",
+      "42R",
+      "44R",
+      "46R"
     ],
     "colors": [
-      "Stainless Steel with Gold Dial",
-      "Two-Tone Gold & Steel"
+      "Classic Navy Blue",
+      "Charcoal Melange",
+      "Olive Hopsack"
     ],
     "specifications": {
-      "Movement": "Swiss Made ETA 2824-2 Automatic Movement",
-      "Case": "Stainless Steel (38mm Diameter, 10mm Thickness)",
-      "Crystal": "Sapphire Crystal with Anti-Reflective Coating",
-      "Water Resistance": "5 ATM (50 meters / 160 feet)",
-      "Origin": "Swiss Made"
+      "Fabric": "70% Wool, 28% Polyester, 2% Elastane Twill",
+      "Structure": "Modern Half-Canvas Internal Chest Construction",
+      "Lining": "Breathable Bemberg Silk Cupro Lining",
+      "Vents": "Dual Side Back Vents"
     },
     "features": [
-      "Sculpted central bee motif serving as a poetic hour emblem",
-      "Exhibition transparent caseback revealing decorated rotor and jewels",
-      "Scratch-resistant sapphire crystal with anti-reflective treatment",
-      "9-link stainless steel bracelet with push-button butterfly deployment",
-      "Certified Swiss chronometric precision with 2-year international warranty"
+      "Half-canvas chest piece molds naturally to your body over time",
+      "Natural soft shoulder padding without rigid padding boxiness",
+      "Functioning four-button surgeon sleeve cuffs",
+      "Chest welt pocket ready for pocket squares, plus two flap pockets",
+      "Pairs effortlessly with tailored trousers or dark denim jeans"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1
   },
   {
     "id": 19,
-    "name": "Horsebit Detail Acetate Square Sunglasses",
-    "brand": "GUCCI",
-    "category": "accessories",
-    "price": 42000,
-    "originalPrice": 48000,
+    "name": "Men's Water-Resistant Classic Flight Bomber Jacket",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "outerwear",
+    "price": 4299,
+    "originalPrice": 6299,
     "rating": 4.8,
-    "reviewCount": 3410,
-    "badge": "new",
-    "description": "Bold 1970s Italian glamour. Oversized square sunglasses crafted from thick hand-polished tortoiseshell acetate with 100% UVA/UVB gradient lenses and gold-toned miniature Horsebit temples.",
+    "reviewCount": 2940,
+    "badge": "hot",
+    "description": "Military heritage refined for the city. Weather-resistant flight satin nylon shell with lightweight thermal insulation, signature ribbed baseball collar, and utility sleeve pocket.",
     "tags": [
-      "Sunglasses",
-      "Horsebit",
-      "Tortoiseshell",
-      "Italian Eyewear"
+      "Bomber Jacket",
+      "MA-1",
+      "Water-Resistant",
+      "Flight Jacket"
     ],
     "sizes": [
-      "Standard Fit (Lens: 54mm / Bridge: 20mm / Temple: 145mm)"
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
     ],
     "colors": [
-      "Havana Tortoiseshell",
-      "Shiny Black with Grey Lens"
+      "Sage Green",
+      "Matte Black",
+      "Deep Navy"
     ],
     "specifications": {
-      "Frame": "Hand-Polished High-Grade Italian Cellulose Acetate",
-      "Lenses": "100% UVA/UVB Category 3 Gradient Tint Lenses",
-      "Details": "Miniature Gold-Tone Metal Horsebit on Temples",
-      "Origin": "Made in Italy"
+      "Shell": "Heavy-Duty 100% Flight Satin Nylon with DWR Coating",
+      "Insulation": "Polyfill Thermal Mid-Weight Insulation",
+      "Closure": "Two-Way Heavy Gauge YKK Zipper",
+      "Collar": "Knit Ribbed Baseball Collar"
     },
     "features": [
-      "Full spectrum 100% UVA and UVB eye protection against harsh glare",
-      "Subtle laser-engraved Gucci signature on the corner of the lens",
-      "Five-barrel metal hinges for lifelong temple stability",
-      "Accompanied by a jewel-toned velvet hard case with satin lining",
-      "Includes microfiber cleaning cloth and authenticity certification"
+      "Water-repellent DWR coating sheds light rain and snow easily",
+      "Classic zippered utility cigarette pocket on left sleeve",
+      "Dual front snap-flap hand pockets lined with warm brushed tricot",
+      "Ribbed collar, cuffs, and hem seal in warmth on chilly days",
+      "Interior snap security pocket for wallet and phone"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1
   },
   {
     "id": 20,
-    "name": "Interlocking G 18k Yellow Gold Signet Ring",
-    "brand": "GUCCI",
-    "category": "accessories",
-    "price": 145000,
-    "originalPrice": 165000,
-    "rating": 5,
-    "reviewCount": 890,
-    "badge": "limited",
-    "description": "Cast in solid 18-karat yellow gold with an antiqued satin finish. The signet ring features an engraved rope border around a raised Interlocking G emblem, honoring archival signet rings worn by Florentine royalty.",
-    "tags": [
-      "Fine Jewelry",
-      "18k Gold",
-      "Signet Ring",
-      "Interlocking G"
-    ],
-    "sizes": [
-      "IT 12",
-      "IT 14",
-      "IT 16",
-      "IT 18",
-      "IT 20",
-      "IT 22"
-    ],
-    "colors": [
-      "18k Solid Yellow Gold"
-    ],
-    "specifications": {
-      "Gold": "18 Karat Solid Yellow Gold (750/1000 Purity)",
-      "Width": "12mm Face Diameter (Weight: 9.8g)",
-      "Hallmark": "Official Italian Assay Hallmark and Gucci Registration",
-      "Origin": "Handmade in Arezzo, Italy"
-    },
-    "features": [
-      "Crafted from 100% certified recycled solid 18k yellow gold",
-      "Hand-chiseled rope border detailing framing the Interlocking G",
-      "Satin brushed gold finish resistant to everyday micro-scratches",
-      "Comfort-fit tapered inner band for effortless daily wear",
-      "Presented in a luxury velvet jewelry box with authenticity passport"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 21,
-    "name": "Gucci Flora Gorgeous Gardenia Eau de Parfum (100ml)",
-    "brand": "GUCCI",
-    "category": "beauty",
-    "price": 16500,
-    "originalPrice": 19500,
+    "name": "Classic Minimalist White Leather Court Sneakers",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "footwear",
+    "price": 3499,
+    "originalPrice": 4999,
     "rating": 4.9,
-    "reviewCount": 8420,
+    "reviewCount": 6820,
     "badge": "hot",
-    "description": "A joyful floral signature built around the White Gardenia blossom blended with solar Jasmine Grandiflorum absolute, Pear Blossom accord, and a touch of Brown Sugar. Housed in a lacquered pink glass bottle.",
+    "description": "The cleanest sneaker ever made. Handcrafted from supple full-grain Italian leather with an ultra-clean silhouette, padded collar, cushioned memory foam insole, and durable Margom-style rubber cupsole.",
     "tags": [
-      "Flora",
-      "Gardenia",
-      "Eau de Parfum",
-      "Floral Fragrance"
+      "White Sneakers",
+      "Minimalist",
+      "Full-Grain Leather",
+      "Court Shoes"
     ],
     "sizes": [
-      "100ml / 3.3 fl. oz."
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
     ],
     "colors": [
-      "Lacquered Pink Porcelain Glass"
+      "Cloud White",
+      "White / Gum Sole",
+      "Triple Black"
     ],
     "specifications": {
-      "Fragrance Family": "Floral Fruity Gourmand",
-      "Top Notes": "Pear Blossom Accord, Italian Mandarin, Red Berries",
-      "Heart Notes": "White Gardenia, Jasmine Grandiflorum Absolute, Frangipani",
-      "Base Notes": "Patchouli, Warm Brown Sugar Accord",
-      "Origin": "Made in France"
+      "Upper": "100% Full-Grain Calfskin Leather",
+      "Lining": "Full Soft Calf Leather Interior Lining",
+      "Outsole": "Stitched Natural Rubber Margom-Style Cupsole",
+      "Insole": "Removable Memory Foam Footbed with Arch Support"
     },
     "features": [
-      "Precious White Gardenia extract harvested at peak morning blossom",
-      "Lacquered pink glass flacon adorned with Vittorio Accornero's Flora motif",
-      "Long-lasting Eau de Parfum concentration with intoxicating sillage",
-      "Shiny ribbed gold cap engraved with the Gucci logo",
-      "Boxed in FSC-certified paper printed with archival garden botanical artwork"
+      "Buttery full-grain leather upper wipes clean easily with a cloth",
+      "Full leather interior allows comfortable sockless summer wear",
+      "Stitched 360-degree rubber cupsole won't delaminate or separate",
+      "Reinforced eyelets with waxed flat cotton laces",
+      "Subtle gold foil serial number embossed on outer heel"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 22,
-    "name": "Gucci Bloom Intense Eau de Parfum (100ml)",
-    "brand": "GUCCI",
-    "category": "beauty",
-    "price": 17500,
-    "originalPrice": 20500,
-    "rating": 5,
-    "reviewCount": 4890,
-    "badge": "hot",
-    "description": "A hypnotic deep floral nectar inspired by moonlight. Intensifying the original white floral bouquet of Tuberose and Jasmine with nocturnal Lady of the Night flower, enriched by Patchouli and crystal Moss.",
-    "tags": [
-      "Gucci Bloom",
-      "Intense",
-      "Tuberose",
-      "Moonlight Florals"
-    ],
-    "sizes": [
-      "100ml / 3.3 fl. oz."
-    ],
-    "colors": [
-      "Black Toile de Jouy Lacquered Glass"
-    ],
-    "specifications": {
-      "Concentration": "Eau de Parfum Intense",
-      "Key Ingredients": "Jasmine Sambac, Rangoon Creeper, Night-Blooming Jasmine",
-      "Base": "Patchouli Heart, Coconut Essence, Crystal Moss",
-      "Origin": "Made in France"
-    },
-    "features": [
-      "Rich nocturnal blooming jasmine creates an intoxicating evening trail",
-      "Lacquered black glass flacon with crimson Toile de Jouy Herbarium pattern",
-      "Captures the lush atmosphere of an enchanted botanical garden at night",
-      "Superior 10-12 hour projection and lasting longevity",
-      "Includes complimentary 5ml travel spray in gift packaging"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 23,
-    "name": "Rouge à Lèvres Satin Lipstick in Gold Art Deco Tube",
-    "brand": "GUCCI",
-    "category": "beauty",
-    "price": 4900,
-    "originalPrice": 5800,
-    "rating": 4.9,
-    "reviewCount": 6120,
-    "badge": "hot",
-    "description": "Creamy, long-lasting color with a luminous satin finish. Delivers intense pigmentation with an ultra-light moisturizing formula infused with natural oils. Encased in a gold-toned tube etched with an Art Deco decorative pattern.",
-    "tags": [
-      "Lipstick",
-      "Goldie Red",
-      "Art Deco",
-      "Satin Finish"
-    ],
-    "sizes": [
-      "3.5g / 0.12 oz."
-    ],
-    "colors": [
-      "25* Goldie Red (The Iconic Red)",
-      "208 They Met in Argentina",
-      "505 Janet Rust"
-    ],
-    "specifications": {
-      "Finish": "Luminous Satin Silk Finish",
-      "Casing": "Precious Gold-Tone Metal with Art Deco Engraving",
-      "Formula": "Dermatologically Tested, Infused with Natural Waxes",
-      "Origin": "Made in Italy"
-    },
-    "features": [
-      "Intensely pigmented in one stroke without feathering or bleeding",
-      "Infused with natural conditioning oils for supple all-day hydration",
-      "Heirloom-quality reusable gold metal casing inspired by vintage vanity art",
-      "Subtle violet and soft fruity scent notes",
-      "The exact signature red lip worn across Gucci runway models"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 24,
-    "name": "The Alchemist's Garden: A Song for the Rose Perfumed Oil",
-    "brand": "GUCCI",
-    "category": "beauty",
-    "price": 36000,
-    "originalPrice": 42000,
-    "rating": 5,
-    "reviewCount": 680,
-    "badge": "limited",
-    "description": "From Gucci's Haute Parfumerie collection, The Alchemist's Garden. Formulated as a rich perfumed oil with pure Bulgarian Rose essence, sweet woods, and amber musks, contained in a precious lacquered sage-green glass dropper bottle.",
-    "tags": [
-      "Alchemist's Garden",
-      "Haute Parfumerie",
-      "Bulgarian Rose",
-      "Perfume Oil"
-    ],
-    "sizes": [
-      "20ml / 0.67 fl. oz."
-    ],
-    "colors": [
-      "Lacquered Sage-Green Bottle with Gold Foil Print"
-    ],
-    "specifications": {
-      "Format": "Concentrated Perfumed Oil with Glass Pipette Dropper",
-      "Key Note": "Pure Bulgarian Rose Absolute, Sweet Musks, Cedarwood",
-      "Layering": "Designed to be layered with Eaux de Parfum and Acque Profumate",
-      "Origin": "Crafted in Grasse, France"
-    },
-    "features": [
-      "Highest concentration of pure natural Bulgarian rose absolute",
-      "Glass pipette dropper delivers precise single-drop pulse-point application",
-      "Vintage apothecary bottle finished with gold lettering and rose artwork",
-      "Envelops skin in a silken, deeply intimate scented aura",
-      "Presented in an ornamental gold-embossed keepsake presentation box"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 25,
-    "name": "Gucci Savoy GG Supreme Cabin Trolley Suitcase",
-    "brand": "GUCCI",
-    "category": "handbags",
-    "price": 310000,
-    "originalPrice": 350000,
-    "rating": 5,
-    "reviewCount": 540,
-    "badge": "limited",
-    "description": "The Gucci Savoy luggage collection pays homage to Guccio Gucci’s beginnings at The Savoy hotel in London. This 4-wheel cabin trolley is crafted from durable GG Supreme canvas with green and red Web and brown leather trim.",
-    "tags": [
-      "Gucci Savoy",
-      "Cabin Trolley",
-      "Luggage",
-      "The Savoy"
-    ],
-    "sizes": [
-      "Cabin Size (W 38cm x H 51cm x D 21cm, 35 Litres)"
-    ],
-    "colors": [
-      "Beige/Ebony GG Canvas with Brown Leather"
-    ],
-    "specifications": {
-      "Capacity": "35 Litres (International Cabin Luggage Size Compliant)",
-      "Wheels": "360-Degree 4-Wheel Multi-Directional Spinner Wheels",
-      "Telescopic Handle": "Multi-Stage Aluminum Retractable Pull Handle",
-      "Lock": "Integrated TSA Combination Padlock and Leather Key Clochette",
-      "Origin": "Made in Italy"
-    },
-    "features": [
-      "Ultra-smooth 360-degree four-wheel system glides effortlessly across terminals",
-      "Durable scratch-resistant GG Supreme coated canvas",
-      "Interior organization straps with palladium-finish double G buckles",
-      "Includes customizable leather luggage ID tag and key clochette",
-      "Protective heavy-duty travel cover included"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 26,
-    "name": "Ophidia GG Medium Duffle Bag with Web Stripe",
-    "brand": "GUCCI",
-    "category": "handbags",
-    "price": 220000,
-    "originalPrice": 250000,
-    "rating": 4.9,
-    "reviewCount": 1680,
-    "badge": "hot",
-    "description": "The classic weekender. Crafted from GG Supreme canvas, inlaid with the house green and red Web stripe, and finished with textured brown leather trim, double top handles, and a detachable shoulder strap.",
-    "tags": [
-      "Ophidia",
-      "Duffle Bag",
-      "Weekend Holdall",
-      "Web Stripe"
-    ],
-    "sizes": [
-      "Medium (W 44cm x H 27cm x D 24cm)"
-    ],
-    "colors": [
-      "Beige & Ebony GG Canvas with Brown Leather"
-    ],
-    "specifications": {
-      "Material": "GG Supreme Canvas with Leather Corner Guards",
-      "Strap": "Detachable Green and Red Web Shoulder Strap (50cm drop)",
-      "Lock": "Lock with Key Holder and Leather Clochette",
-      "Origin": "Made in Italy"
-    },
-    "features": [
-      "Optimal dimensions for a 3-day luxury weekend getaway",
-      "Two-way heavy gauge zipper with padlock and key clochette",
-      "Reinforced double leather handles and sturdy base studs",
-      "Interior zip pocket and two large open compartments",
-      "Removable leather luggage tag with gold foil Double G"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 27,
-    "name": "Gucci 25H Ultra-Thin Steel Luxury Swiss Watch (40mm)",
-    "brand": "GUCCI",
-    "category": "accessories",
-    "price": 280000,
-    "originalPrice": 315000,
-    "rating": 5,
-    "reviewCount": 740,
-    "badge": "limited",
-    "description": "With its sleek 4mm ultra-thin silhouette, the Gucci 25H is inspired by modern architectural forms. Featuring a multi-layered brushed steel case, horizontal satin-finish dial with Interlocking G motif, and an integrated five-link bracelet.",
-    "tags": [
-      "Gucci 25H",
-      "Ultra-Thin",
-      "Swiss Luxury",
-      "Integrated Bracelet"
-    ],
-    "sizes": [
-      "40mm Case Diameter (Ultra-Thin 4.0mm Profile)"
-    ],
-    "colors": [
-      "Monochrome Brushed Stainless Steel",
-      "Steel & Gold Bezel"
-    ],
-    "specifications": {
-      "Thickness": "Ultra-Thin 4.0mm Profile",
-      "Case": "Brushed and Polished Stainless Steel",
-      "Dial": "Silver Horizontal Satin-Brushed Dial with Interlocking G",
-      "Glass": "Anti-Reflective Sapphire Crystal Glass",
-      "Movement": "Swiss Made Precision Quartz Movement",
-      "Origin": "Swiss Made"
-    },
-    "features": [
-      "Ultra-thin 4mm architectural case rests seamlessly under dress shirts",
-      "Integrated five-link stainless steel bracelet contours wrist ergonomically",
-      "Invisible butterfly folding clasp with safety pushers",
-      "Water resistant to 30 meters / 3 ATM",
-      "Accompanied by high-lacquer wooden collector presentation box"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 28,
-    "name": "GG Monogram Wool & Cashmere Fringe Shawl",
-    "brand": "GUCCI",
-    "category": "accessories",
-    "price": 52000,
-    "originalPrice": 59000,
-    "rating": 4.9,
-    "reviewCount": 4210,
-    "badge": "hot",
-    "description": "An iconic winter accessory. Jacquard-woven in Italy from an ultra-soft blend of virgin wool and cashmere. Features the classic GG diamond pattern on one side and a contrast tonal reverse with hand-finished eyelash fringes.",
-    "tags": [
-      "Wool Scarf",
-      "Cashmere",
-      "GG Shawl",
-      "Fringe"
-    ],
-    "sizes": [
-      "140cm x 140cm Square"
-    ],
-    "colors": [
-      "Anthracite Grey & Black",
-      "Camel & Cocoa Brown",
-      "Soft Pink"
-    ],
-    "specifications": {
-      "Fabric": "70% Virgin Wool, 30% Cashmere",
-      "Dimensions": "140cm x 140cm (Large Square Shawl)",
-      "Edges": "Delicate Hand-Fringed Eyelash Borders",
-      "Origin": "Woven in Biella, Italy"
-    },
-    "features": [
-      "Sublime cloud-soft hand feel with luxurious cashmere warmth",
-      "Generous 140cm square allows versatile draping, wrapping, and tying",
-      "Reversible two-tone GG jacquard design complements coats and suits",
-      "Woven Gucci signature label in bottom corner",
-      "Folded inside signature tissue with embossed Gucci seal"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 29,
-    "name": "Gucci Bamboo 1947 Mini Handbag with Bamboo Turnlock",
-    "brand": "GUCCI",
-    "category": "handbags",
-    "price": 340000,
-    "originalPrice": 380000,
-    "rating": 5,
-    "reviewCount": 490,
-    "badge": "limited",
-    "description": "A testament to Italian artisanal innovation. Created in 1947 amid post-war material shortages, Guccio Gucci used lightweight, durable bamboo heated over an open flame. Features the curved bamboo top handle and matching bamboo turnlock.",
-    "tags": [
-      "Bamboo 1947",
-      "Mini Bag",
-      "Florentine Craft",
-      "Artisanal"
-    ],
-    "sizes": [
-      "Mini (W 17cm x H 12cm x D 7.5cm)"
-    ],
-    "colors": [
-      "Off-White Calfskin",
-      "Nero Black",
-      "Turquoise"
-    ],
-    "specifications": {
-      "Handle": "Hand-Bent Flame-Treated Bamboo Top Handle",
-      "Closure": "Carved Bamboo Turnlock Clasp",
-      "Leather": "Full Grain Smooth Box Calf Leather",
-      "Straps": "Includes One Leather Strap and One Web Shoulder Strap",
-      "Origin": "Handcrafted in Florence, Italy"
-    },
-    "features": [
-      "Each bamboo handle is heated and shaped by hand, making every bag unique",
-      "Carved matching bamboo turnlock closure with gold-tone hardware",
-      "Includes leather interior pocket with vanity mirror in leather sleeve",
-      "Two interchangeable shoulder straps: matching leather and red/green web",
-      "Preserved in a bespoke satin-lined collector presentation trunk"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 30,
-    "name": "Gucci Blondie Medium Top Handle Bag with Round GG",
-    "brand": "GUCCI",
-    "category": "handbags",
-    "price": 275000,
-    "originalPrice": 310000,
-    "rating": 4.9,
-    "reviewCount": 880,
-    "badge": "new",
-    "description": "The Gucci Blondie draws inspiration from a 1971 patent archival model. Its defining feature is the bold circular Interlocking G emblem, set against supple leather with clean geometric lines.",
-    "tags": [
-      "Blondie",
-      "Top Handle",
-      "Round GG",
-      "1971 Archive"
-    ],
-    "sizes": [
-      "Medium (W 29cm x H 22cm x D 10cm)"
-    ],
-    "colors": [
-      "Rosso Ancora Deep Red",
-      "Black Calfskin",
-      "Ivory"
-    ],
-    "specifications": {
-      "Leather": "Supple Smooth Semi-Gloss Calfskin",
-      "Hardware": "Gold-Tone Circular Cut-Out Interlocking G",
-      "Interior": "Two Main Compartments with Center Zipper Divider",
-      "Origin": "Made in Italy"
-    },
-    "features": [
-      "Prominent circular cutout Interlocking G archival emblem",
-      "Structured top handle plus detachable leather shoulder strap",
-      "Magnetic snap closure for seamless everyday access",
-      "Interior zip pocket and two flat wall pockets",
-      "Gold-toned protective metal feet on base"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "assured": true,
-    "deliveryDays": 1
-  },
-  {
-    "id": 31,
-    "name": "Gucci Jordaan Slim Leather Loafer",
-    "brand": "GUCCI",
-    "category": "shoes",
-    "price": 94000,
-    "originalPrice": 108000,
-    "rating": 5,
-    "reviewCount": 3890,
-    "badge": "hot",
-    "description": "A refined interpretation of the iconic Horsebit shoe, the Jordaan features a slimmer shape with a narrower toe and lower vamp, crafted from butter-soft burnished Italian leather.",
-    "tags": [
-      "Jordaan",
-      "Slim Loafer",
-      "Horsebit",
-      "Burnished Leather"
-    ],
-    "sizes": [
-      "EU 39",
-      "EU 40",
-      "EU 41",
-      "EU 42",
-      "EU 43",
-      "EU 44",
-      "EU 45"
-    ],
-    "colors": [
-      "Burnished Cocoa Brown",
-      "Nero Black",
-      "Oxblood"
-    ],
-    "specifications": {
-      "Leather": "Hand-Burnished Calfskin with Antique Patina",
-      "Cut": "Slim Silhouette with Elongated Toe",
-      "Sole": "Ultra-Flexible Blake-Stitched Leather Sole",
-      "Origin": "Handmade in Florence, Italy"
-    },
-    "features": [
-      "Hand-burnished leather finish develops a rich unique patina over time",
-      "Slender modern profile flatters both slim tailoring and casual denim",
-      "Miniature golden Horsebit hardware on the vamp",
-      "Ultra-soft leather lining requires zero break-in period",
-      "Hand-cut beveled leather soles with rubber heel reinforcement"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1
   },
   {
-    "id": 32,
-    "name": "Silk Twill Flora Print Pleated Midi Skirt",
-    "brand": "GUCCI",
-    "category": "apparel",
-    "price": 155000,
-    "originalPrice": 175000,
+    "id": 21,
+    "name": "Handcrafted Full-Grain Leather Penny Loafers",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "footwear",
+    "price": 4999,
+    "originalPrice": 6999,
     "rating": 4.9,
-    "reviewCount": 780,
-    "badge": "new",
-    "description": "An eternal floral fantasy. Originally commissioned in 1966 for Princess Grace of Monaco, the Flora pattern blossoms across accordion-pleated Italian silk twill with an elasticized silk waistband.",
+    "reviewCount": 3240,
+    "badge": "hot",
+    "description": "Timeless footwear perfection. Handcrafted from hand-burnished calfskin leather with traditional Blake stitched construction, leather sole with rubber heel insert, and classic penny strap.",
     "tags": [
-      "Flora Print",
-      "Silk Skirt",
-      "Pleated",
-      "Princess Grace"
+      "Penny Loafers",
+      "Leather Shoes",
+      "Blake Stitch",
+      "Dress Loafer"
     ],
     "sizes": [
-      "IT 38",
-      "IT 40",
-      "IT 42",
-      "IT 44",
-      "IT 46"
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
     ],
     "colors": [
-      "Multicolor Flora on Ivory Silk"
+      "Burnished Cognac Brown",
+      "Classic Black",
+      "Oxblood Burgundy"
     ],
     "specifications": {
-      "Fabric": "100% Heavy Silk Twill (Dry Clean Only)",
-      "Print": "Archival Flora Botanical Print (37 Flower Species)",
-      "Waist": "Shirred Elasticized Silk Waistband",
-      "Origin": "Made in Italy"
+      "Leather": "Hand-Burnished Full-Grain Italian Calfskin",
+      "Construction": "Traditional Blake Stitched Sole",
+      "Heel": "Stacked Leather Heel with Vibram Rubber Top Lift",
+      "Sole": "Hand-Polished Natural Leather Sole"
     },
     "features": [
-      "Master artist Vittorio Accornero's legendary 1966 Flora illustration",
-      "Sharp permanent knife pleats maintain rhythmic fluid motion when walking",
-      "Lined with soft silk habotai for complete opacity and smooth drape",
-      "Concealed side zipper with delicate hook-and-eye closure",
-      "Versatile midi length pairs with boots or slingbacks"
+      "Hand-burnished leather finish develops a rich, unique patina over time",
+      "Blake-stitched leather sole offers immediate flexibility and resoleability",
+      "Supple calfskin lining contours naturally to your foot shape",
+      "Classic saddle penny strap detail across the vamp",
+      "Arrives with a luxury shoe horn and flannel travel dust bags"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 22,
+    "name": "Men's Chelsea Suede Ankle Boots with Elastic Gusset",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "footwear",
+    "price": 4499,
+    "originalPrice": 6499,
+    "rating": 4.8,
+    "reviewCount": 2890,
+    "badge": "new",
+    "description": "Sleek and versatile. Crafted from water-treated plush calf suede with durable elastic side gores, pull tabs, and lightweight cushioned rubber sole.",
+    "tags": [
+      "Chelsea Boots",
+      "Suede Boots",
+      "Ankle Boots",
+      "Smart Casual"
+    ],
+    "sizes": [
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
+    ],
+    "colors": [
+      "Tobacco Suede",
+      "Charcoal Grey",
+      "Nero Black"
+    ],
+    "specifications": {
+      "Upper": "Premium Wax-Treated Water-Resistant Calf Suede",
+      "Sole": "Lightweight Crepe-Textured Rubber Sole",
+      "Gusset": "Heavy-Duty Elastic Side Webbing",
+      "Pull Tab": "Woven Grosgrain Back Pull Loop"
+    },
+    "features": [
+      "Water-resistant treatment prevents water spots and street staining",
+      "Elastic side gussets make slipping in and out effortless",
+      "Cushioned leather insole provides support for all-day walking",
+      "Crepe rubber sole offers superior shock absorption and grip",
+      "Slim ankle shaft fits cleanly beneath slim trousers or jeans"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 23,
+    "name": "Ultra-Lightweight Engineered Mesh Running Sneakers",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "footwear",
+    "price": 3299,
+    "originalPrice": 4799,
+    "rating": 4.9,
+    "reviewCount": 5120,
+    "badge": "hot",
+    "description": "Maximum energy return. Breathable seamless engineered jacquard mesh upper with high-rebound EVA foam midsole, TPU heel clip, and high-traction rubber outsole.",
+    "tags": [
+      "Running Shoes",
+      "Athletic",
+      "Breathable Mesh",
+      "Performance"
+    ],
+    "sizes": [
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
+    ],
+    "colors": [
+      "Chalk White / Orange",
+      "All Black",
+      "Wolf Grey"
+    ],
+    "specifications": {
+      "Midsole": "High-Rebound Dual-Density EVA Cushioning",
+      "Upper": "Engineered Breathable Jacquard Mesh",
+      "Weight": "240 grams (Size UK 8)",
+      "Drop": "8mm Heel-to-Toe Drop"
+    },
+    "features": [
+      "Seamless mesh upper eliminates hot spots and blisters",
+      "High-rebound responsive foam absorbs road and pavement impact",
+      "TPU molded heel counter locks the rearfoot firmly in place",
+      "Zonal rubber pods on the outsole provide wet road grip",
+      "Reflective accents along the heel for low-light night visibility"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 24,
+    "name": "Full-Grain Italian Leather Dress Belt with Brass Buckle",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 1499,
+    "originalPrice": 2299,
+    "rating": 4.8,
+    "reviewCount": 4120,
+    "badge": "hot",
+    "description": "Built for a lifetime. Crafted from a single cut of 3.8mm thick vegetable-tanned full-grain Italian leather with hand-burnished edges and solid antiqued brass buckle.",
+    "tags": [
+      "Leather Belt",
+      "Full-Grain",
+      "Brass Buckle",
+      "Italian Leather"
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38",
+      "40"
+    ],
+    "colors": [
+      "Cognac Tan",
+      "Classic Black",
+      "Espresso Brown"
+    ],
+    "specifications": {
+      "Width": "35mm (1.38 inches) Ideal for Chinos and Denim",
+      "Leather": "3.8mm Solid Full-Grain Vegetable-Tanned Cowhide",
+      "Buckle": "100% Solid Cast Antique Brass",
+      "Origin": "Hand-Finished by Leather Artisans"
+    },
+    "features": [
+      "Single solid cut of leather with no bonded cardboard filler layers",
+      "Solid brass buckle attached with Chicago screws for easy buckle replacement",
+      "Hand-beveled and beeswax-burnished edges won't fray or crack",
+      "Develops a rich, lustrous leather patina through everyday wear",
+      "Includes cloth gift storage bag"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 25,
+    "name": "Minimalist Chronograph Watch with Sapphire Glass (40mm)",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 4999,
+    "originalPrice": 7499,
+    "rating": 4.9,
+    "reviewCount": 2980,
+    "badge": "hot",
+    "description": "Understated precision. Stainless steel 40mm case with scratch-resistant sapphire crystal glass, Japanese quartz chronograph movement, date window, and quick-release leather strap.",
+    "tags": [
+      "Chronograph",
+      "Watch",
+      "Sapphire Glass",
+      "Minimalist"
+    ],
+    "sizes": [
+      "40mm Case (10mm Thickness, 20mm Lug Width)"
+    ],
+    "colors": [
+      "Silver Case with White Dial",
+      "Black Case with Black Dial"
+    ],
+    "specifications": {
+      "Movement": "Japanese Miyota Quartz Chronograph Movement",
+      "Glass": "Scratch-Resistant Sapphire Crystal Lens",
+      "Water Resistance": "5 ATM (50 meters / 165 feet)",
+      "Strap": "Interchangeable Quick-Release Italian Leather Strap"
+    },
+    "features": [
+      "Scratch-proof sapphire crystal keeps the dial crystal clear forever",
+      "Sub-dials measure minutes, seconds, and 24-hour time accurately",
+      "Quick-release spring bars let you swap straps in seconds without tools",
+      "Subtle date aperture window at 4 o'clock position",
+      "Arrives in a matte black velvet-lined presentation gift box"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 26,
+    "name": "Classic Polarized Acetate Sunglasses in Tortoiseshell",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 1999,
+    "originalPrice": 2999,
+    "rating": 4.8,
+    "reviewCount": 3620,
+    "badge": "new",
+    "description": "Iconic timeless styling. Handcrafted from premium cellulose acetate with 100% UV400 polarized gradient lenses that eliminate glare and enhance clarity.",
+    "tags": [
+      "Sunglasses",
+      "Polarized",
+      "UV400",
+      "Tortoiseshell"
+    ],
+    "sizes": [
+      "Standard Medium Fit (52-20-145mm)"
+    ],
+    "colors": [
+      "Classic Tortoiseshell",
+      "Glossy Black with Grey Lens"
+    ],
+    "specifications": {
+      "Frame": "Hand-Polished Cellulose Acetate Frame",
+      "Lenses": "Triacetate Cellulose (TAC) Polarized UV400 Lenses",
+      "Hinges": "5-Barrel Stainless Steel Riveted Hinges",
+      "Protection": "100% UVA/UVB Eye Protection"
+    },
+    "features": [
+      "Polarized lenses eliminate blinding reflections from water and asphalt",
+      "Sturdy 5-barrel steel hinges provide a snug and wobble-free fit",
+      "Lightweight cellulose acetate sits comfortably on the nose bridge",
+      "Includes a structured hard case and microfiber cleaning cloth",
+      "Universal unisex frame shape flatters round, square, and oval face shapes"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 27,
+    "name": "Heavy-Duty Canvas & Leather Weekend Travel Duffle (42L)",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 3999,
+    "originalPrice": 5999,
+    "rating": 4.9,
+    "reviewCount": 2180,
+    "badge": "hot",
+    "description": "The ideal companion for 3 to 4 day getaways. Constructed from waterproof 16 oz waxed cotton canvas trimmed with full-grain leather, padded shoulder strap, and separate shoe compartment.",
+    "tags": [
+      "Weekend Duffle",
+      "Travel Bag",
+      "Waxed Canvas",
+      "Shoe Pocket"
+    ],
+    "sizes": [
+      "One Size (42 Litres Capacity: 52 x 28 x 26 cm)"
+    ],
+    "colors": [
+      "Army Green with Brown Leather",
+      "Charcoal Black"
+    ],
+    "specifications": {
+      "Fabric": "16 oz Water-Resistant Waxed Canvas + Full-Grain Leather",
+      "Capacity": "42 Litres (Meets Airline Carry-On Overhead Regulations)",
+      "Zippers": "Heavy-Duty Solid Brass YKK Two-Way Zippers",
+      "Pockets": "Shoe Tunnel, Laptop Sleeve, 2 Exterior Quick-Access Pockets"
+    },
+    "features": [
+      "Dedicated ventilated side shoe compartment isolates footwear from clean clothes",
+      "Waterproof waxed canvas sheds rain and airport tarmac grime effortlessly",
+      "Padded removable shoulder strap and riveted leather grab handles",
+      "Interior padded sleeve comfortably fits up to 15.6-inch laptops",
+      "Metal bottom studs protect the base when placed on floors"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 28,
+    "name": "Full-Grain Leather Everyday Zip Tote Bag",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 3499,
+    "originalPrice": 4999,
+    "rating": 4.8,
+    "reviewCount": 3120,
+    "badge": "new",
+    "description": "Effortless everyday carry. Crafted from soft pebble-grain leather with a secure top zipper closure, spacious interior with padded tablet sleeve, and reinforced shoulder straps.",
+    "tags": [
+      "Leather Tote",
+      "Everyday Bag",
+      "Work Bag",
+      "Pebble Grain"
+    ],
+    "sizes": [
+      "Medium (W 38cm x H 30cm x D 14cm)"
+    ],
+    "colors": [
+      "Cognac Tan",
+      "Midnight Black",
+      "Burgundy Wine"
+    ],
+    "specifications": {
+      "Material": "Pebble-Grain Full-Grain Italian Leather",
+      "Closure": "Full-Length Top YKK Metal Zipper",
+      "Straps": "Double Flat Shoulder Straps (26cm drop)",
+      "Interior": "Padded Laptop Compartment + 2 Slip Pockets + 1 Zip Pocket"
+    },
+    "features": [
+      "Pebble leather resists scuffs, scratches, and daily commuter wear",
+      "Full top zipper prevents contents from spilling when traveling",
+      "Comfortable flat shoulder straps distribute weight evenly",
+      "Spacious main compartment holds 14-inch laptops, water bottles, and books",
+      "Flat reinforced base keeps the bag standing upright when set down"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 29,
+    "name": "Vacuum Insulated Stainless Steel Tumbler (750ml)",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 1299,
+    "originalPrice": 1899,
+    "rating": 4.9,
+    "reviewCount": 5410,
+    "badge": "hot",
+    "description": "Keep hydrated anywhere. Double-walled 18/8 food-grade stainless steel with vacuum insulation. Keeps drinks ice cold for 24 hours or piping hot for 12 hours with a leakproof straw lid.",
+    "tags": [
+      "Insulated Bottle",
+      "Stainless Steel",
+      "Hydration",
+      "Eco-Friendly"
+    ],
+    "sizes": [
+      "750ml (25 oz) Capacity"
+    ],
+    "colors": [
+      "Matte Black",
+      "Brushed Steel",
+      "Sage Green",
+      "Terracotta"
+    ],
+    "specifications": {
+      "Material": "18/8 Pro-Grade Stainless Steel (100% BPA Free)",
+      "Insulation": "TempShield Double-Wall Vacuum Insulation",
+      "Performance": "Cold for 24 Hours / Hot for 12 Hours",
+      "Lid": "Leak-Proof 2-in-1 Chug & Straw Spout Lid"
+    },
+    "features": [
+      "Pure 18/8 stainless steel leaves no metallic taste in drinks",
+      "Powder-coated non-slip exterior stays sweat-free without condensation",
+      "Fits perfectly inside standard vehicle cup holders and backpack side pockets",
+      "Wide mouth design accommodates full-size ice cubes and easy cleaning",
+      "Integrated flexible silicone carry loop handle"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 30,
+    "name": "Full-Grain Leather Slim Bifold Wallet with RFID Shield",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "accessories",
+    "price": 1199,
+    "originalPrice": 1799,
+    "rating": 4.8,
+    "reviewCount": 4180,
+    "badge": "hot",
+    "description": "Slim, pocket-friendly, and secure. Crafted from premium vegetable-tanned leather with built-in RFID blocking shield, 8 card slots, and dual currency cash compartments.",
+    "tags": [
+      "Leather Wallet",
+      "RFID Shield",
+      "Bifold",
+      "Slim Wallet"
+    ],
+    "sizes": [
+      "Closed: 11cm x 9cm x 1.2cm (Ultra-Slim)"
+    ],
+    "colors": [
+      "Cognac Brown",
+      "Classic Black",
+      "Espresso"
+    ],
+    "specifications": {
+      "Leather": "Top-Grain Vegetable-Tanned Italian Leather",
+      "Security": "Certified RFID-Blocking Inner Lining (13.56 MHz)",
+      "Capacity": "8 Card Slots + 2 Hidden Pockets + 1 Full-Length Bill Compartment"
+    },
+    "features": [
+      "Ultra-slim 1.2cm profile sits comfortably in front or back pants pockets",
+      "Advanced RFID-blocking mesh prevents wireless credit card skimming",
+      "Precision turned edges and heavy-duty nylon contrast stitching",
+      "Quick-access thumb notch on primary everyday card slot",
+      "Comes packaged in an embossed gift box"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 31,
+    "name": "Men's Classic Corduroy Button-Down Overshirt",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "shirts",
+    "price": 2699,
+    "originalPrice": 3999,
+    "rating": 4.8,
+    "reviewCount": 1940,
+    "badge": "new",
+    "description": "A seasonal layering favorite. Soft 12-wale cotton corduroy with twin button-flap chest pockets, point collar, and a relaxed straight cut that wears well over tees.",
+    "tags": [
+      "Corduroy",
+      "Overshirt",
+      "Autumn Wear",
+      "Workwear"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Caramel Tan",
+      "Forest Green",
+      "Washed Black"
+    ],
+    "specifications": {
+      "Fabric": "100% Cotton 12-Wale Corduroy",
+      "Fit": "Relaxed Overshirt Fit",
+      "Buttons": "Tortoiseshell Matte Buttons",
+      "Wash Care": "Machine Wash Cold Inside Out"
+    },
+    "features": [
+      "Plush 12-wale velvety corduroy texture keeps you cozy in chilly breeze",
+      "Two functional button-flap chest pockets",
+      "Straight hemline with side splits designed for layering",
+      "Heavy-duty button placket with reinforced contrast stitching",
+      "Garment washed for ultra-soft hand feel with zero stiffness"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80"
+    ],
+    "assured": true,
+    "deliveryDays": 1
+  },
+  {
+    "id": 32,
+    "name": "Men's Athletic Fit Commuter Stretch Pants",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "pants",
+    "price": 2799,
+    "originalPrice": 3999,
+    "rating": 4.9,
+    "reviewCount": 3210,
+    "badge": "hot",
+    "description": "Engineered for life in motion. Water-repellent technical stretch twill with hidden zippered security pockets, gusseted crotch, and an athletic tapered leg for cycling and commuting.",
+    "tags": [
+      "Commuter Pants",
+      "Water-Repellent",
+      "4-Way Stretch",
+      "Technical"
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Navy Blue",
+      "Slate Grey",
+      "Black"
+    ],
+    "specifications": {
+      "Fabric": "90% Technical Polyester, 10% Spandex 4-Way Stretch",
+      "Coating": "DWR Water-Resistant Finish",
+      "Pockets": "5 Pockets (including 1 Hidden Zipper Passport Pocket)",
+      "Crotch": "Full Mobility Diamond Inseam Gusset"
+    },
+    "features": [
+      "Four-way stretch technical fabric flexes comfortably through bike commutes",
+      "DWR treatment sheds coffee spills and sudden light drizzle",
+      "Hidden zippered side pocket keeps keys and phone secure during motion",
+      "Reflective interior cuff strip reveals when rolled up on bike pedals",
+      "Wrinkle-resistant wash-and-wear performance"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1
   },
   {
     "id": 33,
-    "name": "Gucci Horsebit Leather Weekend Holdall",
-    "brand": "GUCCI",
-    "category": "handbags",
-    "price": 290000,
-    "originalPrice": 330000,
-    "rating": 5,
-    "reviewCount": 420,
-    "badge": "limited",
-    "description": "Handcrafted in Florence from pebble-grain black leather. Accented with the house Horsebit emblem, heavy brass hardware, luggage tag, and a wide canvas web strap for international journeys.",
+    "name": "Men's Waffle-Knit Thermal Long-Sleeve Henley",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "tshirts",
+    "price": 1699,
+    "originalPrice": 2499,
+    "rating": 4.8,
+    "reviewCount": 2840,
+    "badge": "new",
+    "description": "A rugged casual staple. Heavyweight combed cotton waffle knit with a 3-button henley placket, ribbed cuffs, and flatlock anti-chafe stitching.",
     "tags": [
-      "Weekend Holdall",
-      "Travel Bag",
-      "Pebble Grain",
-      "Horsebit"
+      "Henley",
+      "Thermal Waffle",
+      "Long Sleeve",
+      "Casual"
     ],
     "sizes": [
-      "Large (W 50cm x H 30cm x D 25cm)"
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
     ],
     "colors": [
-      "Nero Black Pebble Leather",
-      "Cuir Tan"
+      "Heather Charcoal",
+      "Oatmeal",
+      "Navy"
     ],
     "specifications": {
-      "Leather": "Heavy Pebble-Grain Calfskin Leather",
-      "Hardware": "Solid Brushed Brass Hardware",
-      "Strap": "Adjustable & Detachable Web Shoulder Strap (55cm drop)",
-      "Origin": "Made in Italy"
+      "Fabric": "100% Combed Cotton Waffle Thermal Knit (260 GSM)",
+      "Placket": "3-Button Henley with Herringbone Twill Placket Facing",
+      "Cuffs": "Ribbed Knit Cuffs with Elastane",
+      "Fit": "Athletic Tailored Fit"
     },
     "features": [
-      "Supple yet resilient pebble leather resists scratches and travel wear",
-      "Generous capacity accommodates up to 5 days of tailored garments",
-      "Two-way brass zipper with leather pulls and combination padlock",
-      "Reinforced dual grab handles with leather snap keeper",
-      "Cotton linen lining with padded interior tablet and laptop sleeve"
+      "Textured waffle thermal knit traps body heat for natural insulation",
+      "Soft brushed interior feels comfortable against bare skin",
+      "Herringbone-reinforced button placket resists stretching over time",
+      "Durable flatlock seams eliminate friction and chafing",
+      "Curved hemline layers smoothly under flannels or jackets"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1
   },
   {
     "id": 34,
-    "name": "Double G Matelassé Leather Zip Wallet",
-    "brand": "GUCCI",
-    "category": "accessories",
-    "price": 68000,
-    "originalPrice": 78000,
+    "name": "Lightweight Packable Down Puffer Jacket",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "outerwear",
+    "price": 4999,
+    "originalPrice": 6999,
     "rating": 4.9,
-    "reviewCount": 3120,
+    "reviewCount": 3890,
     "badge": "hot",
-    "description": "A compact continental wallet in soft chevron matelassé leather with Double G hardware. Features twelve card slots, three bill compartments, and a zippered coin pocket.",
+    "description": "Cloud-like warmth that packs down into a travel pouch. 650 fill power ethically-sourced duck down with a water-resistant ripstop nylon shell, stand collar, and zippered hand-warmer pockets.",
     "tags": [
-      "Zip Wallet",
-      "Double G",
-      "Matelassé",
-      "Leather Goods"
+      "Puffer Jacket",
+      "Packable Down",
+      "650 Fill Power",
+      "Winter Outerwear"
     ],
     "sizes": [
-      "W 19cm x H 10.5cm x D 2.5cm"
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
     ],
     "colors": [
-      "Black Chevron Leather",
-      "Dusty Pink",
-      "Porcelain White"
+      "Midnight Black",
+      "Steel Blue",
+      "Olive Drab"
     ],
     "specifications": {
-      "Material": "Matelassé Chevron Calfskin Leather",
-      "Slots": "12 Credit Card Slots, 3 Bill Compartments, 1 Coin Zip Pocket",
-      "Hardware": "Antiqued Gold-Toned Double G",
-      "Origin": "Made in Italy"
+      "Insulation": "90/10 RDS-Certified Duck Down (650 Fill Power)",
+      "Shell": "20D Ultralight Ripstop Nylon with DWR Coating",
+      "Pockets": "2 Exterior Zip Pockets, 2 Interior Drop Pockets",
+      "Weight": "320 grams (Includes Matching Stuffsack)"
     },
     "features": [
-      "All-around smooth zip closure keeps contents safe and secure",
-      "Generous twelve card capacity and dedicated zippered coin divider",
-      "Supple quilted chevron leather with iconic Double G plaque",
-      "Full grain leather and moire interior lining",
-      "Fits all major international currencies and full-sized smartphones"
+      "High-loft 650 fill power down delivers exceptional thermal warmth",
+      "Packs down into its own matching travel pouch for effortless carry",
+      "DWR water-resistant finish sheds light drizzle and snow flurries",
+      "Elastic bound cuffs and drawcord hem seal out cold wind drafts",
+      "Soft microfleece-lined front pockets warm cold hands instantly"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1
   },
   {
     "id": 35,
-    "name": "Gucci Mémoire d'une Odeur Mineral Aromatic Fragrance",
-    "brand": "GUCCI",
-    "category": "beauty",
-    "price": 15500,
-    "originalPrice": 18000,
+    "name": "Classic Suede Penny Driving Moccasins",
+    "brand": "SHOPWAVE ATELIER",
+    "category": "footwear",
+    "price": 3899,
+    "originalPrice": 5499,
     "rating": 4.8,
-    "reviewCount": 2940,
+    "reviewCount": 1720,
     "badge": "new",
-    "description": "A universal elixir transcending gender and time. Roman Chamomile and Indian Coral Jasmine are blended with precious Musks, Cedarwood, and warm Sandalwood, presented in a vintage grooved green bottle with a gold cap.",
+    "description": "Relaxed resort comfort. Handcrafted from velvety water-repellent Italian suede with traditional moccasin tubular stitching and segmented rubber pebble driving sole.",
     "tags": [
-      "Mémoire",
-      "Mineral Aromatic",
-      "Chamomile",
-      "Universal"
+      "Driving Shoes",
+      "Suede Moccasins",
+      "Penny Loafer",
+      "Casual"
     ],
     "sizes": [
-      "100ml / 3.3 fl. oz."
+      "UK 7",
+      "UK 8",
+      "UK 9",
+      "UK 10",
+      "UK 11"
     ],
     "colors": [
-      "Fluted Light Green Glass with Gold Crown Cap"
+      "Navy Blue Suede",
+      "Tobacco Brown",
+      "Stone Sand"
     ],
     "specifications": {
-      "Fragrance Category": "Mineral Aromatic (Universal Genderless)",
-      "Top Notes": "Roman Chamomile, Bitter Almond",
-      "Heart Notes": "Indian Coral Jasmine NaturePrint, Precious Musks",
-      "Base Notes": "Vanilla, Cedarwood, Sandalwood",
-      "Origin": "Made in France"
+      "Upper": "100% Water-Treated Italian Calf Suede",
+      "Sole": "Segmented Rubber Grip Pebble Driving Sole",
+      "Insole": "Cushioned Leather Footbed",
+      "Construction": "Hand-Stitched Tubular Moccasin"
     },
     "features": [
-      "Groundbreaking Roman Chamomile note brings nostalgic mineral freshness",
-      "Exquisite fluted vintage green glass flacon inspired by ancient Roman columns",
-      "Crown-shaped shiny gold-toned cap embossed with Gucci star engravings",
-      "Box decorated with a starry night sky inspired by Giotto's frescoes in Padua",
-      "Intimate and ethereal scent profile suitable for everyday contemplation"
+      "Segmented rubber pebble sole provides unmatched pedal sensitivity and floor grip",
+      "Tubular moccasin construction wraps the foot in seamless suede comfort",
+      "Soft breathable leather lining for effortless barefoot wear",
+      "Classic penny strap detail across the vamp with hand-stitched apron",
+      "Lightweight and flexible enough to roll into weekend luggage"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1
   },
   {
     "id": 36,
-    "name": "Gucci Flora Silk Foulard Scarf (90cm)",
-    "brand": "GUCCI",
+    "name": "Classic Heritage Washed Cotton Baseball Cap",
+    "brand": "SHOPWAVE ATELIER",
     "category": "accessories",
-    "price": 45000,
-    "originalPrice": 52000,
-    "rating": 5,
-    "reviewCount": 2420,
+    "price": 999,
+    "originalPrice": 1499,
+    "rating": 4.8,
+    "reviewCount": 4890,
     "badge": "hot",
-    "description": "The historical Flora print was created for Grace Kelly, Princess of Monaco, in 1966. Printed on fluid organic silk twill with delicate hand-rolled edges, portraying 37 botanical floral species in luminous watercolor tones.",
+    "description": "An understated, unconstructed 6-panel dad hat. Made from 100% pre-washed cotton twill with an antiqued brass buckle closure and subtle tonal embroidered atelier crest.",
     "tags": [
-      "Silk Foulard",
-      "Flora",
-      "Hand-Rolled",
-      "Princess Grace"
+      "Baseball Cap",
+      "Dad Hat",
+      "Cotton Twill",
+      "Headwear"
     ],
     "sizes": [
-      "90cm x 90cm Square"
+      "One Size Fits Most (Adjustable Strapback)"
     ],
     "colors": [
-      "Ivory with Multicolor Flora & Gold Border"
+      "Washed Navy",
+      "Charcoal Black",
+      "Vintage Khaki"
     ],
     "specifications": {
-      "Silk": "100% Organic Italian Silk Twill (18 Momme)",
-      "Edges": "Exquisite Artisanal Hand-Rolled and Hand-Stitched Edges",
-      "Dimensions": "90cm x 90cm",
-      "Origin": "Hand-Printed in Como, Italy"
+      "Fabric": "100% Pre-Washed Cotton Twill",
+      "Profile": "Low-Profile 6-Panel Unstructured Crown",
+      "Closure": "Adjustable Strapback with Embossed Brass Buckle",
+      "Brim": "Pre-Curved Sun Visor"
     },
     "features": [
-      "Historic botanical illustration hand-printed by master silk artisans in Lake Como",
-      "Pure organic silk twill boasts breathtaking color vibrancy and luster",
-      "Signature hand-rolled border requires over 45 minutes of needlework per piece",
-      "Can be worn as a neck foulard, hair scarf, draped over shoulders, or framed",
-      "Includes presentation box tied with a branded emerald green satin bow"
+      "Enzyme-washed cotton for an authentic broken-in vintage feel",
+      "Antiqued brass slider buckle customizes fit for all head sizes",
+      "Pre-curved brim shields eyes from harsh sunlight",
+      "Interior cotton sweatband absorbs forehead moisture",
+      "Six stitched ventilation eyelets promote continuous airflow"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80"
     ],
     "assured": true,
     "deliveryDays": 1

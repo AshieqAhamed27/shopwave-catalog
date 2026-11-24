@@ -19,55 +19,58 @@ export default function Navbar() {
       {/* Top Luxury Announcement Bar */}
       <div className="gucci-top-bar">
         <div className="container bar-content">
-          <span className="gucci-bar-tag">GUCCI ATELIER</span>
+          <span className="gucci-bar-tag">SHOPWAVE ATELIER</span>
           <span className="gucci-bar-text">
-            COMPLIMENTARY EXPRESS DELIVERY & SIGNATURE GIFT PACKAGING ON ALL CREATIONS
+            COMPLIMENTARY EXPRESS DELIVERY & PACKAGING ON ORDERS OVER ₹1,999 • 30-DAY EASY RETURNS
           </span>
-          <Link to="/products" className="gucci-bar-link">DISCOVER NEW ARRIVALS</Link>
+          <Link to="/products" className="gucci-bar-link">EXPLORE THE EDIT</Link>
         </div>
       </div>
 
       <nav className={`gucci-navbar${scrolled ? ' scrolled' : ''}`}>
         <div className="container nav-inner-wrap">
-          {/* Gucci Brand Logo */}
+          {/* Brand Logo */}
           <Link to="/" className="nav-brand-link" style={{ textDecoration: 'none' }}>
             <BrandLogo size="md" />
           </Link>
 
-          {/* Luxury Department Links */}
+          {/* Real Apparel Department Links */}
           <div className="gucci-nav-links">
             <NavLink to="/products" end className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
-              ALL CREATIONS
+              ALL
             </NavLink>
-            <NavLink to="/products?category=handbags" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
-              HANDBAGS
+            <NavLink to="/products?category=shirts" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
+              SHIRTS
             </NavLink>
-            <NavLink to="/products?category=shoes" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
+            <NavLink to="/products?category=pants" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
+              PANTS & DENIM
+            </NavLink>
+            <NavLink to="/products?category=tshirts" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
+              TEES & POLOS
+            </NavLink>
+            <NavLink to="/products?category=outerwear" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
+              JACKETS
+            </NavLink>
+            <NavLink to="/products?category=footwear" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
               SHOES
             </NavLink>
-            <NavLink to="/products?category=apparel" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
-              READY-TO-WEAR
-            </NavLink>
             <NavLink to="/products?category=accessories" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
-              JEWELRY & ACCESSORIES
-            </NavLink>
-            <NavLink to="/products?category=beauty" className={({ isActive }) => `gucci-nav-link${isActive ? ' active' : ''}`}>
-              BEAUTY
+              ACCESSORIES
             </NavLink>
           </div>
 
           {/* Right Action Icons */}
           <div className="gucci-nav-actions">
-            {/* My Gucci Account */}
+            {/* Account */}
             {user ? (
               <div className="gucci-account-dropdown-wrap">
                 <button
                   type="button"
                   className="gucci-account-btn logged-in"
                   onClick={() => setUserDropdown(!userDropdown)}
-                  title="My Gucci Profile"
+                  title="My Atelier Profile"
                 >
-                  <span className="account-initials">{user.avatar || 'GC'}</span>
+                  <span className="account-initials">{user.avatar || 'SW'}</span>
                   <span className="account-label">{user.name.split(' ')[0]}</span>
                 </button>
 
@@ -75,7 +78,7 @@ export default function Navbar() {
                   <div className="gucci-account-menu" onMouseLeave={() => setUserDropdown(false)}>
                     <div className="menu-header">
                       <p className="menu-name">{user.name}</p>
-                      <span className="menu-tier">GUCCI PRIVILEGE CLIENT</span>
+                      <span className="menu-tier">ATELIER PRIVILEGE MEMBER</span>
                     </div>
                     <div className="menu-sep" />
                     <Link to="/login" className="menu-link" onClick={() => setUserDropdown(false)}>
@@ -96,7 +99,7 @@ export default function Navbar() {
                 )}
               </div>
             ) : (
-              <Link to="/login" className="gucci-account-btn" title="Sign In to My Gucci">
+              <Link to="/login" className="gucci-account-btn" title="Sign In to ShopWave Atelier">
                 <span className="account-icon">👤</span>
                 <span className="account-text">SIGN IN</span>
               </Link>

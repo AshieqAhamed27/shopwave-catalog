@@ -34,9 +34,9 @@ export default function LoginPage() {
   const handleDemoLogin = () => {
     login({
       name: 'Ashieq Ahamed',
-      email: 'ashieq@gucci.com',
-      tier: 'Gucci Privilege Client',
-      points: 5800,
+      email: 'ashieq@shopwave.in',
+      tier: 'Atelier Privilege Member',
+      points: 4250,
       avatar: 'AA'
     });
     navigate(redirectPath);
@@ -49,9 +49,9 @@ export default function LoginPage() {
         <div className="container" style={{ maxWidth: '680px', padding: '5rem 1.5rem' }}>
           <div className="gucci-account-card">
             <div className="account-card-header">
-              <div className="account-avatar-lg">{user.avatar || 'GC'}</div>
+              <div className="account-avatar-lg">{user.avatar || 'SW'}</div>
               <div>
-                <span className="account-tier-badge">✦ GUCCI PRIVILEGE CLIENT</span>
+                <span className="account-tier-badge">✦ ATELIER PRIVILEGE MEMBER</span>
                 <h1 className="account-welcome-name">Welcome, {user.name}</h1>
                 <p className="account-welcome-email">{user.email}</p>
               </div>
@@ -59,35 +59,35 @@ export default function LoginPage() {
 
             <div className="account-privileges-grid">
               <div className="privilege-box">
-                <span className="privilege-k">Client Status</span>
-                <span className="privilege-v">VIP Member</span>
-                <span className="privilege-sub">Private Client Advisor Active</span>
+                <span className="privilege-k">Membership Status</span>
+                <span className="privilege-v">VIP Patron</span>
+                <span className="privilege-sub">Complimentary Express Shipping</span>
               </div>
               <div className="privilege-box">
-                <span className="privilege-k">Delivery Privileges</span>
-                <span className="privilege-v">White-Glove</span>
-                <span className="privilege-sub">Complimentary Worldwide</span>
+                <span className="privilege-k">Return Window</span>
+                <span className="privilege-v">30 Days</span>
+                <span className="privilege-sub">Free Doorstep Pickup</span>
               </div>
             </div>
 
             <div className="account-services-list">
-              <h3 className="services-heading">Your Exclusive Services</h3>
+              <h3 className="services-heading">Your Atelier Privileges</h3>
               <div className="service-item">
                 <span className="gold-check">✓</span>
-                <span><strong>Priority Atelier Appointments</strong> at flagship boutiques worldwide</span>
+                <span><strong>Free Express Delivery</strong> on all orders with no minimum threshold</span>
               </div>
               <div className="service-item">
                 <span className="gold-check">✓</span>
-                <span><strong>Complimentary Monogramming & Embossing</strong> on leather creations</span>
+                <span><strong>Instant 1-Click Checkout</strong> with saved shipping addresses</span>
               </div>
               <div className="service-item">
                 <span className="gold-check">✓</span>
-                <span><strong>Early Preview Access</strong> to seasonal Runway collections</span>
+                <span><strong>Early Access to Limited Drops</strong> & seasonal linen & wool releases</span>
               </div>
             </div>
 
             <div className="account-actions-row">
-              <Link to="/products" className="btn-gucci-solid-lg">Discover Collections →</Link>
+              <Link to="/products" className="btn-gucci-solid-lg">Explore Apparel Catalog →</Link>
               <button type="button" onClick={logout} className="btn-gucci-outline-lg" style={{ borderColor: 'rgba(239,68,68,0.5)', color: '#ef4444' }}>
                 Sign Out
               </button>
@@ -103,45 +103,45 @@ export default function LoginPage() {
       <div className="container">
         {/* Breadcrumb */}
         <nav className="gucci-breadcrumb" aria-label="Breadcrumb">
-          <Link to="/">GUCCI</Link>
+          <Link to="/">SHOPWAVE ATELIER</Link>
           <span className="breadcrumb-sep">/</span>
-          <span className="breadcrumb-current">MY GUCCI ACCOUNT</span>
+          <span className="breadcrumb-current">ACCOUNT LOGIN</span>
         </nav>
 
         <div className="gucci-auth-grid">
           {/* Left Column: Brand Story & Client Privileges */}
           <div className="gucci-auth-editorial">
-            <span className="editorial-crest">✦ FIRENZE 1921</span>
+            <span className="editorial-crest">✦ MODERN ESSENTIALS</span>
             <h1 className="editorial-title">
-              MY GUCCI<br />
-              <span className="editorial-sub">CLIENT PORTAL</span>
+              SHOPWAVE ATELIER<br />
+              <span className="editorial-sub">MEMBER PORTAL</span>
             </h1>
 
             <p className="editorial-desc">
-              Sign in to manage your appointments, track your bespoke orders, save creations
-              to your private wishlist, and receive invitations to private previews.
+              Sign in to manage your orders, track deliveries in real time, save favorite styles
+              to your wishlist, and enjoy complimentary express delivery.
             </p>
 
             <div className="editorial-perks">
               <div className="perk-row">
                 <span className="perk-bullet">✦</span>
                 <div>
-                  <h4 className="perk-h">Personalized Styling</h4>
-                  <p className="perk-p">Connect directly with dedicated House advisors for tailored wardrobe curation.</p>
+                  <h4 className="perk-h">Express Order Tracking</h4>
+                  <p className="perk-p">Real-time status updates with SMS & email dispatch notifications.</p>
                 </div>
               </div>
               <div className="perk-row">
                 <span className="perk-bullet">✦</span>
                 <div>
-                  <h4 className="perk-h">Order Archiving & Tracking</h4>
-                  <p className="perk-p">View real-time insured delivery milestones and authenticated receipts.</p>
+                  <h4 className="perk-h">Fast 30-Day Doorstep Returns</h4>
+                  <p className="perk-p">One-click return initiation with hassle-free doorstep pickup across India.</p>
                 </div>
               </div>
               <div className="perk-row">
                 <span className="perk-bullet">✦</span>
                 <div>
-                  <h4 className="perk-h">Archival Previews</h4>
-                  <p className="perk-p">Gain priority invitations to limited leather drops and runway trunk shows.</p>
+                  <h4 className="perk-h">Member Exclusive Previews</h4>
+                  <p className="perk-p">Priority access to new shirt cuts, selvedge denim restocks, and seasonal capsule edits.</p>
                 </div>
               </div>
             </div>
@@ -171,28 +171,27 @@ export default function LoginPage() {
               {/* One-Click Quick Demo Login */}
               <div className="gucci-demo-login-bar">
                 <div className="demo-info">
-                  <span className="demo-badge">PRIVILEGE CLIENT ACCESS</span>
-                  <span className="demo-sub">Explore with pre-authenticated client profile</span>
+                  <span className="demo-badge">ONE-CLICK DEMO ACCESS</span>
+                  <span className="demo-sub">Sign in instantly as an Atelier member</span>
                 </div>
                 <button
                   type="button"
                   className="btn-gucci-gold-sm"
                   onClick={handleDemoLogin}
-                  title="One-click access"
                 >
                   ⚡ One-Click Sign In
                 </button>
               </div>
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="gucci-form">
+              <form onSubmit={handleSubmit} className="gucci-auth-form">
                 {tab === 'register' && (
-                  <div className="gucci-field-group">
-                    <label className="gucci-label" htmlFor="reg-name">TITLE & FULL NAME *</label>
+                  <div className="gucci-input-group">
+                    <label className="gucci-input-label" htmlFor="auth-name">FULL NAME</label>
                     <input
-                      id="reg-name"
+                      id="auth-name"
                       type="text"
-                      className="gucci-input"
+                      className="gucci-text-input"
                       placeholder="e.g. Ashieq Ahamed"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
@@ -201,94 +200,69 @@ export default function LoginPage() {
                   </div>
                 )}
 
-                <div className="gucci-field-group">
-                  <label className="gucci-label" htmlFor="auth-email">EMAIL ADDRESS *</label>
+                <div className="gucci-input-group">
+                  <label className="gucci-input-label" htmlFor="auth-email">EMAIL ADDRESS</label>
                   <input
                     id="auth-email"
-                    type="text"
-                    className="gucci-input"
-                    placeholder="client@gucci.com"
+                    type="email"
+                    className="gucci-text-input"
+                    placeholder="name@domain.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </div>
 
-                <div className="gucci-field-group">
-                  <div className="gucci-label-row">
-                    <label className="gucci-label" htmlFor="auth-password">PASSWORD *</label>
-                    {tab === 'login' && (
-                      <button
-                        type="button"
-                        className="gucci-forgot-btn"
-                        onClick={() => addToast('Reset instructions sent to your email.', 'info')}
-                      >
-                        Forgot Password?
-                      </button>
-                    )}
-                  </div>
-                  <div className="gucci-password-wrap">
-                    <input
-                      id="auth-password"
-                      type={showPassword ? 'text' : 'password'}
-                      className="gucci-input"
-                      placeholder="Enter password"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      required
-                    />
+                <div className="gucci-input-group">
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <label className="gucci-input-label" htmlFor="auth-password" style={{ margin: 0 }}>PASSWORD</label>
                     <button
                       type="button"
-                      className="gucci-eye-btn"
                       onClick={() => setShowPassword(!showPassword)}
-                      aria-label="Toggle password"
+                      className="gucci-show-pwd-btn"
                     >
-                      {showPassword ? '👁' : '👁‍🗨'}
+                      {showPassword ? 'HIDE' : 'SHOW'}
                     </button>
                   </div>
+                  <input
+                    id="auth-password"
+                    type={showPassword ? 'text' : 'password'}
+                    className="gucci-text-input"
+                    placeholder="Enter your password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                  />
                 </div>
 
-                <div className="gucci-remember-row">
+                <div className="gucci-form-options">
                   <label className="gucci-checkbox-label">
                     <input
                       type="checkbox"
                       checked={rememberMe}
                       onChange={(e) => setRememberMe(e.target.checked)}
                     />
-                    <span>Remember my credentials securely</span>
+                    <span>Remember my preferences</span>
                   </label>
+                  <a href="#" onClick={(e) => { e.preventDefault(); addToast('Password reset link sent to your email.', 'info'); }} className="gucci-forgot-link">
+                    Forgot password?
+                  </a>
                 </div>
 
-                <button type="submit" className="btn-gucci-solid-lg" style={{ marginTop: '0.75rem' }}>
-                  {tab === 'login' ? 'SIGN IN TO MY GUCCI' : 'CREATE MY ACCOUNT'}
+                <button
+                  type="submit"
+                  className="btn-gucci-solid-lg"
+                  style={{ width: '100%', marginTop: '1rem' }}
+                >
+                  {tab === 'login' ? 'SIGN IN TO ATELIER' : 'CREATE ATELIER ACCOUNT'}
                 </button>
               </form>
 
-              {/* Social Login Options */}
-              <div className="gucci-divider">
-                <span>OR SIGN IN WITH</span>
+              {/* Bottom Guarantee */}
+              <div className="gucci-form-footer">
+                <span className="lock-icon">🔒</span>
+                <span>256-Bit Encrypted Secure Member Portal • Privacy Protected</span>
               </div>
-
-              <div className="gucci-social-grid">
-                <button
-                  type="button"
-                  className="gucci-social-btn"
-                  onClick={handleDemoLogin}
-                >
-                  Google
-                </button>
-                <button
-                  type="button"
-                  className="gucci-social-btn"
-                  onClick={handleDemoLogin}
-                >
-                  Apple
-                </button>
-              </div>
-
-              <p className="gucci-disclaimer">
-                By entering, you confirm your acceptance of Gucci's <strong>Terms of Service</strong> and <strong>Privacy Code</strong>.
-              </p>
             </div>
           </div>
         </div>

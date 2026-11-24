@@ -19,6 +19,10 @@ export default function ProductCard({ product }) {
     ? product.images[activeImageIndex === 0 ? 1 : activeImageIndex]
     : (product.images && product.images[activeImageIndex]) || product.images?.[0] || './placeholder.svg';
 
+  const discountPercent = product.originalPrice && product.originalPrice > product.price
+    ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+    : null;
+
   return (
     <article
       className="gucci-luxury-card"
@@ -42,12 +46,12 @@ export default function ProductCard({ product }) {
           }}
         />
 
-        {/* Minimal Luxury Badge */}
+        {/* E-Commerce Status Badge */}
         {product.badge && (
           <span className="gucci-card-badge">
-            {product.badge === 'hot' ? 'SIGNATURE' :
-             product.badge === 'new' ? 'NEW COLLECTION' :
-             product.badge === 'limited' ? 'EXCLUSIVITY' : product.badge.toUpperCase()}
+            {product.badge === 'hot' ? 'BESTSELLER' :
+             product.badge === 'new' ? 'NEW ARRIVAL' :
+             product.badge === 'limited' ? 'LIMITED EDITION' : product.badge.toUpperCase()}
           </span>
         )}
 
@@ -84,31 +88,57 @@ export default function ProductCard({ product }) {
             className="gucci-quick-bag-btn"
             onClick={(e) => { e.stopPropagation(); addToCart(product); }}
           >
-            + ADD TO SHOPPING BAG
+            + ADD TO BAG
           </button>
         </div>
       </div>
 
       {/* Aligned Card Body */}
       <div className="gucci-card-body">
-        {/* Collection / Line */}
-        <span className="gucci-card-collection">
-          {product.tags?.[0] || 'GUCCI FLORENCE'}
-        </span>
+        {/* Category & Collection Tag */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', marginBottom: '0.35rem' }}>
+          <span className="gucci-card-collection">
+            {product.tags?.[0] || product.category.toUpperCase()}
+          </span>
+          {product.rating && (
+            <span style={{ fontSize: '0.72rem', color: '#c5a059', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+              ★ {product.rating} <span style={{ color: 'rgba(255,255,255,0.4)', fontWeight: 400 }}>({product.reviewCount || 120})</span>
+            </span>
+          )}
+        </div>
 
-        {/* Title */}
+        {/* Title (2-line clamped with fixed min-height for baseline alignment) */}
         <h3 className="gucci-card-title" title={product.name}>
           {product.name}
         </h3>
 
-        {/* Price */}
-        <div className="gucci-card-price">
-          {formatPrice(product.price)}
+        {/* Size Availability Preview */}
+        {product.sizes && product.sizes.length > 0 && (
+          <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', marginBottom: '0.5rem', letterSpacing: '0.04em' }}>
+            Sizes: <span style={{ color: 'rgba(255,255,255,0.75)' }}>{product.sizes.slice(0, 5).join(' · ')}</span>
+          </div>
+        )}
+
+        {/* Real E-Commerce Price with Strike-through & Discount */}
+        <div className="gucci-card-price" style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+          <span style={{ color: '#ffffff', fontWeight: 700, fontSize: '1.05rem' }}>
+            {formatPrice(product.price)}
+          </span>
+          {product.originalPrice && product.originalPrice > product.price && (
+            <>
+              <span style={{ textDecoration: 'line-through', color: 'rgba(255,255,255,0.4)', fontSize: '0.85rem' }}>
+                {formatPrice(product.originalPrice)}
+              </span>
+              <span style={{ color: '#4ade80', fontSize: '0.75rem', fontWeight: 700 }}>
+                {discountPercent}% OFF
+              </span>
+            </>
+          )}
         </div>
 
-        {/* Complimentary Service Note */}
-        <span className="gucci-card-service-note">
-          Complimentary Delivery & Gift Packaging
+        {/* Delivery / Guarantee Note */}
+        <span className="gucci-card-service-note" style={{ marginTop: '0.45rem' }}>
+          {product.deliveryDays === 1 ? '⚡ Next-Day Delivery • ' : ''}Free 30-Day Returns
         </span>
       </div>
     </article>
