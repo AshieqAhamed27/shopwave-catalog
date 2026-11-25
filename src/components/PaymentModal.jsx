@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import { formatPrice } from '../data/products';
 import { useShop } from '../context/ShopContext';
 
@@ -46,6 +47,15 @@ export default function PaymentModal({
     pincode: '600048',
     state: 'Tamil Nadu'
   });
+
+  // Reset modal state each time it opens
+  useEffect(() => {
+    if (isOpen) {
+      setStep('form');
+      setProgressPercent(15);
+      setConfirmedOrder(null);
+    }
+  }, [isOpen]);
 
   // Keep customer in sync with user if available
   useEffect(() => {
@@ -154,15 +164,15 @@ export default function PaymentModal({
   // Payment Execution Simulation
   const handlePay = () => {
     if (!customer.name.trim()) {
-      alert('Please enter your full name for shipping.');
+      addToast('Please enter your full name for shipping.', 'error');
       return;
     }
     if (!customer.address.trim()) {
-      alert('Please enter your delivery address.');
+      addToast('Please enter your delivery address.', 'error');
       return;
     }
     if (activeTab === 'cod' && codOtp && codOtp !== simulatedOtp) {
-      alert(`Invalid OTP! Please enter ${simulatedOtp} to confirm COD.`);
+      addToast(`Invalid OTP! Please enter ${simulatedOtp} to confirm COD.`, 'error');
       return;
     }
 
@@ -520,7 +530,7 @@ export default function PaymentModal({
     }, 400);
   };
 
-  return (
+  return createPortal(
     <div
       className="payment-modal-backdrop"
       onClick={(e) => {
@@ -1053,6 +1063,7 @@ export default function PaymentModal({
           </div>
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

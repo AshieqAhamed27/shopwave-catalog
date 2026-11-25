@@ -7205,3 +7205,151 @@ body {
   color: #9ca3af !important;
   text-align: center !important;
 }
+
+
+/* =========================================================================
+   PAYMENT MODAL LAYERING, SCROLLING & FULL RESPONSIVE ALIGNMENT FIXES
+   ========================================================================= */
+
+.payment-modal-backdrop {
+  z-index: 5000 !important;
+  padding: 1rem !important;
+  overflow-y: auto !important;
+}
+
+.simulated-viva-modal {
+  width: 100% !important;
+  max-width: 680px !important;
+  max-height: 92dvh !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  margin: auto !important;
+  box-sizing: border-box !important;
+}
+
+.viva-gateway-topbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 20 !important;
+  gap: 12px;
+}
+
+.viva-field input,
+.upi-input-wrap input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.upi-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.viva-success-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.viva-success-actions > button {
+  flex: 1 1 200px;
+}
+
+/* Global horizontal-overflow safety across all viewports */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Tablet & Mobile Responsive Improvements */
+@media (max-width: 900px) {
+  .gucci-auth-grid,
+  .gucci-pdp-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .gucci-auth-editorial {
+    padding-right: 0 !important;
+  }
+
+  .gucci-form-box {
+    padding: 1.5rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .payment-modal-backdrop {
+    padding: 0.5rem !important;
+    align-items: flex-start !important;
+  }
+
+  .simulated-viva-modal {
+    max-height: 95dvh !important;
+    border-radius: 12px !important;
+  }
+
+  .viva-gateway-topbar {
+    padding: 0.85rem 1rem !important;
+  }
+
+  .viva-title {
+    font-size: 0.82rem !important;
+  }
+
+  .viva-sub {
+    font-size: 0.62rem !important;
+  }
+
+  .payment-modal-body {
+    padding: 1rem !important;
+  }
+
+  .viva-amount-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.65rem !important;
+    padding: 0.9rem 1rem !important;
+  }
+
+  .banks-interactive-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .viva-success-actions {
+    flex-direction: column !important;
+  }
+
+  .viva-success-actions > button {
+    width: 100% !important;
+  }
+
+  .gucci-form-options {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.65rem !important;
+  }
+
+  .account-card-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  .account-actions-row {
+    flex-direction: column !important;
+  }
+
+  .account-actions-row > a {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .viva-tabs-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

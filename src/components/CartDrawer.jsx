@@ -107,7 +107,10 @@ export default function CartDrawer() {
       {/* Payment Gateway Modal */}
       <PaymentModal
         isOpen={isPaymentOpen}
-        onClose={() => setIsPaymentOpen(false)}
+        onClose={() => {
+          setIsPaymentOpen(false);
+          if (cart.length === 0) setCartOpen(false);
+        }}
         cartItems={cart}
         totalAmount={cartTotal}
         onPaymentSuccess={() => {
