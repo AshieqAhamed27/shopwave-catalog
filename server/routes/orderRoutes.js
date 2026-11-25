@@ -2,6 +2,8 @@ import express from 'express';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import Order from '../models/Order.js';
+import { isDBConnected } from '../config/db.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -9,7 +11,7 @@ const ordersFilePath = path.join(__dirname, '../data/orders.json');
 
 const router = express.Router();
 
-function getOrders() {
+function getOrdersFile() {
   try {
     if (!fs.existsSync(ordersFilePath)) {
       fs.writeFileSync(ordersFilePath, '[]', 'utf-8');
@@ -22,12 +24,12 @@ function getOrders() {
   }
 }
 
-function saveOrders(orders) {
+function saveOrdersFile(orders) {
   fs.writeFileSync(ordersFilePath, JSON.stringify(orders, null, 2), 'utf-8');
 }
 
 // POST /api/orders - create a new order
-router.post('/orders', (req, res) => {
+router.post('/orders', async (req, res) => {
   try {
     const { items, customer, paymentMethod = 'card', paymentDetails } = req.body;
 
@@ -35,14 +37,15 @@ router.post('/orders', (req, res) => {
       return res.status(400).json({ success: false, error: 'Order must contain at least one item' });
     }
 
-    const subtotal = items.reduce((sum, item) => sum + (item.price * (item.qty || 1)), 0);
+    const subtotal = items.reduce((sum, item) => sum + item.price * (item.qty || 1), 0);
     const shipping = subtotal > 999 ? 0 : 99;
     const total = subtotal + shipping;
 
-    const transactionId = paymentDetails?.transactionId || `TXN_${Date.now()}_${Math.floor(1000 + Math.random() * 9000)}`;
-    const isCod = (paymentMethod === 'cod' || paymentDetails?.method === 'cod');
+    const transactionId =
+      paymentDetails?.transactionId || `TXN_${Date.now()}_${Math.floor(1000 + Math.random() * 9000)}`;
+    const isCod = paymentMethod === 'cod' || paymentDetails?.method === 'cod';
 
-    const newOrder = {
+    const orderPayload = {
       id: `ORD-${Date.now()}-${Math.floor(100 + Math.random() * 900)}`,
       createdAt: new Date().toISOString(),
       status: 'confirmed',
@@ -56,35 +59,43 @@ router.post('/orders', (req, res) => {
       items: items.map(item => ({
         id: item.id,
         name: item.name,
+        size: item.size || null,
         price: item.price,
         qty: item.qty || 1,
         image: item.images?.[0] || item.image || '',
       })),
-      pricing: {
-        subtotal,
-        shipping,
-        total,
-      },
+      pricing: { subtotal, shipping, total },
       paymentMethod: paymentDetails?.method || paymentMethod,
       payment: {
         transactionId: isCod ? `COD_PENDING_${Date.now()}` : transactionId,
         method: paymentDetails?.method || paymentMethod,
         status: isCod ? 'PENDING_ON_DELIVERY' : 'PAID',
-        paidAt: isCod ? null : (paymentDetails?.paidAt || new Date().toISOString()),
+        paidAt: isCod ? null : paymentDetails?.paidAt || new Date().toISOString(),
         upiId: paymentDetails?.upiId || null,
         bankName: paymentDetails?.bankName || null,
         cardLast4: paymentDetails?.cardLast4 || null,
       },
     };
 
-    const orders = getOrders();
-    orders.unshift(newOrder);
-    saveOrders(orders);
+    if (isDBConnected()) {
+      const savedOrder = await Order.create(orderPayload);
+      return res.status(201).json({
+        success: true,
+        storage: 'mongodb',
+        message: 'Order placed and saved to MongoDB!',
+        order: savedOrder,
+      });
+    }
+
+    const orders = getOrdersFile();
+    orders.unshift(orderPayload);
+    saveOrdersFile(orders);
 
     res.status(201).json({
       success: true,
+      storage: 'json-fallback',
       message: 'Order placed successfully!',
-      order: newOrder,
+      order: orderPayload,
     });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
@@ -92,20 +103,29 @@ router.post('/orders', (req, res) => {
 });
 
 // GET /api/orders - list all orders
-router.get('/orders', (_req, res) => {
+router.get('/orders', async (_req, res) => {
   try {
-    const orders = getOrders();
-    res.json({ success: true, count: orders.length, data: orders });
+    const orders = isDBConnected()
+      ? await Order.find().sort({ createdAt: -1 }).lean()
+      : getOrdersFile();
+
+    res.json({
+      success: true,
+      storage: isDBConnected() ? 'mongodb' : 'json-fallback',
+      count: orders.length,
+      data: orders,
+    });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   }
 });
 
 // GET /api/orders/:id - get order by ID
-router.get('/orders/:id', (req, res) => {
+router.get('/orders/:id', async (req, res) => {
   try {
-    const orders = getOrders();
-    const order = orders.find(o => o.id === req.params.id);
+    const order = isDBConnected()
+      ? await Order.findOne({ id: req.params.id }).lean()
+      : getOrdersFile().find(o => o.id === req.params.id);
 
     if (!order) {
       return res.status(404).json({ success: false, error: 'Order not found' });

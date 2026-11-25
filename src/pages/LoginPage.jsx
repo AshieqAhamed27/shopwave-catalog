@@ -16,19 +16,40 @@ export default function LoginPage() {
 
   const redirectPath = location.state?.from || '/';
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email || !password) {
       addToast('Please provide both your email and password.', 'error');
       return;
     }
+
     const displayName = tab === 'register' && name ? name : email.split('@')[0];
-    login({
-      name: displayName,
-      email: email,
-      avatar: displayName.substring(0, 2).toUpperCase()
-    });
-    navigate(redirectPath);
+    const endpoint = tab === 'register' ? '/api/auth/register' : '/api/auth/login';
+
+    try {
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: displayName, email, password }),
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        addToast(data.error || 'Authentication failed.', 'error');
+        return;
+      }
+
+      login(data.user);
+      navigate(redirectPath);
+    } catch {
+      // Graceful offline fallback if backend server is not running
+      login({
+        name: displayName,
+        email: email,
+        avatar: displayName.substring(0, 2).toUpperCase(),
+      });
+      navigate(redirectPath);
+    }
   };
 
   // Printable Invoice from Dashboard

@@ -1,9 +1,12 @@
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import productRoutes from './routes/productRoutes.js';
+import { connectDB, isDBConnected } from './config/db.js';
+import productRoutes, { seedProductsIfNeeded } from './routes/productRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
+import authRoutes from './routes/authRoutes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -26,6 +29,7 @@ app.get('/api/health', (_req, res) => {
   res.json({
     status: 'ok',
     service: 'ShopWave Backend API',
+    database: isDBConnected() ? 'mongodb-atlas' : 'json-fallback',
     timestamp: new Date().toISOString(),
   });
 });
@@ -33,6 +37,7 @@ app.get('/api/health', (_req, res) => {
 // API Routes
 app.use('/api', productRoutes);
 app.use('/api', orderRoutes);
+app.use('/api', authRoutes);
 
 // Serve built frontend assets if dist exists (unified production mode)
 const distPath = path.join(__dirname, '../dist');
@@ -47,13 +52,21 @@ app.use((req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`\n===========================================`);
-  console.log(`🚀 ShopWave Backend API running on port ${PORT}`);
-  console.log(`👉 Health check: http://localhost:${PORT}/api/health`);
-  console.log(`👉 Products API: http://localhost:${PORT}/api/products`);
-  console.log(`👉 Orders API:   http://localhost:${PORT}/api/orders`);
-  console.log(`===========================================\n`);
+// Connect to MongoDB Atlas (if configured) and start Express server
+connectDB().then(async connected => {
+  if (connected) {
+    await seedProductsIfNeeded();
+  }
+  app.listen(PORT, () => {
+    console.log(`\n===========================================`);
+    console.log(`🚀 ShopWave Backend API running on port ${PORT}`);
+    console.log(`🗄️  Storage Mode: ${connected ? 'MongoDB Atlas' : 'Local JSON Fallback'}`);
+    console.log(`👉 Health check: http://localhost:${PORT}/api/health`);
+    console.log(`👉 Products API: http://localhost:${PORT}/api/products`);
+    console.log(`👉 Orders API:   http://localhost:${PORT}/api/orders`);
+    console.log(`👉 Auth API:     http://localhost:${PORT}/api/auth/login`);
+    console.log(`===========================================\n`);
+  });
 });
 
 export default app;
