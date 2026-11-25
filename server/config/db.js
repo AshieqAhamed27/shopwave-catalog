@@ -1,3 +1,4 @@
+import dns from 'dns';
 import mongoose from 'mongoose';
 
 /**
@@ -11,6 +12,11 @@ export async function connectDB() {
   if (!uri || uri.includes('<username>') || uri.includes('<password>')) {
     console.warn('⚠️  MONGODB_URI not configured in .env — running with local JSON storage fallback.');
     return false;
+  }
+
+  // Fix Windows/router DNS SRV resolution issues with mongodb+srv:// URIs
+  if (uri.startsWith('mongodb+srv://')) {
+    dns.setServers(['8.8.8.8', '1.1.1.1']);
   }
 
   try {
